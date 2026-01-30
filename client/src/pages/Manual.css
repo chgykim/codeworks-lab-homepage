@@ -1,0 +1,172 @@
+.manual-content {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.manual-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: sticky;
+    top: 80px;
+    height: fit-content;
+}
+
+.manual-nav-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    background: white;
+    color: var(--text-color);
+    font-weight: 500;
+    text-align: left;
+    transition: all 0.2s ease;
+}
+
+.manual-nav-item:hover {
+    border-color: var(--primary-color);
+}
+
+.manual-nav-item.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.nav-arrow {
+    margin-left: auto;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.manual-nav-item.active .nav-arrow,
+.manual-nav-item:hover .nav-arrow {
+    opacity: 1;
+}
+
+.manual-detail {
+    background: white;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+}
+
+.manual-detail-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--primary-color);
+}
+
+.manual-detail-header h2 {
+    color: var(--text-color);
+}
+
+.manual-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.manual-step {
+    display: flex;
+    gap: 1rem;
+}
+
+.step-number {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background-alt);
+    border-radius: 50%;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.step-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.step-content p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 4rem;
+    border-radius: var(--radius-lg);
+    margin-top: 2rem;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.contact-info {
+    padding: 1rem;
+}
+
+.contact-icon {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.contact-info h2 {
+    margin-bottom: 0.75rem;
+}
+
+.contact-info p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.contact-form {
+    padding: 2rem;
+}
+
+.contact-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+@media (max-width: 968px) {
+    .manual-content {
+        grid-template-columns: 1fr;
+    }
+
+    .manual-nav {
+        position: static;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .manual-nav-item {
+        flex: 1;
+        min-width: 140px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form .form-row {
+        grid-template-columns: 1fr;
+    }
+}

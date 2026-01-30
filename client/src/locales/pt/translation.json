@@ -1,0 +1,388 @@
+{
+  "brand": {
+    "name": "CodeWorks Lab",
+    "tagline": "Registramos, Exibimos e Assistimos",
+    "description": "Criamos ferramentas utilitárias de estilo de vida e diários de autogestão. Não julgamos. Registramos, exibimos e assistimos.",
+    "safeWay": "Safe Way 10"
+  },
+  "nav": {
+    "home": "Início",
+    "apps": "Apps",
+    "manual": "Guia",
+    "reviews": "Avaliações",
+    "blog": "Blog",
+    "admin": "Admin",
+    "login": "Login Admin",
+    "logout": "Sair"
+  },
+  "hero": {
+    "title": "Seu Assistente",
+    "titleHighlight": "do Dia a Dia",
+    "subtitle": "A linha Safe Way 10 da CodeWorks Lab - ferramentas utilitárias de estilo de vida e diários de autogestão projetados para facilitar sua vida diária.",
+    "appStore": "App Store",
+    "playStore": "Google Play",
+    "downloads": "Downloads",
+    "rating": "Avaliação",
+    "apps": "Apps",
+    "coreMessage": "Não julgamos. Registramos, exibimos e assistimos."
+  },
+  "apps": {
+    "title": "Linha Safe Way 10",
+    "subtitle": "Utilitários de estilo de vida e diários de autogestão para o dia a dia",
+    "learnMore": "Saiba Mais",
+    "comingSoon": "Em Breve",
+    "items": {
+      "wayback": {
+        "name": "WayBack",
+        "tagline": "Retorno Seguro e Viagens",
+        "description": "Mapas offline, navegação e guia de viagem baseado em localização. Seu companheiro para jornadas seguras.",
+        "category": "Navegação"
+      },
+      "wayfit": {
+        "name": "WayFit",
+        "tagline": "Diário de Refeições e Calorias",
+        "description": "Tire fotos de suas refeições para manter um diário pessoal e obter informações nutricionais aproximadas.",
+        "category": "Estilo de Vida"
+      },
+      "waymuscle": {
+        "name": "WayMuscle",
+        "tagline": "Treinador em Casa",
+        "description": "Parceiro de exercícios com IA que ajuda você a treinar com a forma correta em casa.",
+        "category": "Fitness"
+      },
+      "waybrain": {
+        "name": "WayBrain",
+        "tagline": "Fitness Mental",
+        "description": "Jogo de treinamento cerebral que mantém sua mente ativa através de quizzes e conversas.",
+        "category": "Entretenimento"
+      },
+      "wayview": {
+        "name": "WayView",
+        "tagline": "Lupa Inteligente",
+        "description": "Ferramenta de assistência visual que amplia texto pequeno e lê em voz alta. Uma lupa de leitura digital.",
+        "category": "Utilidade"
+      },
+      "waysound": {
+        "name": "WaySound",
+        "tagline": "Assistente de Legendas",
+        "description": "Bloco de notas de transcrição em tempo real que converte fala em texto. Um gerador de legendas para conversas.",
+        "category": "Utilidade"
+      },
+      "waylog": {
+        "name": "WayLog",
+        "tagline": "Lembrete de Suplementos",
+        "description": "Despertador que lembra quando tomar vitaminas ou suplementos. Acompanhe seu histórico de consumo.",
+        "category": "Estilo de Vida"
+      },
+      "wayspot": {
+        "name": "WaySpot",
+        "tagline": "Diário de Observação Corporal",
+        "description": "Álbum de fotos que organiza imagens de mudanças corporais (manchas, marcas) em ordem cronológica.",
+        "category": "Estilo de Vida"
+      },
+      "wayrest": {
+        "name": "WayRest",
+        "tagline": "Gravador de Sons do Sono",
+        "description": "Gravador de sono que captura sons (ronco, falar dormindo) enquanto você descansa. Verifique seus sons noturnos.",
+        "category": "Estilo de Vida"
+      },
+      "waystory": {
+        "name": "WayStory",
+        "tagline": "Criador de Autobiografias",
+        "description": "Transforme suas histórias de vida em um livro através de conversas guiadas. Assistente de publicação e escrita.",
+        "category": "Criativo"
+      }
+    }
+  },
+  "features": {
+    "title": "Por que Escolher Safe Way 10?",
+    "subtitle": "Ferramentas que registram, exibem e assistem - sem fazer julgamentos",
+    "items": {
+      "recording": {
+        "title": "Registro Inteligente",
+        "description": "Registre e organize automaticamente suas atividades e dados diários."
+      },
+      "display": {
+        "title": "Exibição Clara",
+        "description": "Visualize seus dados registrados em gráficos e linhas do tempo intuitivos."
+      },
+      "assist": {
+        "title": "Assistência Útil",
+        "description": "Receba lembretes, dicas e orientações para apoiar suas rotinas diárias."
+      },
+      "privacy": {
+        "title": "Privacidade em Primeiro",
+        "description": "Seus dados são seus. Armazenamento criptografado com controle total de privacidade."
+      },
+      "offline": {
+        "title": "Funciona Offline",
+        "description": "Recursos principais funcionam sem internet. Seus dados estão sempre acessíveis."
+      },
+      "sync": {
+        "title": "100% Armazenamento Local",
+        "description": "Todos os dados são armazenados apenas no seu dispositivo. Nenhuma informação pessoal é enviada ou armazenada externamente."
+      },
+      "simple": {
+        "title": "Simples e Intuitivo",
+        "description": "Projetado para todos. Fácil de usar independente da experiência técnica."
+      },
+      "support": {
+        "title": "Suporte Dedicado",
+        "description": "Suporte ao cliente responsivo pronto para ajudar quando você precisar."
+      }
+    }
+  },
+  "reviews": {
+    "title": "Avaliações dos Usuários",
+    "subtitle": "{{count}} usuários nos avaliaram com {{rating}} estrelas em média",
+    "writeReview": "Escrever Avaliação",
+    "submitReview": "Enviar Avaliação",
+    "name": "Nome",
+    "email": "Email (opcional)",
+    "rating": "Avaliação",
+    "content": "Sua Avaliação",
+    "contentPlaceholder": "Compartilhe sua experiência (mínimo 10 caracteres)",
+    "submitSuccess": "Avaliação enviada com sucesso. Será visível após aprovação.",
+    "loadMore": "Carregar Mais",
+    "noReviews": "Ainda não há avaliações. Seja o primeiro a compartilhar sua experiência!",
+    "pending": "Pendente",
+    "approved": "Aprovado",
+    "rejected": "Rejeitado"
+  },
+  "blog": {
+    "title": "Blog e Notícias",
+    "subtitle": "Fique atualizado com as últimas notícias e dicas da CodeWorks Lab",
+    "all": "Todos",
+    "loadMore": "Carregar Mais",
+    "noPosts": "Nenhuma postagem ainda.",
+    "backToList": "Voltar ao Blog",
+    "views": "visualizações",
+    "categories": {
+      "general": "Geral",
+      "announcement": "Anúncio",
+      "update": "Atualização",
+      "tips": "Dicas",
+      "event": "Evento"
+    }
+  },
+  "manual": {
+    "title": "Guia do Usuário",
+    "subtitle": "Aprenda a aproveitar ao máximo nossos apps",
+    "sections": {
+      "gettingStarted": {
+        "title": "Começando",
+        "items": {
+          "download": {
+            "title": "Baixar o App",
+            "text": "Procure nossos apps na App Store ou Google Play e baixe gratuitamente."
+          },
+          "signup": {
+            "title": "Criar Conta",
+            "text": "Cadastre-se com email ou contas sociais (Google, Apple, etc.)."
+          },
+          "setup": {
+            "title": "Configuração Inicial",
+            "text": "Insira suas informações básicas para receber recomendações personalizadas."
+          }
+        }
+      },
+      "profile": {
+        "title": "Configurações de Perfil",
+        "items": {
+          "basic": {
+            "title": "Informações Básicas",
+            "text": "Vá para Perfil > Configurações para atualizar seu nome e preferências."
+          },
+          "goals": {
+            "title": "Definir Metas",
+            "text": "Escolha seus objetivos e ajudaremos você a alcançá-los."
+          },
+          "sync": {
+            "title": "Configurações de Sincronização",
+            "text": "Conecte-se com outras plataformas para sincronizar dados automaticamente."
+          }
+        }
+      },
+      "features": {
+        "title": "Recursos Principais",
+        "items": {
+          "tracking": {
+            "title": "Registro de Atividades",
+            "text": "Toque no botão + na tela inicial para registrar atividades."
+          },
+          "auto": {
+            "title": "Registro Automático",
+            "text": "Conecte seu wearable para registro automático de atividades."
+          },
+          "routines": {
+            "title": "Criar Rotinas",
+            "text": "Salve atividades frequentes como rotinas para acesso rápido."
+          }
+        }
+      },
+      "notifications": {
+        "title": "Notificações",
+        "items": {
+          "activity": {
+            "title": "Lembretes de Atividade",
+            "text": "Configure lembretes personalizados para manter suas metas."
+          },
+          "hydration": {
+            "title": "Alertas de Hidratação",
+            "text": "Receba lembretes periódicos para se manter hidratado."
+          },
+          "sleep": {
+            "title": "Lembretes de Sono",
+            "text": "Receba notificações para melhores hábitos de sono."
+          }
+        }
+      }
+    },
+    "contact": {
+      "title": "Precisa de Ajuda?",
+      "subtitle": "Não encontrou o que procura? Entre em contato e responderemos em breve.",
+      "name": "Nome",
+      "email": "Email",
+      "subject": "Assunto (opcional)",
+      "message": "Mensagem",
+      "send": "Enviar Mensagem",
+      "success": "Mensagem enviada com sucesso. Responderemos o mais rápido possível."
+    }
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "subtitle": "Encontre respostas para perguntas comuns",
+    "items": {
+      "free": {
+        "question": "Os apps são gratuitos?",
+        "answer": "Não! Experimente todos os recursos grátis por 2 semanas! Depois assine mensal ou anualmente!"
+      },
+      "devices": {
+        "question": "Quais dispositivos são suportados?",
+        "answer": "Disponível em iOS 14+ e Android 8.0+. Também suporta integração com Apple Watch e Galaxy Watch."
+      },
+      "integration": {
+        "question": "Posso conectar outros apps?",
+        "answer": "Sim! Nossos apps integram com Apple Health, Google Fit e Samsung Health onde aplicável."
+      },
+      "privacy": {
+        "question": "Meus dados estão seguros?",
+        "answer": "Todos os dados são criptografados de ponta a ponta e cumprimos o GDPR e regulamentos de privacidade. Nunca compartilhamos dados sem consentimento."
+      },
+      "cancel": {
+        "question": "O que acontece se eu cancelar minha assinatura?",
+        "answer": "Seus dados são preservados mesmo após o cancelamento. Retome a qualquer momento e continue de onde parou."
+      }
+    }
+  },
+  "footer": {
+    "description": "Registramos, exibimos e assistimos. Construindo ferramentas de estilo de vida para o dia a dia.",
+    "quickLinks": "Links Rápidos",
+    "legal": "Legal",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço",
+    "refund": "Política de Reembolso",
+    "contact": "Contato",
+    "copyright": "Todos os direitos reservados.",
+    "madeBy": "Feito com carinho por"
+  },
+  "admin": {
+    "login": {
+      "title": "Login Admin",
+      "subtitle": "Faça login para acessar o painel de administração",
+      "email": "Email",
+      "password": "Senha",
+      "submit": "Entrar",
+      "error": "Credenciais inválidas",
+      "noPermission": "Acesso de administrador necessário"
+    },
+    "dashboard": {
+      "title": "Painel Admin",
+      "welcome": "Bem-vindo",
+      "totalReviews": "Total de Avaliações",
+      "pendingReviews": "Pendentes",
+      "approvedReviews": "Aprovadas",
+      "blogPosts": "Postagens",
+      "published": "Publicadas",
+      "drafts": "Rascunhos",
+      "uniqueVisitors": "Visitantes Únicos (30d)",
+      "totalVisits": "Total de Visitas",
+      "avgRating": "Avaliação Média",
+      "blogViews": "Visualizações do Blog",
+      "topPages": "Páginas Top (30d)",
+      "quickLinks": "Links Rápidos",
+      "manageReviews": "Gerenciar Avaliações",
+      "manageBlog": "Gerenciar Blog"
+    },
+    "reviews": {
+      "title": "Gerenciamento de Avaliações",
+      "all": "Todas",
+      "pending": "Pendentes",
+      "approved": "Aprovadas",
+      "rejected": "Rejeitadas",
+      "author": "Autor",
+      "rating": "Avaliação",
+      "content": "Conteúdo",
+      "status": "Status",
+      "date": "Data",
+      "actions": "Ações",
+      "approve": "Aprovar",
+      "reject": "Rejeitar",
+      "delete": "Excluir",
+      "deleteConfirm": "Tem certeza que deseja excluir esta avaliação?",
+      "statusUpdated": "Status da avaliação atualizado",
+      "deleted": "Avaliação excluída"
+    },
+    "blog": {
+      "title": "Gerenciamento do Blog",
+      "newPost": "Nova Postagem",
+      "editPost": "Editar Postagem",
+      "all": "Todas",
+      "published": "Publicadas",
+      "draft": "Rascunho",
+      "postTitle": "Título",
+      "category": "Categoria",
+      "status": "Status",
+      "views": "Visualizações",
+      "date": "Data",
+      "actions": "Ações",
+      "content": "Conteúdo",
+      "excerpt": "Resumo (opcional)",
+      "save": "Salvar",
+      "cancel": "Cancelar",
+      "deleteConfirm": "Tem certeza que deseja excluir esta postagem?",
+      "created": "Postagem criada",
+      "updated": "Postagem atualizada",
+      "deleted": "Postagem excluída"
+    }
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Ocorreu um erro",
+    "retry": "Tentar novamente",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "create": "Criar",
+    "submit": "Enviar",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "noData": "Nenhum dado disponível",
+    "required": "Obrigatório"
+  },
+  "language": {
+    "select": "Idioma",
+    "en": "English",
+    "ko": "한국어",
+    "ja": "日本語",
+    "zh-CN": "简体中文",
+    "es": "Español",
+    "pt": "Português",
+    "fr": "Français",
+    "de": "Deutsch",
+    "ru": "Русский",
+    "ar": "العربية",
+    "hi": "हिन्दी"
+  }
+}

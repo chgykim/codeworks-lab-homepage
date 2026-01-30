@@ -1,0 +1,31 @@
+.reviews-content {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 2rem;
+    align-items: start;
+}
+
+.reviews-main {
+    min-height: 400px;
+}
+
+.reviews-sidebar {
+    position: sticky;
+    top: 80px;
+}
+
+.load-more {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+@media (max-width: 968px) {
+    .reviews-content {
+        grid-template-columns: 1fr;
+    }
+
+    .reviews-sidebar {
+        position: static;
+        order: -1;
+    }
+}

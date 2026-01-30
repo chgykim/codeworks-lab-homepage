@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+client/dist/
+server/dist/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Firebase service account (NEVER commit this!)
+firebase-service-account.json
+*firebase-adminsdk*.json
+
+# Database
+*.db
+server/database/
+
+# Logs
+logs/
+*.log
+server/logs/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test coverage
+coverage/
+
+# Temporary files
+*.tmp
+*.temp

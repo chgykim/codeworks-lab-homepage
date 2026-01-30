@@ -1,0 +1,102 @@
+.language-selector {
+    position: relative;
+}
+
+.language-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.5rem 0.75rem;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    color: var(--text-color);
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.language-btn:hover {
+    border-color: var(--primary-color);
+    background-color: var(--background-alt);
+}
+
+.current-lang {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.lang-flag {
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.lang-code {
+    font-weight: 500;
+}
+
+.chevron {
+    transition: transform 0.2s ease;
+}
+
+.chevron.open {
+    transform: rotate(180deg);
+}
+
+.language-dropdown {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    min-width: 180px;
+    max-height: 320px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    z-index: 1000;
+}
+
+.language-option {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.language-option:hover {
+    background-color: var(--background-alt);
+}
+
+.language-option.active {
+    background-color: #eef2ff;
+    color: var(--primary-color);
+}
+
+.lang-native {
+    flex: 1;
+}
+
+.check-mark {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* RTL Support */
+[dir="rtl"] .language-dropdown {
+    right: auto;
+    left: 0;
+}
+
+[dir="rtl"] .language-option {
+    text-align: right;
+}

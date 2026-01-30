@@ -1,0 +1,388 @@
+{
+  "brand": {
+    "name": "CodeWorks Lab",
+    "tagline": "기록하고, 보여주고, 돕습니다",
+    "description": "생활 편의 도구와 자기 관리 기록장을 만듭니다. 판단하지 않습니다. 기록하고, 보여주고, 도울 뿐입니다.",
+    "safeWay": "Safe Way 10"
+  },
+  "nav": {
+    "home": "홈",
+    "apps": "앱",
+    "manual": "가이드",
+    "reviews": "리뷰",
+    "blog": "블로그",
+    "admin": "관리자",
+    "login": "관리자 로그인",
+    "logout": "로그아웃"
+  },
+  "hero": {
+    "title": "일상의",
+    "titleHighlight": "든든한 도우미",
+    "subtitle": "CodeWorks Lab의 Safe Way 10 라인업 - 일상을 더 편리하게 만들어주는 생활 편의 도구와 자기 관리 기록장입니다.",
+    "appStore": "App Store",
+    "playStore": "Google Play",
+    "downloads": "다운로드",
+    "rating": "평균 평점",
+    "apps": "개 앱",
+    "coreMessage": "판단하지 않습니다. 기록하고, 보여주고, 도울 뿐입니다."
+  },
+  "apps": {
+    "title": "Safe Way 10 라인업",
+    "subtitle": "일상을 위한 생활 편의 도구와 자기 관리 기록장",
+    "learnMore": "자세히 보기",
+    "comingSoon": "출시 예정",
+    "items": {
+      "wayback": {
+        "name": "WayBack",
+        "tagline": "안전 귀가 & 여행",
+        "description": "오프라인 지도, 길 찾기, 위치 기반 여행 가이드. 안전한 여정의 동반자입니다.",
+        "category": "네비게이션"
+      },
+      "wayfit": {
+        "name": "WayFit",
+        "tagline": "식단 기록 & 칼로리 계산",
+        "description": "음식 사진을 찍어 나만의 식단 일기를 쓰고, 대략적인 영양 정보를 얻으세요.",
+        "category": "라이프스타일"
+      },
+      "waymuscle": {
+        "name": "WayMuscle",
+        "tagline": "홈트레이닝 코치",
+        "description": "집에서 바른 자세로 운동할 수 있도록 돕는 AI 운동 파트너입니다.",
+        "category": "피트니스"
+      },
+      "waybrain": {
+        "name": "WayBrain",
+        "tagline": "두뇌 유산소",
+        "description": "퀴즈와 대화를 통해 뇌를 즐겁게 하는 두뇌 트레이닝 게임입니다.",
+        "category": "엔터테인먼트"
+      },
+      "wayview": {
+        "name": "WayView",
+        "tagline": "스마트 돋보기",
+        "description": "작은 글씨를 크게 보여주고 읽어주는 시각 보조 도구. 디지털 독서 확대경입니다.",
+        "category": "유틸리티"
+      },
+      "waysound": {
+        "name": "WaySound",
+        "tagline": "대화 자막 비서",
+        "description": "음성을 실시간 텍스트로 변환하는 받아쓰기 메모장. 대화 자막 생성기입니다.",
+        "category": "유틸리티"
+      },
+      "waylog": {
+        "name": "WayLog",
+        "tagline": "영양제 알림장",
+        "description": "영양제나 약 먹는 시간을 잊지 않게 알려주는 알람 시계. 복용 이력을 기록하세요.",
+        "category": "라이프스타일"
+      },
+      "wayspot": {
+        "name": "WaySpot",
+        "tagline": "바디 관찰 일기",
+        "description": "몸의 변화(점, 상처 등)를 사진으로 찍어 시간 순서대로 보여주는 앨범입니다.",
+        "category": "라이프스타일"
+      },
+      "wayrest": {
+        "name": "WayRest",
+        "tagline": "수면 소리 녹음",
+        "description": "잠자는 동안의 소리(코골이, 잠꼬대)를 녹음해주는 수면 레코더입니다.",
+        "category": "라이프스타일"
+      },
+      "waystory": {
+        "name": "WayStory",
+        "tagline": "자서전 메이커",
+        "description": "대화를 통해 인생 이야기를 책으로 정리해주는 출판/작문 보조 도구입니다.",
+        "category": "창작"
+      }
+    }
+  },
+  "features": {
+    "title": "왜 Safe Way 10인가요?",
+    "subtitle": "판단 없이 기록하고, 보여주고, 돕는 도구들",
+    "items": {
+      "recording": {
+        "title": "스마트 기록",
+        "description": "일상의 활동과 데이터를 자동으로 기록하고 정리합니다."
+      },
+      "display": {
+        "title": "명확한 표시",
+        "description": "기록된 데이터를 직관적인 차트와 타임라인으로 보여줍니다."
+      },
+      "assist": {
+        "title": "친절한 도움",
+        "description": "일상 루틴을 지원하는 알림, 팁, 안내를 제공합니다."
+      },
+      "privacy": {
+        "title": "개인정보 우선",
+        "description": "당신의 데이터는 당신의 것. 암호화 저장과 완전한 개인정보 제어."
+      },
+      "offline": {
+        "title": "오프라인 지원",
+        "description": "핵심 기능은 인터넷 없이도 작동. 데이터는 항상 접근 가능합니다."
+      },
+      "sync": {
+        "title": "100% 로컬 저장",
+        "description": "모든 데이터는 오직 사용자 기기에만 저장됩니다. 어떠한 개인정보도 외부로 전송되거나 저장되지 않습니다."
+      },
+      "simple": {
+        "title": "간단하고 직관적",
+        "description": "모든 사람을 위해 설계. 기술 경험에 상관없이 쉽게 사용할 수 있습니다."
+      },
+      "support": {
+        "title": "친절한 지원",
+        "description": "필요할 때 도움을 드릴 준비가 된 고객 지원팀."
+      }
+    }
+  },
+  "reviews": {
+    "title": "사용자 리뷰",
+    "subtitle": "{{count}}명의 사용자가 평균 {{rating}}점을 주었습니다",
+    "writeReview": "리뷰 작성",
+    "submitReview": "리뷰 제출",
+    "name": "이름",
+    "email": "이메일 (선택)",
+    "rating": "평점",
+    "content": "리뷰 내용",
+    "contentPlaceholder": "사용 경험을 공유해주세요 (최소 10자)",
+    "submitSuccess": "리뷰가 제출되었습니다. 승인 후 게시됩니다.",
+    "loadMore": "더 보기",
+    "noReviews": "아직 리뷰가 없습니다. 첫 번째로 경험을 공유해주세요!",
+    "pending": "대기 중",
+    "approved": "승인됨",
+    "rejected": "거절됨"
+  },
+  "blog": {
+    "title": "블로그 & 소식",
+    "subtitle": "CodeWorks Lab의 최신 소식과 팁을 확인하세요",
+    "all": "전체",
+    "loadMore": "더 보기",
+    "noPosts": "아직 게시물이 없습니다.",
+    "backToList": "블로그로 돌아가기",
+    "views": "조회",
+    "categories": {
+      "general": "일반",
+      "announcement": "공지",
+      "update": "업데이트",
+      "tips": "팁",
+      "event": "이벤트"
+    }
+  },
+  "manual": {
+    "title": "사용 가이드",
+    "subtitle": "앱을 최대한 활용하는 방법을 알아보세요",
+    "sections": {
+      "gettingStarted": {
+        "title": "시작하기",
+        "items": {
+          "download": {
+            "title": "앱 다운로드",
+            "text": "App Store 또는 Google Play에서 앱을 검색하여 무료로 다운로드하세요."
+          },
+          "signup": {
+            "title": "계정 생성",
+            "text": "이메일 또는 소셜 계정(Google, Apple 등)으로 빠르게 가입하세요."
+          },
+          "setup": {
+            "title": "초기 설정",
+            "text": "기본 정보를 입력하면 맞춤 추천을 받을 수 있습니다."
+          }
+        }
+      },
+      "profile": {
+        "title": "프로필 설정",
+        "items": {
+          "basic": {
+            "title": "기본 정보",
+            "text": "프로필 > 설정에서 이름, 환경설정 등을 업데이트하세요."
+          },
+          "goals": {
+            "title": "목표 설정",
+            "text": "목표를 선택하면 진행 상황을 추적하는 데 도움을 드립니다."
+          },
+          "sync": {
+            "title": "동기화 설정",
+            "text": "다른 플랫폼과 연결하여 데이터를 자동으로 동기화하세요."
+          }
+        }
+      },
+      "features": {
+        "title": "주요 기능",
+        "items": {
+          "tracking": {
+            "title": "활동 기록",
+            "text": "홈 화면의 + 버튼을 눌러 활동을 기록하세요."
+          },
+          "auto": {
+            "title": "자동 기록",
+            "text": "웨어러블 기기를 연결하면 활동이 자동으로 기록됩니다."
+          },
+          "routines": {
+            "title": "루틴 만들기",
+            "text": "자주 사용하는 활동을 루틴으로 저장하여 빠르게 접근하세요."
+          }
+        }
+      },
+      "notifications": {
+        "title": "알림",
+        "items": {
+          "activity": {
+            "title": "활동 알림",
+            "text": "루틴을 유지할 수 있도록 맞춤 알림을 설정하세요."
+          },
+          "hydration": {
+            "title": "수분 섭취 알림",
+            "text": "하루 종일 수분을 유지할 수 있도록 주기적인 알림을 받으세요."
+          },
+          "sleep": {
+            "title": "휴식 알림",
+            "text": "더 나은 휴식 습관을 위해 취침 시간 알림을 받으세요."
+          }
+        }
+      }
+    },
+    "contact": {
+      "title": "도움이 필요하신가요?",
+      "subtitle": "찾는 내용이 없으신가요? 연락 주시면 빠르게 답변드리겠습니다.",
+      "name": "이름",
+      "email": "이메일",
+      "subject": "제목 (선택)",
+      "message": "메시지",
+      "send": "메시지 보내기",
+      "success": "메시지가 전송되었습니다. 빠른 시일 내에 답변드리겠습니다."
+    }
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "subtitle": "궁금한 점에 대한 답변을 찾아보세요",
+    "items": {
+      "free": {
+        "question": "앱은 무료인가요?",
+        "answer": "아니요! 2주간 전 기능을 모두 체험해보세요! 그리고 월간 또는 연간 구독하세요!"
+      },
+      "devices": {
+        "question": "어떤 기기를 지원하나요?",
+        "answer": "iOS 14+ 및 Android 8.0+ 에서 사용 가능합니다. Apple Watch와 Galaxy Watch 연동도 지원합니다."
+      },
+      "integration": {
+        "question": "다른 앱과 연결할 수 있나요?",
+        "answer": "네! 해당되는 앱에서 Apple Health, Google Fit, Samsung Health와 연동됩니다."
+      },
+      "privacy": {
+        "question": "내 데이터는 안전한가요?",
+        "answer": "모든 데이터는 종단간 암호화되며 GDPR 및 개인정보 규정을 준수합니다. 동의 없이 데이터를 공유하지 않습니다."
+      },
+      "cancel": {
+        "question": "구독을 취소하면 어떻게 되나요?",
+        "answer": "취소 후에도 데이터는 보존됩니다. 언제든지 다시 시작할 수 있습니다."
+      }
+    }
+  },
+  "footer": {
+    "description": "기록하고, 보여주고, 돕습니다. 일상을 위한 라이프스타일 도구를 만듭니다.",
+    "quickLinks": "빠른 링크",
+    "legal": "법적 고지",
+    "privacy": "개인정보처리방침",
+    "terms": "이용약관",
+    "refund": "환불정책",
+    "contact": "연락처",
+    "copyright": "All rights reserved.",
+    "madeBy": "Made with care by"
+  },
+  "admin": {
+    "login": {
+      "title": "관리자 로그인",
+      "subtitle": "관리자 대시보드에 접근하려면 로그인하세요",
+      "email": "이메일",
+      "password": "비밀번호",
+      "submit": "로그인",
+      "error": "잘못된 인증 정보",
+      "noPermission": "관리자 권한이 필요합니다"
+    },
+    "dashboard": {
+      "title": "관리자 대시보드",
+      "welcome": "환영합니다",
+      "totalReviews": "총 리뷰",
+      "pendingReviews": "대기 중",
+      "approvedReviews": "승인됨",
+      "blogPosts": "블로그 포스트",
+      "published": "게시됨",
+      "drafts": "임시저장",
+      "uniqueVisitors": "고유 방문자 (30일)",
+      "totalVisits": "총 방문",
+      "avgRating": "평균 평점",
+      "blogViews": "블로그 조회",
+      "topPages": "인기 페이지 (30일)",
+      "quickLinks": "빠른 링크",
+      "manageReviews": "리뷰 관리",
+      "manageBlog": "블로그 관리"
+    },
+    "reviews": {
+      "title": "리뷰 관리",
+      "all": "전체",
+      "pending": "대기 중",
+      "approved": "승인됨",
+      "rejected": "거절됨",
+      "author": "작성자",
+      "rating": "평점",
+      "content": "내용",
+      "status": "상태",
+      "date": "날짜",
+      "actions": "작업",
+      "approve": "승인",
+      "reject": "거절",
+      "delete": "삭제",
+      "deleteConfirm": "이 리뷰를 삭제하시겠습니까?",
+      "statusUpdated": "리뷰 상태가 업데이트되었습니다",
+      "deleted": "리뷰가 삭제되었습니다"
+    },
+    "blog": {
+      "title": "블로그 관리",
+      "newPost": "새 포스트",
+      "editPost": "포스트 수정",
+      "all": "전체",
+      "published": "게시됨",
+      "draft": "임시저장",
+      "postTitle": "제목",
+      "category": "카테고리",
+      "status": "상태",
+      "views": "조회수",
+      "date": "날짜",
+      "actions": "작업",
+      "content": "내용",
+      "excerpt": "발췌 (선택)",
+      "save": "저장",
+      "cancel": "취소",
+      "deleteConfirm": "이 포스트를 삭제하시겠습니까?",
+      "created": "포스트가 생성되었습니다",
+      "updated": "포스트가 업데이트되었습니다",
+      "deleted": "포스트가 삭제되었습니다"
+    }
+  },
+  "common": {
+    "loading": "로딩 중...",
+    "error": "오류가 발생했습니다",
+    "retry": "다시 시도",
+    "save": "저장",
+    "cancel": "취소",
+    "delete": "삭제",
+    "edit": "편집",
+    "create": "생성",
+    "submit": "제출",
+    "search": "검색",
+    "filter": "필터",
+    "noData": "데이터가 없습니다",
+    "required": "필수"
+  },
+  "language": {
+    "select": "언어",
+    "en": "English",
+    "ko": "한국어",
+    "ja": "日本語",
+    "zh-CN": "简体中文",
+    "es": "Español",
+    "pt": "Português",
+    "fr": "Français",
+    "de": "Deutsch",
+    "ru": "Русский",
+    "ar": "العربية",
+    "hi": "हिन्दी"
+  }
+}

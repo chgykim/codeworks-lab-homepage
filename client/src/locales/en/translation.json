@@ -1,0 +1,388 @@
+{
+  "brand": {
+    "name": "CodeWorks Lab",
+    "tagline": "We Record, Display, and Assist",
+    "description": "We create lifestyle utility tools and self-management journals. We do not judge. We record, display, and assist.",
+    "safeWay": "Safe Way 10"
+  },
+  "nav": {
+    "home": "Home",
+    "apps": "Apps",
+    "manual": "Guide",
+    "reviews": "Reviews",
+    "blog": "Blog",
+    "admin": "Admin",
+    "login": "Admin Login",
+    "logout": "Logout"
+  },
+  "hero": {
+    "title": "Your Everyday",
+    "titleHighlight": "Life Assistant",
+    "subtitle": "CodeWorks Lab's Safe Way 10 lineup - lifestyle utility tools and self-management journals designed to make your daily life easier.",
+    "appStore": "App Store",
+    "playStore": "Google Play",
+    "downloads": "Downloads",
+    "rating": "Avg Rating",
+    "apps": "Apps",
+    "coreMessage": "We do not judge. We record, display, and assist."
+  },
+  "apps": {
+    "title": "Safe Way 10 Lineup",
+    "subtitle": "Lifestyle utilities and self-management journals for everyday life",
+    "learnMore": "Learn More",
+    "comingSoon": "Coming Soon",
+    "items": {
+      "wayback": {
+        "name": "WayBack",
+        "tagline": "Safe Return & Travel",
+        "description": "Offline maps, navigation, and location-based travel guide. Your companion for safe journeys.",
+        "category": "Navigation"
+      },
+      "wayfit": {
+        "name": "WayFit",
+        "tagline": "Meal Journal & Calorie Log",
+        "description": "Take photos of your food to keep a personal meal diary and get approximate nutritional information.",
+        "category": "Lifestyle"
+      },
+      "waymuscle": {
+        "name": "WayMuscle",
+        "tagline": "Home Training Coach",
+        "description": "AI exercise partner that helps you work out with proper form at home.",
+        "category": "Fitness"
+      },
+      "waybrain": {
+        "name": "WayBrain",
+        "tagline": "Brain Fitness",
+        "description": "Brain training game that keeps your mind active through quizzes and conversations.",
+        "category": "Entertainment"
+      },
+      "wayview": {
+        "name": "WayView",
+        "tagline": "Smart Magnifier",
+        "description": "Visual assistance tool that enlarges small text and reads it aloud. A digital reading magnifier.",
+        "category": "Utility"
+      },
+      "waysound": {
+        "name": "WaySound",
+        "tagline": "Conversation Subtitle Assistant",
+        "description": "Real-time transcription notepad that converts speech to text. A subtitle generator for conversations.",
+        "category": "Utility"
+      },
+      "waylog": {
+        "name": "WayLog",
+        "tagline": "Supplement Reminder",
+        "description": "Alarm clock that reminds you when to take vitamins or supplements. Keep track of your intake history.",
+        "category": "Lifestyle"
+      },
+      "wayspot": {
+        "name": "WaySpot",
+        "tagline": "Body Observation Diary",
+        "description": "Photo album that organizes pictures of body changes (spots, marks) in chronological order.",
+        "category": "Lifestyle"
+      },
+      "wayrest": {
+        "name": "WayRest",
+        "tagline": "Sleep Sound Recorder",
+        "description": "Sleep recorder that captures sounds (snoring, sleep talking) while you rest. Check your nighttime sounds.",
+        "category": "Lifestyle"
+      },
+      "waystory": {
+        "name": "WayStory",
+        "tagline": "Autobiography Maker",
+        "description": "Turn your life stories into a book through guided conversations. A publishing and writing assistant.",
+        "category": "Creative"
+      }
+    }
+  },
+  "features": {
+    "title": "Why Choose Safe Way 10?",
+    "subtitle": "Tools that record, display, and assist - without making judgments",
+    "items": {
+      "recording": {
+        "title": "Smart Recording",
+        "description": "Automatically log and organize your daily activities and data."
+      },
+      "display": {
+        "title": "Clear Display",
+        "description": "View your recorded data in intuitive charts and timelines."
+      },
+      "assist": {
+        "title": "Helpful Assistance",
+        "description": "Get reminders, tips, and guidance to support your daily routines."
+      },
+      "privacy": {
+        "title": "Privacy First",
+        "description": "Your data stays yours. Encrypted storage with full privacy control."
+      },
+      "offline": {
+        "title": "Offline Ready",
+        "description": "Core features work without internet. Your data is always accessible."
+      },
+      "sync": {
+        "title": "100% Local Storage",
+        "description": "All data is stored only on your device. No personal information is ever sent or stored externally."
+      },
+      "simple": {
+        "title": "Simple & Intuitive",
+        "description": "Designed for everyone. Easy to use regardless of tech experience."
+      },
+      "support": {
+        "title": "Caring Support",
+        "description": "Responsive customer support ready to help when you need it."
+      }
+    }
+  },
+  "reviews": {
+    "title": "User Reviews",
+    "subtitle": "{{count}} users rated us {{rating}} stars on average",
+    "writeReview": "Write a Review",
+    "submitReview": "Submit Review",
+    "name": "Name",
+    "email": "Email (optional)",
+    "rating": "Rating",
+    "content": "Your Review",
+    "contentPlaceholder": "Share your experience with us (minimum 10 characters)",
+    "submitSuccess": "Review submitted successfully. It will be visible after approval.",
+    "loadMore": "Load More",
+    "noReviews": "No reviews yet. Be the first to share your experience!",
+    "pending": "Pending",
+    "approved": "Approved",
+    "rejected": "Rejected"
+  },
+  "blog": {
+    "title": "Blog & News",
+    "subtitle": "Stay updated with the latest news and tips from CodeWorks Lab",
+    "all": "All",
+    "loadMore": "Load More",
+    "noPosts": "No posts yet.",
+    "backToList": "Back to Blog",
+    "views": "views",
+    "categories": {
+      "general": "General",
+      "announcement": "Announcement",
+      "update": "Update",
+      "tips": "Tips",
+      "event": "Event"
+    }
+  },
+  "manual": {
+    "title": "User Guide",
+    "subtitle": "Learn how to get the most out of our apps",
+    "sections": {
+      "gettingStarted": {
+        "title": "Getting Started",
+        "items": {
+          "download": {
+            "title": "Download the App",
+            "text": "Search for our apps on the App Store or Google Play and download them for free."
+          },
+          "signup": {
+            "title": "Create Account",
+            "text": "Sign up with your email or social accounts (Google, Apple, etc.) for quick registration."
+          },
+          "setup": {
+            "title": "Initial Setup",
+            "text": "Enter your basic information to receive personalized recommendations."
+          }
+        }
+      },
+      "profile": {
+        "title": "Profile Settings",
+        "items": {
+          "basic": {
+            "title": "Basic Information",
+            "text": "Go to Profile > Settings to update your name, preferences, and other details."
+          },
+          "goals": {
+            "title": "Set Your Goals",
+            "text": "Choose your objectives and let us help you track your progress."
+          },
+          "sync": {
+            "title": "Sync Settings",
+            "text": "Connect with other platforms to automatically sync your data."
+          }
+        }
+      },
+      "features": {
+        "title": "Key Features",
+        "items": {
+          "tracking": {
+            "title": "Activity Recording",
+            "text": "Tap the + button on the home screen to record your activities."
+          },
+          "auto": {
+            "title": "Auto Recording",
+            "text": "Connect your wearable device for automatic activity logging."
+          },
+          "routines": {
+            "title": "Create Routines",
+            "text": "Save frequently used activities as routines for quick access."
+          }
+        }
+      },
+      "notifications": {
+        "title": "Notifications",
+        "items": {
+          "activity": {
+            "title": "Activity Reminders",
+            "text": "Set custom reminders to stay on track with your routines."
+          },
+          "hydration": {
+            "title": "Hydration Alerts",
+            "text": "Get periodic reminders to stay hydrated throughout the day."
+          },
+          "sleep": {
+            "title": "Rest Reminders",
+            "text": "Receive bedtime notifications for better rest habits."
+          }
+        }
+      }
+    },
+    "contact": {
+      "title": "Need Help?",
+      "subtitle": "Can't find what you're looking for? Contact us and we'll get back to you soon.",
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject (optional)",
+      "message": "Message",
+      "send": "Send Message",
+      "success": "Message sent successfully. We'll respond as soon as possible."
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions",
+    "items": {
+      "free": {
+        "question": "Are the apps free?",
+        "answer": "No! Try all features free for 2 weeks! Then subscribe monthly or yearly!"
+      },
+      "devices": {
+        "question": "Which devices are supported?",
+        "answer": "Available on iOS 14+ and Android 8.0+. Also supports Apple Watch and Galaxy Watch integration."
+      },
+      "integration": {
+        "question": "Can I connect other apps?",
+        "answer": "Yes! Our apps integrate with Apple Health, Google Fit, and Samsung Health where applicable."
+      },
+      "privacy": {
+        "question": "Is my data secure?",
+        "answer": "All data is end-to-end encrypted and we comply with GDPR and privacy regulations. We never share data without consent."
+      },
+      "cancel": {
+        "question": "What happens if I cancel my subscription?",
+        "answer": "Your data is preserved even after cancellation. Resume anytime and pick up where you left off."
+      }
+    }
+  },
+  "footer": {
+    "description": "We record, display, and assist. Building lifestyle tools for everyday life.",
+    "quickLinks": "Quick Links",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "refund": "Refund Policy",
+    "contact": "Contact",
+    "copyright": "All rights reserved.",
+    "madeBy": "Made with care by"
+  },
+  "admin": {
+    "login": {
+      "title": "Admin Login",
+      "subtitle": "Sign in to access the admin dashboard",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Sign In",
+      "error": "Invalid credentials",
+      "noPermission": "Admin access required"
+    },
+    "dashboard": {
+      "title": "Admin Dashboard",
+      "welcome": "Welcome",
+      "totalReviews": "Total Reviews",
+      "pendingReviews": "Pending",
+      "approvedReviews": "Approved",
+      "blogPosts": "Blog Posts",
+      "published": "Published",
+      "drafts": "Drafts",
+      "uniqueVisitors": "Unique Visitors (30d)",
+      "totalVisits": "Total Visits",
+      "avgRating": "Avg Rating",
+      "blogViews": "Blog Views",
+      "topPages": "Top Pages (30d)",
+      "quickLinks": "Quick Links",
+      "manageReviews": "Manage Reviews",
+      "manageBlog": "Manage Blog"
+    },
+    "reviews": {
+      "title": "Review Management",
+      "all": "All",
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "author": "Author",
+      "rating": "Rating",
+      "content": "Content",
+      "status": "Status",
+      "date": "Date",
+      "actions": "Actions",
+      "approve": "Approve",
+      "reject": "Reject",
+      "delete": "Delete",
+      "deleteConfirm": "Are you sure you want to delete this review?",
+      "statusUpdated": "Review status updated",
+      "deleted": "Review deleted"
+    },
+    "blog": {
+      "title": "Blog Management",
+      "newPost": "New Post",
+      "editPost": "Edit Post",
+      "all": "All",
+      "published": "Published",
+      "draft": "Draft",
+      "postTitle": "Title",
+      "category": "Category",
+      "status": "Status",
+      "views": "Views",
+      "date": "Date",
+      "actions": "Actions",
+      "content": "Content",
+      "excerpt": "Excerpt (optional)",
+      "save": "Save",
+      "cancel": "Cancel",
+      "deleteConfirm": "Are you sure you want to delete this post?",
+      "created": "Post created",
+      "updated": "Post updated",
+      "deleted": "Post deleted"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "submit": "Submit",
+    "search": "Search",
+    "filter": "Filter",
+    "noData": "No data available",
+    "required": "Required"
+  },
+  "language": {
+    "select": "Language",
+    "en": "English",
+    "ko": "Korean",
+    "ja": "Japanese",
+    "zh-CN": "Chinese (Simplified)",
+    "es": "Spanish",
+    "pt": "Portuguese",
+    "fr": "French",
+    "de": "German",
+    "ru": "Russian",
+    "ar": "Arabic",
+    "hi": "Hindi"
+  }
+}

@@ -1,0 +1,388 @@
+{
+  "brand": {
+    "name": "CodeWorks Lab",
+    "tagline": "記録し、表示し、サポートします",
+    "description": "生活便利ツールと自己管理ジャーナルを作っています。私たちは判断しません。記録し、表示し、サポートします。",
+    "safeWay": "Safe Way 10"
+  },
+  "nav": {
+    "home": "ホーム",
+    "apps": "アプリ",
+    "manual": "ガイド",
+    "reviews": "レビュー",
+    "blog": "ブログ",
+    "admin": "管理者",
+    "login": "管理者ログイン",
+    "logout": "ログアウト"
+  },
+  "hero": {
+    "title": "あなたの毎日の",
+    "titleHighlight": "ライフアシスタント",
+    "subtitle": "CodeWorks LabのSafe Way 10ラインナップ - 毎日の生活をより便利にする生活便利ツールと自己管理ジャーナル。",
+    "appStore": "App Store",
+    "playStore": "Google Play",
+    "downloads": "ダウンロード",
+    "rating": "平均評価",
+    "apps": "アプリ",
+    "coreMessage": "私たちは判断しません。記録し、表示し、サポートします。"
+  },
+  "apps": {
+    "title": "Safe Way 10 ラインナップ",
+    "subtitle": "毎日の生活のための生活便利ツールと自己管理ジャーナル",
+    "learnMore": "詳細を見る",
+    "comingSoon": "近日公開",
+    "items": {
+      "wayback": {
+        "name": "WayBack",
+        "tagline": "安全な帰宅＆旅行",
+        "description": "オフラインマップ、ナビゲーション、位置情報ベースの旅行ガイド。安全な旅のお供に。",
+        "category": "ナビゲーション"
+      },
+      "wayfit": {
+        "name": "WayFit",
+        "tagline": "食事記録＆カロリー計算",
+        "description": "食事の写真を撮って食事日記をつけ、おおよその栄養情報を取得。",
+        "category": "ライフスタイル"
+      },
+      "waymuscle": {
+        "name": "WayMuscle",
+        "tagline": "ホームトレーニングコーチ",
+        "description": "自宅で正しいフォームで運動できるようサポートするAI運動パートナー。",
+        "category": "フィットネス"
+      },
+      "waybrain": {
+        "name": "WayBrain",
+        "tagline": "脳のフィットネス",
+        "description": "クイズや会話を通じて脳を活性化させる脳トレゲーム。",
+        "category": "エンターテイメント"
+      },
+      "wayview": {
+        "name": "WayView",
+        "tagline": "スマート虫眼鏡",
+        "description": "小さな文字を拡大して読み上げる視覚補助ツール。デジタル読書拡大鏡。",
+        "category": "ユーティリティ"
+      },
+      "waysound": {
+        "name": "WaySound",
+        "tagline": "会話字幕アシスタント",
+        "description": "音声をテキストに変換するリアルタイム書き起こしメモ帳。会話の字幕生成器。",
+        "category": "ユーティリティ"
+      },
+      "waylog": {
+        "name": "WayLog",
+        "tagline": "サプリメントリマインダー",
+        "description": "ビタミンやサプリメントの服用時間を知らせる目覚まし時計。服用履歴を追跡。",
+        "category": "ライフスタイル"
+      },
+      "wayspot": {
+        "name": "WaySpot",
+        "tagline": "ボディ観察日記",
+        "description": "体の変化（シミ、傷など）の写真を時系列で整理するフォトアルバム。",
+        "category": "ライフスタイル"
+      },
+      "wayrest": {
+        "name": "WayRest",
+        "tagline": "睡眠音レコーダー",
+        "description": "睡眠中の音（いびき、寝言）を記録する睡眠レコーダー。夜間の音を確認。",
+        "category": "ライフスタイル"
+      },
+      "waystory": {
+        "name": "WayStory",
+        "tagline": "自叙伝メーカー",
+        "description": "ガイド付きの会話を通じて人生のストーリーを本にまとめます。出版・執筆アシスタント。",
+        "category": "クリエイティブ"
+      }
+    }
+  },
+  "features": {
+    "title": "なぜSafe Way 10を選ぶのか？",
+    "subtitle": "判断せずに記録し、表示し、サポートするツール",
+    "items": {
+      "recording": {
+        "title": "スマート記録",
+        "description": "毎日の活動やデータを自動で記録・整理。"
+      },
+      "display": {
+        "title": "わかりやすい表示",
+        "description": "記録されたデータを直感的なチャートやタイムラインで表示。"
+      },
+      "assist": {
+        "title": "便利なサポート",
+        "description": "日常のルーティンをサポートするリマインダー、ヒント、ガイダンスを取得。"
+      },
+      "privacy": {
+        "title": "プライバシー優先",
+        "description": "データはあなたのもの。暗号化されたストレージで完全なプライバシー管理。"
+      },
+      "offline": {
+        "title": "オフライン対応",
+        "description": "コア機能はインターネットなしで動作。データはいつでもアクセス可能。"
+      },
+      "sync": {
+        "title": "100%ローカル保存",
+        "description": "すべてのデータはお使いのデバイスにのみ保存されます。個人情報が外部に送信・保存されることは一切ありません。"
+      },
+      "simple": {
+        "title": "シンプル＆直感的",
+        "description": "誰でも使いやすい設計。技術経験に関係なく簡単に使用可能。"
+      },
+      "support": {
+        "title": "心のこもったサポート",
+        "description": "必要なときにいつでも対応できるカスタマーサポート。"
+      }
+    }
+  },
+  "reviews": {
+    "title": "ユーザーレビュー",
+    "subtitle": "{{count}}人のユーザーが平均{{rating}}点を付けました",
+    "writeReview": "レビューを書く",
+    "submitReview": "レビューを送信",
+    "name": "名前",
+    "email": "メール（任意）",
+    "rating": "評価",
+    "content": "レビュー内容",
+    "contentPlaceholder": "体験を共有してください（10文字以上）",
+    "submitSuccess": "レビューが正常に送信されました。承認後に公開されます。",
+    "loadMore": "もっと見る",
+    "noReviews": "まだレビューがありません。最初のレビューを書いてみましょう！",
+    "pending": "保留中",
+    "approved": "承認済み",
+    "rejected": "却下"
+  },
+  "blog": {
+    "title": "ブログ＆ニュース",
+    "subtitle": "CodeWorks Labの最新ニュースとヒントをチェック",
+    "all": "すべて",
+    "loadMore": "もっと見る",
+    "noPosts": "投稿がありません。",
+    "backToList": "ブログ一覧へ",
+    "views": "閲覧",
+    "categories": {
+      "general": "一般",
+      "announcement": "お知らせ",
+      "update": "アップデート",
+      "tips": "ヒント",
+      "event": "イベント"
+    }
+  },
+  "manual": {
+    "title": "ユーザーガイド",
+    "subtitle": "アプリを最大限に活用する方法を学びましょう",
+    "sections": {
+      "gettingStarted": {
+        "title": "はじめに",
+        "items": {
+          "download": {
+            "title": "アプリをダウンロード",
+            "text": "App StoreまたはGoogle Playでアプリを検索して無料でダウンロード。"
+          },
+          "signup": {
+            "title": "アカウント作成",
+            "text": "メールまたはソーシャルアカウント（Google、Appleなど）で簡単登録。"
+          },
+          "setup": {
+            "title": "初期設定",
+            "text": "基本情報を入力すると、パーソナライズされた推奨を受け取れます。"
+          }
+        }
+      },
+      "profile": {
+        "title": "プロフィール設定",
+        "items": {
+          "basic": {
+            "title": "基本情報",
+            "text": "プロフィール > 設定で名前や環境設定などを更新できます。"
+          },
+          "goals": {
+            "title": "目標を設定",
+            "text": "目標を選択すると、達成をサポートします。"
+          },
+          "sync": {
+            "title": "同期設定",
+            "text": "他のプラットフォームと接続してデータを自動同期。"
+          }
+        }
+      },
+      "features": {
+        "title": "主な機能",
+        "items": {
+          "tracking": {
+            "title": "アクティビティ記録",
+            "text": "ホーム画面の+ボタンをタップしてアクティビティを記録。"
+          },
+          "auto": {
+            "title": "自動記録",
+            "text": "ウェアラブルを接続すると自動でアクティビティを記録。"
+          },
+          "routines": {
+            "title": "ルーティン作成",
+            "text": "よく使うアクティビティをルーティンとして保存して素早くアクセス。"
+          }
+        }
+      },
+      "notifications": {
+        "title": "通知設定",
+        "items": {
+          "activity": {
+            "title": "アクティビティリマインダー",
+            "text": "目標達成のためのカスタムリマインダーを設定。"
+          },
+          "hydration": {
+            "title": "水分補給アラート",
+            "text": "一日を通して水分補給のための定期的なリマインダーを受信。"
+          },
+          "sleep": {
+            "title": "就寝リマインダー",
+            "text": "より良い睡眠習慣のための就寝通知を受信。"
+          }
+        }
+      }
+    },
+    "contact": {
+      "title": "お困りですか？",
+      "subtitle": "お探しの情報が見つからない場合はお問い合わせください。できるだけ早くご返答いたします。",
+      "name": "名前",
+      "email": "メール",
+      "subject": "件名（任意）",
+      "message": "メッセージ",
+      "send": "送信",
+      "success": "メッセージが正常に送信されました。できるだけ早くご返答いたします。"
+    }
+  },
+  "faq": {
+    "title": "よくある質問",
+    "subtitle": "よくある質問への回答をご覧ください",
+    "items": {
+      "free": {
+        "question": "アプリは無料ですか？",
+        "answer": "いいえ！2週間すべての機能を無料でお試しください！その後、月額または年額でご購読ください！"
+      },
+      "devices": {
+        "question": "どのデバイスで使用できますか？",
+        "answer": "iOS 14以上、Android 8.0以上で利用可能です。Apple WatchとGalaxy Watchの連携もサポート。"
+      },
+      "integration": {
+        "question": "他のアプリと連携できますか？",
+        "answer": "はい！Apple Health、Google Fit、Samsung Healthと連携できます。設定で連携オプションを確認してください。"
+      },
+      "privacy": {
+        "question": "データは安全ですか？",
+        "answer": "すべてのデータはエンドツーエンドで暗号化され、GDPRおよびプライバシー規制に準拠しています。同意なしにデータを共有することはありません。"
+      },
+      "cancel": {
+        "question": "サブスクリプションをキャンセルするとどうなりますか？",
+        "answer": "キャンセル後もデータは保持されます。いつでも再サブスクリプションして、中断したところから再開できます。"
+      }
+    }
+  },
+  "footer": {
+    "description": "私たちは記録し、表示し、サポートします。毎日の生活のための生活便利ツールを構築しています。",
+    "quickLinks": "クイックリンク",
+    "legal": "法的情報",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "refund": "返金ポリシー",
+    "contact": "お問い合わせ",
+    "copyright": "All rights reserved.",
+    "madeBy": "Made with care by"
+  },
+  "admin": {
+    "login": {
+      "title": "管理者ログイン",
+      "subtitle": "管理者ダッシュボードにアクセスするにはログインしてください",
+      "email": "メール",
+      "password": "パスワード",
+      "submit": "ログイン",
+      "error": "認証情報が無効です",
+      "noPermission": "管理者権限が必要です"
+    },
+    "dashboard": {
+      "title": "管理者ダッシュボード",
+      "welcome": "ようこそ",
+      "totalReviews": "総レビュー数",
+      "pendingReviews": "保留中",
+      "approvedReviews": "承認済み",
+      "blogPosts": "ブログ投稿",
+      "published": "公開済み",
+      "drafts": "下書き",
+      "uniqueVisitors": "ユニーク訪問者（30日）",
+      "totalVisits": "総訪問数",
+      "avgRating": "平均評価",
+      "blogViews": "ブログ閲覧数",
+      "topPages": "人気ページ（30日）",
+      "quickLinks": "クイックリンク",
+      "manageReviews": "レビュー管理",
+      "manageBlog": "ブログ管理"
+    },
+    "reviews": {
+      "title": "レビュー管理",
+      "all": "すべて",
+      "pending": "保留中",
+      "approved": "承認済み",
+      "rejected": "却下",
+      "author": "投稿者",
+      "rating": "評価",
+      "content": "内容",
+      "status": "ステータス",
+      "date": "日付",
+      "actions": "操作",
+      "approve": "承認",
+      "reject": "却下",
+      "delete": "削除",
+      "deleteConfirm": "このレビューを削除してもよろしいですか？",
+      "statusUpdated": "レビューのステータスが更新されました",
+      "deleted": "レビューが削除されました"
+    },
+    "blog": {
+      "title": "ブログ管理",
+      "newPost": "新規投稿",
+      "editPost": "投稿を編集",
+      "all": "すべて",
+      "published": "公開済み",
+      "draft": "下書き",
+      "postTitle": "タイトル",
+      "category": "カテゴリ",
+      "status": "ステータス",
+      "views": "閲覧数",
+      "date": "日付",
+      "actions": "操作",
+      "content": "内容",
+      "excerpt": "抜粋（任意）",
+      "save": "保存",
+      "cancel": "キャンセル",
+      "deleteConfirm": "この投稿を削除してもよろしいですか？",
+      "created": "投稿が作成されました",
+      "updated": "投稿が更新されました",
+      "deleted": "投稿が削除されました"
+    }
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "error": "エラーが発生しました",
+    "retry": "再試行",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "delete": "削除",
+    "edit": "編集",
+    "create": "作成",
+    "submit": "送信",
+    "search": "検索",
+    "filter": "フィルター",
+    "noData": "データがありません",
+    "required": "必須"
+  },
+  "language": {
+    "select": "言語",
+    "en": "English",
+    "ko": "한국어",
+    "ja": "日本語",
+    "zh-CN": "简体中文",
+    "es": "Español",
+    "pt": "Português",
+    "fr": "Français",
+    "de": "Deutsch",
+    "ru": "Русский",
+    "ar": "العربية",
+    "hi": "हिन्दी"
+  }
+}

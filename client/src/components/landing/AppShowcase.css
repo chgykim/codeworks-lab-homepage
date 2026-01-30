@@ -1,0 +1,188 @@
+.app-showcase {
+    background-color: var(--background-alt);
+}
+
+.app-showcase .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.app-showcase .section-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary-color), #8b5cf6);
+    color: white;
+    padding: 0.5rem 1.25rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.app-showcase .section-title {
+    font-size: 2.25rem;
+    color: var(--text-color);
+    margin-bottom: 0.75rem;
+}
+
+.app-showcase .section-subtitle {
+    color: var(--text-light);
+    font-size: 1.125rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.apps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.app-card {
+    background: var(--background);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: transparent;
+}
+
+.app-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.app-info {
+    flex: 1;
+}
+
+.app-name {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0.25rem;
+}
+
+.app-tagline {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--text-light);
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+}
+
+.app-description {
+    font-size: 0.875rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+}
+
+.app-category {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.app-status {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.coming-soon-badge {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f3f4f6;
+    color: #6b7280;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.released-badge {
+    display: inline-flex;
+    align-items: center;
+    background-color: #d1fae5;
+    color: #065f46;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+/* Locked/Unreleased app cards */
+.app-card-locked {
+    opacity: 0.7;
+    background: #f9fafb;
+}
+
+.app-card-locked:hover {
+    transform: none;
+    box-shadow: var(--shadow);
+}
+
+.app-locked-text {
+    display: block;
+    font-size: 0.875rem;
+    color: #9ca3af;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+.core-message {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--primary-color), #8b5cf6);
+    border-radius: var(--radius-lg);
+    color: white;
+}
+
+.core-message p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .apps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .app-showcase .section-title {
+        font-size: 1.75rem;
+    }
+
+    .core-message p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .apps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1280px) {
+    .apps-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

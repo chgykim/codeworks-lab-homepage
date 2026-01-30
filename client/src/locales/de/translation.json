@@ -1,0 +1,388 @@
+{
+  "brand": {
+    "name": "CodeWorks Lab",
+    "tagline": "Wir Erfassen, Zeigen und Unterstützen",
+    "description": "Wir entwickeln Lifestyle-Utility-Tools und Selbstmanagement-Tagebücher. Wir urteilen nicht. Wir erfassen, zeigen und unterstützen.",
+    "safeWay": "Safe Way 10"
+  },
+  "nav": {
+    "home": "Startseite",
+    "apps": "Apps",
+    "manual": "Anleitung",
+    "reviews": "Bewertungen",
+    "blog": "Blog",
+    "admin": "Admin",
+    "login": "Admin Login",
+    "logout": "Abmelden"
+  },
+  "hero": {
+    "title": "Ihr Alltags-",
+    "titleHighlight": "Lebensassistent",
+    "subtitle": "Die Safe Way 10 Produktlinie von CodeWorks Lab - Lifestyle-Utility-Tools und Selbstmanagement-Tagebücher für einen einfacheren Alltag.",
+    "appStore": "App Store",
+    "playStore": "Google Play",
+    "downloads": "Downloads",
+    "rating": "Bewertung",
+    "apps": "Apps",
+    "coreMessage": "Wir urteilen nicht. Wir erfassen, zeigen und unterstützen."
+  },
+  "apps": {
+    "title": "Safe Way 10 Produktlinie",
+    "subtitle": "Lifestyle-Utilities und Selbstmanagement-Tagebücher für den Alltag",
+    "learnMore": "Mehr Erfahren",
+    "comingSoon": "Demnächst",
+    "items": {
+      "wayback": {
+        "name": "WayBack",
+        "tagline": "Sichere Rückkehr & Reisen",
+        "description": "Offline-Karten, Navigation und standortbasierter Reiseführer. Ihr Begleiter für sichere Reisen.",
+        "category": "Navigation"
+      },
+      "wayfit": {
+        "name": "WayFit",
+        "tagline": "Mahlzeiten-Tagebuch & Kalorien",
+        "description": "Fotografieren Sie Ihre Mahlzeiten für ein persönliches Ernährungstagebuch und erhalten Sie ungefähre Nährwertinformationen.",
+        "category": "Lifestyle"
+      },
+      "waymuscle": {
+        "name": "WayMuscle",
+        "tagline": "Home-Training-Coach",
+        "description": "KI-Trainingspartner, der Ihnen hilft, zu Hause mit der richtigen Form zu trainieren.",
+        "category": "Fitness"
+      },
+      "waybrain": {
+        "name": "WayBrain",
+        "tagline": "Gehirn-Fitness",
+        "description": "Gehirntraining-Spiel, das Ihren Geist durch Quizze und Gespräche aktiv hält.",
+        "category": "Unterhaltung"
+      },
+      "wayview": {
+        "name": "WayView",
+        "tagline": "Intelligente Lupe",
+        "description": "Visuelles Hilfsmittel, das kleine Texte vergrößert und vorliest. Eine digitale Leselupe.",
+        "category": "Utility"
+      },
+      "waysound": {
+        "name": "WaySound",
+        "tagline": "Gesprächs-Untertitel-Assistent",
+        "description": "Echtzeit-Transkriptions-Notizblock, der Sprache in Text umwandelt. Ein Untertitel-Generator für Gespräche.",
+        "category": "Utility"
+      },
+      "waylog": {
+        "name": "WayLog",
+        "tagline": "Nahrungsergänzungs-Erinnerung",
+        "description": "Wecker, der Sie an die Einnahme von Vitaminen oder Nahrungsergänzungsmitteln erinnert. Verfolgen Sie Ihre Einnahmehistorie.",
+        "category": "Lifestyle"
+      },
+      "wayspot": {
+        "name": "WaySpot",
+        "tagline": "Körper-Beobachtungs-Tagebuch",
+        "description": "Fotoalbum, das Bilder von Körperveränderungen (Flecken, Markierungen) chronologisch organisiert.",
+        "category": "Lifestyle"
+      },
+      "wayrest": {
+        "name": "WayRest",
+        "tagline": "Schlafgeräusch-Recorder",
+        "description": "Schlaf-Recorder, der Geräusche (Schnarchen, Schlafgespräche) während des Schlafens aufnimmt. Überprüfen Sie Ihre nächtlichen Geräusche.",
+        "category": "Lifestyle"
+      },
+      "waystory": {
+        "name": "WayStory",
+        "tagline": "Autobiografie-Ersteller",
+        "description": "Verwandeln Sie Ihre Lebensgeschichten durch geführte Gespräche in ein Buch. Ein Veröffentlichungs- und Schreibassistent.",
+        "category": "Kreativ"
+      }
+    }
+  },
+  "features": {
+    "title": "Warum Safe Way 10 Wählen?",
+    "subtitle": "Tools, die erfassen, zeigen und unterstützen - ohne zu urteilen",
+    "items": {
+      "recording": {
+        "title": "Intelligente Erfassung",
+        "description": "Erfassen und organisieren Sie automatisch Ihre täglichen Aktivitäten und Daten."
+      },
+      "display": {
+        "title": "Klare Anzeige",
+        "description": "Sehen Sie Ihre erfassten Daten in intuitiven Diagrammen und Zeitlinien."
+      },
+      "assist": {
+        "title": "Hilfreiche Unterstützung",
+        "description": "Erhalten Sie Erinnerungen, Tipps und Anleitungen zur Unterstützung Ihrer täglichen Routinen."
+      },
+      "privacy": {
+        "title": "Datenschutz Zuerst",
+        "description": "Ihre Daten gehören Ihnen. Verschlüsselte Speicherung mit vollständiger Datenschutzkontrolle."
+      },
+      "offline": {
+        "title": "Offline-Bereit",
+        "description": "Kernfunktionen funktionieren ohne Internet. Ihre Daten sind immer zugänglich."
+      },
+      "sync": {
+        "title": "100% Lokale Speicherung",
+        "description": "Alle Daten werden nur auf Ihrem Gerät gespeichert. Persönliche Informationen werden niemals extern gesendet oder gespeichert."
+      },
+      "simple": {
+        "title": "Einfach & Intuitiv",
+        "description": "Für jeden entwickelt. Einfach zu bedienen, unabhängig von technischer Erfahrung."
+      },
+      "support": {
+        "title": "Fürsorglicher Support",
+        "description": "Reaktionsschneller Kundensupport, bereit zu helfen, wenn Sie ihn brauchen."
+      }
+    }
+  },
+  "reviews": {
+    "title": "Nutzerbewertungen",
+    "subtitle": "{{count}} Nutzer haben uns durchschnittlich {{rating}} Sterne gegeben",
+    "writeReview": "Bewertung Schreiben",
+    "submitReview": "Bewertung Absenden",
+    "name": "Name",
+    "email": "E-Mail (optional)",
+    "rating": "Bewertung",
+    "content": "Ihre Bewertung",
+    "contentPlaceholder": "Teilen Sie Ihre Erfahrung (mindestens 10 Zeichen)",
+    "submitSuccess": "Bewertung erfolgreich eingereicht. Sie wird nach Genehmigung sichtbar.",
+    "loadMore": "Mehr Laden",
+    "noReviews": "Noch keine Bewertungen. Seien Sie der Erste, der seine Erfahrung teilt!",
+    "pending": "Ausstehend",
+    "approved": "Genehmigt",
+    "rejected": "Abgelehnt"
+  },
+  "blog": {
+    "title": "Blog & Neuigkeiten",
+    "subtitle": "Bleiben Sie auf dem Laufenden mit den neuesten Nachrichten und Tipps von CodeWorks Lab",
+    "all": "Alle",
+    "loadMore": "Mehr Laden",
+    "noPosts": "Noch keine Beiträge.",
+    "backToList": "Zurück zum Blog",
+    "views": "Aufrufe",
+    "categories": {
+      "general": "Allgemein",
+      "announcement": "Ankündigung",
+      "update": "Update",
+      "tips": "Tipps",
+      "event": "Event"
+    }
+  },
+  "manual": {
+    "title": "Benutzerhandbuch",
+    "subtitle": "Lernen Sie, wie Sie das Beste aus unseren Apps herausholen",
+    "sections": {
+      "gettingStarted": {
+        "title": "Erste Schritte",
+        "items": {
+          "download": {
+            "title": "App Herunterladen",
+            "text": "Suchen Sie unsere Apps im App Store oder Google Play und laden Sie sie kostenlos herunter."
+          },
+          "signup": {
+            "title": "Konto Erstellen",
+            "text": "Registrieren Sie sich mit E-Mail oder Social-Media-Konten (Google, Apple, etc.)."
+          },
+          "setup": {
+            "title": "Ersteinrichtung",
+            "text": "Geben Sie Ihre grundlegenden Informationen ein, um personalisierte Empfehlungen zu erhalten."
+          }
+        }
+      },
+      "profile": {
+        "title": "Profileinstellungen",
+        "items": {
+          "basic": {
+            "title": "Grundinformationen",
+            "text": "Gehen Sie zu Profil > Einstellungen, um Ihren Namen und Präferenzen zu aktualisieren."
+          },
+          "goals": {
+            "title": "Ziele Setzen",
+            "text": "Wählen Sie Ihre Ziele und wir helfen Ihnen, sie zu erreichen."
+          },
+          "sync": {
+            "title": "Sync-Einstellungen",
+            "text": "Verbinden Sie sich mit anderen Plattformen für automatische Datensynchronisation."
+          }
+        }
+      },
+      "features": {
+        "title": "Hauptfunktionen",
+        "items": {
+          "tracking": {
+            "title": "Aktivitäts-Erfassung",
+            "text": "Tippen Sie auf die + Schaltfläche auf dem Startbildschirm, um Aktivitäten zu erfassen."
+          },
+          "auto": {
+            "title": "Automatische Erfassung",
+            "text": "Verbinden Sie Ihr Wearable für automatische Aktivitätserfassung."
+          },
+          "routines": {
+            "title": "Routinen Erstellen",
+            "text": "Speichern Sie häufige Aktivitäten als Routinen für schnellen Zugriff."
+          }
+        }
+      },
+      "notifications": {
+        "title": "Benachrichtigungen",
+        "items": {
+          "activity": {
+            "title": "Aktivitäts-Erinnerungen",
+            "text": "Richten Sie benutzerdefinierte Erinnerungen ein, um Ihre Ziele zu erreichen."
+          },
+          "hydration": {
+            "title": "Trink-Erinnerungen",
+            "text": "Erhalten Sie regelmäßige Erinnerungen, um hydratisiert zu bleiben."
+          },
+          "sleep": {
+            "title": "Schlaf-Erinnerungen",
+            "text": "Erhalten Sie Benachrichtigungen für bessere Schlafgewohnheiten."
+          }
+        }
+      }
+    },
+    "contact": {
+      "title": "Brauchen Sie Hilfe?",
+      "subtitle": "Finden Sie nicht was Sie suchen? Kontaktieren Sie uns und wir antworten bald.",
+      "name": "Name",
+      "email": "E-Mail",
+      "subject": "Betreff (optional)",
+      "message": "Nachricht",
+      "send": "Nachricht Senden",
+      "success": "Nachricht erfolgreich gesendet. Wir antworten so schnell wie möglich."
+    }
+  },
+  "faq": {
+    "title": "Häufig Gestellte Fragen",
+    "subtitle": "Finden Sie Antworten auf häufige Fragen",
+    "items": {
+      "free": {
+        "question": "Sind die Apps kostenlos?",
+        "answer": "Nein! Testen Sie alle Funktionen 2 Wochen kostenlos! Dann abonnieren Sie monatlich oder jährlich!"
+      },
+      "devices": {
+        "question": "Welche Geräte werden unterstützt?",
+        "answer": "Verfügbar auf iOS 14+ und Android 8.0+. Unterstützt auch Apple Watch und Galaxy Watch Integration."
+      },
+      "integration": {
+        "question": "Kann ich andere Apps verbinden?",
+        "answer": "Ja! Unsere Apps integrieren sich mit Apple Health, Google Fit und Samsung Health, wo zutreffend."
+      },
+      "privacy": {
+        "question": "Sind meine Daten sicher?",
+        "answer": "Alle Daten sind Ende-zu-Ende verschlüsselt und wir entsprechen der DSGVO und Datenschutzvorschriften. Wir teilen niemals Daten ohne Zustimmung."
+      },
+      "cancel": {
+        "question": "Was passiert wenn ich mein Abo kündige?",
+        "answer": "Ihre Daten bleiben auch nach der Kündigung erhalten. Setzen Sie jederzeit fort und machen Sie dort weiter, wo Sie aufgehört haben."
+      }
+    }
+  },
+  "footer": {
+    "description": "Wir erfassen, zeigen und unterstützen. Lifestyle-Tools für den Alltag entwickeln.",
+    "quickLinks": "Schnelllinks",
+    "legal": "Rechtliches",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "refund": "Erstattungsrichtlinie",
+    "contact": "Kontakt",
+    "copyright": "Alle Rechte vorbehalten.",
+    "madeBy": "Mit Sorgfalt erstellt von"
+  },
+  "admin": {
+    "login": {
+      "title": "Admin Login",
+      "subtitle": "Melden Sie sich an, um auf das Admin-Dashboard zuzugreifen",
+      "email": "E-Mail",
+      "password": "Passwort",
+      "submit": "Anmelden",
+      "error": "Ungültige Anmeldedaten",
+      "noPermission": "Admin-Zugriff erforderlich"
+    },
+    "dashboard": {
+      "title": "Admin Dashboard",
+      "welcome": "Willkommen",
+      "totalReviews": "Bewertungen Gesamt",
+      "pendingReviews": "Ausstehend",
+      "approvedReviews": "Genehmigt",
+      "blogPosts": "Blog-Beiträge",
+      "published": "Veröffentlicht",
+      "drafts": "Entwürfe",
+      "uniqueVisitors": "Eindeutige Besucher (30T)",
+      "totalVisits": "Besuche Gesamt",
+      "avgRating": "Durchschn. Bewertung",
+      "blogViews": "Blog-Aufrufe",
+      "topPages": "Top-Seiten (30T)",
+      "quickLinks": "Schnelllinks",
+      "manageReviews": "Bewertungen Verwalten",
+      "manageBlog": "Blog Verwalten"
+    },
+    "reviews": {
+      "title": "Bewertungsverwaltung",
+      "all": "Alle",
+      "pending": "Ausstehend",
+      "approved": "Genehmigt",
+      "rejected": "Abgelehnt",
+      "author": "Autor",
+      "rating": "Bewertung",
+      "content": "Inhalt",
+      "status": "Status",
+      "date": "Datum",
+      "actions": "Aktionen",
+      "approve": "Genehmigen",
+      "reject": "Ablehnen",
+      "delete": "Löschen",
+      "deleteConfirm": "Sind Sie sicher, dass Sie diese Bewertung löschen möchten?",
+      "statusUpdated": "Bewertungsstatus aktualisiert",
+      "deleted": "Bewertung gelöscht"
+    },
+    "blog": {
+      "title": "Blog-Verwaltung",
+      "newPost": "Neuer Beitrag",
+      "editPost": "Beitrag Bearbeiten",
+      "all": "Alle",
+      "published": "Veröffentlicht",
+      "draft": "Entwurf",
+      "postTitle": "Titel",
+      "category": "Kategorie",
+      "status": "Status",
+      "views": "Aufrufe",
+      "date": "Datum",
+      "actions": "Aktionen",
+      "content": "Inhalt",
+      "excerpt": "Auszug (optional)",
+      "save": "Speichern",
+      "cancel": "Abbrechen",
+      "deleteConfirm": "Sind Sie sicher, dass Sie diesen Beitrag löschen möchten?",
+      "created": "Beitrag erstellt",
+      "updated": "Beitrag aktualisiert",
+      "deleted": "Beitrag gelöscht"
+    }
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Ein Fehler ist aufgetreten",
+    "retry": "Erneut versuchen",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "create": "Erstellen",
+    "submit": "Absenden",
+    "search": "Suchen",
+    "filter": "Filtern",
+    "noData": "Keine Daten verfügbar",
+    "required": "Erforderlich"
+  },
+  "language": {
+    "select": "Sprache",
+    "en": "English",
+    "ko": "한국어",
+    "ja": "日本語",
+    "zh-CN": "简体中文",
+    "es": "Español",
+    "pt": "Português",
+    "fr": "Français",
+    "de": "Deutsch",
+    "ru": "Русский",
+    "ar": "العربية",
+    "hi": "हिन्दी"
+  }
+}

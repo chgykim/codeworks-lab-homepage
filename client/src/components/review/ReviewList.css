@@ -1,0 +1,47 @@
+.review-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.review-item {
+    padding: 1.5rem;
+}
+
+.review-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.review-item-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.review-author-name {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.review-item-date {
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+.review-item-content {
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+.no-reviews-message {
+    text-align: center;
+    padding: 3rem;
+    color: var(--text-light);
+    background: var(--background-alt);
+    border-radius: var(--radius-lg);
+}
