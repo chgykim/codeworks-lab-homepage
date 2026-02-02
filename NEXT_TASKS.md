@@ -210,6 +210,10 @@ codeworks-lab-homepage/
 - [x] 클라이언트 배포 (Firebase Hosting)
 - [x] CORS 설정 완료
 - [x] 관리자 로그인 테스트 완료
+- [x] **보안 조치**: GitGuardian 경고 대응
+  - DATABASE_URL 노출 문제 해결
+  - 새 PostgreSQL credential 생성 (codeworkslabdb_phdc_user)
+  - 기존 노출된 credential 삭제 완료
 
 ---
 
@@ -304,6 +308,31 @@ firebase projects:list
 
 ---
 
+## 🔐 보안 주의사항
+
+### 절대 GitHub에 올리지 말 것
+- DATABASE_URL (PostgreSQL 연결 정보)
+- FIREBASE_PRIVATE_KEY (Firebase 비공개 키)
+- JWT_SECRET
+- 기타 API 키, 비밀번호
+
+### .env 파일 관리
+- `server/.env` 파일은 `.gitignore`에 포함됨
+- 로컬에서만 사용, 절대 커밋하지 않음
+- Render 환경 변수는 대시보드에서 직접 설정
+
+### credential 노출 시 대응
+1. 즉시 새 credential 생성 (Render Dashboard > PostgreSQL > Info > New default credential)
+2. 서버 환경 변수 업데이트 (DATABASE_URL)
+3. 기존 노출된 credential 삭제
+4. Git 히스토리에서 민감 정보 제거 (선택)
+
+### 현재 PostgreSQL Credential
+- **Username**: codeworkslabdb_phdc_user (Default)
+- **URL**: Render Dashboard > codeworks-lab-db > Info에서 확인
+
+---
+
 ## 연락처 & 리소스
 
 - **Firebase 문서**: https://firebase.google.com/docs/hosting
@@ -314,4 +343,4 @@ firebase projects:list
 ---
 
 *마지막 업데이트: 2026-02-02*
-*맥미니 M4 환경 설정 가이드 작성 완료*
+*맥미니 M4 환경 설정 가이드 + 보안 조치 완료*
