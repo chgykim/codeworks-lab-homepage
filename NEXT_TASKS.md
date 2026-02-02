@@ -67,7 +67,8 @@ PORT=5000
 JWT_SECRET=codeworks-lab-secret-key-2026
 
 # 로컬 개발 시 Render PostgreSQL 사용 (또는 로컬 DB)
-DATABASE_URL=postgresql://codeworks_lab_db_user:7cI3SY5OF3bCwRDoPkpZ26LBtwqQJh04@dpg-d600q8coud1c738uvdm0-a.oregon-postgres.render.com/codeworks_lab_db
+# Render Dashboard > PostgreSQL > External Database URL 복사
+DATABASE_URL=postgresql://[USER]:[PASSWORD]@[HOST]/[DATABASE]
 
 # Firebase Admin SDK
 FIREBASE_PROJECT_ID=rustic-sage
