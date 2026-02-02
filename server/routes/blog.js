@@ -12,7 +12,7 @@ router.get('/', validatePagination, asyncHandler(async (req, res) => {
     const offset = (page - 1) * limit;
     const category = req.query.category;
 
-    let posts = blogModel.getPublished(limit, offset);
+    let posts = await blogModel.getPublished(limit, offset);
 
     // Filter by category if provided
     if (category) {
@@ -31,7 +31,7 @@ router.get('/', validatePagination, asyncHandler(async (req, res) => {
 
 // GET /api/blog/categories - Get unique categories
 router.get('/categories', asyncHandler(async (req, res) => {
-    const posts = blogModel.getPublished(1000, 0);
+    const posts = await blogModel.getPublished(1000, 0);
     const categories = [...new Set(posts.map(p => p.category).filter(Boolean))];
 
     res.json({ categories });
@@ -39,18 +39,18 @@ router.get('/categories', asyncHandler(async (req, res) => {
 
 // GET /api/blog/:slug - Get single blog post by slug
 router.get('/:slug', validateSlug, asyncHandler(async (req, res) => {
-    const post = blogModel.getBySlug(req.params.slug);
+    const post = await blogModel.getBySlug(req.params.slug);
 
     if (!post || post.status !== 'published') {
         return res.status(404).json({ error: 'Post not found' });
     }
 
     // Increment view count
-    blogModel.incrementViews(post.id);
+    await blogModel.incrementViews(post.id);
 
     // Track page visit
     const ip = req.ip || 'unknown';
-    statsModel.recordVisit(`/blog/${req.params.slug}`, ip, req.headers['user-agent']);
+    await statsModel.recordVisit(`/blog/${req.params.slug}`, ip, req.headers['user-agent']);
 
     res.json({
         post: {

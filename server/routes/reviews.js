@@ -12,7 +12,7 @@ router.get('/', validatePagination, asyncHandler(async (req, res) => {
     const limit = parseInt(req.query.limit) || 10;
     const offset = (page - 1) * limit;
 
-    const reviews = reviewModel.getApproved(limit, offset);
+    const reviews = await reviewModel.getApproved(limit, offset);
 
     res.json({
         reviews,
@@ -26,18 +26,18 @@ router.get('/', validatePagination, asyncHandler(async (req, res) => {
 
 // GET /api/reviews/stats - Get review statistics
 router.get('/stats', asyncHandler(async (req, res) => {
-    const stats = reviewModel.getStats();
+    const stats = await reviewModel.getStats();
 
     res.json({
-        total: stats.total || 0,
-        approved: stats.approved || 0,
-        averageRating: stats.avg_rating ? parseFloat(stats.avg_rating.toFixed(1)) : 0
+        total: parseInt(stats.total) || 0,
+        approved: parseInt(stats.approved) || 0,
+        averageRating: stats.avg_rating ? parseFloat(parseFloat(stats.avg_rating).toFixed(1)) : 0
     });
 }));
 
 // GET /api/reviews/:id - Get single review
 router.get('/:id', validateId, asyncHandler(async (req, res) => {
-    const review = reviewModel.getById(parseInt(req.params.id));
+    const review = await reviewModel.getById(parseInt(req.params.id));
 
     if (!review) {
         return res.status(404).json({ error: 'Review not found' });
@@ -64,10 +64,10 @@ router.post('/', reviewLimiter, validateReview, asyncHandler(async (req, res) =>
     const { authorName, email, rating, content } = req.body;
     const ip = req.ip || 'unknown';
 
-    const reviewId = reviewModel.create(authorName, email, rating, content, ip);
+    const reviewId = await reviewModel.create(authorName, email, rating, content, ip);
 
     // Track page visit
-    statsModel.recordVisit('/reviews', ip, req.headers['user-agent']);
+    await statsModel.recordVisit('/reviews', ip, req.headers['user-agent']);
 
     res.status(201).json({
         message: 'Review submitted successfully. It will be visible after approval.',

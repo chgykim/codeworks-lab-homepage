@@ -10,11 +10,11 @@ const APP_KEYS = ['wayback', 'wayfit', 'waymuscle', 'waybrain', 'wayview', 'ways
 
 // GET /api/settings/public - Get public site settings
 router.get('/public', asyncHandler(async (req, res) => {
-    const settings = settingsModel.getAll();
+    const settings = await settingsModel.getAll();
 
     // Track homepage visit
     const ip = req.ip || 'unknown';
-    statsModel.recordVisit('/', ip, req.headers['user-agent']);
+    await statsModel.recordVisit('/', ip, req.headers['user-agent']);
 
     // Get released apps (stored as comma-separated string)
     const releasedAppsStr = settings.released_apps || '';
@@ -31,7 +31,7 @@ router.get('/public', asyncHandler(async (req, res) => {
 
 // GET /api/settings/apps - Get app release status (admin only)
 router.get('/apps', authenticateToken, requireAdmin, asyncHandler(async (req, res) => {
-    const settings = settingsModel.getAll();
+    const settings = await settingsModel.getAll();
     const releasedAppsStr = settings.released_apps || '';
     const releasedApps = releasedAppsStr ? releasedAppsStr.split(',') : [];
 
@@ -55,7 +55,7 @@ router.put('/apps', authenticateToken, requireAdmin, asyncHandler(async (req, re
     const validApps = releasedApps.filter(key => APP_KEYS.includes(key));
 
     // Store as comma-separated string
-    settingsModel.set('released_apps', validApps.join(','));
+    await settingsModel.set('released_apps', validApps.join(','));
 
     res.json({ message: 'App release status updated', releasedApps: validApps });
 }));

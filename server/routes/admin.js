@@ -21,27 +21,27 @@ router.use(requireAdmin);
 
 // GET /api/admin/dashboard - Get dashboard stats
 router.get('/dashboard', asyncHandler(async (req, res) => {
-    const reviewStats = reviewModel.getStats();
-    const blogStats = blogModel.getStats();
-    const visitorStats = statsModel.getVisitorCount(30);
-    const pageViews = statsModel.getPageViews(30);
+    const reviewStats = await reviewModel.getStats();
+    const blogStats = await blogModel.getStats();
+    const visitorStats = await statsModel.getVisitorCount(30);
+    const pageViews = await statsModel.getPageViews(30);
 
     res.json({
         reviews: {
-            total: reviewStats.total || 0,
-            pending: reviewStats.pending || 0,
-            approved: reviewStats.approved || 0,
-            averageRating: reviewStats.avg_rating ? parseFloat(reviewStats.avg_rating.toFixed(1)) : 0
+            total: parseInt(reviewStats.total) || 0,
+            pending: parseInt(reviewStats.pending) || 0,
+            approved: parseInt(reviewStats.approved) || 0,
+            averageRating: reviewStats.avg_rating ? parseFloat(parseFloat(reviewStats.avg_rating).toFixed(1)) : 0
         },
         blog: {
-            total: blogStats.total || 0,
-            published: blogStats.published || 0,
-            drafts: blogStats.drafts || 0,
-            totalViews: blogStats.total_views || 0
+            total: parseInt(blogStats.total) || 0,
+            published: parseInt(blogStats.published) || 0,
+            drafts: parseInt(blogStats.drafts) || 0,
+            totalViews: parseInt(blogStats.total_views) || 0
         },
         visitors: {
-            uniqueVisitors: visitorStats?.unique_visitors || 0,
-            totalVisits: visitorStats?.total_visits || 0,
+            uniqueVisitors: parseInt(visitorStats?.unique_visitors) || 0,
+            totalVisits: parseInt(visitorStats?.total_visits) || 0,
             topPages: pageViews.slice(0, 5)
         }
     });
@@ -56,7 +56,7 @@ router.get('/reviews', validatePagination, asyncHandler(async (req, res) => {
     const offset = (page - 1) * limit;
     const status = req.query.status; // pending, approved, rejected
 
-    const reviews = reviewModel.getAll(status, limit, offset);
+    const reviews = await reviewModel.getAll(status, limit, offset);
 
     res.json({
         reviews: reviews.map(r => ({
@@ -85,12 +85,12 @@ router.put('/reviews/:id/status', validateId, asyncHandler(async (req, res) => {
         return res.status(400).json({ error: 'Invalid status' });
     }
 
-    const review = reviewModel.getById(parseInt(req.params.id));
+    const review = await reviewModel.getById(parseInt(req.params.id));
     if (!review) {
         return res.status(404).json({ error: 'Review not found' });
     }
 
-    reviewModel.updateStatus(parseInt(req.params.id), status);
+    await reviewModel.updateStatus(parseInt(req.params.id), status);
 
     securityLogger.adminAction(req.user.id, 'UPDATE_REVIEW_STATUS', {
         reviewId: req.params.id,
@@ -102,12 +102,12 @@ router.put('/reviews/:id/status', validateId, asyncHandler(async (req, res) => {
 
 // DELETE /api/admin/reviews/:id - Delete review
 router.delete('/reviews/:id', validateId, asyncHandler(async (req, res) => {
-    const review = reviewModel.getById(parseInt(req.params.id));
+    const review = await reviewModel.getById(parseInt(req.params.id));
     if (!review) {
         return res.status(404).json({ error: 'Review not found' });
     }
 
-    reviewModel.delete(parseInt(req.params.id));
+    await reviewModel.delete(parseInt(req.params.id));
 
     securityLogger.adminAction(req.user.id, 'DELETE_REVIEW', {
         reviewId: req.params.id
@@ -125,7 +125,7 @@ router.get('/blog', validatePagination, asyncHandler(async (req, res) => {
     const offset = (page - 1) * limit;
     const status = req.query.status;
 
-    const posts = blogModel.getAll(status, limit, offset);
+    const posts = await blogModel.getAll(status, limit, offset);
 
     res.json({
         posts,
@@ -139,7 +139,7 @@ router.get('/blog', validatePagination, asyncHandler(async (req, res) => {
 
 // GET /api/admin/blog/:id - Get single blog post
 router.get('/blog/:id', validateId, asyncHandler(async (req, res) => {
-    const post = blogModel.getById(parseInt(req.params.id));
+    const post = await blogModel.getById(parseInt(req.params.id));
 
     if (!post) {
         return res.status(404).json({ error: 'Post not found' });
@@ -160,7 +160,7 @@ router.post('/blog', validateBlogPost, asyncHandler(async (req, res) => {
         .substring(0, 100)
         + '-' + Date.now();
 
-    const postId = blogModel.create(
+    const postId = await blogModel.create(
         title,
         slug,
         content,
@@ -170,7 +170,7 @@ router.post('/blog', validateBlogPost, asyncHandler(async (req, res) => {
     );
 
     if (status === 'published') {
-        blogModel.update(postId, title, slug, content, excerpt, category, 'published');
+        await blogModel.update(postId, title, slug, content, excerpt, category, 'published');
     }
 
     securityLogger.adminAction(req.user.id, 'CREATE_BLOG_POST', {
@@ -189,7 +189,7 @@ router.post('/blog', validateBlogPost, asyncHandler(async (req, res) => {
 router.put('/blog/:id', validateId, validateBlogPost, asyncHandler(async (req, res) => {
     const { title, content, excerpt, category, status } = req.body;
 
-    const post = blogModel.getById(parseInt(req.params.id));
+    const post = await blogModel.getById(parseInt(req.params.id));
     if (!post) {
         return res.status(404).json({ error: 'Post not found' });
     }
@@ -205,7 +205,7 @@ router.put('/blog/:id', validateId, validateBlogPost, asyncHandler(async (req, r
             + '-' + Date.now();
     }
 
-    blogModel.update(
+    await blogModel.update(
         parseInt(req.params.id),
         title,
         slug,
@@ -225,12 +225,12 @@ router.put('/blog/:id', validateId, validateBlogPost, asyncHandler(async (req, r
 
 // DELETE /api/admin/blog/:id - Delete blog post
 router.delete('/blog/:id', validateId, asyncHandler(async (req, res) => {
-    const post = blogModel.getById(parseInt(req.params.id));
+    const post = await blogModel.getById(parseInt(req.params.id));
     if (!post) {
         return res.status(404).json({ error: 'Post not found' });
     }
 
-    blogModel.delete(parseInt(req.params.id));
+    await blogModel.delete(parseInt(req.params.id));
 
     securityLogger.adminAction(req.user.id, 'DELETE_BLOG_POST', {
         postId: req.params.id
@@ -243,7 +243,7 @@ router.delete('/blog/:id', validateId, asyncHandler(async (req, res) => {
 
 // GET /api/admin/settings - Get all settings
 router.get('/settings', asyncHandler(async (req, res) => {
-    const settings = settingsModel.getAll();
+    const settings = await settingsModel.getAll();
     res.json({ settings });
 }));
 
@@ -265,7 +265,7 @@ router.put('/settings', asyncHandler(async (req, res) => {
 
     for (const [key, value] of Object.entries(settings)) {
         if (allowedKeys.includes(key) && typeof value === 'string') {
-            settingsModel.set(key, value.substring(0, 500));
+            await settingsModel.set(key, value.substring(0, 500));
         }
     }
 
@@ -285,7 +285,7 @@ router.get('/contacts', validatePagination, asyncHandler(async (req, res) => {
     const offset = (page - 1) * limit;
     const status = req.query.status;
 
-    const submissions = contactModel.getAll(status, limit, offset);
+    const submissions = await contactModel.getAll(status, limit, offset);
 
     res.json({
         submissions,
@@ -305,7 +305,7 @@ router.put('/contacts/:id/status', validateId, asyncHandler(async (req, res) => 
         return res.status(400).json({ error: 'Invalid status' });
     }
 
-    contactModel.updateStatus(parseInt(req.params.id), status);
+    await contactModel.updateStatus(parseInt(req.params.id), status);
 
     res.json({ message: 'Contact status updated' });
 }));

@@ -5,9 +5,9 @@ const checkBruteForce = async (req, res, next) => {
     const ip = req.ip || req.headers['x-forwarded-for'] || 'unknown';
 
     try {
-        const result = loginAttemptModel.getRecentFailures(ip, 15);
+        const result = await loginAttemptModel.getRecentFailures(ip, 15);
 
-        if (result && result.count >= 5) {
+        if (result && parseInt(result.count) >= 5) {
             return res.status(429).json({
                 error: 'Too many failed login attempts',
                 message: 'Please try again in 15 minutes',
@@ -24,18 +24,18 @@ const checkBruteForce = async (req, res, next) => {
 };
 
 // Record login attempt
-const recordLoginAttempt = (ip, email, success) => {
+const recordLoginAttempt = async (ip, email, success) => {
     try {
-        loginAttemptModel.record(ip, email, success);
+        await loginAttemptModel.record(ip, email, success);
     } catch (error) {
         console.error('Failed to record login attempt:', error);
     }
 };
 
 // Clean up old login attempts (call periodically)
-const cleanupLoginAttempts = () => {
+const cleanupLoginAttempts = async () => {
     try {
-        loginAttemptModel.clearOldAttempts();
+        await loginAttemptModel.clearOldAttempts();
     } catch (error) {
         console.error('Failed to cleanup login attempts:', error);
     }

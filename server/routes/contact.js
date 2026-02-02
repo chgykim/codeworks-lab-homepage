@@ -11,7 +11,7 @@ router.post('/', contactLimiter, validateContact, asyncHandler(async (req, res) 
     const { name, email, subject, message } = req.body;
     const ip = req.ip || 'unknown';
 
-    const submissionId = contactModel.create(name, email, subject, message, ip);
+    const submissionId = await contactModel.create(name, email, subject, message, ip);
 
     res.status(201).json({
         message: 'Your message has been sent. We will get back to you soon.',
@@ -21,7 +21,7 @@ router.post('/', contactLimiter, validateContact, asyncHandler(async (req, res) 
 
 // GET /api/contact/info - Get contact information
 router.get('/info', asyncHandler(async (req, res) => {
-    const settings = settingsModel.getAll();
+    const settings = await settingsModel.getAll();
 
     res.json({
         contactEmail: settings.contact_email || 'contact@example.com',

@@ -97,6 +97,8 @@ app.use(notFoundHandler);
 app.use(errorHandler);
 
 // Initialize database on startup
-initializeDatabase();
+initializeDatabase().catch(err => {
+    console.error('Failed to initialize database:', err);
+});
 
 module.exports = app;
