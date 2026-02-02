@@ -1,9 +1,14 @@
 import axios from 'axios';
 
+// API base URL - use Render server in production
+const API_BASE_URL = import.meta.env.PROD
+    ? 'https://codeworks-lab-homepage.onrender.com/api'
+    : '/api';
+
 // Create axios instance with default config
 const api = axios.create({
-    baseURL: '/api',
-    timeout: 10000,
+    baseURL: API_BASE_URL,
+    timeout: 30000,
     headers: {
         'Content-Type': 'application/json'
     },
