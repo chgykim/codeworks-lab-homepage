@@ -288,11 +288,159 @@
   },
   "privacy": {
     "title": "Privacy Policy",
-    "effectiveDate": "Effective Date"
+    "effectiveDate": "Effective Date",
+    "intro": "CodeWorks Lab (\"Company\") complies with applicable privacy laws and regulations and is committed to protecting users' personal information. This Privacy Policy explains how we collect, use, and protect your information.",
+    "section1": {
+      "title": "1. Information We Collect",
+      "desc": "We may collect the following types of information:",
+      "item1": "Log information automatically generated during app usage",
+      "item2": "Device information for error analysis (OS version, device model, etc.)",
+      "item3": "Information you directly provide (name, email for inquiries)",
+      "item4": "Nickname and email (optional) when writing reviews"
+    },
+    "section2": {
+      "title": "2. Purpose of Collection and Use",
+      "desc": "Collected information is used only for the following purposes:",
+      "item1": "Service provision and feature improvement",
+      "item2": "Error analysis and service stability enhancement",
+      "item3": "Customer inquiry response and complaint handling",
+      "item4": "Service usage statistics analysis"
+    },
+    "section3": {
+      "title": "3. Retention Period",
+      "item1": "Personal information is deleted without delay when the purpose of collection is achieved.",
+      "item2": "However, if retention is required by applicable laws, it will be safely stored for the required period.",
+      "item3": "Records related to contracts or withdrawal: 5 years",
+      "item4": "Records related to consumer complaints or disputes: 3 years"
+    },
+    "section4": {
+      "title": "4. Third-Party Disclosure",
+      "desc": "We do not provide personal information to third parties in principle. Exceptions are made only in the following cases:",
+      "item1": "When the user has given prior consent",
+      "item2": "When required by law or requested by investigative authorities following legal procedures"
+    },
+    "section5": {
+      "title": "5. External Services",
+      "desc": "We may use the following external services for service improvement:",
+      "item1": "Firebase Analytics (app usage statistics)",
+      "item2": "Firebase Crashlytics (error analysis)",
+      "item3": "Google Gemini API (AI features)",
+      "note": "Please refer to each service's privacy policy for their data handling practices."
+    },
+    "section6": {
+      "title": "6. Data Deletion",
+      "desc": "We delete personal information without delay when the retention period expires or the purpose of processing is achieved.",
+      "item1": "Electronic files: Securely deleted to prevent recovery",
+      "item2": "Physical documents: Shredded or incinerated"
+    },
+    "section7": {
+      "title": "7. Your Rights",
+      "desc": "You may exercise the following rights at any time:",
+      "item1": "Request to access personal information",
+      "item2": "Request to correct personal information",
+      "item3": "Request to delete personal information",
+      "item4": "Request to stop processing personal information",
+      "note": "You can submit requests through the contact form on our Guide page."
+    },
+    "section8": {
+      "title": "8. Security Measures",
+      "desc": "We implement the following measures to ensure the security of personal information:",
+      "item1": "Encryption of personal information",
+      "item2": "Technical measures against hacking",
+      "item3": "Minimizing and training personnel handling personal information"
+    },
+    "section9": {
+      "title": "9. Privacy Officer",
+      "desc": "For inquiries regarding personal information processing, please contact us through the contact form on our Guide page.",
+      "officer": "Privacy Officer",
+      "name": "Name: Changkyu Kim",
+      "position": "Position: CEO",
+      "contact": "Contact: Guide page contact form"
+    },
+    "section10": {
+      "title": "10. Policy Changes",
+      "desc": "This Privacy Policy is effective as of the date stated above. Any changes will be announced through our website at least 7 days before taking effect."
+    }
   },
   "terms": {
     "title": "Terms of Service",
-    "effectiveDate": "Effective Date"
+    "effectiveDate": "Effective Date",
+    "intro": "These Terms of Service (\"Terms\") govern your use of all services (\"Service\") provided by CodeWorks Lab (\"Company\"). By using our Service, you agree to these Terms.",
+    "section1": {
+      "title": "1. Purpose",
+      "desc": "These Terms establish the conditions and procedures for using the Safe Way 10 lineup apps and related services, as well as the rights, obligations, and responsibilities of the Company and users."
+    },
+    "section2": {
+      "title": "2. Definitions",
+      "term1": "\"Service\"",
+      "def1": "refers to all services provided through apps and websites operated by the Company.",
+      "term2": "\"User\"",
+      "def2": "refers to anyone who accesses and uses the Service in accordance with these Terms.",
+      "term3": "\"Content\"",
+      "def3": "refers to all information created, posted, or stored by users within the Service."
+    },
+    "section3": {
+      "title": "3. Effect and Modification of Terms",
+      "item1": "These Terms apply to all users who wish to use the Service.",
+      "item2": "The Company may modify these Terms if necessary, and changes will be announced through the app or website.",
+      "item3": "Users who do not agree to the modified Terms may discontinue use and withdraw from the Service.",
+      "item4": "Continued use of the Service after the effective date of changes constitutes acceptance of the modified Terms."
+    },
+    "section4": {
+      "title": "4. Provision of Service",
+      "item1": "The Company strives to provide stable service.",
+      "item2": "Service types, usage methods, and hours are determined by the Company.",
+      "item3": "The Company may modify or discontinue all or part of the Service for improvement, technical necessity, or operational reasons.",
+      "item4": "The Service may be temporarily suspended for regular or emergency maintenance."
+    },
+    "section5": {
+      "title": "5. User Obligations",
+      "desc": "Users shall not engage in the following:",
+      "item1": "Violating laws or these Terms through use of the Service",
+      "item2": "Infringing on intellectual property rights, portrait rights, or other rights of the Company or third parties",
+      "item3": "Interfering with normal operation of the Service",
+      "item4": "Collecting or misusing other users' personal information",
+      "item5": "Unauthorized commercial use of the Service",
+      "item6": "Other illegal or improper activities"
+    },
+    "section6": {
+      "title": "6. Intellectual Property",
+      "item1": "Intellectual property rights for all content included in the Service (text, images, software, etc.) belong to the Company.",
+      "item2": "Copyright for content posted by users within the Service belongs to the respective users.",
+      "item3": "Users may not reproduce, distribute, or modify Service content without prior written consent from the Company."
+    },
+    "section7": {
+      "title": "7. Paid Services and Payment",
+      "item1": "Some services may be provided for a fee. Pricing and payment methods are specified within each service.",
+      "item2": "Refunds for paid services follow applicable laws and the Company's refund policy.",
+      "item3": "Subscription services may automatically renew unless cancelled by the user."
+    },
+    "section8": {
+      "title": "8. Disclaimer",
+      "item1": "The Company is not liable for inability to provide Service due to force majeure such as natural disasters, war, or telecommunications service interruptions.",
+      "item2": "The Company is not liable for service disruptions caused by user negligence.",
+      "item3": "The Company does not guarantee the accuracy or reliability of information obtained through the Service.",
+      "item4": "The Company has no obligation to intervene in disputes between users or between users and third parties, and is not liable for resulting damages."
+    },
+    "section9": {
+      "title": "9. Liability for Damages",
+      "item1": "If the Company or a user violates these Terms and causes damage to the other party, they are liable for compensation.",
+      "item2": "However, liability may be limited in cases without intent or gross negligence."
+    },
+    "section10": {
+      "title": "10. Dispute Resolution",
+      "item1": "Disputes arising in connection with these Terms shall be governed by the laws of the Republic of Korea.",
+      "item2": "In case of disputes between the Company and users, both parties shall negotiate in good faith for amicable resolution.",
+      "item3": "If negotiation fails, jurisdiction shall be with the court as provided by the Civil Procedure Act."
+    },
+    "section11": {
+      "title": "11. Contact",
+      "desc": "For inquiries regarding Service use, please submit through the contact form on our Guide page."
+    },
+    "supplementary": {
+      "title": "Supplementary Provisions",
+      "desc": "These Terms are effective as of February 3, 2026."
+    }
   },
   "admin": {
     "login": {

@@ -288,11 +288,159 @@
   },
   "privacy": {
     "title": "Politique de Confidentialité",
-    "effectiveDate": "Date d'effet"
+    "effectiveDate": "Date d'effet",
+    "intro": "CodeWorks Lab (\"Société\") respecte les lois applicables en matière de protection de la vie privée et s'engage à protéger les informations personnelles des utilisateurs. Cette Politique de Confidentialité explique comment nous collectons, utilisons et protégeons vos informations.",
+    "section1": {
+      "title": "1. Informations que nous collectons",
+      "desc": "Nous pouvons collecter les types d'informations suivants :",
+      "item1": "Informations de journal générées automatiquement lors de l'utilisation de l'application",
+      "item2": "Informations sur l'appareil pour l'analyse des erreurs (version du système d'exploitation, modèle de l'appareil, etc.)",
+      "item3": "Informations que vous fournissez directement (nom, e-mail pour les demandes)",
+      "item4": "Pseudo et e-mail (facultatif) lors de la rédaction d'avis"
+    },
+    "section2": {
+      "title": "2. Objectif de la collecte et de l'utilisation",
+      "desc": "Les informations collectées sont utilisées uniquement aux fins suivantes :",
+      "item1": "Fourniture de services et amélioration des fonctionnalités",
+      "item2": "Analyse des erreurs et amélioration de la stabilité du service",
+      "item3": "Réponse aux demandes des clients et traitement des plaintes",
+      "item4": "Analyse des statistiques d'utilisation du service"
+    },
+    "section3": {
+      "title": "3. Période de conservation",
+      "item1": "Les informations personnelles sont supprimées sans délai lorsque l'objectif de la collecte est atteint.",
+      "item2": "Toutefois, si la conservation est requise par les lois applicables, elles seront conservées en toute sécurité pendant la période requise.",
+      "item3": "Dossiers relatifs aux contrats ou aux retraits : 5 ans",
+      "item4": "Dossiers relatifs aux plaintes ou litiges des consommateurs : 3 ans"
+    },
+    "section4": {
+      "title": "4. Divulgation à des tiers",
+      "desc": "Nous ne fournissons pas d'informations personnelles à des tiers en principe. Des exceptions sont faites uniquement dans les cas suivants :",
+      "item1": "Lorsque l'utilisateur a donné son consentement préalable",
+      "item2": "Lorsque requis par la loi ou demandé par les autorités d'enquête suivant les procédures légales"
+    },
+    "section5": {
+      "title": "5. Services externes",
+      "desc": "Nous pouvons utiliser les services externes suivants pour améliorer le service :",
+      "item1": "Firebase Analytics (statistiques d'utilisation de l'application)",
+      "item2": "Firebase Crashlytics (analyse des erreurs)",
+      "item3": "Google Gemini API (fonctionnalités IA)",
+      "note": "Veuillez consulter la politique de confidentialité de chaque service pour leurs pratiques de traitement des données."
+    },
+    "section6": {
+      "title": "6. Suppression des données",
+      "desc": "Nous supprimons les informations personnelles sans délai lorsque la période de conservation expire ou que l'objectif du traitement est atteint.",
+      "item1": "Fichiers électroniques : Supprimés de manière sécurisée pour empêcher la récupération",
+      "item2": "Documents physiques : Déchiquetés ou incinérés"
+    },
+    "section7": {
+      "title": "7. Vos droits",
+      "desc": "Vous pouvez exercer les droits suivants à tout moment :",
+      "item1": "Demander l'accès aux informations personnelles",
+      "item2": "Demander la correction des informations personnelles",
+      "item3": "Demander la suppression des informations personnelles",
+      "item4": "Demander l'arrêt du traitement des informations personnelles",
+      "note": "Vous pouvez soumettre des demandes via le formulaire de contact sur notre page Guide."
+    },
+    "section8": {
+      "title": "8. Mesures de sécurité",
+      "desc": "Nous mettons en œuvre les mesures suivantes pour assurer la sécurité des informations personnelles :",
+      "item1": "Chiffrement des informations personnelles",
+      "item2": "Mesures techniques contre le piratage",
+      "item3": "Minimisation et formation du personnel traitant les informations personnelles"
+    },
+    "section9": {
+      "title": "9. Responsable de la confidentialité",
+      "desc": "Pour toute question concernant le traitement des informations personnelles, veuillez nous contacter via le formulaire de contact sur notre page Guide.",
+      "officer": "Responsable de la confidentialité",
+      "name": "Nom : Changkyu Kim",
+      "position": "Poste : PDG",
+      "contact": "Contact : Formulaire de contact de la page Guide"
+    },
+    "section10": {
+      "title": "10. Modifications de la politique",
+      "desc": "Cette Politique de Confidentialité prend effet à la date indiquée ci-dessus. Tout changement sera annoncé sur notre site web au moins 7 jours avant son entrée en vigueur."
+    }
   },
   "terms": {
     "title": "Conditions d'Utilisation",
-    "effectiveDate": "Date d'effet"
+    "effectiveDate": "Date d'effet",
+    "intro": "Ces Conditions d'Utilisation (\"Conditions\") régissent votre utilisation de tous les services (\"Service\") fournis par CodeWorks Lab (\"Société\"). En utilisant notre Service, vous acceptez ces Conditions.",
+    "section1": {
+      "title": "1. Objet",
+      "desc": "Ces Conditions établissent les conditions et procédures d'utilisation des applications de la gamme Safe Way 10 et des services connexes, ainsi que les droits, obligations et responsabilités de la Société et des utilisateurs."
+    },
+    "section2": {
+      "title": "2. Définitions",
+      "term1": "\"Service\"",
+      "def1": "désigne tous les services fournis via les applications et sites web exploités par la Société.",
+      "term2": "\"Utilisateur\"",
+      "def2": "désigne toute personne qui accède et utilise le Service conformément à ces Conditions.",
+      "term3": "\"Contenu\"",
+      "def3": "désigne toutes les informations créées, publiées ou stockées par les utilisateurs au sein du Service."
+    },
+    "section3": {
+      "title": "3. Effet et modification des Conditions",
+      "item1": "Ces Conditions s'appliquent à tous les utilisateurs qui souhaitent utiliser le Service.",
+      "item2": "La Société peut modifier ces Conditions si nécessaire, et les changements seront annoncés via l'application ou le site web.",
+      "item3": "Les utilisateurs qui n'acceptent pas les Conditions modifiées peuvent cesser d'utiliser et se retirer du Service.",
+      "item4": "L'utilisation continue du Service après la date d'entrée en vigueur des modifications constitue une acceptation des Conditions modifiées."
+    },
+    "section4": {
+      "title": "4. Fourniture du Service",
+      "item1": "La Société s'efforce de fournir un service stable.",
+      "item2": "Les types de services, méthodes d'utilisation et horaires sont déterminés par la Société.",
+      "item3": "La Société peut modifier ou interrompre tout ou partie du Service pour des raisons d'amélioration, de nécessité technique ou opérationnelle.",
+      "item4": "Le Service peut être temporairement suspendu pour une maintenance régulière ou d'urgence."
+    },
+    "section5": {
+      "title": "5. Obligations de l'utilisateur",
+      "desc": "Les utilisateurs ne doivent pas s'engager dans les activités suivantes :",
+      "item1": "Violer les lois ou ces Conditions par l'utilisation du Service",
+      "item2": "Porter atteinte aux droits de propriété intellectuelle, droits à l'image ou autres droits de la Société ou de tiers",
+      "item3": "Interférer avec le fonctionnement normal du Service",
+      "item4": "Collecter ou utiliser abusivement les informations personnelles d'autres utilisateurs",
+      "item5": "Utilisation commerciale non autorisée du Service",
+      "item6": "Autres activités illégales ou inappropriées"
+    },
+    "section6": {
+      "title": "6. Propriété intellectuelle",
+      "item1": "Les droits de propriété intellectuelle pour tout le contenu inclus dans le Service (texte, images, logiciels, etc.) appartiennent à la Société.",
+      "item2": "Les droits d'auteur pour le contenu publié par les utilisateurs au sein du Service appartiennent aux utilisateurs respectifs.",
+      "item3": "Les utilisateurs ne peuvent pas reproduire, distribuer ou modifier le contenu du Service sans le consentement écrit préalable de la Société."
+    },
+    "section7": {
+      "title": "7. Services payants et paiement",
+      "item1": "Certains services peuvent être fournis moyennant des frais. Les tarifs et méthodes de paiement sont spécifiés dans chaque service.",
+      "item2": "Les remboursements pour les services payants suivent les lois applicables et la politique de remboursement de la Société.",
+      "item3": "Les services d'abonnement peuvent être automatiquement renouvelés sauf annulation par l'utilisateur."
+    },
+    "section8": {
+      "title": "8. Clause de non-responsabilité",
+      "item1": "La Société n'est pas responsable de l'incapacité à fournir le Service en raison de force majeure telle que catastrophes naturelles, guerre ou interruptions du service de télécommunications.",
+      "item2": "La Société n'est pas responsable des interruptions de service causées par la négligence de l'utilisateur.",
+      "item3": "La Société ne garantit pas l'exactitude ou la fiabilité des informations obtenues via le Service.",
+      "item4": "La Société n'a aucune obligation d'intervenir dans les litiges entre utilisateurs ou entre utilisateurs et tiers, et n'est pas responsable des dommages qui en résultent."
+    },
+    "section9": {
+      "title": "9. Responsabilité pour dommages",
+      "item1": "Si la Société ou un utilisateur viole ces Conditions et cause un dommage à l'autre partie, il est responsable de l'indemnisation.",
+      "item2": "Toutefois, la responsabilité peut être limitée en l'absence d'intention ou de négligence grave."
+    },
+    "section10": {
+      "title": "10. Résolution des litiges",
+      "item1": "Les litiges découlant de ces Conditions seront régis par les lois de la République de Corée.",
+      "item2": "En cas de litige entre la Société et les utilisateurs, les deux parties négocieront de bonne foi pour une résolution à l'amiable.",
+      "item3": "Si la négociation échoue, la juridiction compétente sera le tribunal prévu par le Code de procédure civile."
+    },
+    "section11": {
+      "title": "11. Contact",
+      "desc": "Pour toute question concernant l'utilisation du Service, veuillez soumettre via le formulaire de contact sur notre page Guide."
+    },
+    "supplementary": {
+      "title": "Dispositions supplémentaires",
+      "desc": "Ces Conditions prennent effet le 3 février 2026."
+    }
   },
   "admin": {
     "login": {

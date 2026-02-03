@@ -288,11 +288,159 @@
   },
   "privacy": {
     "title": "Política de Privacidade",
-    "effectiveDate": "Data de vigência"
+    "effectiveDate": "Data de vigência",
+    "intro": "CodeWorks Lab (\"Empresa\") cumpre as leis de privacidade aplicáveis e está comprometida em proteger as informações pessoais dos usuários. Esta Política de Privacidade explica como coletamos, usamos e protegemos suas informações.",
+    "section1": {
+      "title": "1. Informações que coletamos",
+      "desc": "Podemos coletar os seguintes tipos de informações:",
+      "item1": "Informações de log geradas automaticamente durante o uso do aplicativo",
+      "item2": "Informações do dispositivo para análise de erros (versão do SO, modelo do dispositivo, etc.)",
+      "item3": "Informações que você fornece diretamente (nome, e-mail para consultas)",
+      "item4": "Apelido e e-mail (opcional) ao escrever avaliações"
+    },
+    "section2": {
+      "title": "2. Finalidade da coleta e uso",
+      "desc": "As informações coletadas são usadas apenas para os seguintes fins:",
+      "item1": "Fornecimento de serviços e melhoria de recursos",
+      "item2": "Análise de erros e melhoria da estabilidade do serviço",
+      "item3": "Resposta a consultas de clientes e tratamento de reclamações",
+      "item4": "Análise de estatísticas de uso do serviço"
+    },
+    "section3": {
+      "title": "3. Período de retenção",
+      "item1": "As informações pessoais são excluídas sem demora quando o objetivo da coleta é alcançado.",
+      "item2": "No entanto, se a retenção for exigida por leis aplicáveis, serão armazenadas com segurança pelo período necessário.",
+      "item3": "Registros relacionados a contratos ou cancelamentos: 5 anos",
+      "item4": "Registros relacionados a reclamações ou disputas de consumidores: 3 anos"
+    },
+    "section4": {
+      "title": "4. Divulgação a terceiros",
+      "desc": "Não fornecemos informações pessoais a terceiros em princípio. Exceções são feitas apenas nos seguintes casos:",
+      "item1": "Quando o usuário deu consentimento prévio",
+      "item2": "Quando exigido por lei ou solicitado por autoridades investigativas seguindo procedimentos legais"
+    },
+    "section5": {
+      "title": "5. Serviços externos",
+      "desc": "Podemos usar os seguintes serviços externos para melhorar o serviço:",
+      "item1": "Firebase Analytics (estatísticas de uso do aplicativo)",
+      "item2": "Firebase Crashlytics (análise de erros)",
+      "item3": "Google Gemini API (recursos de IA)",
+      "note": "Consulte a política de privacidade de cada serviço para suas práticas de tratamento de dados."
+    },
+    "section6": {
+      "title": "6. Exclusão de dados",
+      "desc": "Excluímos informações pessoais sem demora quando o período de retenção expira ou o objetivo do processamento é alcançado.",
+      "item1": "Arquivos eletrônicos: Excluídos com segurança para evitar recuperação",
+      "item2": "Documentos físicos: Triturados ou incinerados"
+    },
+    "section7": {
+      "title": "7. Seus direitos",
+      "desc": "Você pode exercer os seguintes direitos a qualquer momento:",
+      "item1": "Solicitar acesso a informações pessoais",
+      "item2": "Solicitar correção de informações pessoais",
+      "item3": "Solicitar exclusão de informações pessoais",
+      "item4": "Solicitar interrupção do processamento de informações pessoais",
+      "note": "Você pode enviar solicitações através do formulário de contato em nossa página de Guia."
+    },
+    "section8": {
+      "title": "8. Medidas de segurança",
+      "desc": "Implementamos as seguintes medidas para garantir a segurança das informações pessoais:",
+      "item1": "Criptografia de informações pessoais",
+      "item2": "Medidas técnicas contra hackers",
+      "item3": "Minimização e treinamento do pessoal que lida com informações pessoais"
+    },
+    "section9": {
+      "title": "9. Responsável pela privacidade",
+      "desc": "Para consultas sobre o processamento de informações pessoais, entre em contato conosco através do formulário de contato em nossa página de Guia.",
+      "officer": "Responsável pela privacidade",
+      "name": "Nome: Changkyu Kim",
+      "position": "Cargo: CEO",
+      "contact": "Contato: Formulário de contato da página de Guia"
+    },
+    "section10": {
+      "title": "10. Alterações na política",
+      "desc": "Esta Política de Privacidade entra em vigor a partir da data indicada acima. Quaisquer alterações serão anunciadas em nosso site pelo menos 7 dias antes de entrar em vigor."
+    }
   },
   "terms": {
     "title": "Termos de Serviço",
-    "effectiveDate": "Data de vigência"
+    "effectiveDate": "Data de vigência",
+    "intro": "Estes Termos de Serviço (\"Termos\") regem o uso de todos os serviços (\"Serviço\") fornecidos pela CodeWorks Lab (\"Empresa\"). Ao usar nosso Serviço, você concorda com estes Termos.",
+    "section1": {
+      "title": "1. Finalidade",
+      "desc": "Estes Termos estabelecem as condições e procedimentos para usar os aplicativos da linha Safe Way 10 e serviços relacionados, bem como os direitos, obrigações e responsabilidades da Empresa e dos usuários."
+    },
+    "section2": {
+      "title": "2. Definições",
+      "term1": "\"Serviço\"",
+      "def1": "refere-se a todos os serviços fornecidos através de aplicativos e sites operados pela Empresa.",
+      "term2": "\"Usuário\"",
+      "def2": "refere-se a qualquer pessoa que acesse e use o Serviço de acordo com estes Termos.",
+      "term3": "\"Conteúdo\"",
+      "def3": "refere-se a todas as informações criadas, publicadas ou armazenadas por usuários dentro do Serviço."
+    },
+    "section3": {
+      "title": "3. Efeito e modificação dos Termos",
+      "item1": "Estes Termos aplicam-se a todos os usuários que desejam usar o Serviço.",
+      "item2": "A Empresa pode modificar estes Termos se necessário, e as alterações serão anunciadas através do aplicativo ou site.",
+      "item3": "Usuários que não concordarem com os Termos modificados podem interromper o uso e se retirar do Serviço.",
+      "item4": "O uso contínuo do Serviço após a data de vigência das alterações constitui aceitação dos Termos modificados."
+    },
+    "section4": {
+      "title": "4. Fornecimento do Serviço",
+      "item1": "A Empresa se esforça para fornecer um serviço estável.",
+      "item2": "Os tipos de serviço, métodos de uso e horários são determinados pela Empresa.",
+      "item3": "A Empresa pode modificar ou descontinuar todo ou parte do Serviço por razões de melhoria, necessidade técnica ou operacional.",
+      "item4": "O Serviço pode ser temporariamente suspenso para manutenção regular ou de emergência."
+    },
+    "section5": {
+      "title": "5. Obrigações do usuário",
+      "desc": "Os usuários não devem se envolver no seguinte:",
+      "item1": "Violar leis ou estes Termos através do uso do Serviço",
+      "item2": "Infringir direitos de propriedade intelectual, direitos de imagem ou outros direitos da Empresa ou terceiros",
+      "item3": "Interferir na operação normal do Serviço",
+      "item4": "Coletar ou usar indevidamente informações pessoais de outros usuários",
+      "item5": "Uso comercial não autorizado do Serviço",
+      "item6": "Outras atividades ilegais ou inadequadas"
+    },
+    "section6": {
+      "title": "6. Propriedade intelectual",
+      "item1": "Os direitos de propriedade intelectual de todo o conteúdo incluído no Serviço (texto, imagens, software, etc.) pertencem à Empresa.",
+      "item2": "Os direitos autorais do conteúdo publicado por usuários dentro do Serviço pertencem aos respectivos usuários.",
+      "item3": "Os usuários não podem reproduzir, distribuir ou modificar o conteúdo do Serviço sem o consentimento prévio por escrito da Empresa."
+    },
+    "section7": {
+      "title": "7. Serviços pagos e pagamento",
+      "item1": "Alguns serviços podem ser fornecidos mediante taxa. Preços e métodos de pagamento são especificados dentro de cada serviço.",
+      "item2": "Reembolsos por serviços pagos seguem as leis aplicáveis e a política de reembolso da Empresa.",
+      "item3": "Serviços de assinatura podem ser renovados automaticamente, a menos que cancelados pelo usuário."
+    },
+    "section8": {
+      "title": "8. Isenção de responsabilidade",
+      "item1": "A Empresa não é responsável pela incapacidade de fornecer o Serviço devido a força maior como desastres naturais, guerra ou interrupções do serviço de telecomunicações.",
+      "item2": "A Empresa não é responsável por interrupções de serviço causadas por negligência do usuário.",
+      "item3": "A Empresa não garante a precisão ou confiabilidade das informações obtidas através do Serviço.",
+      "item4": "A Empresa não tem obrigação de intervir em disputas entre usuários ou entre usuários e terceiros, e não é responsável por danos resultantes."
+    },
+    "section9": {
+      "title": "9. Responsabilidade por danos",
+      "item1": "Se a Empresa ou um usuário violar estes Termos e causar dano à outra parte, é responsável pela compensação.",
+      "item2": "No entanto, a responsabilidade pode ser limitada em casos sem intenção ou negligência grave."
+    },
+    "section10": {
+      "title": "10. Resolução de disputas",
+      "item1": "Disputas decorrentes destes Termos serão regidas pelas leis da República da Coreia.",
+      "item2": "Em caso de disputas entre a Empresa e os usuários, ambas as partes negociarão de boa-fé para uma resolução amigável.",
+      "item3": "Se a negociação falhar, a jurisdição será do tribunal conforme previsto pelo Código de Processo Civil."
+    },
+    "section11": {
+      "title": "11. Contato",
+      "desc": "Para consultas sobre o uso do Serviço, envie através do formulário de contato em nossa página de Guia."
+    },
+    "supplementary": {
+      "title": "Disposições suplementares",
+      "desc": "Estes Termos entram em vigor em 3 de fevereiro de 2026."
+    }
   },
   "admin": {
     "login": {

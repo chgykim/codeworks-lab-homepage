@@ -288,11 +288,159 @@
   },
   "privacy": {
     "title": "Datenschutzrichtlinie",
-    "effectiveDate": "Gültig ab"
+    "effectiveDate": "Gültig ab",
+    "intro": "CodeWorks Lab (\"Unternehmen\") hält sich an die geltenden Datenschutzgesetze und verpflichtet sich, die persönlichen Daten der Nutzer zu schützen. Diese Datenschutzrichtlinie erklärt, wie wir Ihre Informationen sammeln, verwenden und schützen.",
+    "section1": {
+      "title": "1. Informationen, die wir sammeln",
+      "desc": "Wir können folgende Arten von Informationen sammeln:",
+      "item1": "Automatisch generierte Protokollinformationen während der App-Nutzung",
+      "item2": "Geräteinformationen für Fehleranalyse (OS-Version, Gerätemodell usw.)",
+      "item3": "Von Ihnen direkt bereitgestellte Informationen (Name, E-Mail für Anfragen)",
+      "item4": "Spitzname und E-Mail (optional) beim Schreiben von Bewertungen"
+    },
+    "section2": {
+      "title": "2. Zweck der Sammlung und Nutzung",
+      "desc": "Gesammelte Informationen werden nur für folgende Zwecke verwendet:",
+      "item1": "Dienstbereitstellung und Funktionsverbesserung",
+      "item2": "Fehleranalyse und Verbesserung der Dienststabilität",
+      "item3": "Beantwortung von Kundenanfragen und Beschwerdebearbeitung",
+      "item4": "Analyse von Nutzungsstatistiken"
+    },
+    "section3": {
+      "title": "3. Aufbewahrungszeitraum",
+      "item1": "Persönliche Daten werden unverzüglich gelöscht, wenn der Sammlungszweck erreicht ist.",
+      "item2": "Wenn jedoch eine Aufbewahrung gesetzlich vorgeschrieben ist, werden sie für den erforderlichen Zeitraum sicher aufbewahrt.",
+      "item3": "Aufzeichnungen zu Verträgen oder Widerrufen: 5 Jahre",
+      "item4": "Aufzeichnungen zu Verbraucherbeschwerden oder Streitigkeiten: 3 Jahre"
+    },
+    "section4": {
+      "title": "4. Weitergabe an Dritte",
+      "desc": "Wir geben persönliche Daten grundsätzlich nicht an Dritte weiter. Ausnahmen gelten nur in folgenden Fällen:",
+      "item1": "Wenn der Nutzer zuvor zugestimmt hat",
+      "item2": "Wenn gesetzlich vorgeschrieben oder von Ermittlungsbehörden nach rechtlichen Verfahren angefordert"
+    },
+    "section5": {
+      "title": "5. Externe Dienste",
+      "desc": "Wir können folgende externe Dienste zur Serviceverbesserung nutzen:",
+      "item1": "Firebase Analytics (App-Nutzungsstatistiken)",
+      "item2": "Firebase Crashlytics (Fehleranalyse)",
+      "item3": "Google Gemini API (KI-Funktionen)",
+      "note": "Bitte beachten Sie die Datenschutzrichtlinien der jeweiligen Dienste für deren Datenverarbeitungspraktiken."
+    },
+    "section6": {
+      "title": "6. Datenlöschung",
+      "desc": "Wir löschen persönliche Daten unverzüglich, wenn die Aufbewahrungsfrist abläuft oder der Verarbeitungszweck erreicht ist.",
+      "item1": "Elektronische Dateien: Sicher gelöscht, um Wiederherstellung zu verhindern",
+      "item2": "Physische Dokumente: Geschreddert oder verbrannt"
+    },
+    "section7": {
+      "title": "7. Ihre Rechte",
+      "desc": "Sie können jederzeit folgende Rechte ausüben:",
+      "item1": "Auskunft über persönliche Daten verlangen",
+      "item2": "Berichtigung persönlicher Daten verlangen",
+      "item3": "Löschung persönlicher Daten verlangen",
+      "item4": "Einstellung der Verarbeitung persönlicher Daten verlangen",
+      "note": "Sie können Anfragen über das Kontaktformular auf unserer Guide-Seite einreichen."
+    },
+    "section8": {
+      "title": "8. Sicherheitsmaßnahmen",
+      "desc": "Wir implementieren folgende Maßnahmen zur Sicherung persönlicher Daten:",
+      "item1": "Verschlüsselung persönlicher Daten",
+      "item2": "Technische Maßnahmen gegen Hacking",
+      "item3": "Minimierung und Schulung des Personals, das persönliche Daten verarbeitet"
+    },
+    "section9": {
+      "title": "9. Datenschutzbeauftragter",
+      "desc": "Bei Fragen zur Verarbeitung persönlicher Daten kontaktieren Sie uns bitte über das Kontaktformular auf unserer Guide-Seite.",
+      "officer": "Datenschutzbeauftragter",
+      "name": "Name: Changkyu Kim",
+      "position": "Position: CEO",
+      "contact": "Kontakt: Kontaktformular der Guide-Seite"
+    },
+    "section10": {
+      "title": "10. Richtlinienänderungen",
+      "desc": "Diese Datenschutzrichtlinie tritt ab dem oben genannten Datum in Kraft. Änderungen werden mindestens 7 Tage vor Inkrafttreten auf unserer Website angekündigt."
+    }
   },
   "terms": {
     "title": "Nutzungsbedingungen",
-    "effectiveDate": "Gültig ab"
+    "effectiveDate": "Gültig ab",
+    "intro": "Diese Nutzungsbedingungen (\"Bedingungen\") regeln Ihre Nutzung aller Dienste (\"Dienst\"), die von CodeWorks Lab (\"Unternehmen\") bereitgestellt werden. Durch die Nutzung unseres Dienstes stimmen Sie diesen Bedingungen zu.",
+    "section1": {
+      "title": "1. Zweck",
+      "desc": "Diese Bedingungen legen die Bedingungen und Verfahren für die Nutzung der Safe Way 10 Lineup-Apps und verwandter Dienste sowie die Rechte, Pflichten und Verantwortlichkeiten des Unternehmens und der Nutzer fest."
+    },
+    "section2": {
+      "title": "2. Definitionen",
+      "term1": "\"Dienst\"",
+      "def1": "bezeichnet alle Dienste, die über vom Unternehmen betriebene Apps und Websites bereitgestellt werden.",
+      "term2": "\"Nutzer\"",
+      "def2": "bezeichnet jeden, der gemäß diesen Bedingungen auf den Dienst zugreift und ihn nutzt.",
+      "term3": "\"Inhalt\"",
+      "def3": "bezeichnet alle Informationen, die von Nutzern innerhalb des Dienstes erstellt, veröffentlicht oder gespeichert werden."
+    },
+    "section3": {
+      "title": "3. Gültigkeit und Änderung der Bedingungen",
+      "item1": "Diese Bedingungen gelten für alle Nutzer, die den Dienst nutzen möchten.",
+      "item2": "Das Unternehmen kann diese Bedingungen bei Bedarf ändern, und Änderungen werden über die App oder Website angekündigt.",
+      "item3": "Nutzer, die den geänderten Bedingungen nicht zustimmen, können die Nutzung einstellen und sich vom Dienst zurückziehen.",
+      "item4": "Die fortgesetzte Nutzung des Dienstes nach dem Inkrafttreten von Änderungen gilt als Zustimmung zu den geänderten Bedingungen."
+    },
+    "section4": {
+      "title": "4. Bereitstellung des Dienstes",
+      "item1": "Das Unternehmen bemüht sich um einen stabilen Dienst.",
+      "item2": "Dienstarten, Nutzungsmethoden und -zeiten werden vom Unternehmen festgelegt.",
+      "item3": "Das Unternehmen kann den Dienst ganz oder teilweise aus Verbesserungs-, technischen oder betrieblichen Gründen ändern oder einstellen.",
+      "item4": "Der Dienst kann aufgrund regelmäßiger oder Notfallwartung vorübergehend ausgesetzt werden."
+    },
+    "section5": {
+      "title": "5. Pflichten der Nutzer",
+      "desc": "Nutzer dürfen Folgendes nicht tun:",
+      "item1": "Gesetze oder diese Bedingungen durch Nutzung des Dienstes verletzen",
+      "item2": "Geistige Eigentumsrechte, Persönlichkeitsrechte oder andere Rechte des Unternehmens oder Dritter verletzen",
+      "item3": "Den normalen Betrieb des Dienstes stören",
+      "item4": "Persönliche Daten anderer Nutzer sammeln oder missbrauchen",
+      "item5": "Unbefugte kommerzielle Nutzung des Dienstes",
+      "item6": "Andere illegale oder unangemessene Aktivitäten"
+    },
+    "section6": {
+      "title": "6. Geistiges Eigentum",
+      "item1": "Die Rechte an geistigem Eigentum für alle im Dienst enthaltenen Inhalte (Text, Bilder, Software usw.) gehören dem Unternehmen.",
+      "item2": "Das Urheberrecht an von Nutzern innerhalb des Dienstes veröffentlichten Inhalten gehört den jeweiligen Nutzern.",
+      "item3": "Nutzer dürfen Dienstinhalte ohne vorherige schriftliche Zustimmung des Unternehmens nicht vervielfältigen, verbreiten oder ändern."
+    },
+    "section7": {
+      "title": "7. Kostenpflichtige Dienste und Zahlung",
+      "item1": "Einige Dienste können kostenpflichtig sein. Preise und Zahlungsmethoden werden innerhalb jedes Dienstes angegeben.",
+      "item2": "Erstattungen für kostenpflichtige Dienste folgen den geltenden Gesetzen und der Erstattungsrichtlinie des Unternehmens.",
+      "item3": "Abonnementdienste können automatisch verlängert werden, sofern sie nicht vom Nutzer gekündigt werden."
+    },
+    "section8": {
+      "title": "8. Haftungsausschluss",
+      "item1": "Das Unternehmen haftet nicht für die Unfähigkeit, den Dienst aufgrund höherer Gewalt wie Naturkatastrophen, Krieg oder Unterbrechungen des Telekommunikationsdienstes bereitzustellen.",
+      "item2": "Das Unternehmen haftet nicht für Dienstunterbrechungen durch Nutzerverschulden.",
+      "item3": "Das Unternehmen garantiert nicht die Genauigkeit oder Zuverlässigkeit der durch den Dienst erhaltenen Informationen.",
+      "item4": "Das Unternehmen ist nicht verpflichtet, in Streitigkeiten zwischen Nutzern oder zwischen Nutzern und Dritten einzugreifen, und haftet nicht für daraus resultierende Schäden."
+    },
+    "section9": {
+      "title": "9. Schadensersatzhaftung",
+      "item1": "Wenn das Unternehmen oder ein Nutzer gegen diese Bedingungen verstößt und der anderen Partei Schaden zufügt, ist er zum Schadensersatz verpflichtet.",
+      "item2": "Die Haftung kann jedoch in Fällen ohne Vorsatz oder grobe Fahrlässigkeit eingeschränkt sein."
+    },
+    "section10": {
+      "title": "10. Streitbeilegung",
+      "item1": "Streitigkeiten im Zusammenhang mit diesen Bedingungen unterliegen den Gesetzen der Republik Korea.",
+      "item2": "Im Falle von Streitigkeiten zwischen dem Unternehmen und Nutzern werden beide Parteien in gutem Glauben für eine gütliche Einigung verhandeln.",
+      "item3": "Scheitern die Verhandlungen, ist das Gericht gemäß Zivilprozessordnung zuständig."
+    },
+    "section11": {
+      "title": "11. Kontakt",
+      "desc": "Bei Fragen zur Dienstnutzung reichen Sie bitte über das Kontaktformular auf unserer Guide-Seite ein."
+    },
+    "supplementary": {
+      "title": "Ergänzende Bestimmungen",
+      "desc": "Diese Bedingungen treten am 3. Februar 2026 in Kraft."
+    }
   },
   "admin": {
     "login": {
