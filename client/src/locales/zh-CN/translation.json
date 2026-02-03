@@ -286,6 +286,14 @@
     "copyright": "版权所有。",
     "madeBy": "用心制作 by"
   },
+  "privacy": {
+    "title": "隐私政策",
+    "effectiveDate": "生效日期"
+  },
+  "terms": {
+    "title": "服务条款",
+    "effectiveDate": "生效日期"
+  },
   "admin": {
     "login": {
       "title": "管理员登录",

@@ -286,6 +286,14 @@
     "copyright": "Alle Rechte vorbehalten.",
     "madeBy": "Mit Sorgfalt erstellt von"
   },
+  "privacy": {
+    "title": "Datenschutzrichtlinie",
+    "effectiveDate": "Gültig ab"
+  },
+  "terms": {
+    "title": "Nutzungsbedingungen",
+    "effectiveDate": "Gültig ab"
+  },
   "admin": {
     "login": {
       "title": "Admin Login",

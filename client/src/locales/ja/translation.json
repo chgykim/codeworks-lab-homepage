@@ -286,6 +286,14 @@
     "copyright": "All rights reserved.",
     "madeBy": "Made with care by"
   },
+  "privacy": {
+    "title": "プライバシーポリシー",
+    "effectiveDate": "施行日"
+  },
+  "terms": {
+    "title": "利用規約",
+    "effectiveDate": "施行日"
+  },
   "admin": {
     "login": {
       "title": "管理者ログイン",

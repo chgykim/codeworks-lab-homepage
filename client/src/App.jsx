@@ -10,6 +10,8 @@ import { AuthProvider } from './hooks/useAuth';
 import Home from './pages/Home';
 import Manual from './pages/Manual';
 import Reviews from './pages/Reviews';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
 
 // Admin pages
 import AdminLogin from './pages/admin/Login';
@@ -43,6 +45,8 @@ function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="/manual" element={<Manual />} />
                         <Route path="/reviews" element={<Reviews />} />
+                        <Route path="/privacy" element={<Privacy />} />
+                        <Route path="/terms" element={<Terms />} />
 
                         {/* Admin routes */}
                         <Route path="/admin/login" element={<AdminLogin />} />

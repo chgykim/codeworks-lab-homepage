@@ -286,6 +286,14 @@
     "copyright": "Todos los derechos reservados.",
     "madeBy": "Hecho con cariño por"
   },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "effectiveDate": "Fecha de vigencia"
+  },
+  "terms": {
+    "title": "Términos de Servicio",
+    "effectiveDate": "Fecha de vigencia"
+  },
   "admin": {
     "login": {
       "title": "Acceso Admin",

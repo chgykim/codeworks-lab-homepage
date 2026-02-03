@@ -286,6 +286,14 @@
     "copyright": "Tous droits réservés.",
     "madeBy": "Fait avec soin par"
   },
+  "privacy": {
+    "title": "Politique de Confidentialité",
+    "effectiveDate": "Date d'effet"
+  },
+  "terms": {
+    "title": "Conditions d'Utilisation",
+    "effectiveDate": "Date d'effet"
+  },
   "admin": {
     "login": {
       "title": "Connexion Admin",

@@ -286,6 +286,14 @@
     "copyright": "جميع الحقوق محفوظة.",
     "madeBy": "صنع بعناية بواسطة"
   },
+  "privacy": {
+    "title": "سياسة الخصوصية",
+    "effectiveDate": "تاريخ السريان"
+  },
+  "terms": {
+    "title": "شروط الخدمة",
+    "effectiveDate": "تاريخ السريان"
+  },
   "admin": {
     "login": {
       "title": "تسجيل دخول المشرف",

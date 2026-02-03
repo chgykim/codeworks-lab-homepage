@@ -286,6 +286,14 @@
     "copyright": "सर्वाधिकार सुरक्षित।",
     "madeBy": "प्यार से बनाया"
   },
+  "privacy": {
+    "title": "गोपनीयता नीति",
+    "effectiveDate": "प्रभावी तिथि"
+  },
+  "terms": {
+    "title": "सेवा की शर्तें",
+    "effectiveDate": "प्रभावी तिथि"
+  },
   "admin": {
     "login": {
       "title": "एडमिन लॉगिन",
