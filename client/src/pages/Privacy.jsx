@@ -29,6 +29,8 @@ function Privacy() {
                             <li>{t('privacy.section1.item3')}</li>
                             <li>{t('privacy.section1.item4')}</li>
                         </ul>
+                        <p>{t('privacy.section1.noSensitive')}</p>
+                        <p>{t('privacy.section1.noPayment')}</p>
                     </section>
 
                     <section className="legal-section">
@@ -70,6 +72,7 @@ function Privacy() {
                             <li>{t('privacy.section5.item3')}</li>
                         </ul>
                         <p>{t('privacy.section5.note')}</p>
+                        <p>{t('privacy.section5.overseas')}</p>
                     </section>
 
                     <section className="legal-section">

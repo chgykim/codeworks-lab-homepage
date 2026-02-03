@@ -296,7 +296,9 @@
       "item1": "应用使用过程中自动生成的日志信息",
       "item2": "用于错误分析的设备信息（操作系统版本、设备型号等）",
       "item3": "您直接提供的信息（咨询时的姓名、电子邮件等）",
-      "item4": "撰写评论时的昵称和电子邮件（可选）"
+      "item4": "撰写评论时的昵称和电子邮件（可选）",
+      "noSensitive": "我们不收集健康信息、生物识别信息、位置信息、联系人、照片、语音等敏感信息。",
+      "noPayment": "我们不直接处理应用内支付。所有支付信息通过Apple App Store或Google Play Store处理。"
     },
     "section2": {
       "title": "第二条（收集和使用目的）",
@@ -325,7 +327,8 @@
       "item1": "Firebase Analytics（应用使用统计）",
       "item2": "Firebase Crashlytics（错误分析）",
       "item3": "Google Gemini API（AI功能）",
-      "note": "有关各服务的数据处理方式，请参阅各服务的隐私政策。"
+      "note": "有关各服务的数据处理方式，请参阅各服务的隐私政策。",
+      "overseas": "外部服务（Firebase、Gemini API）可能使用海外服务器，数据按照各服务的隐私政策进行处理。"
     },
     "section6": {
       "title": "第六条（数据删除）",
@@ -353,8 +356,8 @@
       "title": "第九条（隐私负责人）",
       "desc": "有关个人信息处理的咨询，请通过指南页面的联系表单联系我们。",
       "officer": "隐私负责人",
-      "name": "姓名：金昌圭",
-      "position": "职位：CEO",
+      "name": "姓名：Rustic Sage",
+      "position": "职位：代表",
       "contact": "联系方式：指南页面联系表单"
     },
     "section10": {

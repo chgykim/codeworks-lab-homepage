@@ -296,7 +296,9 @@
       "item1": "Informações de log geradas automaticamente durante o uso do aplicativo",
       "item2": "Informações do dispositivo para análise de erros (versão do SO, modelo do dispositivo, etc.)",
       "item3": "Informações que você fornece diretamente (nome, e-mail para consultas)",
-      "item4": "Apelido e e-mail (opcional) ao escrever avaliações"
+      "item4": "Apelido e e-mail (opcional) ao escrever avaliações",
+      "noSensitive": "A Empresa não coleta informações sensíveis como informações de saúde, dados biométricos, dados de localização, contatos, fotos ou dados de voz dos usuários.",
+      "noPayment": "A Empresa não processa diretamente pagamentos no aplicativo (compras no app). Todas as informações de pagamento são processadas através da Apple App Store ou Google Play Store."
     },
     "section2": {
       "title": "2. Finalidade da coleta e uso",
@@ -325,7 +327,8 @@
       "item1": "Firebase Analytics (estatísticas de uso do aplicativo)",
       "item2": "Firebase Crashlytics (análise de erros)",
       "item3": "Google Gemini API (recursos de IA)",
-      "note": "Consulte a política de privacidade de cada serviço para suas práticas de tratamento de dados."
+      "note": "Consulte a política de privacidade de cada serviço para suas práticas de tratamento de dados.",
+      "overseas": "Serviços externos (Firebase, Gemini API) podem usar servidores no exterior, e os dados são processados de acordo com a política de privacidade de cada serviço."
     },
     "section6": {
       "title": "6. Exclusão de dados",
@@ -353,8 +356,8 @@
       "title": "9. Responsável pela privacidade",
       "desc": "Para consultas sobre o processamento de informações pessoais, entre em contato conosco através do formulário de contato em nossa página de Guia.",
       "officer": "Responsável pela privacidade",
-      "name": "Nome: Changkyu Kim",
-      "position": "Cargo: CEO",
+      "name": "Nome: Rustic Sage",
+      "position": "Cargo: Representante",
       "contact": "Contato: Formulário de contato da página de Guia"
     },
     "section10": {

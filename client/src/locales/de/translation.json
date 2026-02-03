@@ -296,7 +296,9 @@
       "item1": "Automatisch generierte Protokollinformationen während der App-Nutzung",
       "item2": "Geräteinformationen für Fehleranalyse (OS-Version, Gerätemodell usw.)",
       "item3": "Von Ihnen direkt bereitgestellte Informationen (Name, E-Mail für Anfragen)",
-      "item4": "Spitzname und E-Mail (optional) beim Schreiben von Bewertungen"
+      "item4": "Spitzname und E-Mail (optional) beim Schreiben von Bewertungen",
+      "noSensitive": "Das Unternehmen erhebt keine sensiblen Informationen wie Gesundheitsdaten, biometrische Daten, Standortdaten, Kontakte, Fotos oder Sprachdaten der Nutzer.",
+      "noPayment": "Das Unternehmen verarbeitet In-App-Zahlungen nicht direkt. Alle Zahlungsinformationen werden über den Apple App Store oder Google Play Store verarbeitet."
     },
     "section2": {
       "title": "2. Zweck der Sammlung und Nutzung",
@@ -325,7 +327,8 @@
       "item1": "Firebase Analytics (App-Nutzungsstatistiken)",
       "item2": "Firebase Crashlytics (Fehleranalyse)",
       "item3": "Google Gemini API (KI-Funktionen)",
-      "note": "Bitte beachten Sie die Datenschutzrichtlinien der jeweiligen Dienste für deren Datenverarbeitungspraktiken."
+      "note": "Bitte beachten Sie die Datenschutzrichtlinien der jeweiligen Dienste für deren Datenverarbeitungspraktiken.",
+      "overseas": "Externe Dienste (Firebase, Gemini API) können Server im Ausland nutzen, und Daten werden gemäß der Datenschutzrichtlinie jedes Dienstes verarbeitet."
     },
     "section6": {
       "title": "6. Datenlöschung",
@@ -353,8 +356,8 @@
       "title": "9. Datenschutzbeauftragter",
       "desc": "Bei Fragen zur Verarbeitung persönlicher Daten kontaktieren Sie uns bitte über das Kontaktformular auf unserer Guide-Seite.",
       "officer": "Datenschutzbeauftragter",
-      "name": "Name: Changkyu Kim",
-      "position": "Position: CEO",
+      "name": "Name: Rustic Sage",
+      "position": "Position: Vertreter",
       "contact": "Kontakt: Kontaktformular der Guide-Seite"
     },
     "section10": {

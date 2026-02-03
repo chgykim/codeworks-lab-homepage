@@ -296,7 +296,9 @@
       "item1": "Informations de journal générées automatiquement lors de l'utilisation de l'application",
       "item2": "Informations sur l'appareil pour l'analyse des erreurs (version du système d'exploitation, modèle de l'appareil, etc.)",
       "item3": "Informations que vous fournissez directement (nom, e-mail pour les demandes)",
-      "item4": "Pseudo et e-mail (facultatif) lors de la rédaction d'avis"
+      "item4": "Pseudo et e-mail (facultatif) lors de la rédaction d'avis",
+      "noSensitive": "La Societe ne collecte pas d'informations sensibles telles que les informations de sante, les donnees biometriques, les donnees de localisation, les contacts, les photos ou les donnees vocales des utilisateurs.",
+      "noPayment": "La Societe ne traite pas directement les paiements integres (achats in-app). Toutes les informations de paiement sont traitees via l'Apple App Store ou le Google Play Store."
     },
     "section2": {
       "title": "2. Objectif de la collecte et de l'utilisation",
@@ -325,7 +327,8 @@
       "item1": "Firebase Analytics (statistiques d'utilisation de l'application)",
       "item2": "Firebase Crashlytics (analyse des erreurs)",
       "item3": "Google Gemini API (fonctionnalités IA)",
-      "note": "Veuillez consulter la politique de confidentialité de chaque service pour leurs pratiques de traitement des données."
+      "note": "Veuillez consulter la politique de confidentialité de chaque service pour leurs pratiques de traitement des données.",
+      "overseas": "Les services externes (Firebase, Gemini API) peuvent utiliser des serveurs a l'etranger, et les donnees sont traitees conformement a la politique de confidentialite de chaque service."
     },
     "section6": {
       "title": "6. Suppression des données",
@@ -353,8 +356,8 @@
       "title": "9. Responsable de la confidentialité",
       "desc": "Pour toute question concernant le traitement des informations personnelles, veuillez nous contacter via le formulaire de contact sur notre page Guide.",
       "officer": "Responsable de la confidentialité",
-      "name": "Nom : Changkyu Kim",
-      "position": "Poste : PDG",
+      "name": "Nom : Rustic Sage",
+      "position": "Poste : Representant",
       "contact": "Contact : Formulaire de contact de la page Guide"
     },
     "section10": {

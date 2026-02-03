@@ -296,7 +296,9 @@
       "item1": "Log information automatically generated during app usage",
       "item2": "Device information for error analysis (OS version, device model, etc.)",
       "item3": "Information you directly provide (name, email for inquiries)",
-      "item4": "Nickname and email (optional) when writing reviews"
+      "item4": "Nickname and email (optional) when writing reviews",
+      "noSensitive": "We do not collect sensitive information such as health data, biometric data, location data, contacts, photos, or voice recordings.",
+      "noPayment": "We do not process in-app payments directly. All payment information is processed through the Apple App Store or Google Play Store."
     },
     "section2": {
       "title": "2. Purpose of Collection and Use",
@@ -325,7 +327,8 @@
       "item1": "Firebase Analytics (app usage statistics)",
       "item2": "Firebase Crashlytics (error analysis)",
       "item3": "Google Gemini API (AI features)",
-      "note": "Please refer to each service's privacy policy for their data handling practices."
+      "note": "Please refer to each service's privacy policy for their data handling practices.",
+      "overseas": "External services (Firebase, Gemini API) may use overseas servers, and data is processed according to each service's privacy policy."
     },
     "section6": {
       "title": "6. Data Deletion",
@@ -353,8 +356,8 @@
       "title": "9. Privacy Officer",
       "desc": "For inquiries regarding personal information processing, please contact us through the contact form on our Guide page.",
       "officer": "Privacy Officer",
-      "name": "Name: Changkyu Kim",
-      "position": "Position: CEO",
+      "name": "Name: Rustic Sage",
+      "position": "Position: Representative",
       "contact": "Contact: Guide page contact form"
     },
     "section10": {

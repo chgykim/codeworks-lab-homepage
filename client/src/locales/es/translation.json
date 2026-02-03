@@ -296,7 +296,9 @@
       "item1": "Información de registro generada automáticamente durante el uso de la aplicación",
       "item2": "Información del dispositivo para análisis de errores (versión del SO, modelo del dispositivo, etc.)",
       "item3": "Información que usted proporciona directamente (nombre, correo electrónico para consultas)",
-      "item4": "Apodo y correo electrónico (opcional) al escribir reseñas"
+      "item4": "Apodo y correo electrónico (opcional) al escribir reseñas",
+      "noSensitive": "La Empresa no recopila información sensible como información de salud, datos biométricos, datos de ubicación, contactos, fotos o datos de voz de los usuarios.",
+      "noPayment": "La Empresa no procesa directamente los pagos en la aplicación (compras en la app). Toda la información de pago se procesa a través de Apple App Store o Google Play Store."
     },
     "section2": {
       "title": "2. Propósito de Recopilación y Uso",
@@ -325,7 +327,8 @@
       "item1": "Firebase Analytics (estadísticas de uso de la aplicación)",
       "item2": "Firebase Crashlytics (análisis de errores)",
       "item3": "Google Gemini API (funciones de IA)",
-      "note": "Consulte la política de privacidad de cada servicio para conocer sus prácticas de manejo de datos."
+      "note": "Consulte la política de privacidad de cada servicio para conocer sus prácticas de manejo de datos.",
+      "overseas": "Los servicios externos (Firebase, Gemini API) pueden utilizar servidores en el extranjero, y los datos se procesan de acuerdo con la política de privacidad de cada servicio."
     },
     "section6": {
       "title": "6. Eliminación de Datos",
@@ -353,8 +356,8 @@
       "title": "9. Oficial de Privacidad",
       "desc": "Para consultas sobre el procesamiento de información personal, contáctenos a través del formulario de contacto en nuestra página de Guía.",
       "officer": "Oficial de Privacidad",
-      "name": "Nombre: Changkyu Kim",
-      "position": "Cargo: CEO",
+      "name": "Nombre: Rustic Sage",
+      "position": "Cargo: Representante",
       "contact": "Contacto: Formulario de contacto de la página de Guía"
     },
     "section10": {
