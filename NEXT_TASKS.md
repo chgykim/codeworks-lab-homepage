@@ -215,6 +215,31 @@ codeworks-lab-homepage/
   - 새 PostgreSQL credential 생성 (codeworkslabdb_phdc_user)
   - 기존 노출된 credential 삭제 완료
 
+### 2026-02-04
+- [x] **Google Cloud Platform API 키 노출 경고 대응**
+  - Google로부터 API 키 노출 경고 이메일 수신
+  - Firebase API 키가 GitHub에 하드코딩되어 노출됨
+- [x] **Firebase 클라이언트 설정 보안 강화**
+  - `client/src/config/firebase.js` → 환경변수(`VITE_*`)로 전환
+  - `server/config/firebase.js` → `ADMIN_EMAIL` 환경변수로 전환
+  - `client/.env` 및 `client/.env.example` 생성
+- [x] **API 키 재생성 (Google Cloud Console)**
+  - Browser key 순환 (키 재생성)
+  - 이전 노출된 키 완전 삭제
+- [x] **Firebase 서비스 계정 키 재생성**
+  - 새 비공개 키 발급 및 적용
+- [x] **Git 히스토리 정리 (BFG Repo-Cleaner)**
+  - 노출된 API 키, 비밀번호, JWT Secret 히스토리에서 제거
+  - GitHub force push 완료
+- [x] **.gitignore 보안 강화**
+  - `.env`, `firebase-service-account.json`, `*.key` 등 추가
+- [x] **Firebase Hosting 재배포**
+  - 새 API 키 적용된 클라이언트 빌드 및 배포
+- [x] **Render 서버 재배포**
+  - 환경변수 확인 (ADMIN_EMAIL, JWT_SECRET)
+  - Clear build cache & deploy 실행
+- [x] **관리자 로그인 테스트 완료** ✅
+
 ### 2026-02-03
 - [x] **개인정보 처리방침 페이지 추가** (`/privacy`)
   - Privacy.jsx 컴포넌트 생성
@@ -410,5 +435,5 @@ Render 유료 플랜: 월 $7 ≈ 9,000원 (연 11만원)
 
 ---
 
-*마지막 업데이트: 2026-02-03*
-*맥미니 M4 환경 설정 가이드 + 보안 조치 + 수익 목표 + 법적 페이지 완료*
+*마지막 업데이트: 2026-02-04*
+*맥미니 M4 환경 설정 가이드 + API 키 보안 조치 완료 + 수익 목표 + 법적 페이지 완료*
