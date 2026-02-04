@@ -356,6 +356,41 @@ firebase projects:list
 
 ## 🔐 보안 주의사항
 
+### ⚠️ 보안 사고 이력 (교훈)
+
+| 날짜 | 문제 | 원인 | 대응 |
+|------|------|------|------|
+| 2026-02-02 | PostgreSQL credential 노출 | DATABASE_URL이 코드에 포함 | 새 credential 생성, 기존 삭제 |
+| 2026-02-04 | Firebase API 키 노출 | API 키 하드코딩 | 키 재생성, Git 히스토리 정리 |
+
+### 🚨 앞으로 예방하는 방법 (필독!)
+
+**1. 코드 작성 시 규칙**
+- API 키, 비밀번호는 **절대** 코드에 직접 작성 금지
+- 항상 환경변수(`process.env.*`, `import.meta.env.*`)로 사용
+
+**2. 커밋 전 확인**
+```bash
+# 커밋 전 민감한 정보 검색
+git diff --staged | grep -i -E "(password|secret|key|token|api)"
+```
+
+**3. 환경변수 파일 구조**
+```
+client/.env          # 클라이언트 환경변수 (VITE_* 접두사)
+client/.env.example  # 템플릿 (Git에 포함)
+server/.env          # 서버 환경변수 (Git 제외)
+.env.example         # 템플릿 (Git에 포함)
+```
+
+**4. 새 API 키/비밀 추가 시 체크리스트**
+- [ ] 환경변수로 설정했는가?
+- [ ] .gitignore에 포함되어 있는가?
+- [ ] .env.example에 템플릿 추가했는가?
+- [ ] Render 환경변수에 추가했는가?
+
+---
+
 ### 절대 GitHub에 올리지 말 것
 - DATABASE_URL (PostgreSQL 연결 정보)
 - FIREBASE_PRIVATE_KEY (Firebase 비공개 키)
