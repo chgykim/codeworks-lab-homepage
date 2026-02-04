@@ -2,8 +2,8 @@ const admin = require('firebase-admin');
 const path = require('path');
 const fs = require('fs');
 
-// Admin email for authorization check
-const ADMIN_EMAIL = 'chgykim0@gmail.com';
+// Admin email for authorization check (from environment variable)
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL || '';
 
 // Initialize Firebase Admin SDK
 let firebaseInitialized = false;

@@ -1,23 +1,32 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth';
 
+// Firebase configuration from environment variables
 const firebaseConfig = {
-  apiKey: "***REMOVED***",
-  authDomain: "rustic-sage.firebaseapp.com",
-  projectId: "rustic-sage",
-  storageBucket: "rustic-sage.firebasestorage.app",
-  messagingSenderId: "119948658294",
-  appId: "1:119948658294:web:c2a75dd8ac27917c6ec157",
-  measurementId: "G-FM65CZ1KVS"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
+
+// Validate required config
+const requiredConfig = ['apiKey', 'authDomain', 'projectId'];
+for (const key of requiredConfig) {
+  if (!firebaseConfig[key]) {
+    console.error(`Missing required Firebase config: ${key}. Check your .env file.`);
+  }
+}
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
 
-// Admin email
-const ADMIN_EMAIL = 'chgykim0@gmail.com';
+// Admin email from environment variable
+const ADMIN_EMAIL = import.meta.env.VITE_ADMIN_EMAIL || '';
 
 // Google Sign In
 export async function signInWithGoogle() {
