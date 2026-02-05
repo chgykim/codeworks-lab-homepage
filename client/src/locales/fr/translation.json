@@ -12,8 +12,9 @@
     "reviews": "Avis",
     "blog": "Blog",
     "admin": "Admin",
-    "login": "Connexion Admin",
-    "logout": "Déconnexion"
+    "login": "Connexion",
+    "logout": "Déconnexion",
+    "mypage": "Mon Compte"
   },
   "hero": {
     "title": "Votre Assistant",
@@ -243,10 +244,20 @@
       "subtitle": "Vous ne trouvez pas ce que vous cherchez? Contactez-nous et nous vous répondrons rapidement.",
       "name": "Nom",
       "email": "Email",
-      "subject": "Sujet (optionnel)",
+      "subject": "Catégorie",
       "message": "Message",
       "send": "Envoyer le Message",
-      "success": "Message envoyé avec succès. Nous répondrons dès que possible."
+      "success": "Message envoyé avec succès. Nous répondrons dès que possible.",
+      "selectCategory": "Sélectionner une catégorie",
+      "categories": {
+        "appError": "Erreur d'application",
+        "deviceSupport": "Support appareil",
+        "countryLanguage": "Pays/Langue",
+        "improvement": "Amélioration",
+        "featureRequest": "Demande de fonctionnalité",
+        "appDevelopment": "Développement d'application",
+        "other": "Autre"
+      }
     }
   },
   "faq": {
@@ -528,7 +539,78 @@
     "search": "Rechercher",
     "filter": "Filtrer",
     "noData": "Aucune donnée disponible",
-    "required": "Requis"
+    "required": "Requis",
+    "optional": "Optionnel",
+    "prev": "Précédent",
+    "next": "Suivant"
+  },
+  "auth": {
+    "login": "Se connecter",
+    "register": "S'inscrire",
+    "logout": "Se déconnecter",
+    "email": "Email",
+    "password": "Mot de passe",
+    "name": "Nom",
+    "confirmPassword": "Confirmer le mot de passe",
+    "emailPlaceholder": "Entrez votre email",
+    "passwordPlaceholder": "Entrez votre mot de passe",
+    "namePlaceholder": "Entrez votre nom",
+    "confirmPasswordPlaceholder": "Confirmez votre mot de passe",
+    "loginSubtitle": "Connectez-vous à votre compte",
+    "registerSubtitle": "Créer un nouveau compte",
+    "noAccount": "Pas encore de compte?",
+    "hasAccount": "Déjà un compte?",
+    "loginFailed": "Échec de la connexion",
+    "registerFailed": "Échec de l'inscription",
+    "invalidEmail": "Veuillez entrer un email valide",
+    "emailTaken": "Cet email est déjà enregistré",
+    "passwordMinLength": "Le mot de passe doit contenir au moins 8 caractères",
+    "passwordRequirements": "Le mot de passe doit contenir des majuscules, des minuscules et des chiffres",
+    "passwordMismatch": "Les mots de passe ne correspondent pas",
+    "passwordMin8": "8+ caractères",
+    "passwordLowercase": "Lettre minuscule",
+    "passwordUppercase": "Lettre majuscule",
+    "passwordNumber": "Chiffre"
+  },
+  "mypage": {
+    "title": "Mon Compte",
+    "subtitle": "Gérer votre compte",
+    "noName": "Pas de nom",
+    "joined": "Inscrit le: {{date}}",
+    "reviews": "Avis",
+    "inquiries": "Demandes",
+    "changePassword": "Changer le mot de passe",
+    "myReviews": "Mes avis",
+    "myInquiries": "Mes demandes",
+    "deleteAccount": "Supprimer le compte",
+    "deleteAccountTitle": "Supprimer le compte",
+    "deleteWarning": "Cette action est irréversible. Êtes-vous sûr de vouloir supprimer votre compte?",
+    "confirmPassword": "Confirmer le mot de passe",
+    "deleteFailed": "Échec de la suppression du compte",
+    "currentPassword": "Mot de passe actuel",
+    "newPassword": "Nouveau mot de passe",
+    "passwordChanged": "Mot de passe changé avec succès",
+    "totalReviews": "{{count}} avis",
+    "noReviews": "Pas encore d'avis",
+    "noReviewsDesc": "Écrivez un avis pour partager votre expérience!",
+    "writeReview": "Écrire un avis",
+    "deleteReviewTitle": "Supprimer l'avis",
+    "deleteReviewConfirm": "Êtes-vous sûr de vouloir supprimer cet avis?",
+    "totalInquiries": "{{count}} demandes",
+    "noInquiries": "Pas encore de demandes",
+    "noInquiriesDesc": "Des questions? Contactez-nous!",
+    "goToContact": "Nous contacter",
+    "noSubject": "Pas de sujet",
+    "status": {
+      "pending": "En attente",
+      "approved": "Approuvé",
+      "rejected": "Rejeté"
+    },
+    "inquiryStatus": {
+      "unread": "Non lu",
+      "read": "Lu",
+      "replied": "Répondu"
+    }
   },
   "language": {
     "select": "Langue",

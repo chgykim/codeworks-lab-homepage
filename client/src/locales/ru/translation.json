@@ -12,8 +12,9 @@
     "reviews": "Отзывы",
     "blog": "Блог",
     "admin": "Админ",
-    "login": "Вход для Админа",
-    "logout": "Выйти"
+    "login": "Вход",
+    "logout": "Выйти",
+    "mypage": "Мой кабинет"
   },
   "hero": {
     "title": "Ваш Ежедневный",
@@ -243,10 +244,20 @@
       "subtitle": "Не нашли то, что искали? Свяжитесь с нами, и мы ответим в ближайшее время.",
       "name": "Имя",
       "email": "Email",
-      "subject": "Тема (необязательно)",
+      "subject": "Категория",
       "message": "Сообщение",
       "send": "Отправить Сообщение",
-      "success": "Сообщение успешно отправлено. Мы ответим как можно скорее."
+      "success": "Сообщение успешно отправлено. Мы ответим как можно скорее.",
+      "selectCategory": "Выберите категорию",
+      "categories": {
+        "appError": "Ошибка приложения",
+        "deviceSupport": "Поддержка устройств",
+        "countryLanguage": "Страна/Язык",
+        "improvement": "Улучшение",
+        "featureRequest": "Запрос функции",
+        "appDevelopment": "Разработка приложений",
+        "other": "Другое"
+      }
     }
   },
   "faq": {
@@ -528,7 +539,78 @@
     "search": "Поиск",
     "filter": "Фильтр",
     "noData": "Нет данных",
-    "required": "Обязательно"
+    "required": "Обязательно",
+    "optional": "Необязательно",
+    "prev": "Назад",
+    "next": "Далее"
+  },
+  "auth": {
+    "login": "Вход",
+    "register": "Регистрация",
+    "logout": "Выход",
+    "email": "Email",
+    "password": "Пароль",
+    "name": "Имя",
+    "confirmPassword": "Подтвердите пароль",
+    "emailPlaceholder": "Введите ваш email",
+    "passwordPlaceholder": "Введите ваш пароль",
+    "namePlaceholder": "Введите ваше имя",
+    "confirmPasswordPlaceholder": "Подтвердите ваш пароль",
+    "loginSubtitle": "Войдите в свой аккаунт",
+    "registerSubtitle": "Создайте новый аккаунт",
+    "noAccount": "Нет аккаунта?",
+    "hasAccount": "Уже есть аккаунт?",
+    "loginFailed": "Ошибка входа",
+    "registerFailed": "Ошибка регистрации",
+    "invalidEmail": "Введите корректный email",
+    "emailTaken": "Этот email уже зарегистрирован",
+    "passwordMinLength": "Пароль должен содержать минимум 8 символов",
+    "passwordRequirements": "Пароль должен содержать заглавные, строчные буквы и цифры",
+    "passwordMismatch": "Пароли не совпадают",
+    "passwordMin8": "8+ символов",
+    "passwordLowercase": "Строчная буква",
+    "passwordUppercase": "Заглавная буква",
+    "passwordNumber": "Цифра"
+  },
+  "mypage": {
+    "title": "Мой Кабинет",
+    "subtitle": "Управление аккаунтом",
+    "noName": "Без имени",
+    "joined": "Дата регистрации: {{date}}",
+    "reviews": "Отзывы",
+    "inquiries": "Обращения",
+    "changePassword": "Изменить пароль",
+    "myReviews": "Мои отзывы",
+    "myInquiries": "Мои обращения",
+    "deleteAccount": "Удалить аккаунт",
+    "deleteAccountTitle": "Удаление аккаунта",
+    "deleteWarning": "Это действие нельзя отменить. Вы уверены, что хотите удалить свой аккаунт?",
+    "confirmPassword": "Подтвердите пароль",
+    "deleteFailed": "Не удалось удалить аккаунт",
+    "currentPassword": "Текущий пароль",
+    "newPassword": "Новый пароль",
+    "passwordChanged": "Пароль успешно изменён",
+    "totalReviews": "{{count}} отзывов",
+    "noReviews": "Пока нет отзывов",
+    "noReviewsDesc": "Напишите отзыв и поделитесь своим опытом!",
+    "writeReview": "Написать отзыв",
+    "deleteReviewTitle": "Удаление отзыва",
+    "deleteReviewConfirm": "Вы уверены, что хотите удалить этот отзыв?",
+    "totalInquiries": "{{count}} обращений",
+    "noInquiries": "Пока нет обращений",
+    "noInquiriesDesc": "Есть вопросы? Свяжитесь с нами!",
+    "goToContact": "Связаться с нами",
+    "noSubject": "Без темы",
+    "status": {
+      "pending": "На рассмотрении",
+      "approved": "Одобрен",
+      "rejected": "Отклонён"
+    },
+    "inquiryStatus": {
+      "unread": "Не прочитано",
+      "read": "Прочитано",
+      "replied": "Ответ получен"
+    }
   },
   "language": {
     "select": "Язык",

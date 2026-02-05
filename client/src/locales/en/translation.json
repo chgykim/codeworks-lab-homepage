@@ -12,8 +12,9 @@
     "reviews": "Reviews",
     "blog": "Blog",
     "admin": "Admin",
-    "login": "Admin Login",
-    "logout": "Logout"
+    "login": "Login",
+    "logout": "Logout",
+    "mypage": "My Page"
   },
   "hero": {
     "title": "Your Everyday",
@@ -243,10 +244,20 @@
       "subtitle": "Can't find what you're looking for? Contact us and we'll get back to you soon.",
       "name": "Name",
       "email": "Email",
-      "subject": "Subject (optional)",
+      "subject": "Category",
       "message": "Message",
       "send": "Send Message",
-      "success": "Message sent successfully. We'll respond as soon as possible."
+      "success": "Message sent successfully. We'll respond as soon as possible.",
+      "selectCategory": "Select a category",
+      "categories": {
+        "appError": "App Error",
+        "deviceSupport": "Device Support",
+        "countryLanguage": "Country/Language",
+        "improvement": "Improvement",
+        "featureRequest": "Feature Request",
+        "appDevelopment": "App Development",
+        "other": "Other"
+      }
     }
   },
   "faq": {
@@ -528,7 +539,78 @@
     "search": "Search",
     "filter": "Filter",
     "noData": "No data available",
-    "required": "Required"
+    "required": "Required",
+    "optional": "Optional",
+    "prev": "Previous",
+    "next": "Next"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "name": "Name",
+    "confirmPassword": "Confirm Password",
+    "emailPlaceholder": "Enter your email",
+    "passwordPlaceholder": "Enter your password",
+    "namePlaceholder": "Enter your name",
+    "confirmPasswordPlaceholder": "Confirm your password",
+    "loginSubtitle": "Sign in to your account",
+    "registerSubtitle": "Create a new account",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "loginFailed": "Login failed",
+    "registerFailed": "Registration failed",
+    "invalidEmail": "Please enter a valid email",
+    "emailTaken": "This email is already registered",
+    "passwordMinLength": "Password must be at least 8 characters",
+    "passwordRequirements": "Password must contain uppercase, lowercase, and numbers",
+    "passwordMismatch": "Passwords do not match",
+    "passwordMin8": "8+ characters",
+    "passwordLowercase": "Lowercase letter",
+    "passwordUppercase": "Uppercase letter",
+    "passwordNumber": "Number"
+  },
+  "mypage": {
+    "title": "My Page",
+    "subtitle": "Manage your account",
+    "noName": "No name",
+    "joined": "Joined: {{date}}",
+    "reviews": "Reviews",
+    "inquiries": "Inquiries",
+    "changePassword": "Change Password",
+    "myReviews": "My Reviews",
+    "myInquiries": "My Inquiries",
+    "deleteAccount": "Delete Account",
+    "deleteAccountTitle": "Delete Account",
+    "deleteWarning": "This action cannot be undone. Are you sure you want to delete your account?",
+    "confirmPassword": "Confirm Password",
+    "deleteFailed": "Failed to delete account",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "passwordChanged": "Password changed successfully",
+    "totalReviews": "{{count}} reviews",
+    "noReviews": "No reviews yet",
+    "noReviewsDesc": "Write a review to share your experience!",
+    "writeReview": "Write a Review",
+    "deleteReviewTitle": "Delete Review",
+    "deleteReviewConfirm": "Are you sure you want to delete this review?",
+    "totalInquiries": "{{count}} inquiries",
+    "noInquiries": "No inquiries yet",
+    "noInquiriesDesc": "Have questions? Contact us!",
+    "goToContact": "Contact Us",
+    "noSubject": "No subject",
+    "status": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected"
+    },
+    "inquiryStatus": {
+      "unread": "Unread",
+      "read": "Read",
+      "replied": "Replied"
+    }
   },
   "language": {
     "select": "Language",

@@ -12,8 +12,9 @@
     "reviews": "Avaliações",
     "blog": "Blog",
     "admin": "Admin",
-    "login": "Login Admin",
-    "logout": "Sair"
+    "login": "Entrar",
+    "logout": "Sair",
+    "mypage": "Minha Conta"
   },
   "hero": {
     "title": "Seu Assistente",
@@ -243,10 +244,20 @@
       "subtitle": "Não encontrou o que procura? Entre em contato e responderemos em breve.",
       "name": "Nome",
       "email": "Email",
-      "subject": "Assunto (opcional)",
+      "subject": "Categoria",
       "message": "Mensagem",
       "send": "Enviar Mensagem",
-      "success": "Mensagem enviada com sucesso. Responderemos o mais rápido possível."
+      "success": "Mensagem enviada com sucesso. Responderemos o mais rápido possível.",
+      "selectCategory": "Selecione uma categoria",
+      "categories": {
+        "appError": "Erro do App",
+        "deviceSupport": "Suporte de Dispositivo",
+        "countryLanguage": "País/Idioma",
+        "improvement": "Melhoria",
+        "featureRequest": "Solicitação de Recurso",
+        "appDevelopment": "Desenvolvimento de App",
+        "other": "Outro"
+      }
     }
   },
   "faq": {
@@ -528,7 +539,78 @@
     "search": "Buscar",
     "filter": "Filtrar",
     "noData": "Nenhum dado disponível",
-    "required": "Obrigatório"
+    "required": "Obrigatório",
+    "optional": "Opcional",
+    "prev": "Anterior",
+    "next": "Próximo"
+  },
+  "auth": {
+    "login": "Entrar",
+    "register": "Cadastrar",
+    "logout": "Sair",
+    "email": "Email",
+    "password": "Senha",
+    "name": "Nome",
+    "confirmPassword": "Confirmar Senha",
+    "emailPlaceholder": "Digite seu email",
+    "passwordPlaceholder": "Digite sua senha",
+    "namePlaceholder": "Digite seu nome",
+    "confirmPasswordPlaceholder": "Confirme sua senha",
+    "loginSubtitle": "Entre na sua conta",
+    "registerSubtitle": "Criar uma nova conta",
+    "noAccount": "Não tem uma conta?",
+    "hasAccount": "Já tem uma conta?",
+    "loginFailed": "Falha ao entrar",
+    "registerFailed": "Falha ao cadastrar",
+    "invalidEmail": "Por favor, insira um email válido",
+    "emailTaken": "Este email já está registrado",
+    "passwordMinLength": "A senha deve ter pelo menos 8 caracteres",
+    "passwordRequirements": "A senha deve conter maiúsculas, minúsculas e números",
+    "passwordMismatch": "As senhas não coincidem",
+    "passwordMin8": "8+ caracteres",
+    "passwordLowercase": "Letra minúscula",
+    "passwordUppercase": "Letra maiúscula",
+    "passwordNumber": "Número"
+  },
+  "mypage": {
+    "title": "Minha Conta",
+    "subtitle": "Gerencie sua conta",
+    "noName": "Sem nome",
+    "joined": "Cadastrado em: {{date}}",
+    "reviews": "Avaliações",
+    "inquiries": "Consultas",
+    "changePassword": "Alterar Senha",
+    "myReviews": "Minhas Avaliações",
+    "myInquiries": "Minhas Consultas",
+    "deleteAccount": "Excluir Conta",
+    "deleteAccountTitle": "Excluir Conta",
+    "deleteWarning": "Esta ação não pode ser desfeita. Tem certeza de que deseja excluir sua conta?",
+    "confirmPassword": "Confirmar Senha",
+    "deleteFailed": "Falha ao excluir conta",
+    "currentPassword": "Senha Atual",
+    "newPassword": "Nova Senha",
+    "passwordChanged": "Senha alterada com sucesso",
+    "totalReviews": "{{count}} avaliações",
+    "noReviews": "Ainda não há avaliações",
+    "noReviewsDesc": "Escreva uma avaliação para compartilhar sua experiência!",
+    "writeReview": "Escrever Avaliação",
+    "deleteReviewTitle": "Excluir Avaliação",
+    "deleteReviewConfirm": "Tem certeza de que deseja excluir esta avaliação?",
+    "totalInquiries": "{{count}} consultas",
+    "noInquiries": "Ainda não há consultas",
+    "noInquiriesDesc": "Tem dúvidas? Entre em contato!",
+    "goToContact": "Fale Conosco",
+    "noSubject": "Sem assunto",
+    "status": {
+      "pending": "Pendente",
+      "approved": "Aprovado",
+      "rejected": "Rejeitado"
+    },
+    "inquiryStatus": {
+      "unread": "Não lido",
+      "read": "Lido",
+      "replied": "Respondido"
+    }
   },
   "language": {
     "select": "Idioma",

@@ -22,6 +22,7 @@ const logger = require('./utils/logger');
 
 // Import routes
 const authRoutes = require('./routes/auth');
+const userRoutes = require('./routes/user');
 const reviewRoutes = require('./routes/reviews');
 const blogRoutes = require('./routes/blog');
 const adminRoutes = require('./routes/admin');
@@ -77,6 +78,7 @@ app.get('/api/health', (req, res) => {
 
 // API routes
 app.use('/api/auth', authRoutes);
+app.use('/api/user', userRoutes);
 app.use('/api/reviews', reviewRoutes);
 app.use('/api/blog', blogRoutes);
 app.use('/api/admin', adminRoutes);

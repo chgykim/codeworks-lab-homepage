@@ -12,8 +12,9 @@
     "reviews": "Reseñas",
     "blog": "Blog",
     "admin": "Admin",
-    "login": "Acceso Admin",
-    "logout": "Cerrar Sesión"
+    "login": "Iniciar Sesión",
+    "logout": "Cerrar Sesión",
+    "mypage": "Mi Cuenta"
   },
   "hero": {
     "title": "Tu Asistente",
@@ -243,10 +244,20 @@
       "subtitle": "¿No encuentras lo que buscas? Contáctanos y te responderemos pronto.",
       "name": "Nombre",
       "email": "Correo",
-      "subject": "Asunto (opcional)",
+      "subject": "Categoría",
       "message": "Mensaje",
       "send": "Enviar Mensaje",
-      "success": "Mensaje enviado exitosamente. Responderemos lo antes posible."
+      "success": "Mensaje enviado exitosamente. Responderemos lo antes posible.",
+      "selectCategory": "Selecciona una categoría",
+      "categories": {
+        "appError": "Error de la App",
+        "deviceSupport": "Soporte de Dispositivo",
+        "countryLanguage": "País/Idioma",
+        "improvement": "Mejora",
+        "featureRequest": "Solicitud de Función",
+        "appDevelopment": "Desarrollo de App",
+        "other": "Otro"
+      }
     }
   },
   "faq": {
@@ -528,7 +539,78 @@
     "search": "Buscar",
     "filter": "Filtrar",
     "noData": "No hay datos disponibles",
-    "required": "Requerido"
+    "required": "Requerido",
+    "optional": "Opcional",
+    "prev": "Anterior",
+    "next": "Siguiente"
+  },
+  "auth": {
+    "login": "Iniciar Sesión",
+    "register": "Registrarse",
+    "logout": "Cerrar Sesión",
+    "email": "Correo Electrónico",
+    "password": "Contraseña",
+    "name": "Nombre",
+    "confirmPassword": "Confirmar Contraseña",
+    "emailPlaceholder": "Ingresa tu correo",
+    "passwordPlaceholder": "Ingresa tu contraseña",
+    "namePlaceholder": "Ingresa tu nombre",
+    "confirmPasswordPlaceholder": "Confirma tu contraseña",
+    "loginSubtitle": "Inicia sesión en tu cuenta",
+    "registerSubtitle": "Crea una nueva cuenta",
+    "noAccount": "¿No tienes cuenta?",
+    "hasAccount": "¿Ya tienes cuenta?",
+    "loginFailed": "Error al iniciar sesión",
+    "registerFailed": "Error al registrarse",
+    "invalidEmail": "Por favor ingresa un correo válido",
+    "emailTaken": "Este correo ya está registrado",
+    "passwordMinLength": "La contraseña debe tener al menos 8 caracteres",
+    "passwordRequirements": "La contraseña debe contener mayúsculas, minúsculas y números",
+    "passwordMismatch": "Las contraseñas no coinciden",
+    "passwordMin8": "8+ caracteres",
+    "passwordLowercase": "Letra minúscula",
+    "passwordUppercase": "Letra mayúscula",
+    "passwordNumber": "Número"
+  },
+  "mypage": {
+    "title": "Mi Cuenta",
+    "subtitle": "Administra tu cuenta",
+    "noName": "Sin nombre",
+    "joined": "Registrado: {{date}}",
+    "reviews": "Reseñas",
+    "inquiries": "Consultas",
+    "changePassword": "Cambiar Contraseña",
+    "myReviews": "Mis Reseñas",
+    "myInquiries": "Mis Consultas",
+    "deleteAccount": "Eliminar Cuenta",
+    "deleteAccountTitle": "Eliminar Cuenta",
+    "deleteWarning": "Esta acción no se puede deshacer. ¿Estás seguro de que quieres eliminar tu cuenta?",
+    "confirmPassword": "Confirmar Contraseña",
+    "deleteFailed": "Error al eliminar la cuenta",
+    "currentPassword": "Contraseña Actual",
+    "newPassword": "Nueva Contraseña",
+    "passwordChanged": "Contraseña cambiada exitosamente",
+    "totalReviews": "{{count}} reseñas",
+    "noReviews": "Aún no hay reseñas",
+    "noReviewsDesc": "¡Escribe una reseña para compartir tu experiencia!",
+    "writeReview": "Escribir Reseña",
+    "deleteReviewTitle": "Eliminar Reseña",
+    "deleteReviewConfirm": "¿Estás seguro de que quieres eliminar esta reseña?",
+    "totalInquiries": "{{count}} consultas",
+    "noInquiries": "Aún no hay consultas",
+    "noInquiriesDesc": "¿Tienes preguntas? ¡Contáctanos!",
+    "goToContact": "Contactar",
+    "noSubject": "Sin asunto",
+    "status": {
+      "pending": "Pendiente",
+      "approved": "Aprobado",
+      "rejected": "Rechazado"
+    },
+    "inquiryStatus": {
+      "unread": "No leído",
+      "read": "Leído",
+      "replied": "Respondido"
+    }
   },
   "language": {
     "select": "Idioma",

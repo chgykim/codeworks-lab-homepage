@@ -12,8 +12,9 @@
     "reviews": "التقييمات",
     "blog": "المدونة",
     "admin": "الإدارة",
-    "login": "تسجيل دخول المشرف",
-    "logout": "تسجيل الخروج"
+    "login": "تسجيل الدخول",
+    "logout": "تسجيل الخروج",
+    "mypage": "حسابي"
   },
   "hero": {
     "title": "مساعدك",
@@ -243,10 +244,20 @@
       "subtitle": "لم تجد ما تبحث عنه؟ تواصل معنا وسنرد عليك قريباً.",
       "name": "الاسم",
       "email": "البريد الإلكتروني",
-      "subject": "الموضوع (اختياري)",
+      "subject": "الفئة",
       "message": "الرسالة",
       "send": "إرسال الرسالة",
-      "success": "تم إرسال الرسالة بنجاح. سنرد في أقرب وقت ممكن."
+      "success": "تم إرسال الرسالة بنجاح. سنرد في أقرب وقت ممكن.",
+      "selectCategory": "اختر فئة",
+      "categories": {
+        "appError": "خطأ في التطبيق",
+        "deviceSupport": "دعم الأجهزة",
+        "countryLanguage": "البلد/اللغة",
+        "improvement": "تحسين",
+        "featureRequest": "طلب ميزة",
+        "appDevelopment": "تطوير التطبيقات",
+        "other": "أخرى"
+      }
     }
   },
   "faq": {
@@ -528,7 +539,78 @@
     "search": "بحث",
     "filter": "تصفية",
     "noData": "لا توجد بيانات",
-    "required": "مطلوب"
+    "required": "مطلوب",
+    "optional": "اختياري",
+    "prev": "السابق",
+    "next": "التالي"
+  },
+  "auth": {
+    "login": "تسجيل الدخول",
+    "register": "إنشاء حساب",
+    "logout": "تسجيل الخروج",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "name": "الاسم",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "emailPlaceholder": "أدخل بريدك الإلكتروني",
+    "passwordPlaceholder": "أدخل كلمة المرور",
+    "namePlaceholder": "أدخل اسمك",
+    "confirmPasswordPlaceholder": "أكد كلمة المرور",
+    "loginSubtitle": "سجل الدخول إلى حسابك",
+    "registerSubtitle": "إنشاء حساب جديد",
+    "noAccount": "ليس لديك حساب؟",
+    "hasAccount": "لديك حساب بالفعل؟",
+    "loginFailed": "فشل تسجيل الدخول",
+    "registerFailed": "فشل التسجيل",
+    "invalidEmail": "يرجى إدخال بريد إلكتروني صالح",
+    "emailTaken": "هذا البريد الإلكتروني مسجل بالفعل",
+    "passwordMinLength": "يجب أن تتكون كلمة المرور من 8 أحرف على الأقل",
+    "passwordRequirements": "يجب أن تحتوي كلمة المرور على أحرف كبيرة وصغيرة وأرقام",
+    "passwordMismatch": "كلمات المرور غير متطابقة",
+    "passwordMin8": "8+ أحرف",
+    "passwordLowercase": "حرف صغير",
+    "passwordUppercase": "حرف كبير",
+    "passwordNumber": "رقم"
+  },
+  "mypage": {
+    "title": "حسابي",
+    "subtitle": "إدارة حسابك",
+    "noName": "بدون اسم",
+    "joined": "تاريخ الانضمام: {{date}}",
+    "reviews": "التقييمات",
+    "inquiries": "الاستفسارات",
+    "changePassword": "تغيير كلمة المرور",
+    "myReviews": "تقييماتي",
+    "myInquiries": "استفساراتي",
+    "deleteAccount": "حذف الحساب",
+    "deleteAccountTitle": "حذف الحساب",
+    "deleteWarning": "لا يمكن التراجع عن هذا الإجراء. هل أنت متأكد من حذف حسابك؟",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "deleteFailed": "فشل حذف الحساب",
+    "currentPassword": "كلمة المرور الحالية",
+    "newPassword": "كلمة المرور الجديدة",
+    "passwordChanged": "تم تغيير كلمة المرور بنجاح",
+    "totalReviews": "{{count}} تقييمات",
+    "noReviews": "لا توجد تقييمات بعد",
+    "noReviewsDesc": "اكتب تقييماً وشارك تجربتك!",
+    "writeReview": "اكتب تقييماً",
+    "deleteReviewTitle": "حذف التقييم",
+    "deleteReviewConfirm": "هل أنت متأكد من حذف هذا التقييم؟",
+    "totalInquiries": "{{count}} استفسارات",
+    "noInquiries": "لا توجد استفسارات بعد",
+    "noInquiriesDesc": "لديك أسئلة؟ تواصل معنا!",
+    "goToContact": "اتصل بنا",
+    "noSubject": "بدون موضوع",
+    "status": {
+      "pending": "قيد الانتظار",
+      "approved": "موافق عليه",
+      "rejected": "مرفوض"
+    },
+    "inquiryStatus": {
+      "unread": "غير مقروء",
+      "read": "مقروء",
+      "replied": "تم الرد"
+    }
   },
   "language": {
     "select": "اللغة",

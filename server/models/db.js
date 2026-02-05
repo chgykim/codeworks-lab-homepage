@@ -13,7 +13,11 @@ CREATE TABLE IF NOT EXISTS users (
     id SERIAL PRIMARY KEY,
     email VARCHAR(255) UNIQUE NOT NULL,
     password VARCHAR(255) NOT NULL,
+    name VARCHAR(100),
     role VARCHAR(20) DEFAULT 'user' CHECK(role IN ('user', 'admin')),
+    login_attempts INTEGER DEFAULT 0,
+    locked_until TIMESTAMP,
+    deleted_at TIMESTAMP,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
@@ -34,6 +38,7 @@ CREATE TABLE IF NOT EXISTS reviews (
     content TEXT NOT NULL,
     status VARCHAR(20) DEFAULT 'pending' CHECK(status IN ('pending', 'approved', 'rejected')),
     ip_address VARCHAR(45),
+    user_id INTEGER REFERENCES users(id) ON DELETE SET NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
@@ -75,6 +80,7 @@ CREATE TABLE IF NOT EXISTS contact_submissions (
     message TEXT NOT NULL,
     status VARCHAR(20) DEFAULT 'unread' CHECK(status IN ('unread', 'read', 'replied')),
     ip_address VARCHAR(45),
+    user_id INTEGER REFERENCES users(id) ON DELETE SET NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -133,23 +139,26 @@ async function initializeDatabase() {
 // User operations
 const userModel = {
     findByEmail: async (email) => {
-        const result = await pool.query('SELECT * FROM users WHERE email = $1', [email]);
+        const result = await pool.query(
+            'SELECT * FROM users WHERE email = $1 AND deleted_at IS NULL',
+            [email]
+        );
         return result.rows[0];
     },
 
     findById: async (id) => {
         const result = await pool.query(
-            'SELECT id, email, role, created_at FROM users WHERE id = $1',
+            'SELECT id, email, name, role, created_at FROM users WHERE id = $1 AND deleted_at IS NULL',
             [id]
         );
         return result.rows[0];
     },
 
-    create: async (email, password, role = 'user') => {
+    create: async (email, password, name = null, role = 'user') => {
         const hashedPassword = bcrypt.hashSync(password, 12);
         const result = await pool.query(
-            'INSERT INTO users (email, password, role) VALUES ($1, $2, $3) RETURNING id',
-            [email, hashedPassword, role]
+            'INSERT INTO users (email, password, name, role) VALUES ($1, $2, $3, $4) RETURNING id',
+            [email, hashedPassword, name, role]
         );
         return result.rows[0].id;
     },
@@ -160,6 +169,57 @@ const userModel = {
             'UPDATE users SET password = $1, updated_at = CURRENT_TIMESTAMP WHERE id = $2',
             [hashedPassword, id]
         );
+    },
+
+    updateProfile: async (id, name) => {
+        await pool.query(
+            'UPDATE users SET name = $1, updated_at = CURRENT_TIMESTAMP WHERE id = $2',
+            [name, id]
+        );
+    },
+
+    softDelete: async (id) => {
+        await pool.query(
+            'UPDATE users SET deleted_at = CURRENT_TIMESTAMP WHERE id = $1',
+            [id]
+        );
+    },
+
+    checkPassword: async (user, password) => {
+        return bcrypt.compareSync(password, user.password);
+    },
+
+    incrementLoginAttempts: async (id) => {
+        await pool.query(
+            'UPDATE users SET login_attempts = login_attempts + 1 WHERE id = $1',
+            [id]
+        );
+    },
+
+    resetLoginAttempts: async (id) => {
+        await pool.query(
+            'UPDATE users SET login_attempts = 0, locked_until = NULL WHERE id = $1',
+            [id]
+        );
+    },
+
+    lockAccount: async (id, minutes = 15) => {
+        await pool.query(
+            `UPDATE users SET locked_until = NOW() + INTERVAL '${minutes} minutes' WHERE id = $1`,
+            [id]
+        );
+    },
+
+    isLocked: (user) => {
+        return user.locked_until && new Date(user.locked_until) > new Date();
+    },
+
+    emailExists: async (email) => {
+        const result = await pool.query(
+            'SELECT id FROM users WHERE email = $1 AND deleted_at IS NULL',
+            [email]
+        );
+        return result.rows.length > 0;
     }
 };
 
@@ -222,11 +282,11 @@ const reviewModel = {
         return result.rows[0];
     },
 
-    create: async (authorName, email, rating, content, ipAddress) => {
+    create: async (authorName, email, rating, content, ipAddress, userId = null) => {
         const result = await pool.query(
-            `INSERT INTO reviews (author_name, email, rating, content, ip_address)
-             VALUES ($1, $2, $3, $4, $5) RETURNING id`,
-            [authorName, email, rating, content, ipAddress]
+            `INSERT INTO reviews (author_name, email, rating, content, ip_address, user_id)
+             VALUES ($1, $2, $3, $4, $5, $6) RETURNING id`,
+            [authorName, email, rating, content, ipAddress, userId]
         );
         return result.rows[0].id;
     },
@@ -393,11 +453,11 @@ const statsModel = {
 
 // Contact form operations
 const contactModel = {
-    create: async (name, email, subject, message, ipAddress) => {
+    create: async (name, email, subject, message, ipAddress, userId = null) => {
         const result = await pool.query(
-            `INSERT INTO contact_submissions (name, email, subject, message, ip_address)
-             VALUES ($1, $2, $3, $4, $5) RETURNING id`,
-            [name, email, subject, message, ipAddress]
+            `INSERT INTO contact_submissions (name, email, subject, message, ip_address, user_id)
+             VALUES ($1, $2, $3, $4, $5, $6) RETURNING id`,
+            [name, email, subject, message, ipAddress, userId]
         );
         return result.rows[0].id;
     },

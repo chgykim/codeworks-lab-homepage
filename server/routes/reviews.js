@@ -5,6 +5,7 @@ const { reviewModel, statsModel } = require('../models/db');
 const { validateReview, validateId, validatePagination } = require('../middleware/validator');
 const { reviewLimiter } = require('../config/security');
 const { asyncHandler } = require('../middleware/errorHandler');
+const { optionalAuthenticateToken } = require('../middleware/auth');
 
 // GET /api/reviews - Get approved reviews (public)
 router.get('/', validatePagination, asyncHandler(async (req, res) => {
@@ -60,11 +61,12 @@ router.get('/:id', validateId, asyncHandler(async (req, res) => {
 }));
 
 // POST /api/reviews - Submit new review
-router.post('/', reviewLimiter, validateReview, asyncHandler(async (req, res) => {
+router.post('/', reviewLimiter, optionalAuthenticateToken, validateReview, asyncHandler(async (req, res) => {
     const { authorName, email, rating, content } = req.body;
     const ip = req.ip || 'unknown';
+    const userId = req.user?.id || null;
 
-    const reviewId = await reviewModel.create(authorName, email, rating, content, ip);
+    const reviewId = await reviewModel.create(authorName, email, rating, content, ip, userId);
 
     // Track page visit
     await statsModel.recordVisit('/reviews', ip, req.headers['user-agent']);

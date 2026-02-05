@@ -12,8 +12,9 @@
     "reviews": "评价",
     "blog": "博客",
     "admin": "管理",
-    "login": "管理员登录",
-    "logout": "退出登录"
+    "login": "登录",
+    "logout": "退出登录",
+    "mypage": "我的"
   },
   "hero": {
     "title": "您的日常",
@@ -243,10 +244,20 @@
       "subtitle": "找不到您需要的信息？联系我们，我们会尽快回复。",
       "name": "姓名",
       "email": "邮箱",
-      "subject": "主题（选填）",
+      "subject": "类别",
       "message": "留言",
       "send": "发送消息",
-      "success": "消息发送成功。我们会尽快回复您。"
+      "success": "消息发送成功。我们会尽快回复您。",
+      "selectCategory": "选择类别",
+      "categories": {
+        "appError": "应用错误",
+        "deviceSupport": "设备支持",
+        "countryLanguage": "国家/语言",
+        "improvement": "改进建议",
+        "featureRequest": "功能请求",
+        "appDevelopment": "应用开发",
+        "other": "其他"
+      }
     }
   },
   "faq": {
@@ -528,7 +539,78 @@
     "search": "搜索",
     "filter": "筛选",
     "noData": "暂无数据",
-    "required": "必填"
+    "required": "必填",
+    "optional": "选填",
+    "prev": "上一步",
+    "next": "下一步"
+  },
+  "auth": {
+    "login": "登录",
+    "register": "注册",
+    "logout": "退出登录",
+    "email": "邮箱",
+    "password": "密码",
+    "name": "姓名",
+    "confirmPassword": "确认密码",
+    "emailPlaceholder": "请输入邮箱",
+    "passwordPlaceholder": "请输入密码",
+    "namePlaceholder": "请输入姓名",
+    "confirmPasswordPlaceholder": "请再次输入密码",
+    "loginSubtitle": "登录您的账户",
+    "registerSubtitle": "创建新账户",
+    "noAccount": "还没有账户？",
+    "hasAccount": "已有账户？",
+    "loginFailed": "登录失败",
+    "registerFailed": "注册失败",
+    "invalidEmail": "请输入有效的邮箱",
+    "emailTaken": "该邮箱已被注册",
+    "passwordMinLength": "密码至少需要8个字符",
+    "passwordRequirements": "密码必须包含大写字母、小写字母和数字",
+    "passwordMismatch": "密码不匹配",
+    "passwordMin8": "8个字符以上",
+    "passwordLowercase": "包含小写字母",
+    "passwordUppercase": "包含大写字母",
+    "passwordNumber": "包含数字"
+  },
+  "mypage": {
+    "title": "我的",
+    "subtitle": "管理您的账户",
+    "noName": "未设置姓名",
+    "joined": "注册日期: {{date}}",
+    "reviews": "评价",
+    "inquiries": "咨询",
+    "changePassword": "修改密码",
+    "myReviews": "我的评价",
+    "myInquiries": "我的咨询",
+    "deleteAccount": "删除账户",
+    "deleteAccountTitle": "删除账户",
+    "deleteWarning": "此操作无法撤销。确定要删除您的账户吗？",
+    "confirmPassword": "确认密码",
+    "deleteFailed": "账户删除失败",
+    "currentPassword": "当前密码",
+    "newPassword": "新密码",
+    "passwordChanged": "密码修改成功",
+    "totalReviews": "{{count}}条评价",
+    "noReviews": "暂无评价",
+    "noReviewsDesc": "写一条评价分享您的体验吧！",
+    "writeReview": "写评价",
+    "deleteReviewTitle": "删除评价",
+    "deleteReviewConfirm": "确定要删除这条评价吗？",
+    "totalInquiries": "{{count}}条咨询",
+    "noInquiries": "暂无咨询",
+    "noInquiriesDesc": "有问题？联系我们！",
+    "goToContact": "联系我们",
+    "noSubject": "无主题",
+    "status": {
+      "pending": "待审核",
+      "approved": "已通过",
+      "rejected": "已拒绝"
+    },
+    "inquiryStatus": {
+      "unread": "未读",
+      "read": "已读",
+      "replied": "已回复"
+    }
   },
   "language": {
     "select": "语言",

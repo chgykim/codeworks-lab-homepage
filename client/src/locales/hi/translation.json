@@ -12,8 +12,9 @@
     "reviews": "समीक्षाएं",
     "blog": "ब्लॉग",
     "admin": "एडमिन",
-    "login": "एडमिन लॉगिन",
-    "logout": "लॉग आउट"
+    "login": "लॉगिन",
+    "logout": "लॉग आउट",
+    "mypage": "मेरा खाता"
   },
   "hero": {
     "title": "आपका दैनिक",
@@ -243,10 +244,20 @@
       "subtitle": "जो खोज रहे हैं वह नहीं मिल रहा? हमसे संपर्क करें और हम जल्द ही जवाब देंगे।",
       "name": "नाम",
       "email": "ईमेल",
-      "subject": "विषय (वैकल्पिक)",
+      "subject": "श्रेणी",
       "message": "संदेश",
       "send": "संदेश भेजें",
-      "success": "संदेश सफलतापूर्वक भेजा गया। हम जल्द से जल्द जवाब देंगे।"
+      "success": "संदेश सफलतापूर्वक भेजा गया। हम जल्द से जल्द जवाब देंगे।",
+      "selectCategory": "श्रेणी चुनें",
+      "categories": {
+        "appError": "ऐप त्रुटि",
+        "deviceSupport": "डिवाइस सपोर्ट",
+        "countryLanguage": "देश/भाषा",
+        "improvement": "सुधार",
+        "featureRequest": "फीचर अनुरोध",
+        "appDevelopment": "ऐप विकास",
+        "other": "अन्य"
+      }
     }
   },
   "faq": {
@@ -528,7 +539,78 @@
     "search": "खोजें",
     "filter": "फ़िल्टर",
     "noData": "कोई डेटा उपलब्ध नहीं",
-    "required": "आवश्यक"
+    "required": "आवश्यक",
+    "optional": "वैकल्पिक",
+    "prev": "पिछला",
+    "next": "अगला"
+  },
+  "auth": {
+    "login": "लॉगिन",
+    "register": "रजिस्टर",
+    "logout": "लॉग आउट",
+    "email": "ईमेल",
+    "password": "पासवर्ड",
+    "name": "नाम",
+    "confirmPassword": "पासवर्ड की पुष्टि करें",
+    "emailPlaceholder": "अपना ईमेल दर्ज करें",
+    "passwordPlaceholder": "अपना पासवर्ड दर्ज करें",
+    "namePlaceholder": "अपना नाम दर्ज करें",
+    "confirmPasswordPlaceholder": "अपना पासवर्ड पुष्टि करें",
+    "loginSubtitle": "अपने खाते में साइन इन करें",
+    "registerSubtitle": "एक नया खाता बनाएं",
+    "noAccount": "खाता नहीं है?",
+    "hasAccount": "पहले से खाता है?",
+    "loginFailed": "लॉगिन विफल",
+    "registerFailed": "पंजीकरण विफल",
+    "invalidEmail": "कृपया एक वैध ईमेल दर्ज करें",
+    "emailTaken": "यह ईमेल पहले से पंजीकृत है",
+    "passwordMinLength": "पासवर्ड कम से कम 8 अक्षरों का होना चाहिए",
+    "passwordRequirements": "पासवर्ड में अपरकेस, लोअरकेस और नंबर होने चाहिए",
+    "passwordMismatch": "पासवर्ड मेल नहीं खाते",
+    "passwordMin8": "8+ अक्षर",
+    "passwordLowercase": "छोटा अक्षर",
+    "passwordUppercase": "बड़ा अक्षर",
+    "passwordNumber": "नंबर"
+  },
+  "mypage": {
+    "title": "मेरा खाता",
+    "subtitle": "अपना खाता प्रबंधित करें",
+    "noName": "कोई नाम नहीं",
+    "joined": "शामिल हुए: {{date}}",
+    "reviews": "समीक्षाएं",
+    "inquiries": "पूछताछ",
+    "changePassword": "पासवर्ड बदलें",
+    "myReviews": "मेरी समीक्षाएं",
+    "myInquiries": "मेरी पूछताछ",
+    "deleteAccount": "खाता हटाएं",
+    "deleteAccountTitle": "खाता हटाएं",
+    "deleteWarning": "यह क्रिया पूर्ववत नहीं की जा सकती। क्या आप वाकई अपना खाता हटाना चाहते हैं?",
+    "confirmPassword": "पासवर्ड की पुष्टि करें",
+    "deleteFailed": "खाता हटाने में विफल",
+    "currentPassword": "वर्तमान पासवर्ड",
+    "newPassword": "नया पासवर्ड",
+    "passwordChanged": "पासवर्ड सफलतापूर्वक बदला गया",
+    "totalReviews": "{{count}} समीक्षाएं",
+    "noReviews": "अभी तक कोई समीक्षा नहीं",
+    "noReviewsDesc": "अपना अनुभव साझा करने के लिए समीक्षा लिखें!",
+    "writeReview": "समीक्षा लिखें",
+    "deleteReviewTitle": "समीक्षा हटाएं",
+    "deleteReviewConfirm": "क्या आप वाकई इस समीक्षा को हटाना चाहते हैं?",
+    "totalInquiries": "{{count}} पूछताछ",
+    "noInquiries": "अभी तक कोई पूछताछ नहीं",
+    "noInquiriesDesc": "प्रश्न हैं? हमसे संपर्क करें!",
+    "goToContact": "संपर्क करें",
+    "noSubject": "कोई विषय नहीं",
+    "status": {
+      "pending": "लंबित",
+      "approved": "स्वीकृत",
+      "rejected": "अस्वीकृत"
+    },
+    "inquiryStatus": {
+      "unread": "अपठित",
+      "read": "पढ़ा गया",
+      "replied": "उत्तर दिया गया"
+    }
   },
   "language": {
     "select": "भाषा",

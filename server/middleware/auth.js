@@ -105,5 +105,6 @@ module.exports = {
     authenticateToken,
     requireAdmin,
     optionalAuth,
+    optionalAuthenticateToken: optionalAuth,
     cookieOptions
 };

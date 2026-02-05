@@ -12,8 +12,9 @@
     "reviews": "レビュー",
     "blog": "ブログ",
     "admin": "管理者",
-    "login": "管理者ログイン",
-    "logout": "ログアウト"
+    "login": "ログイン",
+    "logout": "ログアウト",
+    "mypage": "マイページ"
   },
   "hero": {
     "title": "あなたの毎日の",
@@ -243,10 +244,20 @@
       "subtitle": "お探しの情報が見つからない場合はお問い合わせください。できるだけ早くご返答いたします。",
       "name": "名前",
       "email": "メール",
-      "subject": "件名（任意）",
+      "subject": "カテゴリ",
       "message": "メッセージ",
       "send": "送信",
-      "success": "メッセージが正常に送信されました。できるだけ早くご返答いたします。"
+      "success": "メッセージが正常に送信されました。できるだけ早くご返答いたします。",
+      "selectCategory": "カテゴリを選択",
+      "categories": {
+        "appError": "アプリのエラー",
+        "deviceSupport": "デバイスサポート",
+        "countryLanguage": "国/言語",
+        "improvement": "改善提案",
+        "featureRequest": "機能リクエスト",
+        "appDevelopment": "アプリ開発",
+        "other": "その他"
+      }
     }
   },
   "faq": {
@@ -528,7 +539,78 @@
     "search": "検索",
     "filter": "フィルター",
     "noData": "データがありません",
-    "required": "必須"
+    "required": "必須",
+    "optional": "任意",
+    "prev": "前へ",
+    "next": "次へ"
+  },
+  "auth": {
+    "login": "ログイン",
+    "register": "新規登録",
+    "logout": "ログアウト",
+    "email": "メールアドレス",
+    "password": "パスワード",
+    "name": "名前",
+    "confirmPassword": "パスワード確認",
+    "emailPlaceholder": "メールアドレスを入力",
+    "passwordPlaceholder": "パスワードを入力",
+    "namePlaceholder": "名前を入力",
+    "confirmPasswordPlaceholder": "パスワードを再入力",
+    "loginSubtitle": "アカウントにログイン",
+    "registerSubtitle": "新しいアカウントを作成",
+    "noAccount": "アカウントをお持ちでないですか？",
+    "hasAccount": "すでにアカウントをお持ちですか？",
+    "loginFailed": "ログインに失敗しました",
+    "registerFailed": "登録に失敗しました",
+    "invalidEmail": "有効なメールアドレスを入力してください",
+    "emailTaken": "このメールアドレスは既に登録されています",
+    "passwordMinLength": "パスワードは8文字以上である必要があります",
+    "passwordRequirements": "パスワードには大文字、小文字、数字を含める必要があります",
+    "passwordMismatch": "パスワードが一致しません",
+    "passwordMin8": "8文字以上",
+    "passwordLowercase": "小文字を含む",
+    "passwordUppercase": "大文字を含む",
+    "passwordNumber": "数字を含む"
+  },
+  "mypage": {
+    "title": "マイページ",
+    "subtitle": "アカウントを管理",
+    "noName": "名前未設定",
+    "joined": "登録日: {{date}}",
+    "reviews": "レビュー",
+    "inquiries": "お問い合わせ",
+    "changePassword": "パスワード変更",
+    "myReviews": "マイレビュー",
+    "myInquiries": "マイお問い合わせ",
+    "deleteAccount": "アカウント削除",
+    "deleteAccountTitle": "アカウント削除",
+    "deleteWarning": "この操作は取り消せません。本当にアカウントを削除しますか？",
+    "confirmPassword": "パスワード確認",
+    "deleteFailed": "アカウントの削除に失敗しました",
+    "currentPassword": "現在のパスワード",
+    "newPassword": "新しいパスワード",
+    "passwordChanged": "パスワードが正常に変更されました",
+    "totalReviews": "{{count}}件のレビュー",
+    "noReviews": "まだレビューがありません",
+    "noReviewsDesc": "体験を共有するレビューを書いてみましょう！",
+    "writeReview": "レビューを書く",
+    "deleteReviewTitle": "レビュー削除",
+    "deleteReviewConfirm": "このレビューを削除してもよろしいですか？",
+    "totalInquiries": "{{count}}件のお問い合わせ",
+    "noInquiries": "まだお問い合わせがありません",
+    "noInquiriesDesc": "質問がありますか？お問い合わせください！",
+    "goToContact": "お問い合わせ",
+    "noSubject": "件名なし",
+    "status": {
+      "pending": "保留中",
+      "approved": "承認済み",
+      "rejected": "却下"
+    },
+    "inquiryStatus": {
+      "unread": "未読",
+      "read": "既読",
+      "replied": "返信済み"
+    }
   },
   "language": {
     "select": "言語",

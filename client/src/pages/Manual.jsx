@@ -170,13 +170,21 @@ function Manual() {
 
                             <div className="form-group">
                                 <label className="form-label">{t('manual.contact.subject')}</label>
-                                <input
-                                    type="text"
+                                <select
                                     name="subject"
                                     value={contactForm.subject}
                                     onChange={handleContactChange}
                                     className="form-input"
-                                />
+                                >
+                                    <option value="">{t('manual.contact.selectCategory')}</option>
+                                    <option value="appError">{t('manual.contact.categories.appError')}</option>
+                                    <option value="deviceSupport">{t('manual.contact.categories.deviceSupport')}</option>
+                                    <option value="countryLanguage">{t('manual.contact.categories.countryLanguage')}</option>
+                                    <option value="improvement">{t('manual.contact.categories.improvement')}</option>
+                                    <option value="featureRequest">{t('manual.contact.categories.featureRequest')}</option>
+                                    <option value="appDevelopment">{t('manual.contact.categories.appDevelopment')}</option>
+                                    <option value="other">{t('manual.contact.categories.other')}</option>
+                                </select>
                             </div>
 
                             <div className="form-group">

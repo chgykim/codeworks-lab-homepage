@@ -12,8 +12,9 @@
     "reviews": "Bewertungen",
     "blog": "Blog",
     "admin": "Admin",
-    "login": "Admin Login",
-    "logout": "Abmelden"
+    "login": "Anmelden",
+    "logout": "Abmelden",
+    "mypage": "Mein Konto"
   },
   "hero": {
     "title": "Ihr Alltags-",
@@ -243,10 +244,20 @@
       "subtitle": "Finden Sie nicht was Sie suchen? Kontaktieren Sie uns und wir antworten bald.",
       "name": "Name",
       "email": "E-Mail",
-      "subject": "Betreff (optional)",
+      "subject": "Kategorie",
       "message": "Nachricht",
       "send": "Nachricht Senden",
-      "success": "Nachricht erfolgreich gesendet. Wir antworten so schnell wie möglich."
+      "success": "Nachricht erfolgreich gesendet. Wir antworten so schnell wie möglich.",
+      "selectCategory": "Kategorie auswählen",
+      "categories": {
+        "appError": "App-Fehler",
+        "deviceSupport": "Geräte-Support",
+        "countryLanguage": "Land/Sprache",
+        "improvement": "Verbesserung",
+        "featureRequest": "Funktionsanfrage",
+        "appDevelopment": "App-Entwicklung",
+        "other": "Sonstiges"
+      }
     }
   },
   "faq": {
@@ -528,7 +539,78 @@
     "search": "Suchen",
     "filter": "Filtern",
     "noData": "Keine Daten verfügbar",
-    "required": "Erforderlich"
+    "required": "Erforderlich",
+    "optional": "Optional",
+    "prev": "Zurück",
+    "next": "Weiter"
+  },
+  "auth": {
+    "login": "Anmelden",
+    "register": "Registrieren",
+    "logout": "Abmelden",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "name": "Name",
+    "confirmPassword": "Passwort bestätigen",
+    "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
+    "passwordPlaceholder": "Geben Sie Ihr Passwort ein",
+    "namePlaceholder": "Geben Sie Ihren Namen ein",
+    "confirmPasswordPlaceholder": "Bestätigen Sie Ihr Passwort",
+    "loginSubtitle": "Melden Sie sich bei Ihrem Konto an",
+    "registerSubtitle": "Erstellen Sie ein neues Konto",
+    "noAccount": "Noch kein Konto?",
+    "hasAccount": "Bereits ein Konto?",
+    "loginFailed": "Anmeldung fehlgeschlagen",
+    "registerFailed": "Registrierung fehlgeschlagen",
+    "invalidEmail": "Bitte geben Sie eine gültige E-Mail ein",
+    "emailTaken": "Diese E-Mail ist bereits registriert",
+    "passwordMinLength": "Passwort muss mindestens 8 Zeichen lang sein",
+    "passwordRequirements": "Passwort muss Großbuchstaben, Kleinbuchstaben und Zahlen enthalten",
+    "passwordMismatch": "Passwörter stimmen nicht überein",
+    "passwordMin8": "8+ Zeichen",
+    "passwordLowercase": "Kleinbuchstabe",
+    "passwordUppercase": "Großbuchstabe",
+    "passwordNumber": "Zahl"
+  },
+  "mypage": {
+    "title": "Mein Konto",
+    "subtitle": "Verwalten Sie Ihr Konto",
+    "noName": "Kein Name",
+    "joined": "Beigetreten: {{date}}",
+    "reviews": "Bewertungen",
+    "inquiries": "Anfragen",
+    "changePassword": "Passwort ändern",
+    "myReviews": "Meine Bewertungen",
+    "myInquiries": "Meine Anfragen",
+    "deleteAccount": "Konto löschen",
+    "deleteAccountTitle": "Konto löschen",
+    "deleteWarning": "Diese Aktion kann nicht rückgängig gemacht werden. Sind Sie sicher, dass Sie Ihr Konto löschen möchten?",
+    "confirmPassword": "Passwort bestätigen",
+    "deleteFailed": "Konto konnte nicht gelöscht werden",
+    "currentPassword": "Aktuelles Passwort",
+    "newPassword": "Neues Passwort",
+    "passwordChanged": "Passwort erfolgreich geändert",
+    "totalReviews": "{{count}} Bewertungen",
+    "noReviews": "Noch keine Bewertungen",
+    "noReviewsDesc": "Schreiben Sie eine Bewertung, um Ihre Erfahrung zu teilen!",
+    "writeReview": "Bewertung schreiben",
+    "deleteReviewTitle": "Bewertung löschen",
+    "deleteReviewConfirm": "Sind Sie sicher, dass Sie diese Bewertung löschen möchten?",
+    "totalInquiries": "{{count}} Anfragen",
+    "noInquiries": "Noch keine Anfragen",
+    "noInquiriesDesc": "Haben Sie Fragen? Kontaktieren Sie uns!",
+    "goToContact": "Kontaktieren Sie uns",
+    "noSubject": "Kein Betreff",
+    "status": {
+      "pending": "Ausstehend",
+      "approved": "Genehmigt",
+      "rejected": "Abgelehnt"
+    },
+    "inquiryStatus": {
+      "unread": "Ungelesen",
+      "read": "Gelesen",
+      "replied": "Beantwortet"
+    }
   },
   "language": {
     "select": "Sprache",

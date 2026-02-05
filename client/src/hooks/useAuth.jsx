@@ -50,6 +50,28 @@ export function AuthProvider({ children }) {
         return () => unsubscribe();
     }, []);
 
+    // Email/password login
+    const login = async (email, password) => {
+        const response = await api.post('/auth/login', { email, password });
+        const { user: serverUser, token } = response.data;
+
+        localStorage.setItem('authToken', token);
+        setUser(serverUser);
+
+        return serverUser;
+    };
+
+    // Register new user
+    const register = async (email, password, name) => {
+        const response = await api.post('/auth/register', { email, password, name });
+        const { user: serverUser, token } = response.data;
+
+        localStorage.setItem('authToken', token);
+        setUser(serverUser);
+
+        return serverUser;
+    };
+
     // Google login
     const loginWithGoogle = async () => {
         const result = await signInWithGoogle();
@@ -95,12 +117,19 @@ export function AuthProvider({ children }) {
         return user?.role === 'admin';
     };
 
+    const isLoggedIn = () => {
+        return !!user;
+    };
+
     const value = {
         user,
         loading,
+        login,
+        register,
         loginWithGoogle,
         logout,
-        isAdmin
+        isAdmin,
+        isLoggedIn
     };
 
     return (

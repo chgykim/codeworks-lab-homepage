@@ -5,13 +5,15 @@ const { contactModel, settingsModel } = require('../models/db');
 const { validateContact } = require('../middleware/validator');
 const { contactLimiter } = require('../config/security');
 const { asyncHandler } = require('../middleware/errorHandler');
+const { optionalAuthenticateToken } = require('../middleware/auth');
 
 // POST /api/contact - Submit contact form
-router.post('/', contactLimiter, validateContact, asyncHandler(async (req, res) => {
+router.post('/', contactLimiter, optionalAuthenticateToken, validateContact, asyncHandler(async (req, res) => {
     const { name, email, subject, message } = req.body;
     const ip = req.ip || 'unknown';
+    const userId = req.user?.id || null;
 
-    const submissionId = await contactModel.create(name, email, subject, message, ip);
+    const submissionId = await contactModel.create(name, email, subject, message, ip, userId);
 
     res.status(201).json({
         message: 'Your message has been sent. We will get back to you soon.',
