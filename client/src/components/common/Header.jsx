@@ -77,7 +77,7 @@ function Header() {
                                     className="btn btn-primary btn-sm"
                                     onClick={() => setIsMenuOpen(false)}
                                 >
-                                    {t('nav.adminLogin') || 'Admin'}
+                                    Admin
                                 </Link>
                             )}
                         </div>
