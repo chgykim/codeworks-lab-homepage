@@ -615,8 +615,27 @@ Render 대시보드 → codeworks-lab-homepage → Environment
 2. 새 공지사항 작성 (상태: **게시됨**)
 3. 이메일 발송 버튼(✈️) 클릭
 4. Render 로그에서 결과 확인:
-   - ✅ 성공: `Email sent successfully to: xxx@xxx.com`
-   - ❌ 실패: `Failed to send email to xxx: Connection timeout`
+
+**상세 로그 (2026-02-05 추가됨):**
+```
+[EmailService] Starting email send process...
+[EmailService] SMTP_USER: SET (또는 NOT SET)
+[EmailService] SMTP_PASS: SET (또는 NOT SET)
+[EmailService] Verifying SMTP connection...
+[EmailService] SMTP connection verified successfully  ← 연결 성공
+[EmailService] Found 3 users to send email to
+Email sent successfully to: xxx@xxx.com
+```
+
+**에러 발생 시:**
+```
+[EmailService] SMTP connection failed: Connection timeout  ← 포트 차단됨
+```
+
+**결과 해석:**
+- ✅ `SMTP connection verified` → 연결 성공, 이메일 발송 시작
+- ❌ `SMTP connection failed` → Render에서 포트 465도 차단됨
+- ⚠️ `SMTP_USER: NOT SET` → 환경변수 미설정
 
 ### 3. Gmail SMTP 포트 465도 안 될 경우
 Render 무료 플랜에서 포트 465도 차단되어 있을 수 있음.
