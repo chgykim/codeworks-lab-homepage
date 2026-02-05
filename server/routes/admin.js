@@ -390,7 +390,7 @@ router.post('/announcements', asyncHandler(async (req, res) => {
         type,
         title.trim(),
         content.trim(),
-        req.user.id,
+        null,  // author_id - Firebase UID is not compatible with INTEGER
         announcementStatus
     );
 
