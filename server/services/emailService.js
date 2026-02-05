@@ -98,8 +98,24 @@ const generateEmailTemplate = (announcement) => {
 
 // Send email to all users in batches
 const sendAnnouncementEmail = async (announcement) => {
+    console.log('[EmailService] Starting email send process...');
+    console.log('[EmailService] SMTP_USER:', process.env.SMTP_USER ? 'SET' : 'NOT SET');
+    console.log('[EmailService] SMTP_PASS:', process.env.SMTP_PASS ? 'SET' : 'NOT SET');
+
     const transporter = createTransporter();
+
+    // Verify connection first
+    try {
+        console.log('[EmailService] Verifying SMTP connection...');
+        await transporter.verify();
+        console.log('[EmailService] SMTP connection verified successfully');
+    } catch (verifyError) {
+        console.error('[EmailService] SMTP connection failed:', verifyError.message);
+        return { success: false, sent: 0, total: 0, error: verifyError.message };
+    }
+
     const emails = await getAllUserEmails();
+    console.log('[EmailService] Found', emails.length, 'users to send email to');
 
     if (emails.length === 0) {
         return { success: true, sent: 0, total: 0, message: 'No users to send email to' };
