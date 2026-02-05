@@ -114,7 +114,7 @@ async function initializeDatabase() {
         await client.query(schema);
 
         // Migration: Add missing columns to users table
-        const columnsToAdd = [
+        const userColumns = [
             { name: 'name', type: 'VARCHAR(100)' },
             { name: 'login_attempts', type: 'INTEGER DEFAULT 0' },
             { name: 'locked_until', type: 'TIMESTAMP' },
@@ -122,7 +122,7 @@ async function initializeDatabase() {
             { name: 'updated_at', type: 'TIMESTAMP DEFAULT CURRENT_TIMESTAMP' }
         ];
 
-        for (const col of columnsToAdd) {
+        for (const col of userColumns) {
             const columnCheck = await client.query(`
                 SELECT column_name FROM information_schema.columns
                 WHERE table_name = 'users' AND column_name = $1
@@ -133,6 +133,43 @@ async function initializeDatabase() {
                 console.log(`Added ${col.name} column to users table`);
             }
         }
+
+        // Migration: Add user_id column to reviews table
+        const reviewUserIdCheck = await client.query(`
+            SELECT column_name FROM information_schema.columns
+            WHERE table_name = 'reviews' AND column_name = 'user_id'
+        `);
+        if (reviewUserIdCheck.rows.length === 0) {
+            await client.query('ALTER TABLE reviews ADD COLUMN user_id INTEGER REFERENCES users(id) ON DELETE SET NULL');
+            console.log('Added user_id column to reviews table');
+        }
+
+        // Migration: Add user_id column to contact_submissions table
+        const contactUserIdCheck = await client.query(`
+            SELECT column_name FROM information_schema.columns
+            WHERE table_name = 'contact_submissions' AND column_name = 'user_id'
+        `);
+        if (contactUserIdCheck.rows.length === 0) {
+            await client.query('ALTER TABLE contact_submissions ADD COLUMN user_id INTEGER REFERENCES users(id) ON DELETE SET NULL');
+            console.log('Added user_id column to contact_submissions table');
+        }
+
+        // Migration: Create announcements table if not exists
+        await client.query(`
+            CREATE TABLE IF NOT EXISTS announcements (
+                id SERIAL PRIMARY KEY,
+                type VARCHAR(20) NOT NULL CHECK(type IN ('new_app', 'update', 'announcement')),
+                title VARCHAR(500) NOT NULL,
+                content TEXT NOT NULL,
+                status VARCHAR(20) DEFAULT 'draft' CHECK(status IN ('draft', 'published')),
+                email_sent BOOLEAN DEFAULT FALSE,
+                email_sent_at TIMESTAMP,
+                author_id INTEGER REFERENCES users(id),
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            )
+        `);
+        console.log('Ensured announcements table exists');
 
         // Create default admin user if not exists
         const adminEmail = process.env.ADMIN_EMAIL || 'admin@example.com';
