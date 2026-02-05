@@ -237,10 +237,8 @@ codeworks-lab-homepage/
 │   ├── src/
 │   │   ├── components/         # UI 컴포넌트
 │   │   ├── pages/              # 페이지 컴포넌트
-│   │   │   ├── auth/           # 인증 페이지 (Login, Register)
-│   │   │   ├── user/           # 사용자 페이지 (MyPage, ChangePassword, MyReviews, MyInquiries)
-│   │   │   └── admin/          # 관리자 페이지
-│   │   ├── hooks/useAuth.jsx   # 인증 훅 (로그인, 회원가입, 상태관리)
+│   │   │   └── admin/          # 관리자 페이지 (Dashboard, Login, ManageReviews 등)
+│   │   ├── hooks/useAuth.jsx   # 인증 훅 (관리자 Google 로그인)
 │   │   ├── locales/            # 다국어 번역 (11개 언어)
 │   │   └── utils/api.js        # API 통신
 │   ├── dist/                   # 빌드 결과물
@@ -248,10 +246,10 @@ codeworks-lab-homepage/
 │
 ├── server/                     # Express.js 서버
 │   ├── routes/                 # API 라우트
-│   │   ├── auth.js             # 인증 API (login, register)
-│   │   ├── user.js             # 사용자 API (profile, password, reviews, inquiries)
-│   │   └── ...                 # 기타 라우트
-│   ├── models/db.js            # PostgreSQL 연결 및 모델 (userModel 포함)
+│   │   ├── auth.js             # 인증 API (관리자 Google 로그인만)
+│   │   ├── admin.js            # 관리자 API
+│   │   └── ...                 # 기타 라우트 (reviews, blog, contact 등)
+│   ├── models/db.js            # PostgreSQL 연결 및 모델
 │   ├── middleware/             # 인증, 검증, 에러 처리
 │   ├── config/                 # 보안, Firebase 설정
 │   └── package.json
@@ -375,16 +373,6 @@ codeworks-lab-homepage/
 ---
 
 ## 홈페이지 관리 작업
-
-### 사용자 페이지 기능
-| 경로 | 기능 |
-|------|------|
-| `/login` | 일반 사용자 로그인 (이메일/비밀번호) |
-| `/register` | 회원가입 |
-| `/mypage` | 마이페이지 (프로필, 통계) |
-| `/mypage/password` | 비밀번호 변경 |
-| `/mypage/reviews` | 내 리뷰 관리 |
-| `/mypage/inquiries` | 내 문의 내역 |
 
 ### 관리자 페이지 기능 (/admin)
 | 기능 | 설명 |
@@ -593,53 +581,44 @@ Render 유료 플랜: 월 $7 ≈ 9,000원 (연 11만원)
 
 ---
 
-## 🚨 즉시 해야 할 작업
+## ✅ 2026-02-06 완료된 작업 (기능 간소화)
 
-### 1. [보안] Gmail 앱 비밀번호 재생성 ⚠️
-> NEXT_TASKS.md에 비밀번호가 노출되어 GitHub에 푸시됨 (2026-02-05)
+### 제거된 기능 (보안/개인정보 이슈로 인한 간소화)
+- [x] **이메일 발송 기능 제거**
+  - `server/services/emailService.js` 삭제
+  - 공지사항 이메일 발송 버튼 제거
+  - SMTP 관련 환경변수 불필요
+- [x] **회원가입 기능 제거**
+  - `/register` 라우트 제거
+  - `server/routes/auth.js`에서 register 엔드포인트 제거
+- [x] **일반 사용자 로그인 제거**
+  - `/login` 라우트 제거 (관리자 `/admin/login`만 유지)
+  - 헤더에서 로그인 버튼 제거
+- [x] **마이페이지 기능 제거**
+  - `/mypage`, `/mypage/password`, `/mypage/reviews`, `/mypage/inquiries` 제거
+  - `client/src/pages/user/` 폴더 삭제
+  - `client/src/pages/auth/` 폴더 삭제
+  - `server/routes/user.js` 삭제
 
-1. https://myaccount.google.com/apppasswords 접속
-2. 기존 앱 비밀번호 **삭제**
-3. 새 앱 비밀번호 **생성**
-4. Render 환경변수 `SMTP_PASS` **업데이트**
-5. Save Changes → 자동 재배포
+### 변경 사항
+- [x] **Header.jsx** - 관리자만 로그아웃 버튼 표시
+- [x] **Dashboard.jsx** - 등록 회원 수 통계 카드 제거
+- [x] **api.js** - userAPI, authAPI 일부 함수 제거
+- [x] **useAuth.jsx** - login, register 함수 제거
+- [x] **validator.js** - validateLogin, validateRegister, validatePassword 제거
+- [x] **security.js** - registerLimiter 제거
 
-### 2. [보안] Resend API 키 삭제
-1. https://resend.com/api-keys 접속
-2. 노출된 키 **삭제** (현재 Gmail SMTP 사용 중이라 새로 생성 안 해도 됨)
+### 보안 키 유출 대응
+> NEXT_TASKS.md에 Gmail 앱 비밀번호가 노출됨 (2026-02-05)
+> 이메일 기능 자체를 제거하여 해결
 
-### 3. 이메일 발송 테스트
-1. https://rustic-sage.web.app/admin/announcements 접속
-2. 공지사항 이메일 발송 버튼 클릭
-3. **Render 로그 확인** (Render Dashboard → Logs)
+- [x] 이메일 기능 제거로 SMTP 관련 정보 불필요
+- [ ] Resend API 키 삭제 (https://resend.com/api-keys)
+- [ ] Gmail 앱 비밀번호 삭제 (https://myaccount.google.com/apppasswords)
 
-**성공 시:**
-```
-[EmailService] SMTP connection verified successfully
-[EmailService] Found 3 users to send email to
-Email sent successfully to: xxx@xxx.com
-```
-
-**실패 시:**
-```
-[EmailService] SMTP connection failed: Connection timeout
-```
-
-### 4. 포트 465도 안 될 경우 대안
-Render 무료 플랜에서 SMTP 포트가 차단될 수 있음.
-
-| 대안 | 설명 |
-|------|------|
-| **Render 유료 플랜** | $7/월, 포트 제한 없음 |
-| **SendGrid API** | 무료 100통/일, HTTP API 사용 |
-| **Mailgun API** | 무료 5,000통/월 |
-
----
-
-### 참고: 현재 이메일 설정 상태
-- **방식**: Gmail SMTP (포트 465, SSL)
-- **환경변수**: `SMTP_HOST`, `SMTP_USER`, `SMTP_PASS`, `SMTP_FROM`
-- **코드**: `server/services/emailService.js`
+### 현재 인증 구조
+- **관리자 로그인**: `/admin/login` (Google 로그인)
+- **일반 사용자**: 로그인 없이 사용 (리뷰 작성, 문의 가능)
 
 ---
 
@@ -650,34 +629,15 @@ Render 무료 플랜에서 SMTP 포트가 차단될 수 있음.
 - [x] **서버 API**:
   - `GET /api/announcements` - 공개 공지사항 목록
   - `GET/POST/PUT/DELETE /api/admin/announcements` - 관리자 CRUD
-  - `POST /api/admin/announcements/:id/send-email` - 이메일 발송
-  - `POST /api/admin/announcements/:id/reset-email` - 발송 상태 리셋
-  - `GET /api/admin/smtp-test` - SMTP 연결 테스트
 - [x] **클라이언트**:
   - `ManageAnnouncements.jsx` - 공지사항 관리 페이지
   - 유형별/상태별 필터링
-  - 이메일 발송 버튼 (게시됨 상태에서만)
 - [x] **Manual 페이지 변경**:
   - 기존: activity, hydration, sleep
   - 변경: **newApp, update, announcement**
-- [x] **관리자 대시보드**:
-  - 등록 회원 수 표시
-  - 이메일 대상 수 표시
 - [x] **11개 언어 번역 파일 업데이트**
-
-### 이메일 발송 기능
-- [x] **emailService.js** - nodemailer → Resend → Gmail SMTP 465 순으로 변경
-- [x] **백그라운드 발송** - 타임아웃 방지
-- [x] **오류 로깅** - 발송 성공/실패 로그 출력
-- ⏳ **SMTP 연결 테스트 필요** (포트 465)
-
-### 데이터베이스 마이그레이션
-- [x] `users` 테이블: `name`, `login_attempts`, `locked_until`, `deleted_at`, `updated_at` 컬럼 추가
-- [x] `reviews` 테이블: `user_id` 컬럼 추가
-- [x] `contact_submissions` 테이블: `user_id` 컬럼 추가
-- [x] `announcements` 테이블 생성
 
 ---
 
-*마지막 업데이트: 2026-02-05*
-*맥미니 M4 환경 설정 가이드 + API 키 보안 조치 완료 + 수익 목표 + 법적 페이지 완료 + 사용자 계정 시스템 완료 + 공지사항 관리 시스템 완료*
+*마지막 업데이트: 2026-02-06*
+*맥미니 M4 환경 설정 가이드 + API 키 보안 조치 완료 + 수익 목표 + 법적 페이지 완료 + 기능 간소화 완료*

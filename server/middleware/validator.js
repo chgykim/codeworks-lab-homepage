@@ -23,59 +23,6 @@ const sanitizeString = (value) => {
         .trim();
 };
 
-// Login validation
-const validateLogin = [
-    body('email')
-        .isEmail()
-        .withMessage('Valid email is required')
-        .normalizeEmail(),
-    body('password')
-        .isLength({ min: 6 })
-        .withMessage('Password must be at least 6 characters'),
-    handleValidationErrors
-];
-
-// Registration validation
-const validateRegister = [
-    body('email')
-        .isEmail()
-        .withMessage('Valid email is required')
-        .normalizeEmail(),
-    body('password')
-        .isLength({ min: 8 })
-        .withMessage('Password must be at least 8 characters')
-        .matches(/[a-z]/)
-        .withMessage('Password must contain at least one lowercase letter')
-        .matches(/[A-Z]/)
-        .withMessage('Password must contain at least one uppercase letter')
-        .matches(/[0-9]/)
-        .withMessage('Password must contain at least one number'),
-    body('name')
-        .optional()
-        .trim()
-        .isLength({ min: 2, max: 100 })
-        .withMessage('Name must be 2-100 characters')
-        .customSanitizer(sanitizeString),
-    handleValidationErrors
-];
-
-// Password change validation
-const validatePassword = [
-    body('currentPassword')
-        .isLength({ min: 1 })
-        .withMessage('Current password is required'),
-    body('newPassword')
-        .isLength({ min: 8 })
-        .withMessage('Password must be at least 8 characters')
-        .matches(/[a-z]/)
-        .withMessage('Password must contain at least one lowercase letter')
-        .matches(/[A-Z]/)
-        .withMessage('Password must contain at least one uppercase letter')
-        .matches(/[0-9]/)
-        .withMessage('Password must contain at least one number'),
-    handleValidationErrors
-];
-
 // Review validation
 const validateReview = [
     body('authorName')
@@ -186,9 +133,6 @@ const validatePagination = [
 ];
 
 module.exports = {
-    validateLogin,
-    validateRegister,
-    validatePassword,
     validateReview,
     validateBlogPost,
     validateContact,

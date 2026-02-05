@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Menu, X, Home, BookOpen, Star, Settings, User } from 'lucide-react';
+import { Menu, X, Home, BookOpen, Star, Settings } from 'lucide-react';
 import { useAuth } from '../../hooks/useAuth';
 import LanguageSelector from './LanguageSelector';
 import './Header.css';
@@ -67,30 +67,10 @@ function Header() {
 
                         <div className="nav-actions">
                             <LanguageSelector />
-                            {user ? (
-                                <>
-                                    {!isAdmin() && (
-                                        <Link
-                                            to="/mypage"
-                                            className={`nav-link user-link ${isActive('/mypage') ? 'active' : ''}`}
-                                            onClick={() => setIsMenuOpen(false)}
-                                        >
-                                            <User size={18} />
-                                            <span>{t('nav.mypage')}</span>
-                                        </Link>
-                                    )}
-                                    <button onClick={handleLogout} className="btn btn-secondary btn-sm">
-                                        {t('nav.logout')}
-                                    </button>
-                                </>
-                            ) : (
-                                <Link
-                                    to="/login"
-                                    className="btn btn-primary btn-sm"
-                                    onClick={() => setIsMenuOpen(false)}
-                                >
-                                    {t('nav.login')}
-                                </Link>
+                            {isAdmin() && user && (
+                                <button onClick={handleLogout} className="btn btn-secondary btn-sm">
+                                    {t('nav.logout')}
+                                </button>
                             )}
                         </div>
                     </nav>

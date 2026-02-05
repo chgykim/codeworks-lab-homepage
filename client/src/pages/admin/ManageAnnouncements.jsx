@@ -6,11 +6,9 @@ import {
     Plus,
     Edit2,
     Trash2,
-    Mail,
     AlertCircle,
     Check,
-    X,
-    Send
+    X
 } from 'lucide-react';
 import { useAuth } from '../../hooks/useAuth';
 import { adminAPI } from '../../utils/api';
@@ -41,7 +39,6 @@ function ManageAnnouncements() {
     });
     const [formErrors, setFormErrors] = useState({});
     const [submitting, setSubmitting] = useState(false);
-    const [sendingEmail, setSendingEmail] = useState(null);
 
     useEffect(() => {
         if (!authLoading && !isAdmin()) {
@@ -137,26 +134,6 @@ function ManageAnnouncements() {
             setMessage({ type: 'success', text: t('admin.announcements.deleted') });
         } catch (error) {
             setMessage({ type: 'error', text: t('common.error') });
-        }
-    };
-
-    const handleSendEmail = async (id) => {
-        if (!window.confirm(t('admin.announcements.sendEmailConfirm'))) return;
-
-        setSendingEmail(id);
-        try {
-            const response = await adminAPI.sendAnnouncementEmail(id);
-            setAnnouncements((prev) =>
-                prev.map((a) => (a.id === id ? { ...a, emailSent: true, emailSentAt: new Date().toISOString() } : a))
-            );
-            setMessage({
-                type: 'success',
-                text: t('admin.announcements.emailStarted') || '이메일 발송이 시작되었습니다'
-            });
-        } catch (error) {
-            setMessage({ type: 'error', text: error.response?.data?.error || t('common.error') });
-        } finally {
-            setSendingEmail(null);
         }
     };
 
@@ -364,7 +341,6 @@ function ManageAnnouncements() {
                                     <th>{t('admin.announcements.type')}</th>
                                     <th>{t('admin.announcements.titleLabel')}</th>
                                     <th>{t('admin.announcements.status')}</th>
-                                    <th>{t('admin.announcements.emailStatus')}</th>
                                     <th>{t('admin.announcements.date')}</th>
                                     <th>{t('admin.announcements.actions')}</th>
                                 </tr>
@@ -396,16 +372,6 @@ function ManageAnnouncements() {
                                                     : t('admin.announcements.draft')}
                                             </span>
                                         </td>
-                                        <td>
-                                            {announcement.emailSent ? (
-                                                <span className="email-sent-badge">
-                                                    <Mail size={14} />
-                                                    {formatDate(announcement.emailSentAt)}
-                                                </span>
-                                            ) : (
-                                                <span className="email-not-sent">-</span>
-                                            )}
-                                        </td>
                                         <td>{formatDate(announcement.createdAt)}</td>
                                         <td>
                                             <div className="action-buttons">
@@ -416,20 +382,6 @@ function ManageAnnouncements() {
                                                 >
                                                     <Edit2 size={16} />
                                                 </button>
-                                                {announcement.status === 'published' && !announcement.emailSent && (
-                                                    <button
-                                                        className="btn-icon success"
-                                                        onClick={() => handleSendEmail(announcement.id)}
-                                                        disabled={sendingEmail === announcement.id}
-                                                        title={t('admin.announcements.sendEmail')}
-                                                    >
-                                                        {sendingEmail === announcement.id ? (
-                                                            <span className="spinner-small" />
-                                                        ) : (
-                                                            <Send size={16} />
-                                                        )}
-                                                    </button>
-                                                )}
                                                 <button
                                                     className="btn-icon danger"
                                                     onClick={() => handleDelete(announcement.id)}

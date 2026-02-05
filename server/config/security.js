@@ -68,18 +68,6 @@ const authLimiter = rateLimit({
     skipSuccessfulRequests: true
 });
 
-// Rate limiter for registration
-const registerLimiter = rateLimit({
-    windowMs: 60 * 60 * 1000, // 1 hour
-    max: 3, // 3 registration attempts per hour per IP
-    message: {
-        error: 'Too many registration attempts. Please try again later.',
-        retryAfter: 60
-    },
-    standardHeaders: true,
-    legacyHeaders: false
-});
-
 // Rate limiter for review submissions
 const reviewLimiter = rateLimit({
     windowMs: 60 * 60 * 1000, // 1 hour
@@ -109,7 +97,6 @@ module.exports = {
     corsConfig,
     generalLimiter,
     authLimiter,
-    registerLimiter,
     reviewLimiter,
     contactLimiter
 };

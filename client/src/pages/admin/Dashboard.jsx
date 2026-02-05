@@ -5,13 +5,11 @@ import {
     LayoutDashboard,
     Star,
     Users,
-    UserPlus,
     Eye,
     TrendingUp,
     AlertCircle,
     Smartphone,
-    Megaphone,
-    Mail
+    Megaphone
 } from 'lucide-react';
 import { useAuth } from '../../hooks/useAuth';
 import { adminAPI } from '../../utils/api';
@@ -128,22 +126,6 @@ function Dashboard() {
                                 </div>
                                 <div className="stat-details">
                                     <span>Safe Way 10</span>
-                                </div>
-                            </div>
-
-                            <div className="stat-card card">
-                                <div className="stat-icon members">
-                                    <UserPlus size={24} />
-                                </div>
-                                <div className="stat-info">
-                                    <span className="stat-value">{stats.users?.total || 0}</span>
-                                    <span className="stat-label">{t('admin.dashboard.totalMembers') || '등록 회원'}</span>
-                                </div>
-                                <div className="stat-details">
-                                    <span className="badge badge-info">
-                                        <Mail size={12} style={{marginRight: '4px'}} />
-                                        {t('admin.dashboard.emailTargets') || '이메일 대상'}: {stats.users?.withEmail || 0}
-                                    </span>
                                 </div>
                             </div>
                         </div>

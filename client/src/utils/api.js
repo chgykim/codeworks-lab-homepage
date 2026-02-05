@@ -55,27 +55,12 @@ api.interceptors.response.use(
     }
 );
 
-// Auth API
+// Auth API (Admin only)
 export const authAPI = {
-    login: (email, password) => api.post('/auth/login', { email, password }),
-    register: (email, password, name) => api.post('/auth/register', { email, password, name }),
-    checkEmail: (email) => api.get(`/auth/check-email?email=${encodeURIComponent(email)}`),
     firebaseLogin: (idToken) => api.post('/auth/firebase-login', { idToken }),
     logout: () => api.post('/auth/logout'),
     getMe: () => api.get('/auth/me'),
     refreshToken: () => api.post('/auth/refresh')
-};
-
-// User API
-export const userAPI = {
-    getProfile: () => api.get('/user/profile'),
-    updateProfile: (name) => api.put('/user/profile', { name }),
-    changePassword: (currentPassword, newPassword) =>
-        api.put('/user/password', { currentPassword, newPassword }),
-    deleteAccount: (password) => api.delete('/user/account', { data: { password } }),
-    getReviews: (page = 1, limit = 20) => api.get(`/user/reviews?page=${page}&limit=${limit}`),
-    deleteReview: (id) => api.delete(`/user/reviews/${id}`),
-    getInquiries: (page = 1, limit = 20) => api.get(`/user/inquiries?page=${page}&limit=${limit}`)
 };
 
 // Reviews API
@@ -148,8 +133,7 @@ export const adminAPI = {
     getAnnouncement: (id) => api.get(`/admin/announcements/${id}`),
     createAnnouncement: (data) => api.post('/admin/announcements', data),
     updateAnnouncement: (id, data) => api.put(`/admin/announcements/${id}`, data),
-    deleteAnnouncement: (id) => api.delete(`/admin/announcements/${id}`),
-    sendAnnouncementEmail: (id) => api.post(`/admin/announcements/${id}/send-email`)
+    deleteAnnouncement: (id) => api.delete(`/admin/announcements/${id}`)
 };
 
 export default api;

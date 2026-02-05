@@ -13,16 +13,6 @@ import Reviews from './pages/Reviews';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 
-// Auth pages
-import Login from './pages/auth/Login';
-import Register from './pages/auth/Register';
-
-// User pages
-import MyPage from './pages/user/MyPage';
-import ChangePassword from './pages/user/ChangePassword';
-import MyReviews from './pages/user/MyReviews';
-import MyInquiries from './pages/user/MyInquiries';
-
 // Admin pages
 import AdminLogin from './pages/admin/Login';
 import Dashboard from './pages/admin/Dashboard';
@@ -58,16 +48,6 @@ function App() {
                         <Route path="/reviews" element={<Reviews />} />
                         <Route path="/privacy" element={<Privacy />} />
                         <Route path="/terms" element={<Terms />} />
-
-                        {/* Auth routes */}
-                        <Route path="/login" element={<Login />} />
-                        <Route path="/register" element={<Register />} />
-
-                        {/* User routes */}
-                        <Route path="/mypage" element={<MyPage />} />
-                        <Route path="/mypage/password" element={<ChangePassword />} />
-                        <Route path="/mypage/reviews" element={<MyReviews />} />
-                        <Route path="/mypage/inquiries" element={<MyInquiries />} />
 
                         {/* Admin routes */}
                         <Route path="/admin/login" element={<AdminLogin />} />

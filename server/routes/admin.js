@@ -7,10 +7,8 @@ const {
     settingsModel,
     statsModel,
     contactModel,
-    announcementModel,
-    userModel
+    announcementModel
 } = require('../models/db');
-const { sendAnnouncementEmail, verifyConnection } = require('../services/emailService');
 const { authenticateToken, requireAdmin } = require('../middleware/auth');
 const { validateBlogPost, validateId, validatePagination } = require('../middleware/validator');
 const { asyncHandler } = require('../middleware/errorHandler');
@@ -28,7 +26,6 @@ router.get('/dashboard', asyncHandler(async (req, res) => {
     const blogStats = await blogModel.getStats();
     const visitorStats = await statsModel.getVisitorCount(30);
     const pageViews = await statsModel.getPageViews(30);
-    const userStats = await userModel.getStats();
 
     res.json({
         reviews: {
@@ -47,12 +44,6 @@ router.get('/dashboard', asyncHandler(async (req, res) => {
             uniqueVisitors: parseInt(visitorStats?.unique_visitors) || 0,
             totalVisits: parseInt(visitorStats?.total_visits) || 0,
             topPages: pageViews.slice(0, 5)
-        },
-        users: {
-            total: parseInt(userStats?.total) || 0,
-            admins: parseInt(userStats?.admins) || 0,
-            members: parseInt(userStats?.users) || 0,
-            withEmail: parseInt(userStats?.with_email) || 0
         }
     });
 }));
@@ -339,8 +330,6 @@ router.get('/announcements', validatePagination, asyncHandler(async (req, res) =
             title: a.title,
             content: a.content,
             status: a.status,
-            emailSent: a.email_sent,
-            emailSentAt: a.email_sent_at,
             authorId: a.author_id,
             createdAt: a.created_at,
             updatedAt: a.updated_at
@@ -368,8 +357,6 @@ router.get('/announcements/:id', validateId, asyncHandler(async (req, res) => {
             title: announcement.title,
             content: announcement.content,
             status: announcement.status,
-            emailSent: announcement.email_sent,
-            emailSentAt: announcement.email_sent_at,
             authorId: announcement.author_id,
             createdAt: announcement.created_at,
             updatedAt: announcement.updated_at
@@ -457,88 +444,6 @@ router.delete('/announcements/:id', validateId, asyncHandler(async (req, res) =>
     });
 
     res.json({ message: 'Announcement deleted' });
-}));
-
-// POST /api/admin/announcements/:id/send-email - Send announcement email
-router.post('/announcements/:id/send-email', validateId, asyncHandler(async (req, res) => {
-    const announcement = await announcementModel.getById(parseInt(req.params.id));
-
-    if (!announcement) {
-        return res.status(404).json({ error: 'Announcement not found' });
-    }
-
-    if (announcement.status !== 'published') {
-        return res.status(400).json({ error: 'Announcement must be published before sending email' });
-    }
-
-    if (announcement.email_sent) {
-        return res.status(400).json({ error: 'Email has already been sent for this announcement' });
-    }
-
-    // Mark as sent immediately to prevent duplicate sends
-    await announcementModel.markEmailSent(parseInt(req.params.id));
-
-    // Send response immediately, process email in background
-    res.json({
-        message: 'Email sending started',
-        status: 'processing'
-    });
-
-    // Send emails in background (don't await)
-    sendAnnouncementEmail(announcement)
-        .then(result => {
-            console.log(`Email sent for announcement ${req.params.id}: ${result.sent}/${result.total}`);
-            securityLogger.adminAction(req.user.id || 'system', 'SEND_ANNOUNCEMENT_EMAIL', {
-                announcementId: req.params.id,
-                sent: result.sent,
-                total: result.total
-            });
-        })
-        .catch(error => {
-            console.error(`Failed to send email for announcement ${req.params.id}:`, error.message);
-        });
-}));
-
-// POST /api/admin/announcements/:id/reset-email - Reset email sent status
-router.post('/announcements/:id/reset-email', validateId, asyncHandler(async (req, res) => {
-    const announcement = await announcementModel.getById(parseInt(req.params.id));
-
-    if (!announcement) {
-        return res.status(404).json({ error: 'Announcement not found' });
-    }
-
-    await announcementModel.resetEmailSent(parseInt(req.params.id));
-
-    res.json({ message: 'Email status reset successfully' });
-}));
-
-// GET /api/admin/smtp-test - Test SMTP connection
-router.get('/smtp-test', asyncHandler(async (req, res) => {
-    const result = await verifyConnection();
-
-    if (result.success) {
-        res.json({
-            message: 'SMTP connection successful',
-            config: {
-                host: process.env.SMTP_HOST || 'smtp.gmail.com',
-                port: process.env.SMTP_PORT || 587,
-                user: process.env.SMTP_USER ? '***configured***' : 'NOT SET',
-                pass: process.env.SMTP_PASS ? '***configured***' : 'NOT SET',
-                from: process.env.SMTP_FROM || process.env.SMTP_USER || 'NOT SET'
-            }
-        });
-    } else {
-        res.status(500).json({
-            error: 'SMTP connection failed',
-            details: result.error,
-            config: {
-                host: process.env.SMTP_HOST || 'smtp.gmail.com',
-                port: process.env.SMTP_PORT || 587,
-                user: process.env.SMTP_USER ? '***configured***' : 'NOT SET',
-                pass: process.env.SMTP_PASS ? '***configured***' : 'NOT SET'
-            }
-        });
-    }
 }));
 
 module.exports = router;
