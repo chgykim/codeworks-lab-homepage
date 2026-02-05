@@ -591,5 +591,85 @@ Render 유료 플랜: 월 $7 ≈ 9,000원 (연 11만원)
 
 ---
 
+---
+
+## 🚨 즉시 해야 할 작업 (맥미니 M4에서)
+
+### 1. Render 환경변수 수정 - SMTP 포트 변경
+Render 대시보드 → codeworks-lab-homepage → Environment
+
+| Key | 기존 값 | 변경 값 |
+|-----|---------|---------|
+| `SMTP_PORT` | 587 | **465** |
+
+나머지는 그대로:
+- `SMTP_HOST`: smtp.gmail.com
+- `SMTP_USER`: chgykim0@gmail.com
+- `SMTP_PASS`: bnpqemiljmfbqdcd
+- `SMTP_FROM`: chgykim0@gmail.com
+
+**Save Changes** 클릭 후 자동 재배포
+
+### 2. 이메일 발송 테스트
+1. https://rustic-sage.web.app/admin/announcements 접속
+2. 새 공지사항 작성 (상태: **게시됨**)
+3. 이메일 발송 버튼(✈️) 클릭
+4. Render 로그에서 결과 확인:
+   - ✅ 성공: `Email sent successfully to: xxx@xxx.com`
+   - ❌ 실패: `Failed to send email to xxx: Connection timeout`
+
+### 3. Gmail SMTP 포트 465도 안 될 경우
+Render 무료 플랜에서 포트 465도 차단되어 있을 수 있음.
+
+**대안:**
+1. **Render 유료 플랜** ($7/월)으로 업그레이드
+2. **본인 도메인을 Resend에 추가** (DNS 설정 필요)
+   - Resend에 도메인 추가 → SPF, DKIM 레코드 DNS에 추가
+   - 인증 완료 후 해당 도메인에서 모든 이메일 주소로 발송 가능
+
+### 4. Resend 사용 시 (현재 설정된 상태)
+현재 emailService.js는 **Gmail SMTP 포트 465**로 설정됨.
+만약 Resend로 되돌리려면:
+- `RESEND_API_KEY`: `re_RtqDatg3_Jmv64cfaw29h5YwECAocdViV` (이미 Render에 추가됨)
+- emailService.js를 Resend 버전으로 롤백 필요
+
+---
+
+## ✅ 2026-02-05 완료된 작업 (공지사항 시스템)
+
+### 공지사항 관리 시스템 구현
+- [x] **데이터베이스**: `announcements` 테이블 생성
+- [x] **서버 API**:
+  - `GET /api/announcements` - 공개 공지사항 목록
+  - `GET/POST/PUT/DELETE /api/admin/announcements` - 관리자 CRUD
+  - `POST /api/admin/announcements/:id/send-email` - 이메일 발송
+  - `POST /api/admin/announcements/:id/reset-email` - 발송 상태 리셋
+  - `GET /api/admin/smtp-test` - SMTP 연결 테스트
+- [x] **클라이언트**:
+  - `ManageAnnouncements.jsx` - 공지사항 관리 페이지
+  - 유형별/상태별 필터링
+  - 이메일 발송 버튼 (게시됨 상태에서만)
+- [x] **Manual 페이지 변경**:
+  - 기존: activity, hydration, sleep
+  - 변경: **newApp, update, announcement**
+- [x] **관리자 대시보드**:
+  - 등록 회원 수 표시
+  - 이메일 대상 수 표시
+- [x] **11개 언어 번역 파일 업데이트**
+
+### 이메일 발송 기능
+- [x] **emailService.js** - nodemailer → Resend → Gmail SMTP 465 순으로 변경
+- [x] **백그라운드 발송** - 타임아웃 방지
+- [x] **오류 로깅** - 발송 성공/실패 로그 출력
+- ⏳ **SMTP 연결 테스트 필요** (포트 465)
+
+### 데이터베이스 마이그레이션
+- [x] `users` 테이블: `name`, `login_attempts`, `locked_until`, `deleted_at`, `updated_at` 컬럼 추가
+- [x] `reviews` 테이블: `user_id` 컬럼 추가
+- [x] `contact_submissions` 테이블: `user_id` 컬럼 추가
+- [x] `announcements` 테이블 생성
+
+---
+
 *마지막 업데이트: 2026-02-05*
-*맥미니 M4 환경 설정 가이드 + API 키 보안 조치 완료 + 수익 목표 + 법적 페이지 완료 + 사용자 계정 시스템 완료*
+*맥미니 M4 환경 설정 가이드 + API 키 보안 조치 완료 + 수익 목표 + 법적 페이지 완료 + 사용자 계정 시스템 완료 + 공지사항 관리 시스템 완료*
