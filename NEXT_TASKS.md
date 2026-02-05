@@ -162,6 +162,15 @@ git push origin master
 | FIREBASE_CLIENT_EMAIL | Firebase 서비스 계정 이메일 |
 | FIREBASE_PRIVATE_KEY | Firebase 서비스 계정 비공개 키 |
 | ALLOWED_ORIGINS | CORS 허용 도메인 |
+| ADMIN_EMAIL | 관리자 이메일 |
+| VITE_FIREBASE_API_KEY | Firebase 웹 API 키 (클라이언트 빌드용) |
+| VITE_FIREBASE_AUTH_DOMAIN | Firebase 인증 도메인 |
+| VITE_FIREBASE_PROJECT_ID | Firebase 프로젝트 ID |
+| VITE_FIREBASE_STORAGE_BUCKET | Firebase 스토리지 버킷 |
+| VITE_FIREBASE_MESSAGING_SENDER_ID | Firebase 메시징 발신자 ID |
+| VITE_FIREBASE_APP_ID | Firebase 앱 ID |
+| VITE_FIREBASE_MEASUREMENT_ID | Firebase 측정 ID |
+| VITE_ADMIN_EMAIL | 관리자 이메일 (클라이언트용) |
 
 ---
 
@@ -173,6 +182,10 @@ codeworks-lab-homepage/
 │   ├── src/
 │   │   ├── components/         # UI 컴포넌트
 │   │   ├── pages/              # 페이지 컴포넌트
+│   │   │   ├── auth/           # 인증 페이지 (Login, Register)
+│   │   │   ├── user/           # 사용자 페이지 (MyPage, ChangePassword, MyReviews, MyInquiries)
+│   │   │   └── admin/          # 관리자 페이지
+│   │   ├── hooks/useAuth.jsx   # 인증 훅 (로그인, 회원가입, 상태관리)
 │   │   ├── locales/            # 다국어 번역 (11개 언어)
 │   │   └── utils/api.js        # API 통신
 │   ├── dist/                   # 빌드 결과물
@@ -180,7 +193,10 @@ codeworks-lab-homepage/
 │
 ├── server/                     # Express.js 서버
 │   ├── routes/                 # API 라우트
-│   ├── models/db.js            # PostgreSQL 연결 및 모델
+│   │   ├── auth.js             # 인증 API (login, register)
+│   │   ├── user.js             # 사용자 API (profile, password, reviews, inquiries)
+│   │   └── ...                 # 기타 라우트
+│   ├── models/db.js            # PostgreSQL 연결 및 모델 (userModel 포함)
 │   ├── middleware/             # 인증, 검증, 에러 처리
 │   ├── config/                 # 보안, Firebase 설정
 │   └── package.json
@@ -261,9 +277,59 @@ codeworks-lab-homepage/
 - [x] 시행일 수정: 2025-02-03 → 2026-02-03
 - [x] Firebase 배포 완료
 
+### 2026-02-05
+- [x] **사용자 계정 시스템 구현**
+  - 이메일/비밀번호 회원가입 (`/register`)
+  - 일반 사용자 로그인 (`/login`)
+  - 마이페이지 (`/mypage`) - 프로필, 통계
+  - 비밀번호 변경 (`/mypage/password`)
+  - 내 리뷰 관리 (`/mypage/reviews`)
+  - 내 문의 내역 (`/mypage/inquiries`)
+  - 회원 탈퇴 기능
+- [x] **문의 양식 개선**
+  - 제목 필드: 텍스트 입력 → 드롭다운 선택
+  - 7개 카테고리: 앱 오류, 기기 지원, 국가/언어, 개선 사항, 기능 추가, 앱 개발 제안, 기타
+- [x] **서버 API 확장**
+  - `server/routes/user.js` - 사용자 API 신규 생성
+  - `server/routes/auth.js` - register, login, check-email 엔드포인트 추가
+  - `server/middleware/validator.js` - 회원가입/비밀번호 검증 추가
+  - `server/config/security.js` - 회원가입 rate limiter 추가
+  - `server/models/db.js` - users 테이블 확장, userModel 함수 추가
+- [x] **데이터베이스 스키마 확장**
+  - users 테이블: name, deleted_at, login_attempts, locked_until 컬럼 추가
+  - reviews, contact_submissions 테이블에 user_id 외래키 추가
+- [x] **보안 기능**
+  - bcrypt 비밀번호 해싱 (salt 12)
+  - JWT 토큰 인증 (7일 만료)
+  - 로그인 시도 제한 (5회 실패 시 15분 잠금)
+  - 회원가입 rate limiting (IP당 시간당 3회)
+- [x] **클라이언트 페이지 추가**
+  - `pages/auth/Login.jsx`, `Register.jsx`, `Auth.css`
+  - `pages/user/MyPage.jsx`, `ChangePassword.jsx`, `MyReviews.jsx`, `MyInquiries.jsx`, `User.css`
+- [x] **11개 언어 번역 추가**
+  - auth (로그인, 회원가입, 비밀번호 관련)
+  - mypage (마이페이지, 내 리뷰, 내 문의)
+  - contact.categories (문의 카테고리 7개)
+- [x] **Header.jsx 업데이트** - 로그인/마이페이지 메뉴 추가
+- [x] **Render 배포 설정**
+  - Build Command: `cd client && npm install --include=dev && npm run build && cd ../server && npm install`
+  - VITE_* 환경변수 추가 (Firebase 클라이언트 설정)
+  - 정적 파일 CORS 이슈 해결 (app.js 수정)
+- [x] **Firebase Hosting 배포 완료** ✅
+
 ---
 
 ## 홈페이지 관리 작업
+
+### 사용자 페이지 기능
+| 경로 | 기능 |
+|------|------|
+| `/login` | 일반 사용자 로그인 (이메일/비밀번호) |
+| `/register` | 회원가입 |
+| `/mypage` | 마이페이지 (프로필, 통계) |
+| `/mypage/password` | 비밀번호 변경 |
+| `/mypage/reviews` | 내 리뷰 관리 |
+| `/mypage/inquiries` | 내 문의 내역 |
 
 ### 관리자 페이지 기능 (/admin)
 | 기능 | 설명 |
@@ -470,5 +536,5 @@ Render 유료 플랜: 월 $7 ≈ 9,000원 (연 11만원)
 
 ---
 
-*마지막 업데이트: 2026-02-04*
-*맥미니 M4 환경 설정 가이드 + API 키 보안 조치 완료 + 수익 목표 + 법적 페이지 완료*
+*마지막 업데이트: 2026-02-05*
+*맥미니 M4 환경 설정 가이드 + API 키 보안 조치 완료 + 수익 목표 + 법적 페이지 완료 + 사용자 계정 시스템 완료*
