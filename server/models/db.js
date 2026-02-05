@@ -113,6 +113,16 @@ async function initializeDatabase() {
     try {
         await client.query(schema);
 
+        // Migration: Add deleted_at column to users table if not exists
+        const columnCheck = await client.query(`
+            SELECT column_name FROM information_schema.columns
+            WHERE table_name = 'users' AND column_name = 'deleted_at'
+        `);
+        if (columnCheck.rows.length === 0) {
+            await client.query('ALTER TABLE users ADD COLUMN deleted_at TIMESTAMP');
+            console.log('Added deleted_at column to users table');
+        }
+
         // Create default admin user if not exists
         const adminEmail = process.env.ADMIN_EMAIL || 'admin@example.com';
         const adminPassword = process.env.ADMIN_PASSWORD || 'admin123!@#';
