@@ -105,6 +105,61 @@ ALLOWED_ORIGINS=http://localhost:5173,https://rustic-sage.web.app
 
 ---
 
+## ⚠️ 관리자 로그인 주의사항 (중요!)
+
+### ✅ 올바른 관리자 로그인 방법
+```
+https://rustic-sage.web.app/admin/login
+```
+- **반드시 Firebase Hosting URL** (`rustic-sage.web.app`)에서 로그인
+- Google 계정 (등록된 관리자 이메일)으로 로그인
+
+### ❌ 작동하지 않는 URL (절대 사용 금지!)
+```
+https://codeworks-lab-homepage.onrender.com/admin/login  ← 안됨!
+```
+- Render URL에서는 Google 로그인이 **작동하지 않음**
+- OAuth 설정이 Firebase 도메인에만 되어 있음
+
+### 🏗️ 시스템 구조 이해
+
+| 서비스 | URL | 역할 |
+|--------|-----|------|
+| **Firebase Hosting** | `rustic-sage.web.app` | 웹사이트 (클라이언트) |
+| **Render** | `codeworks-lab-homepage.onrender.com` | API 서버만 |
+
+```
+[사용자] → rustic-sage.web.app (Firebase) → API 호출 → Render 서버 → PostgreSQL
+```
+
+### 🚫 절대 바꾸지 말 것
+
+1. **Firebase Authentication 설정**
+   - Google Cloud Console의 OAuth 클라이언트 ID
+   - 승인된 자바스크립트 원본 (`rustic-sage.web.app`)
+   - Firebase Console의 승인된 도메인
+
+2. **클라이언트 Firebase 설정** (`client/src/config/firebase.js`)
+   - API 키, 프로젝트 ID 등 환경변수로 유지
+   - 하드코딩 절대 금지
+
+3. **배포 구조**
+   - 클라이언트: Firebase Hosting에만 배포
+   - 서버 API: Render에만 배포
+   - 이 구조를 변경하면 Google 로그인이 깨짐!
+
+### 🔧 문제 발생 시 체크리스트
+
+관리자 로그인이 안 될 때:
+
+1. **URL 확인**: `rustic-sage.web.app`인지 확인 (Render URL 아님!)
+2. **Firebase 승인 도메인**: Firebase Console → Authentication → Settings → 승인된 도메인
+3. **Google Cloud OAuth**: 승인된 자바스크립트 원본에 도메인 있는지 확인
+4. **API 키**: Firebase Console의 SDK 설정과 일치하는지 확인
+5. **캐시 삭제**: 브라우저 강력 새로고침 (`Ctrl + Shift + R`)
+
+---
+
 ## 로컬 개발 실행
 
 ```bash
