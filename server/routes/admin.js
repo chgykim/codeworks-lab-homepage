@@ -467,28 +467,28 @@ router.post('/announcements/:id/send-email', validateId, asyncHandler(async (req
         return res.status(400).json({ error: 'Email has already been sent for this announcement' });
     }
 
-    try {
-        const result = await sendAnnouncementEmail(announcement);
+    // Mark as sent immediately to prevent duplicate sends
+    await announcementModel.markEmailSent(parseInt(req.params.id));
 
-        if (result.sent > 0) {
-            await announcementModel.markEmailSent(parseInt(req.params.id));
-        }
+    // Send response immediately, process email in background
+    res.json({
+        message: 'Email sending started',
+        status: 'processing'
+    });
 
-        securityLogger.adminAction(req.user.id, 'SEND_ANNOUNCEMENT_EMAIL', {
-            announcementId: req.params.id,
-            sent: result.sent,
-            total: result.total
+    // Send emails in background (don't await)
+    sendAnnouncementEmail(announcement)
+        .then(result => {
+            console.log(`Email sent for announcement ${req.params.id}: ${result.sent}/${result.total}`);
+            securityLogger.adminAction(req.user.id || 'system', 'SEND_ANNOUNCEMENT_EMAIL', {
+                announcementId: req.params.id,
+                sent: result.sent,
+                total: result.total
+            });
+        })
+        .catch(error => {
+            console.error(`Failed to send email for announcement ${req.params.id}:`, error.message);
         });
-
-        res.json({
-            message: 'Email sent successfully',
-            sent: result.sent,
-            total: result.total,
-            errors: result.errors
-        });
-    } catch (error) {
-        res.status(500).json({ error: 'Failed to send email: ' + error.message });
-    }
 }));
 
 module.exports = router;
