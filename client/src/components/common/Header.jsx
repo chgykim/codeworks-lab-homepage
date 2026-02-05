@@ -67,10 +67,18 @@ function Header() {
 
                         <div className="nav-actions">
                             <LanguageSelector />
-                            {isAdmin() && user && (
+                            {isAdmin() && user ? (
                                 <button onClick={handleLogout} className="btn btn-secondary btn-sm">
                                     {t('nav.logout')}
                                 </button>
+                            ) : (
+                                <Link
+                                    to="/admin/login"
+                                    className="btn btn-primary btn-sm"
+                                    onClick={() => setIsMenuOpen(false)}
+                                >
+                                    {t('nav.adminLogin') || 'Admin'}
+                                </Link>
                             )}
                         </div>
                     </nav>
