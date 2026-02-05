@@ -604,9 +604,9 @@ Render 대시보드 → codeworks-lab-homepage → Environment
 
 나머지는 그대로:
 - `SMTP_HOST`: smtp.gmail.com
-- `SMTP_USER`: chgykim0@gmail.com
-- `SMTP_PASS`: bnpqemiljmfbqdcd
-- `SMTP_FROM`: chgykim0@gmail.com
+- `SMTP_USER`: (Gmail 주소)
+- `SMTP_PASS`: (Gmail 앱 비밀번호 - Render 환경변수에서 확인)
+- `SMTP_FROM`: (발신자 이메일)
 
 **Save Changes** 클릭 후 자동 재배포
 
@@ -649,7 +649,7 @@ Render 무료 플랜에서 포트 465도 차단되어 있을 수 있음.
 ### 4. Resend 사용 시 (현재 설정된 상태)
 현재 emailService.js는 **Gmail SMTP 포트 465**로 설정됨.
 만약 Resend로 되돌리려면:
-- `RESEND_API_KEY`: `re_RtqDatg3_Jmv64cfaw29h5YwECAocdViV` (이미 Render에 추가됨)
+- `RESEND_API_KEY`: Render 환경변수에 설정됨 (절대 코드에 작성 금지!)
 - emailService.js를 Resend 버전으로 롤백 필요
 
 ---
