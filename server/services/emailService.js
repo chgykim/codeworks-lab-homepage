@@ -124,7 +124,9 @@ const sendAnnouncementEmail = async (announcement) => {
                     html: htmlContent
                 });
                 sentCount++;
+                console.log(`Email sent successfully to: ${email}`);
             } catch (error) {
+                console.error(`Failed to send email to ${email}:`, error.message);
                 errors.push({ email, error: error.message });
             }
         });

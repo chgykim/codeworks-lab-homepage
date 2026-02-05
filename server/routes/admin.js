@@ -10,7 +10,7 @@ const {
     announcementModel,
     userModel
 } = require('../models/db');
-const { sendAnnouncementEmail } = require('../services/emailService');
+const { sendAnnouncementEmail, verifyConnection } = require('../services/emailService');
 const { authenticateToken, requireAdmin } = require('../middleware/auth');
 const { validateBlogPost, validateId, validatePagination } = require('../middleware/validator');
 const { asyncHandler } = require('../middleware/errorHandler');
@@ -510,6 +510,35 @@ router.post('/announcements/:id/reset-email', validateId, asyncHandler(async (re
     await announcementModel.resetEmailSent(parseInt(req.params.id));
 
     res.json({ message: 'Email status reset successfully' });
+}));
+
+// GET /api/admin/smtp-test - Test SMTP connection
+router.get('/smtp-test', asyncHandler(async (req, res) => {
+    const result = await verifyConnection();
+
+    if (result.success) {
+        res.json({
+            message: 'SMTP connection successful',
+            config: {
+                host: process.env.SMTP_HOST || 'smtp.gmail.com',
+                port: process.env.SMTP_PORT || 587,
+                user: process.env.SMTP_USER ? '***configured***' : 'NOT SET',
+                pass: process.env.SMTP_PASS ? '***configured***' : 'NOT SET',
+                from: process.env.SMTP_FROM || process.env.SMTP_USER || 'NOT SET'
+            }
+        });
+    } else {
+        res.status(500).json({
+            error: 'SMTP connection failed',
+            details: result.error,
+            config: {
+                host: process.env.SMTP_HOST || 'smtp.gmail.com',
+                port: process.env.SMTP_PORT || 587,
+                user: process.env.SMTP_USER ? '***configured***' : 'NOT SET',
+                pass: process.env.SMTP_PASS ? '***configured***' : 'NOT SET'
+            }
+        });
+    }
 }));
 
 module.exports = router;
