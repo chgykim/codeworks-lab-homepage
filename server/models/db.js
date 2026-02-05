@@ -84,12 +84,27 @@ CREATE TABLE IF NOT EXISTS contact_submissions (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+CREATE TABLE IF NOT EXISTS announcements (
+    id SERIAL PRIMARY KEY,
+    type VARCHAR(20) NOT NULL CHECK(type IN ('new_app', 'update', 'announcement')),
+    title VARCHAR(500) NOT NULL,
+    content TEXT NOT NULL,
+    status VARCHAR(20) DEFAULT 'draft' CHECK(status IN ('draft', 'published')),
+    email_sent BOOLEAN DEFAULT FALSE,
+    email_sent_at TIMESTAMP,
+    author_id INTEGER REFERENCES users(id),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
 CREATE INDEX IF NOT EXISTS idx_reviews_status ON reviews(status);
 CREATE INDEX IF NOT EXISTS idx_reviews_created ON reviews(created_at);
 CREATE INDEX IF NOT EXISTS idx_blog_status ON blog_posts(status);
 CREATE INDEX IF NOT EXISTS idx_blog_slug ON blog_posts(slug);
 CREATE INDEX IF NOT EXISTS idx_login_attempts_ip ON login_attempts(ip_address);
 CREATE INDEX IF NOT EXISTS idx_visitor_stats_page ON visitor_stats(page);
+CREATE INDEX IF NOT EXISTS idx_announcements_type ON announcements(type);
+CREATE INDEX IF NOT EXISTS idx_announcements_status ON announcements(status);
 `;
 
 // Initialize database schema
@@ -451,6 +466,99 @@ const statsModel = {
     }
 };
 
+// Announcement operations
+const announcementModel = {
+    getAll: async (type = null, status = null, limit = 50, offset = 0) => {
+        let query = 'SELECT * FROM announcements';
+        const params = [];
+        const conditions = [];
+
+        if (type) {
+            params.push(type);
+            conditions.push(`type = $${params.length}`);
+        }
+        if (status) {
+            params.push(status);
+            conditions.push(`status = $${params.length}`);
+        }
+
+        if (conditions.length > 0) {
+            query += ' WHERE ' + conditions.join(' AND ');
+        }
+
+        params.push(limit, offset);
+        query += ` ORDER BY created_at DESC LIMIT $${params.length - 1} OFFSET $${params.length}`;
+
+        const result = await pool.query(query, params);
+        return result.rows;
+    },
+
+    getPublished: async (type = null, limit = 50, offset = 0) => {
+        let query = `SELECT id, type, title, content, created_at
+                     FROM announcements WHERE status = 'published'`;
+        const params = [];
+
+        if (type) {
+            params.push(type);
+            query += ` AND type = $${params.length}`;
+        }
+
+        params.push(limit, offset);
+        query += ` ORDER BY created_at DESC LIMIT $${params.length - 1} OFFSET $${params.length}`;
+
+        const result = await pool.query(query, params);
+        return result.rows;
+    },
+
+    getById: async (id) => {
+        const result = await pool.query('SELECT * FROM announcements WHERE id = $1', [id]);
+        return result.rows[0];
+    },
+
+    create: async (type, title, content, authorId, status = 'draft') => {
+        const result = await pool.query(
+            `INSERT INTO announcements (type, title, content, author_id, status)
+             VALUES ($1, $2, $3, $4, $5) RETURNING id`,
+            [type, title, content, authorId, status]
+        );
+        return result.rows[0].id;
+    },
+
+    update: async (id, type, title, content, status) => {
+        await pool.query(
+            `UPDATE announcements
+             SET type = $1, title = $2, content = $3, status = $4, updated_at = CURRENT_TIMESTAMP
+             WHERE id = $5`,
+            [type, title, content, status, id]
+        );
+    },
+
+    delete: async (id) => {
+        await pool.query('DELETE FROM announcements WHERE id = $1', [id]);
+    },
+
+    markEmailSent: async (id) => {
+        await pool.query(
+            `UPDATE announcements
+             SET email_sent = TRUE, email_sent_at = CURRENT_TIMESTAMP
+             WHERE id = $1`,
+            [id]
+        );
+    },
+
+    getStats: async () => {
+        const result = await pool.query(`
+            SELECT
+                COUNT(*) as total,
+                SUM(CASE WHEN status = 'published' THEN 1 ELSE 0 END) as published,
+                SUM(CASE WHEN status = 'draft' THEN 1 ELSE 0 END) as drafts,
+                SUM(CASE WHEN email_sent = TRUE THEN 1 ELSE 0 END) as email_sent
+            FROM announcements
+        `);
+        return result.rows[0];
+    }
+};
+
 // Contact form operations
 const contactModel = {
     create: async (name, email, subject, message, ipAddress, userId = null) => {
@@ -495,5 +603,6 @@ module.exports = {
     blogModel,
     settingsModel,
     statsModel,
-    contactModel
+    contactModel,
+    announcementModel
 };

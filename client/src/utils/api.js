@@ -105,6 +105,12 @@ export const settingsAPI = {
     getPublic: () => api.get('/settings/public')
 };
 
+// Announcements API (public)
+export const announcementsAPI = {
+    getAll: (page = 1, limit = 20, type = '') =>
+        api.get(`/announcements?page=${page}&limit=${limit}${type ? `&type=${type}` : ''}`)
+};
+
 // Admin API
 export const adminAPI = {
     getDashboard: () => api.get('/admin/dashboard'),
@@ -134,7 +140,16 @@ export const adminAPI = {
     // Contacts
     getContacts: (page = 1, limit = 20, status = '') =>
         api.get(`/admin/contacts?page=${page}&limit=${limit}${status ? `&status=${status}` : ''}`),
-    updateContactStatus: (id, status) => api.put(`/admin/contacts/${id}/status`, { status })
+    updateContactStatus: (id, status) => api.put(`/admin/contacts/${id}/status`, { status }),
+
+    // Announcements
+    getAnnouncements: (page = 1, limit = 20, type = '', status = '') =>
+        api.get(`/admin/announcements?page=${page}&limit=${limit}${type ? `&type=${type}` : ''}${status ? `&status=${status}` : ''}`),
+    getAnnouncement: (id) => api.get(`/admin/announcements/${id}`),
+    createAnnouncement: (data) => api.post('/admin/announcements', data),
+    updateAnnouncement: (id, data) => api.put(`/admin/announcements/${id}`, data),
+    deleteAnnouncement: (id) => api.delete(`/admin/announcements/${id}`),
+    sendAnnouncementEmail: (id) => api.post(`/admin/announcements/${id}/send-email`)
 };
 
 export default api;

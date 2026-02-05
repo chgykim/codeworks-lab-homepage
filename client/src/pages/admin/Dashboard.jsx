@@ -8,7 +8,8 @@ import {
     Eye,
     TrendingUp,
     AlertCircle,
-    Smartphone
+    Smartphone,
+    Megaphone
 } from 'lucide-react';
 import { useAuth } from '../../hooks/useAuth';
 import { adminAPI } from '../../utils/api';
@@ -165,6 +166,10 @@ function Dashboard() {
                                     <Link to="/admin/apps" className="quick-link">
                                         <Smartphone size={20} />
                                         <span>{t('admin.dashboard.manageApps') || 'Manage Apps'}</span>
+                                    </Link>
+                                    <Link to="/admin/announcements" className="quick-link">
+                                        <Megaphone size={20} />
+                                        <span>{t('admin.dashboard.manageAnnouncements') || 'Manage Announcements'}</span>
                                     </Link>
                                 </div>
                             </div>

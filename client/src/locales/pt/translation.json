@@ -224,17 +224,17 @@
       "notifications": {
         "title": "Notificações",
         "items": {
-          "activity": {
-            "title": "Lembretes de Atividade",
-            "text": "Configure lembretes personalizados para manter suas metas."
+          "newApp": {
+            "title": "Novo App",
+            "text": "Seja o primeiro a saber sobre novos lançamentos da linha Safe Way 10."
           },
-          "hydration": {
-            "title": "Alertas de Hidratação",
-            "text": "Receba lembretes periódicos para se manter hidratado."
+          "update": {
+            "title": "Notícias de Atualização",
+            "text": "Fique informado sobre novos recursos e melhorias em nossos apps."
           },
-          "sleep": {
-            "title": "Lembretes de Sono",
-            "text": "Receba notificações para melhores hábitos de sono."
+          "announcement": {
+            "title": "Anúncios",
+            "text": "Receba notícias importantes e informações de eventos da CodeWorks Lab."
           }
         }
       }
@@ -482,7 +482,9 @@
       "topPages": "Páginas Top (30d)",
       "quickLinks": "Links Rápidos",
       "manageReviews": "Gerenciar Avaliações",
-      "manageBlog": "Gerenciar Blog"
+      "manageBlog": "Gerenciar Blog",
+      "manageApps": "Gerenciar Apps",
+      "manageAnnouncements": "Gerenciar Anúncios"
     },
     "reviews": {
       "title": "Gerenciamento de Avaliações",
@@ -502,6 +504,36 @@
       "deleteConfirm": "Tem certeza que deseja excluir esta avaliação?",
       "statusUpdated": "Status da avaliação atualizado",
       "deleted": "Avaliação excluída"
+    },
+    "announcements": {
+      "title": "Gerenciamento de Anúncios",
+      "new": "Novo Anúncio",
+      "edit": "Editar Anúncio",
+      "all": "Todos",
+      "allStatus": "Todos os Status",
+      "type": "Tipo",
+      "titleLabel": "Título",
+      "titlePlaceholder": "Digite o título do anúncio",
+      "content": "Conteúdo",
+      "contentPlaceholder": "Digite o conteúdo do anúncio",
+      "status": "Status",
+      "draft": "Rascunho",
+      "published": "Publicado",
+      "emailStatus": "Status do Email",
+      "date": "Data",
+      "actions": "Ações",
+      "types": {
+        "newApp": "Novo App",
+        "update": "Atualização",
+        "announcement": "Anúncio"
+      },
+      "sendEmail": "Enviar Email",
+      "sendEmailConfirm": "Enviar email para todos os usuários registrados?",
+      "emailSent": "Email enviado para {{count}} usuários",
+      "created": "Anúncio criado",
+      "updated": "Anúncio atualizado",
+      "deleted": "Anúncio excluído",
+      "deleteConfirm": "Tem certeza que deseja excluir este anúncio?"
     },
     "blog": {
       "title": "Gerenciamento do Blog",

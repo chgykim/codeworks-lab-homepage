@@ -6,8 +6,10 @@ const {
     blogModel,
     settingsModel,
     statsModel,
-    contactModel
+    contactModel,
+    announcementModel
 } = require('../models/db');
+const { sendAnnouncementEmail } = require('../services/emailService');
 const { authenticateToken, requireAdmin } = require('../middleware/auth');
 const { validateBlogPost, validateId, validatePagination } = require('../middleware/validator');
 const { asyncHandler } = require('../middleware/errorHandler');
@@ -308,6 +310,185 @@ router.put('/contacts/:id/status', validateId, asyncHandler(async (req, res) => 
     await contactModel.updateStatus(parseInt(req.params.id), status);
 
     res.json({ message: 'Contact status updated' });
+}));
+
+// ==================== Announcements Management ====================
+
+// GET /api/admin/announcements - Get all announcements
+router.get('/announcements', validatePagination, asyncHandler(async (req, res) => {
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 20;
+    const offset = (page - 1) * limit;
+    const type = req.query.type;
+    const status = req.query.status;
+
+    const announcements = await announcementModel.getAll(type, status, limit, offset);
+
+    res.json({
+        announcements: announcements.map(a => ({
+            id: a.id,
+            type: a.type,
+            title: a.title,
+            content: a.content,
+            status: a.status,
+            emailSent: a.email_sent,
+            emailSentAt: a.email_sent_at,
+            authorId: a.author_id,
+            createdAt: a.created_at,
+            updatedAt: a.updated_at
+        })),
+        pagination: {
+            page,
+            limit,
+            hasMore: announcements.length === limit
+        }
+    });
+}));
+
+// GET /api/admin/announcements/:id - Get single announcement
+router.get('/announcements/:id', validateId, asyncHandler(async (req, res) => {
+    const announcement = await announcementModel.getById(parseInt(req.params.id));
+
+    if (!announcement) {
+        return res.status(404).json({ error: 'Announcement not found' });
+    }
+
+    res.json({
+        announcement: {
+            id: announcement.id,
+            type: announcement.type,
+            title: announcement.title,
+            content: announcement.content,
+            status: announcement.status,
+            emailSent: announcement.email_sent,
+            emailSentAt: announcement.email_sent_at,
+            authorId: announcement.author_id,
+            createdAt: announcement.created_at,
+            updatedAt: announcement.updated_at
+        }
+    });
+}));
+
+// POST /api/admin/announcements - Create new announcement
+router.post('/announcements', asyncHandler(async (req, res) => {
+    const { type, title, content, status } = req.body;
+
+    if (!type || !['new_app', 'update', 'announcement'].includes(type)) {
+        return res.status(400).json({ error: 'Invalid type' });
+    }
+
+    if (!title || title.trim().length === 0) {
+        return res.status(400).json({ error: 'Title is required' });
+    }
+
+    if (!content || content.trim().length === 0) {
+        return res.status(400).json({ error: 'Content is required' });
+    }
+
+    const announcementStatus = status === 'published' ? 'published' : 'draft';
+    const announcementId = await announcementModel.create(
+        type,
+        title.trim(),
+        content.trim(),
+        req.user.id,
+        announcementStatus
+    );
+
+    securityLogger.adminAction(req.user.id, 'CREATE_ANNOUNCEMENT', {
+        announcementId,
+        type,
+        title
+    });
+
+    res.status(201).json({
+        message: 'Announcement created',
+        announcementId
+    });
+}));
+
+// PUT /api/admin/announcements/:id - Update announcement
+router.put('/announcements/:id', validateId, asyncHandler(async (req, res) => {
+    const { type, title, content, status } = req.body;
+
+    const announcement = await announcementModel.getById(parseInt(req.params.id));
+    if (!announcement) {
+        return res.status(404).json({ error: 'Announcement not found' });
+    }
+
+    if (type && !['new_app', 'update', 'announcement'].includes(type)) {
+        return res.status(400).json({ error: 'Invalid type' });
+    }
+
+    await announcementModel.update(
+        parseInt(req.params.id),
+        type || announcement.type,
+        title?.trim() || announcement.title,
+        content?.trim() || announcement.content,
+        status || announcement.status
+    );
+
+    securityLogger.adminAction(req.user.id, 'UPDATE_ANNOUNCEMENT', {
+        announcementId: req.params.id,
+        title: title || announcement.title
+    });
+
+    res.json({ message: 'Announcement updated' });
+}));
+
+// DELETE /api/admin/announcements/:id - Delete announcement
+router.delete('/announcements/:id', validateId, asyncHandler(async (req, res) => {
+    const announcement = await announcementModel.getById(parseInt(req.params.id));
+    if (!announcement) {
+        return res.status(404).json({ error: 'Announcement not found' });
+    }
+
+    await announcementModel.delete(parseInt(req.params.id));
+
+    securityLogger.adminAction(req.user.id, 'DELETE_ANNOUNCEMENT', {
+        announcementId: req.params.id
+    });
+
+    res.json({ message: 'Announcement deleted' });
+}));
+
+// POST /api/admin/announcements/:id/send-email - Send announcement email
+router.post('/announcements/:id/send-email', validateId, asyncHandler(async (req, res) => {
+    const announcement = await announcementModel.getById(parseInt(req.params.id));
+
+    if (!announcement) {
+        return res.status(404).json({ error: 'Announcement not found' });
+    }
+
+    if (announcement.status !== 'published') {
+        return res.status(400).json({ error: 'Announcement must be published before sending email' });
+    }
+
+    if (announcement.email_sent) {
+        return res.status(400).json({ error: 'Email has already been sent for this announcement' });
+    }
+
+    try {
+        const result = await sendAnnouncementEmail(announcement);
+
+        if (result.sent > 0) {
+            await announcementModel.markEmailSent(parseInt(req.params.id));
+        }
+
+        securityLogger.adminAction(req.user.id, 'SEND_ANNOUNCEMENT_EMAIL', {
+            announcementId: req.params.id,
+            sent: result.sent,
+            total: result.total
+        });
+
+        res.json({
+            message: 'Email sent successfully',
+            sent: result.sent,
+            total: result.total,
+            errors: result.errors
+        });
+    } catch (error) {
+        res.status(500).json({ error: 'Failed to send email: ' + error.message });
+    }
 }));
 
 module.exports = router;

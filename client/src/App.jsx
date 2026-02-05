@@ -28,6 +28,7 @@ import AdminLogin from './pages/admin/Login';
 import Dashboard from './pages/admin/Dashboard';
 import ManageReviews from './pages/admin/ManageReviews';
 import ManageApps from './pages/admin/ManageApps';
+import ManageAnnouncements from './pages/admin/ManageAnnouncements';
 
 function App() {
     const { i18n } = useTranslation();
@@ -73,6 +74,7 @@ function App() {
                         <Route path="/admin" element={<Dashboard />} />
                         <Route path="/admin/reviews" element={<ManageReviews />} />
                         <Route path="/admin/apps" element={<ManageApps />} />
+                        <Route path="/admin/announcements" element={<ManageAnnouncements />} />
                     </Routes>
                 </main>
                 <Footer />

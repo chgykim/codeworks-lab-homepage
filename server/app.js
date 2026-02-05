@@ -28,6 +28,7 @@ const blogRoutes = require('./routes/blog');
 const adminRoutes = require('./routes/admin');
 const contactRoutes = require('./routes/contact');
 const settingsRoutes = require('./routes/settings');
+const announcementsRoutes = require('./routes/announcements');
 
 // Initialize database
 const { initializeDatabase } = require('./models/db');
@@ -89,6 +90,7 @@ app.use('/api/blog', blogRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/contact', contactRoutes);
 app.use('/api/settings', settingsRoutes);
+app.use('/api/announcements', announcementsRoutes);
 
 // Serve index.html for client-side routing in production
 if (process.env.NODE_ENV === 'production') {

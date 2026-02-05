@@ -224,17 +224,17 @@
       "notifications": {
         "title": "알림",
         "items": {
-          "activity": {
-            "title": "활동 알림",
-            "text": "루틴을 유지할 수 있도록 맞춤 알림을 설정하세요."
+          "newApp": {
+            "title": "신규 앱",
+            "text": "Safe Way 10 라인업의 새로운 앱 출시 소식을 가장 먼저 만나보세요."
           },
-          "hydration": {
-            "title": "수분 섭취 알림",
-            "text": "하루 종일 수분을 유지할 수 있도록 주기적인 알림을 받으세요."
+          "update": {
+            "title": "업데이트 소식",
+            "text": "앱의 새로운 기능과 개선 사항을 확인하세요."
           },
-          "sleep": {
-            "title": "휴식 알림",
-            "text": "더 나은 휴식 습관을 위해 취침 시간 알림을 받으세요."
+          "announcement": {
+            "title": "공지사항",
+            "text": "CodeWorks Lab의 중요한 소식과 이벤트 정보를 받아보세요."
           }
         }
       }
@@ -482,7 +482,9 @@
       "topPages": "인기 페이지 (30일)",
       "quickLinks": "빠른 링크",
       "manageReviews": "리뷰 관리",
-      "manageBlog": "블로그 관리"
+      "manageBlog": "블로그 관리",
+      "manageApps": "앱 관리",
+      "manageAnnouncements": "공지사항 관리"
     },
     "reviews": {
       "title": "리뷰 관리",
@@ -502,6 +504,36 @@
       "deleteConfirm": "이 리뷰를 삭제하시겠습니까?",
       "statusUpdated": "리뷰 상태가 업데이트되었습니다",
       "deleted": "리뷰가 삭제되었습니다"
+    },
+    "announcements": {
+      "title": "공지사항 관리",
+      "new": "새 공지사항",
+      "edit": "공지사항 수정",
+      "all": "전체",
+      "allStatus": "전체 상태",
+      "type": "유형",
+      "titleLabel": "제목",
+      "titlePlaceholder": "공지사항 제목을 입력하세요",
+      "content": "내용",
+      "contentPlaceholder": "공지사항 내용을 입력하세요",
+      "status": "상태",
+      "draft": "임시저장",
+      "published": "게시됨",
+      "emailStatus": "이메일 발송",
+      "date": "작성일",
+      "actions": "작업",
+      "types": {
+        "newApp": "신규 앱",
+        "update": "업데이트",
+        "announcement": "공지사항"
+      },
+      "sendEmail": "이메일 발송",
+      "sendEmailConfirm": "등록된 모든 회원에게 이메일을 발송하시겠습니까?",
+      "emailSent": "{{count}}명에게 이메일이 발송되었습니다",
+      "created": "공지사항이 생성되었습니다",
+      "updated": "공지사항이 수정되었습니다",
+      "deleted": "공지사항이 삭제되었습니다",
+      "deleteConfirm": "이 공지사항을 삭제하시겠습니까?"
     },
     "blog": {
       "title": "블로그 관리",

@@ -222,19 +222,19 @@
         }
       },
       "notifications": {
-        "title": "通知设置",
+        "title": "通知",
         "items": {
-          "activity": {
-            "title": "活动提醒",
-            "text": "设置自定义提醒以保持目标进度。"
+          "newApp": {
+            "title": "新应用",
+            "text": "第一时间获取Safe Way 10系列新应用发布消息。"
           },
-          "hydration": {
-            "title": "饮水提醒",
-            "text": "获取定期提醒以保持全天水分摄入。"
+          "update": {
+            "title": "更新消息",
+            "text": "了解应用的新功能和改进。"
           },
-          "sleep": {
-            "title": "就寝提醒",
-            "text": "接收就寝通知以养成更好的睡眠习惯。"
+          "announcement": {
+            "title": "公告",
+            "text": "获取CodeWorks Lab的重要新闻和活动信息。"
           }
         }
       }
@@ -482,7 +482,9 @@
       "topPages": "热门页面（30天）",
       "quickLinks": "快速链接",
       "manageReviews": "评价管理",
-      "manageBlog": "博客管理"
+      "manageBlog": "博客管理",
+      "manageApps": "应用管理",
+      "manageAnnouncements": "公告管理"
     },
     "reviews": {
       "title": "评价管理",
@@ -502,6 +504,36 @@
       "deleteConfirm": "确定要删除此评价吗？",
       "statusUpdated": "评价状态已更新",
       "deleted": "评价已删除"
+    },
+    "announcements": {
+      "title": "公告管理",
+      "new": "新建公告",
+      "edit": "编辑公告",
+      "all": "全部",
+      "allStatus": "全部状态",
+      "type": "类型",
+      "titleLabel": "标题",
+      "titlePlaceholder": "输入公告标题",
+      "content": "内容",
+      "contentPlaceholder": "输入公告内容",
+      "status": "状态",
+      "draft": "草稿",
+      "published": "已发布",
+      "emailStatus": "邮件发送状态",
+      "date": "日期",
+      "actions": "操作",
+      "types": {
+        "newApp": "新应用",
+        "update": "更新",
+        "announcement": "公告"
+      },
+      "sendEmail": "发送邮件",
+      "sendEmailConfirm": "向所有注册用户发送邮件吗？",
+      "emailSent": "已向{{count}}位用户发送邮件",
+      "created": "公告已创建",
+      "updated": "公告已更新",
+      "deleted": "公告已删除",
+      "deleteConfirm": "确定要删除此公告吗？"
     },
     "blog": {
       "title": "博客管理",

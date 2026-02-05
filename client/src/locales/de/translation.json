@@ -224,17 +224,17 @@
       "notifications": {
         "title": "Benachrichtigungen",
         "items": {
-          "activity": {
-            "title": "Aktivitäts-Erinnerungen",
-            "text": "Richten Sie benutzerdefinierte Erinnerungen ein, um Ihre Ziele zu erreichen."
+          "newApp": {
+            "title": "Neue App",
+            "text": "Seien Sie der Erste, der von neuen App-Veröffentlichungen der Safe Way 10 Produktlinie erfährt."
           },
-          "hydration": {
-            "title": "Trink-Erinnerungen",
-            "text": "Erhalten Sie regelmäßige Erinnerungen, um hydratisiert zu bleiben."
+          "update": {
+            "title": "Update-Nachrichten",
+            "text": "Bleiben Sie über neue Funktionen und Verbesserungen unserer Apps informiert."
           },
-          "sleep": {
-            "title": "Schlaf-Erinnerungen",
-            "text": "Erhalten Sie Benachrichtigungen für bessere Schlafgewohnheiten."
+          "announcement": {
+            "title": "Ankündigungen",
+            "text": "Erhalten Sie wichtige Nachrichten und Veranstaltungsinformationen von CodeWorks Lab."
           }
         }
       }
@@ -482,7 +482,9 @@
       "topPages": "Top-Seiten (30T)",
       "quickLinks": "Schnelllinks",
       "manageReviews": "Bewertungen Verwalten",
-      "manageBlog": "Blog Verwalten"
+      "manageBlog": "Blog Verwalten",
+      "manageApps": "Apps Verwalten",
+      "manageAnnouncements": "Ankündigungen Verwalten"
     },
     "reviews": {
       "title": "Bewertungsverwaltung",
@@ -502,6 +504,36 @@
       "deleteConfirm": "Sind Sie sicher, dass Sie diese Bewertung löschen möchten?",
       "statusUpdated": "Bewertungsstatus aktualisiert",
       "deleted": "Bewertung gelöscht"
+    },
+    "announcements": {
+      "title": "Ankündigungsverwaltung",
+      "new": "Neue Ankündigung",
+      "edit": "Ankündigung Bearbeiten",
+      "all": "Alle",
+      "allStatus": "Alle Status",
+      "type": "Typ",
+      "titleLabel": "Titel",
+      "titlePlaceholder": "Ankündigungstitel eingeben",
+      "content": "Inhalt",
+      "contentPlaceholder": "Ankündigungsinhalt eingeben",
+      "status": "Status",
+      "draft": "Entwurf",
+      "published": "Veröffentlicht",
+      "emailStatus": "E-Mail-Status",
+      "date": "Datum",
+      "actions": "Aktionen",
+      "types": {
+        "newApp": "Neue App",
+        "update": "Update",
+        "announcement": "Ankündigung"
+      },
+      "sendEmail": "E-Mail Senden",
+      "sendEmailConfirm": "E-Mail an alle registrierten Nutzer senden?",
+      "emailSent": "E-Mail an {{count}} Nutzer gesendet",
+      "created": "Ankündigung erstellt",
+      "updated": "Ankündigung aktualisiert",
+      "deleted": "Ankündigung gelöscht",
+      "deleteConfirm": "Sind Sie sicher, dass Sie diese Ankündigung löschen möchten?"
     },
     "blog": {
       "title": "Blog-Verwaltung",

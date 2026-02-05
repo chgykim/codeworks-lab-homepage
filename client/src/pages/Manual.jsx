@@ -17,7 +17,7 @@ const sectionConfigs = [
     { id: 'gettingStarted', icon: Download, items: ['download', 'signup', 'setup'] },
     { id: 'profile', icon: User, items: ['basic', 'goals', 'sync'] },
     { id: 'features', icon: Activity, items: ['tracking', 'auto', 'routines'] },
-    { id: 'notifications', icon: Bell, items: ['activity', 'hydration', 'sleep'] }
+    { id: 'notifications', icon: Bell, items: ['newApp', 'update', 'announcement'] }
 ];
 
 function Manual() {

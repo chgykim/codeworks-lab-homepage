@@ -224,17 +224,17 @@
       "notifications": {
         "title": "Notificaciones",
         "items": {
-          "activity": {
-            "title": "Recordatorios de Actividad",
-            "text": "Configura recordatorios personalizados para mantener tus metas."
+          "newApp": {
+            "title": "Nueva App",
+            "text": "Sé el primero en conocer los nuevos lanzamientos de la línea Safe Way 10."
           },
-          "hydration": {
-            "title": "Alertas de Hidratación",
-            "text": "Recibe recordatorios periódicos para mantenerte hidratado."
+          "update": {
+            "title": "Noticias de Actualización",
+            "text": "Mantente informado sobre nuevas funciones y mejoras en nuestras apps."
           },
-          "sleep": {
-            "title": "Recordatorio de Sueño",
-            "text": "Recibe notificaciones para mejores hábitos de sueño."
+          "announcement": {
+            "title": "Anuncios",
+            "text": "Recibe noticias importantes e información de eventos de CodeWorks Lab."
           }
         }
       }
@@ -482,7 +482,9 @@
       "topPages": "Páginas Top (30d)",
       "quickLinks": "Enlaces Rápidos",
       "manageReviews": "Gestionar Reseñas",
-      "manageBlog": "Gestionar Blog"
+      "manageBlog": "Gestionar Blog",
+      "manageApps": "Gestionar Apps",
+      "manageAnnouncements": "Gestionar Anuncios"
     },
     "reviews": {
       "title": "Gestión de Reseñas",
@@ -502,6 +504,36 @@
       "deleteConfirm": "¿Estás seguro de eliminar esta reseña?",
       "statusUpdated": "Estado de reseña actualizado",
       "deleted": "Reseña eliminada"
+    },
+    "announcements": {
+      "title": "Gestión de Anuncios",
+      "new": "Nuevo Anuncio",
+      "edit": "Editar Anuncio",
+      "all": "Todos",
+      "allStatus": "Todos los Estados",
+      "type": "Tipo",
+      "titleLabel": "Título",
+      "titlePlaceholder": "Ingresa el título del anuncio",
+      "content": "Contenido",
+      "contentPlaceholder": "Ingresa el contenido del anuncio",
+      "status": "Estado",
+      "draft": "Borrador",
+      "published": "Publicado",
+      "emailStatus": "Estado del Email",
+      "date": "Fecha",
+      "actions": "Acciones",
+      "types": {
+        "newApp": "Nueva App",
+        "update": "Actualización",
+        "announcement": "Anuncio"
+      },
+      "sendEmail": "Enviar Email",
+      "sendEmailConfirm": "¿Enviar email a todos los usuarios registrados?",
+      "emailSent": "Email enviado a {{count}} usuarios",
+      "created": "Anuncio creado",
+      "updated": "Anuncio actualizado",
+      "deleted": "Anuncio eliminado",
+      "deleteConfirm": "¿Estás seguro de eliminar este anuncio?"
     },
     "blog": {
       "title": "Gestión del Blog",

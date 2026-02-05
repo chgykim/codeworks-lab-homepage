@@ -222,19 +222,19 @@
         }
       },
       "notifications": {
-        "title": "通知設定",
+        "title": "お知らせ",
         "items": {
-          "activity": {
-            "title": "アクティビティリマインダー",
-            "text": "目標達成のためのカスタムリマインダーを設定。"
+          "newApp": {
+            "title": "新アプリ",
+            "text": "Safe Way 10ラインナップの新しいアプリリリース情報をいち早くお届けします。"
           },
-          "hydration": {
-            "title": "水分補給アラート",
-            "text": "一日を通して水分補給のための定期的なリマインダーを受信。"
+          "update": {
+            "title": "アップデート情報",
+            "text": "アプリの新機能や改善点についてお知らせします。"
           },
-          "sleep": {
-            "title": "就寝リマインダー",
-            "text": "より良い睡眠習慣のための就寝通知を受信。"
+          "announcement": {
+            "title": "お知らせ",
+            "text": "CodeWorks Labからの重要なニュースやイベント情報をお届けします。"
           }
         }
       }
@@ -482,7 +482,9 @@
       "topPages": "人気ページ（30日）",
       "quickLinks": "クイックリンク",
       "manageReviews": "レビュー管理",
-      "manageBlog": "ブログ管理"
+      "manageBlog": "ブログ管理",
+      "manageApps": "アプリ管理",
+      "manageAnnouncements": "お知らせ管理"
     },
     "reviews": {
       "title": "レビュー管理",
@@ -502,6 +504,36 @@
       "deleteConfirm": "このレビューを削除してもよろしいですか？",
       "statusUpdated": "レビューのステータスが更新されました",
       "deleted": "レビューが削除されました"
+    },
+    "announcements": {
+      "title": "お知らせ管理",
+      "new": "新規お知らせ",
+      "edit": "お知らせ編集",
+      "all": "すべて",
+      "allStatus": "全ステータス",
+      "type": "種類",
+      "titleLabel": "タイトル",
+      "titlePlaceholder": "お知らせのタイトルを入力",
+      "content": "内容",
+      "contentPlaceholder": "お知らせの内容を入力",
+      "status": "ステータス",
+      "draft": "下書き",
+      "published": "公開済み",
+      "emailStatus": "メール送信状況",
+      "date": "日付",
+      "actions": "操作",
+      "types": {
+        "newApp": "新アプリ",
+        "update": "アップデート",
+        "announcement": "お知らせ"
+      },
+      "sendEmail": "メール送信",
+      "sendEmailConfirm": "登録済みのすべてのユーザーにメールを送信しますか？",
+      "emailSent": "{{count}}名にメールを送信しました",
+      "created": "お知らせを作成しました",
+      "updated": "お知らせを更新しました",
+      "deleted": "お知らせを削除しました",
+      "deleteConfirm": "このお知らせを削除してもよろしいですか？"
     },
     "blog": {
       "title": "ブログ管理",
