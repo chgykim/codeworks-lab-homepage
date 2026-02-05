@@ -151,7 +151,7 @@ function ManageAnnouncements() {
             );
             setMessage({
                 type: 'success',
-                text: t('admin.announcements.emailSent', { count: response.data.sent })
+                text: t('admin.announcements.emailStarted') || '이메일 발송이 시작되었습니다'
             });
         } catch (error) {
             setMessage({ type: 'error', text: error.response?.data?.error || t('common.error') });
