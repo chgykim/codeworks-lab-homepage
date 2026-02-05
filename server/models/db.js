@@ -113,14 +113,25 @@ async function initializeDatabase() {
     try {
         await client.query(schema);
 
-        // Migration: Add deleted_at column to users table if not exists
-        const columnCheck = await client.query(`
-            SELECT column_name FROM information_schema.columns
-            WHERE table_name = 'users' AND column_name = 'deleted_at'
-        `);
-        if (columnCheck.rows.length === 0) {
-            await client.query('ALTER TABLE users ADD COLUMN deleted_at TIMESTAMP');
-            console.log('Added deleted_at column to users table');
+        // Migration: Add missing columns to users table
+        const columnsToAdd = [
+            { name: 'name', type: 'VARCHAR(100)' },
+            { name: 'login_attempts', type: 'INTEGER DEFAULT 0' },
+            { name: 'locked_until', type: 'TIMESTAMP' },
+            { name: 'deleted_at', type: 'TIMESTAMP' },
+            { name: 'updated_at', type: 'TIMESTAMP DEFAULT CURRENT_TIMESTAMP' }
+        ];
+
+        for (const col of columnsToAdd) {
+            const columnCheck = await client.query(`
+                SELECT column_name FROM information_schema.columns
+                WHERE table_name = 'users' AND column_name = $1
+            `, [col.name]);
+
+            if (columnCheck.rows.length === 0) {
+                await client.query(`ALTER TABLE users ADD COLUMN ${col.name} ${col.type}`);
+                console.log(`Added ${col.name} column to users table`);
+            }
         }
 
         // Create default admin user if not exists
