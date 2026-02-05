@@ -499,4 +499,17 @@ router.post('/announcements/:id/send-email', validateId, asyncHandler(async (req
         });
 }));
 
+// POST /api/admin/announcements/:id/reset-email - Reset email sent status
+router.post('/announcements/:id/reset-email', validateId, asyncHandler(async (req, res) => {
+    const announcement = await announcementModel.getById(parseInt(req.params.id));
+
+    if (!announcement) {
+        return res.status(404).json({ error: 'Announcement not found' });
+    }
+
+    await announcementModel.resetEmailSent(parseInt(req.params.id));
+
+    res.json({ message: 'Email status reset successfully' });
+}));
+
 module.exports = router;

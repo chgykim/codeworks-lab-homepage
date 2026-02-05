@@ -631,6 +631,15 @@ const announcementModel = {
         );
     },
 
+    resetEmailSent: async (id) => {
+        await pool.query(
+            `UPDATE announcements
+             SET email_sent = FALSE, email_sent_at = NULL
+             WHERE id = $1`,
+            [id]
+        );
+    },
+
     getStats: async () => {
         const result = await pool.query(`
             SELECT
