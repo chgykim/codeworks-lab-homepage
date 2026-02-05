@@ -7,7 +7,8 @@ const {
     settingsModel,
     statsModel,
     contactModel,
-    announcementModel
+    announcementModel,
+    userModel
 } = require('../models/db');
 const { sendAnnouncementEmail } = require('../services/emailService');
 const { authenticateToken, requireAdmin } = require('../middleware/auth');
@@ -27,6 +28,7 @@ router.get('/dashboard', asyncHandler(async (req, res) => {
     const blogStats = await blogModel.getStats();
     const visitorStats = await statsModel.getVisitorCount(30);
     const pageViews = await statsModel.getPageViews(30);
+    const userStats = await userModel.getStats();
 
     res.json({
         reviews: {
@@ -45,6 +47,12 @@ router.get('/dashboard', asyncHandler(async (req, res) => {
             uniqueVisitors: parseInt(visitorStats?.unique_visitors) || 0,
             totalVisits: parseInt(visitorStats?.total_visits) || 0,
             topPages: pageViews.slice(0, 5)
+        },
+        users: {
+            total: parseInt(userStats?.total) || 0,
+            admins: parseInt(userStats?.admins) || 0,
+            members: parseInt(userStats?.users) || 0,
+            withEmail: parseInt(userStats?.with_email) || 0
         }
     });
 }));

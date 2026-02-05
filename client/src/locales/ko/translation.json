@@ -484,7 +484,9 @@
       "manageReviews": "리뷰 관리",
       "manageBlog": "블로그 관리",
       "manageApps": "앱 관리",
-      "manageAnnouncements": "공지사항 관리"
+      "manageAnnouncements": "공지사항 관리",
+      "totalMembers": "등록 회원",
+      "emailTargets": "이메일 대상"
     },
     "reviews": {
       "title": "리뷰 관리",

@@ -301,6 +301,25 @@ const userModel = {
             [email]
         );
         return result.rows.length > 0;
+    },
+
+    getStats: async () => {
+        const result = await pool.query(`
+            SELECT
+                COUNT(*) FILTER (WHERE deleted_at IS NULL) as total,
+                COUNT(*) FILTER (WHERE deleted_at IS NULL AND role = 'admin') as admins,
+                COUNT(*) FILTER (WHERE deleted_at IS NULL AND role = 'user') as users,
+                COUNT(*) FILTER (WHERE deleted_at IS NULL AND email IS NOT NULL) as with_email
+            FROM users
+        `);
+        return result.rows[0];
+    },
+
+    getAllEmails: async () => {
+        const result = await pool.query(
+            'SELECT email FROM users WHERE deleted_at IS NULL AND email IS NOT NULL'
+        );
+        return result.rows.map(row => row.email);
     }
 };
 
