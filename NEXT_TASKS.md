@@ -593,64 +593,53 @@ Render 유료 플랜: 월 $7 ≈ 9,000원 (연 11만원)
 
 ---
 
-## 🚨 즉시 해야 할 작업 (맥미니 M4에서)
+## 🚨 즉시 해야 할 작업
 
-### 1. Render 환경변수 수정 - SMTP 포트 변경
-Render 대시보드 → codeworks-lab-homepage → Environment
+### 1. [보안] Gmail 앱 비밀번호 재생성 ⚠️
+> NEXT_TASKS.md에 비밀번호가 노출되어 GitHub에 푸시됨 (2026-02-05)
 
-| Key | 기존 값 | 변경 값 |
-|-----|---------|---------|
-| `SMTP_PORT` | 587 | **465** |
+1. https://myaccount.google.com/apppasswords 접속
+2. 기존 앱 비밀번호 **삭제**
+3. 새 앱 비밀번호 **생성**
+4. Render 환경변수 `SMTP_PASS` **업데이트**
+5. Save Changes → 자동 재배포
 
-나머지는 그대로:
-- `SMTP_HOST`: smtp.gmail.com
-- `SMTP_USER`: (Gmail 주소)
-- `SMTP_PASS`: (Gmail 앱 비밀번호 - Render 환경변수에서 확인)
-- `SMTP_FROM`: (발신자 이메일)
+### 2. [보안] Resend API 키 삭제
+1. https://resend.com/api-keys 접속
+2. 노출된 키 **삭제** (현재 Gmail SMTP 사용 중이라 새로 생성 안 해도 됨)
 
-**Save Changes** 클릭 후 자동 재배포
-
-### 2. 이메일 발송 테스트
+### 3. 이메일 발송 테스트
 1. https://rustic-sage.web.app/admin/announcements 접속
-2. 새 공지사항 작성 (상태: **게시됨**)
-3. 이메일 발송 버튼(✈️) 클릭
-4. Render 로그에서 결과 확인:
+2. 공지사항 이메일 발송 버튼 클릭
+3. **Render 로그 확인** (Render Dashboard → Logs)
 
-**상세 로그 (2026-02-05 추가됨):**
+**성공 시:**
 ```
-[EmailService] Starting email send process...
-[EmailService] SMTP_USER: SET (또는 NOT SET)
-[EmailService] SMTP_PASS: SET (또는 NOT SET)
-[EmailService] Verifying SMTP connection...
-[EmailService] SMTP connection verified successfully  ← 연결 성공
+[EmailService] SMTP connection verified successfully
 [EmailService] Found 3 users to send email to
 Email sent successfully to: xxx@xxx.com
 ```
 
-**에러 발생 시:**
+**실패 시:**
 ```
-[EmailService] SMTP connection failed: Connection timeout  ← 포트 차단됨
+[EmailService] SMTP connection failed: Connection timeout
 ```
 
-**결과 해석:**
-- ✅ `SMTP connection verified` → 연결 성공, 이메일 발송 시작
-- ❌ `SMTP connection failed` → Render에서 포트 465도 차단됨
-- ⚠️ `SMTP_USER: NOT SET` → 환경변수 미설정
+### 4. 포트 465도 안 될 경우 대안
+Render 무료 플랜에서 SMTP 포트가 차단될 수 있음.
 
-### 3. Gmail SMTP 포트 465도 안 될 경우
-Render 무료 플랜에서 포트 465도 차단되어 있을 수 있음.
+| 대안 | 설명 |
+|------|------|
+| **Render 유료 플랜** | $7/월, 포트 제한 없음 |
+| **SendGrid API** | 무료 100통/일, HTTP API 사용 |
+| **Mailgun API** | 무료 5,000통/월 |
 
-**대안:**
-1. **Render 유료 플랜** ($7/월)으로 업그레이드
-2. **본인 도메인을 Resend에 추가** (DNS 설정 필요)
-   - Resend에 도메인 추가 → SPF, DKIM 레코드 DNS에 추가
-   - 인증 완료 후 해당 도메인에서 모든 이메일 주소로 발송 가능
+---
 
-### 4. Resend 사용 시 (현재 설정된 상태)
-현재 emailService.js는 **Gmail SMTP 포트 465**로 설정됨.
-만약 Resend로 되돌리려면:
-- `RESEND_API_KEY`: Render 환경변수에 설정됨 (절대 코드에 작성 금지!)
-- emailService.js를 Resend 버전으로 롤백 필요
+### 참고: 현재 이메일 설정 상태
+- **방식**: Gmail SMTP (포트 465, SSL)
+- **환경변수**: `SMTP_HOST`, `SMTP_USER`, `SMTP_PASS`, `SMTP_FROM`
+- **코드**: `server/services/emailService.js`
 
 ---
 
