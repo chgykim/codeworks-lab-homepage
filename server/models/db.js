@@ -135,23 +135,31 @@ async function initializeDatabase() {
         }
 
         // Migration: Add user_id column to reviews table
-        const reviewUserIdCheck = await client.query(`
-            SELECT column_name FROM information_schema.columns
-            WHERE table_name = 'reviews' AND column_name = 'user_id'
-        `);
-        if (reviewUserIdCheck.rows.length === 0) {
-            await client.query('ALTER TABLE reviews ADD COLUMN user_id INTEGER REFERENCES users(id) ON DELETE SET NULL');
-            console.log('Added user_id column to reviews table');
+        try {
+            const reviewUserIdCheck = await client.query(`
+                SELECT column_name FROM information_schema.columns
+                WHERE table_name = 'reviews' AND column_name = 'user_id'
+            `);
+            if (reviewUserIdCheck.rows.length === 0) {
+                await client.query('ALTER TABLE reviews ADD COLUMN user_id INTEGER');
+                console.log('Added user_id column to reviews table');
+            }
+        } catch (err) {
+            console.error('Migration error (reviews.user_id):', err.message);
         }
 
         // Migration: Add user_id column to contact_submissions table
-        const contactUserIdCheck = await client.query(`
-            SELECT column_name FROM information_schema.columns
-            WHERE table_name = 'contact_submissions' AND column_name = 'user_id'
-        `);
-        if (contactUserIdCheck.rows.length === 0) {
-            await client.query('ALTER TABLE contact_submissions ADD COLUMN user_id INTEGER REFERENCES users(id) ON DELETE SET NULL');
-            console.log('Added user_id column to contact_submissions table');
+        try {
+            const contactUserIdCheck = await client.query(`
+                SELECT column_name FROM information_schema.columns
+                WHERE table_name = 'contact_submissions' AND column_name = 'user_id'
+            `);
+            if (contactUserIdCheck.rows.length === 0) {
+                await client.query('ALTER TABLE contact_submissions ADD COLUMN user_id INTEGER');
+                console.log('Added user_id column to contact_submissions table');
+            }
+        } catch (err) {
+            console.error('Migration error (contact_submissions.user_id):', err.message);
         }
 
         // Migration: Create announcements table if not exists
