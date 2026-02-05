@@ -38,6 +38,11 @@ const app = express();
 // Trust proxy for rate limiting behind reverse proxy
 app.set('trust proxy', 1);
 
+// Serve static files FIRST (before CORS) in production
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.join(__dirname, '../client/dist')));
+}
+
 // Security middleware
 app.use(helmetConfig);
 app.use(corsConfig);
@@ -85,10 +90,8 @@ app.use('/api/admin', adminRoutes);
 app.use('/api/contact', contactRoutes);
 app.use('/api/settings', settingsRoutes);
 
-// Serve static files in production
+// Serve index.html for client-side routing in production
 if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, '../client/dist')));
-
     app.get('*', (req, res) => {
         res.sendFile(path.join(__dirname, '../client/dist/index.html'));
     });
