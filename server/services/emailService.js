@@ -1,7 +1,18 @@
+const nodemailer = require('nodemailer');
 const { pool } = require('../models/db');
 
-// Resend API endpoint
-const RESEND_API_URL = 'https://api.resend.com/emails';
+// Create transporter with Gmail SMTP (SSL port 465)
+const createTransporter = () => {
+    return nodemailer.createTransport({
+        host: 'smtp.gmail.com',
+        port: 465,
+        secure: true,  // SSL
+        auth: {
+            user: process.env.SMTP_USER,
+            pass: process.env.SMTP_PASS
+        }
+    });
+};
 
 // Get all registered users' emails
 const getAllUserEmails = async () => {
@@ -85,59 +96,31 @@ const generateEmailTemplate = (announcement) => {
     `.trim();
 };
 
-// Send email using Resend API
-const sendEmailWithResend = async (to, subject, html) => {
-    const apiKey = process.env.RESEND_API_KEY;
-
-    if (!apiKey) {
-        throw new Error('RESEND_API_KEY is not set');
-    }
-
-    const response = await fetch(RESEND_API_URL, {
-        method: 'POST',
-        headers: {
-            'Authorization': `Bearer ${apiKey}`,
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            from: 'CodeWorks Lab <onboarding@resend.dev>',
-            to: to,
-            subject: subject,
-            html: html
-        })
-    });
-
-    if (!response.ok) {
-        const error = await response.json();
-        throw new Error(error.message || 'Failed to send email');
-    }
-
-    return await response.json();
-};
-
 // Send email to all users in batches
 const sendAnnouncementEmail = async (announcement) => {
+    const transporter = createTransporter();
     const emails = await getAllUserEmails();
 
     if (emails.length === 0) {
         return { success: true, sent: 0, total: 0, message: 'No users to send email to' };
     }
 
+    const fromEmail = process.env.SMTP_FROM || process.env.SMTP_USER;
     const htmlContent = generateEmailTemplate(announcement);
-    const subject = `[CodeWorks Lab] ${announcement.title}`;
 
     let sentCount = 0;
     const errors = [];
 
-    // Send emails one by one (Resend free tier limit)
     for (const email of emails) {
         try {
-            await sendEmailWithResend(email, subject, htmlContent);
+            await transporter.sendMail({
+                from: `"CodeWorks Lab" <${fromEmail}>`,
+                to: email,
+                subject: `[CodeWorks Lab] ${announcement.title}`,
+                html: htmlContent
+            });
             sentCount++;
             console.log(`Email sent successfully to: ${email}`);
-
-            // Small delay to avoid rate limiting
-            await new Promise(resolve => setTimeout(resolve, 500));
         } catch (error) {
             console.error(`Failed to send email to ${email}:`, error.message);
             errors.push({ email, error: error.message });
@@ -152,28 +135,12 @@ const sendAnnouncementEmail = async (announcement) => {
     };
 };
 
-// Verify Resend API connection
+// Verify SMTP connection
 const verifyConnection = async () => {
-    const apiKey = process.env.RESEND_API_KEY;
-
-    if (!apiKey) {
-        return { success: false, error: 'RESEND_API_KEY is not set' };
-    }
-
     try {
-        // Test API key by getting domains (lightweight request)
-        const response = await fetch('https://api.resend.com/domains', {
-            headers: {
-                'Authorization': `Bearer ${apiKey}`
-            }
-        });
-
-        if (response.ok) {
-            return { success: true };
-        } else {
-            const error = await response.json();
-            return { success: false, error: error.message || 'API key invalid' };
-        }
+        const transporter = createTransporter();
+        await transporter.verify();
+        return { success: true };
     } catch (error) {
         return { success: false, error: error.message };
     }
