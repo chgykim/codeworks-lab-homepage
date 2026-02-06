@@ -613,12 +613,31 @@ Render 유료 플랜: 월 $7 ≈ 9,000원 (연 11만원)
 > 이메일 기능 자체를 제거하여 해결
 
 - [x] 이메일 기능 제거로 SMTP 관련 정보 불필요
-- [ ] Resend API 키 삭제 (https://resend.com/api-keys)
-- [ ] Gmail 앱 비밀번호 삭제 (https://myaccount.google.com/apppasswords)
+- [x] Resend API 키 삭제 완료 (https://resend.com/api-keys)
+- [x] Gmail 앱 비밀번호 삭제 완료 (https://myaccount.google.com/apppasswords)
 
 ### 현재 인증 구조
 - **관리자 로그인**: `/admin/login` (Google 로그인)
 - **일반 사용자**: 로그인 없이 사용 (리뷰 작성, 문의 가능)
+
+### 공지사항 페이지 추가
+- [x] **공지사항 공개 페이지** (`/announcements`)
+  - `Announcements.jsx` 컴포넌트 생성
+  - `Announcements.css` 스타일시트 생성
+  - 유형별 필터링 (전체, 신규 앱, 업데이트, 공지)
+  - 더 보기 버튼 (페이지네이션)
+- [x] **Header.jsx** - 공지사항 메뉴 추가 (리뷰 옆)
+- [x] **api.js** - `announcementsAPI.getAll()` 추가
+- [x] **announcements.js** - 공개 API 라우트 생성
+- [x] **11개 언어 번역 추가** (`nav.announcements`, `announcements.*`)
+
+### 자동 번역 기능 (시도 후 철회)
+- [x] Google Cloud Translation API 연동 시도
+- [x] **비용 문제로 기능 제거** ($20/백만 문자)
+  - `server/services/translateService.js` 삭제
+  - 관련 코드 모두 원복
+  - `@google-cloud/translate` 패키지 제거
+- **대안**: 브라우저 내장 번역 기능 사용 권장
 
 ---
 
@@ -640,4 +659,4 @@ Render 유료 플랜: 월 $7 ≈ 9,000원 (연 11만원)
 ---
 
 *마지막 업데이트: 2026-02-06*
-*맥미니 M4 환경 설정 가이드 + API 키 보안 조치 완료 + 수익 목표 + 법적 페이지 완료 + 기능 간소화 완료*
+*맥미니 M4 환경 설정 가이드 + API 키 보안 조치 완료 + 수익 목표 + 법적 페이지 완료 + 기능 간소화 완료 + 공지사항 페이지 추가 + 보안 키 삭제 완료*
