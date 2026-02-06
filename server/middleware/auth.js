@@ -1,7 +1,10 @@
 const jwt = require('jsonwebtoken');
 const { verifyIdToken, isAdminEmail } = require('../config/firebase');
 
-const JWT_SECRET = process.env.JWT_SECRET || 'dev-secret-key';
+if (!process.env.JWT_SECRET) {
+    throw new Error('JWT_SECRET environment variable is required');
+}
+const JWT_SECRET = process.env.JWT_SECRET;
 
 // Generate JWT token (for session management after Firebase auth)
 function generateToken(user) {
