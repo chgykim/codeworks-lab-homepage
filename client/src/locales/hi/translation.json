@@ -10,11 +10,23 @@
     "apps": "ऐप्स",
     "manual": "गाइड",
     "reviews": "समीक्षाएं",
+    "announcements": "घोषणाएं",
     "blog": "ब्लॉग",
     "admin": "एडमिन",
     "login": "लॉगिन",
     "logout": "लॉग आउट",
     "mypage": "मेरा खाता"
+  },
+  "announcements": {
+    "title": "घोषणाएं",
+    "subtitle": "नवीनतम समाचार और अपडेट देखें",
+    "all": "सभी",
+    "empty": "कोई घोषणा नहीं",
+    "types": {
+      "newApp": "नया ऐप",
+      "update": "अपडेट",
+      "announcement": "घोषणा"
+    }
   },
   "hero": {
     "title": "आपका दैनिक",

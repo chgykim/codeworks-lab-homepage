@@ -10,11 +10,23 @@
     "apps": "التطبيقات",
     "manual": "الدليل",
     "reviews": "التقييمات",
+    "announcements": "الإعلانات",
     "blog": "المدونة",
     "admin": "الإدارة",
     "login": "تسجيل الدخول",
     "logout": "تسجيل الخروج",
     "mypage": "حسابي"
+  },
+  "announcements": {
+    "title": "الإعلانات",
+    "subtitle": "اطلع على آخر الأخبار والتحديثات",
+    "all": "الكل",
+    "empty": "لا توجد إعلانات",
+    "types": {
+      "newApp": "تطبيق جديد",
+      "update": "تحديث",
+      "announcement": "إعلان"
+    }
   },
   "hero": {
     "title": "مساعدك",

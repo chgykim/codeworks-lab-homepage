@@ -10,11 +10,23 @@
     "apps": "应用",
     "manual": "使用指南",
     "reviews": "评价",
+    "announcements": "公告",
     "blog": "博客",
     "admin": "管理",
     "login": "登录",
     "logout": "退出登录",
     "mypage": "我的"
+  },
+  "announcements": {
+    "title": "公告",
+    "subtitle": "查看最新消息和更新",
+    "all": "全部",
+    "empty": "暂无公告",
+    "types": {
+      "newApp": "新应用",
+      "update": "更新",
+      "announcement": "公告"
+    }
   },
   "hero": {
     "title": "您的日常",

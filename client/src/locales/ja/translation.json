@@ -10,11 +10,23 @@
     "apps": "アプリ",
     "manual": "ガイド",
     "reviews": "レビュー",
+    "announcements": "お知らせ",
     "blog": "ブログ",
     "admin": "管理者",
     "login": "ログイン",
     "logout": "ログアウト",
     "mypage": "マイページ"
+  },
+  "announcements": {
+    "title": "お知らせ",
+    "subtitle": "最新のニュースとアップデートをチェック",
+    "all": "すべて",
+    "empty": "お知らせはありません",
+    "types": {
+      "newApp": "新アプリ",
+      "update": "アップデート",
+      "announcement": "お知らせ"
+    }
   },
   "hero": {
     "title": "あなたの毎日の",

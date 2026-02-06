@@ -10,11 +10,23 @@
     "apps": "Apps",
     "manual": "Guide",
     "reviews": "Avis",
+    "announcements": "Actualités",
     "blog": "Blog",
     "admin": "Admin",
     "login": "Connexion",
     "logout": "Déconnexion",
     "mypage": "Mon Compte"
+  },
+  "announcements": {
+    "title": "Actualités",
+    "subtitle": "Consultez les dernières nouvelles et mises à jour",
+    "all": "Tous",
+    "empty": "Aucune actualité",
+    "types": {
+      "newApp": "Nouvelle App",
+      "update": "Mise à jour",
+      "announcement": "Annonce"
+    }
   },
   "hero": {
     "title": "Votre Assistant",
