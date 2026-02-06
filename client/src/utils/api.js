@@ -30,10 +30,30 @@ api.interceptors.request.use(
     }
 );
 
-// Response interceptor
+// Retry helper
+const MAX_RETRIES = 2;
+const RETRY_DELAY = 2000;
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+// Response interceptor with auto-retry for cold start
 api.interceptors.response.use(
     (response) => response,
-    (error) => {
+    async (error) => {
+        const config = error.config;
+
+        // Auto-retry on timeout, network error, or 5xx server error
+        if (config && (config._retryCount || 0) < MAX_RETRIES) {
+            const isTimeout = error.code === 'ECONNABORTED';
+            const isNetwork = error.code === 'ERR_NETWORK';
+            const isServerError = error.response && error.response.status >= 500;
+
+            if (isTimeout || isNetwork || isServerError) {
+                config._retryCount = (config._retryCount || 0) + 1;
+                await sleep(RETRY_DELAY);
+                return api(config);
+            }
+        }
+
         if (error.response) {
             // Handle specific error codes
             if (error.response.status === 401) {
