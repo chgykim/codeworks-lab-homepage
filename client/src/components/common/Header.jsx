@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Menu, X, Home, BookOpen, Star, Settings } from 'lucide-react';
+import { Menu, X, Home, BookOpen, Star, Megaphone, Settings } from 'lucide-react';
 import { useAuth } from '../../hooks/useAuth';
 import LanguageSelector from './LanguageSelector';
 import './Header.css';
@@ -15,7 +15,8 @@ function Header() {
     const navLinks = [
         { path: '/', labelKey: 'nav.home', icon: Home },
         { path: '/manual', labelKey: 'nav.manual', icon: BookOpen },
-        { path: '/reviews', labelKey: 'nav.reviews', icon: Star }
+        { path: '/reviews', labelKey: 'nav.reviews', icon: Star },
+        { path: '/announcements', labelKey: 'nav.announcements', icon: Megaphone }
     ];
 
     const isActive = (path) => {

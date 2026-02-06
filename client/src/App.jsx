@@ -4,13 +4,13 @@ import { useTranslation } from 'react-i18next';
 
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
-import AnnouncementBanner from './components/common/AnnouncementBanner';
 import { AuthProvider } from './hooks/useAuth';
 
 // Public pages
 import Home from './pages/Home';
 import Manual from './pages/Manual';
 import Reviews from './pages/Reviews';
+import Announcements from './pages/Announcements';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 
@@ -40,7 +40,6 @@ function App() {
     return (
         <AuthProvider key={langKey}>
             <Router>
-                <AnnouncementBanner />
                 <Header />
                 <main>
                     <Routes>
@@ -48,6 +47,7 @@ function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="/manual" element={<Manual />} />
                         <Route path="/reviews" element={<Reviews />} />
+                        <Route path="/announcements" element={<Announcements />} />
                         <Route path="/privacy" element={<Privacy />} />
                         <Route path="/terms" element={<Terms />} />
 

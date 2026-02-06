@@ -10,11 +10,23 @@
     "apps": "Apps",
     "manual": "Guide",
     "reviews": "Reviews",
+    "announcements": "News",
     "blog": "Blog",
     "admin": "Admin",
     "login": "Login",
     "logout": "Logout",
     "mypage": "My Page"
+  },
+  "announcements": {
+    "title": "Announcements",
+    "subtitle": "Check out the latest news and updates",
+    "all": "All",
+    "empty": "No announcements yet",
+    "types": {
+      "newApp": "New App",
+      "update": "Update",
+      "announcement": "Notice"
+    }
   },
   "hero": {
     "title": "Your Everyday",

@@ -10,11 +10,23 @@
     "apps": "앱",
     "manual": "가이드",
     "reviews": "리뷰",
+    "announcements": "공지사항",
     "blog": "블로그",
     "admin": "관리자",
     "login": "로그인",
     "logout": "로그아웃",
     "mypage": "마이페이지"
+  },
+  "announcements": {
+    "title": "공지사항",
+    "subtitle": "최신 소식과 업데이트를 확인하세요",
+    "all": "전체",
+    "empty": "공지사항이 없습니다",
+    "types": {
+      "newApp": "신규 앱",
+      "update": "업데이트",
+      "announcement": "공지"
+    }
   },
   "hero": {
     "title": "일상의",
