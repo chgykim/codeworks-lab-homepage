@@ -92,8 +92,8 @@ export const settingsAPI = {
 
 // Announcements API (public)
 export const announcementsAPI = {
-    getAll: (page = 1, limit = 20, type = '', lang = 'ko') =>
-        api.get(`/announcements?page=${page}&limit=${limit}${type ? `&type=${type}` : ''}&lang=${lang}`)
+    getAll: (page = 1, limit = 20, type = '') =>
+        api.get(`/announcements?page=${page}&limit=${limit}${type ? `&type=${type}` : ''}`)
 };
 
 // Admin API

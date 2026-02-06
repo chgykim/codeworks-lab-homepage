@@ -9,31 +9,17 @@ router.get('/', asyncHandler(async (req, res) => {
     const limit = parseInt(req.query.limit) || 20;
     const offset = (page - 1) * limit;
     const type = req.query.type; // new_app, update, announcement
-    const lang = req.query.lang || 'ko'; // Language code
 
     const announcements = await announcementModel.getPublished(type, limit, offset);
 
     res.json({
-        announcements: announcements.map(a => {
-            // Get translated title and content if available
-            let title = a.title;
-            let content = a.content;
-
-            if (a.title_translations && a.title_translations[lang]) {
-                title = a.title_translations[lang];
-            }
-            if (a.content_translations && a.content_translations[lang]) {
-                content = a.content_translations[lang];
-            }
-
-            return {
-                id: a.id,
-                type: a.type,
-                title,
-                content,
-                createdAt: a.created_at
-            };
-        }),
+        announcements: announcements.map(a => ({
+            id: a.id,
+            type: a.type,
+            title: a.title,
+            content: a.content,
+            createdAt: a.created_at
+        })),
         pagination: {
             page,
             limit,

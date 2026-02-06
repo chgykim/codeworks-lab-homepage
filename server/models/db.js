@@ -581,7 +581,7 @@ const announcementModel = {
     },
 
     getPublished: async (type = null, limit = 50, offset = 0) => {
-        let query = `SELECT id, type, title, content, title_translations, content_translations, created_at
+        let query = `SELECT id, type, title, content, created_at
                      FROM announcements WHERE status = 'published'`;
         const params = [];
 
@@ -602,31 +602,22 @@ const announcementModel = {
         return result.rows[0];
     },
 
-    create: async (type, title, content, authorId, status = 'draft', titleTranslations = null, contentTranslations = null) => {
+    create: async (type, title, content, authorId, status = 'draft') => {
         const result = await pool.query(
-            `INSERT INTO announcements (type, title, content, title_translations, content_translations, author_id, status)
-             VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING id`,
-            [type, title, content, titleTranslations ? JSON.stringify(titleTranslations) : null, contentTranslations ? JSON.stringify(contentTranslations) : null, authorId, status]
+            `INSERT INTO announcements (type, title, content, author_id, status)
+             VALUES ($1, $2, $3, $4, $5) RETURNING id`,
+            [type, title, content, authorId, status]
         );
         return result.rows[0].id;
     },
 
-    update: async (id, type, title, content, status, titleTranslations = null, contentTranslations = null) => {
-        if (titleTranslations && contentTranslations) {
-            await pool.query(
-                `UPDATE announcements
-                 SET type = $1, title = $2, content = $3, status = $4, title_translations = $5, content_translations = $6, updated_at = CURRENT_TIMESTAMP
-                 WHERE id = $7`,
-                [type, title, content, status, JSON.stringify(titleTranslations), JSON.stringify(contentTranslations), id]
-            );
-        } else {
-            await pool.query(
-                `UPDATE announcements
-                 SET type = $1, title = $2, content = $3, status = $4, updated_at = CURRENT_TIMESTAMP
-                 WHERE id = $5`,
-                [type, title, content, status, id]
-            );
-        }
+    update: async (id, type, title, content, status) => {
+        await pool.query(
+            `UPDATE announcements
+             SET type = $1, title = $2, content = $3, status = $4, updated_at = CURRENT_TIMESTAMP
+             WHERE id = $5`,
+            [type, title, content, status, id]
+        );
     },
 
     delete: async (id) => {
