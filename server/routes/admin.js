@@ -9,6 +9,7 @@ const {
     contactModel,
     announcementModel
 } = require('../models/db');
+const { translateAnnouncement } = require('../services/translateService');
 const { authenticateToken, requireAdmin } = require('../middleware/auth');
 const { validateBlogPost, validateId, validatePagination } = require('../middleware/validator');
 const { asyncHandler } = require('../middleware/errorHandler');
@@ -380,24 +381,41 @@ router.post('/announcements', asyncHandler(async (req, res) => {
         return res.status(400).json({ error: 'Content is required' });
     }
 
+    // Translate title and content to all supported languages
+    let titleTranslations = null;
+    let contentTranslations = null;
+
+    try {
+        const translations = await translateAnnouncement(title.trim(), content.trim(), 'ko');
+        titleTranslations = translations.titleTranslations;
+        contentTranslations = translations.contentTranslations;
+    } catch (error) {
+        console.error('Translation failed:', error.message);
+        // Continue without translations
+    }
+
     const announcementStatus = status === 'published' ? 'published' : 'draft';
     const announcementId = await announcementModel.create(
         type,
         title.trim(),
         content.trim(),
         null,  // author_id - Firebase UID is not compatible with INTEGER
-        announcementStatus
+        announcementStatus,
+        titleTranslations,
+        contentTranslations
     );
 
     securityLogger.adminAction(req.user.id, 'CREATE_ANNOUNCEMENT', {
         announcementId,
         type,
-        title
+        title,
+        translated: !!titleTranslations
     });
 
     res.status(201).json({
         message: 'Announcement created',
-        announcementId
+        announcementId,
+        translated: !!titleTranslations
     });
 }));
 
@@ -414,12 +432,31 @@ router.put('/announcements/:id', validateId, asyncHandler(async (req, res) => {
         return res.status(400).json({ error: 'Invalid type' });
     }
 
+    const newTitle = title?.trim() || announcement.title;
+    const newContent = content?.trim() || announcement.content;
+
+    // Re-translate if title or content changed
+    let titleTranslations = null;
+    let contentTranslations = null;
+
+    if (title || content) {
+        try {
+            const translations = await translateAnnouncement(newTitle, newContent, 'ko');
+            titleTranslations = translations.titleTranslations;
+            contentTranslations = translations.contentTranslations;
+        } catch (error) {
+            console.error('Translation failed:', error.message);
+        }
+    }
+
     await announcementModel.update(
         parseInt(req.params.id),
         type || announcement.type,
-        title?.trim() || announcement.title,
-        content?.trim() || announcement.content,
-        status || announcement.status
+        newTitle,
+        newContent,
+        status || announcement.status,
+        titleTranslations,
+        contentTranslations
     );
 
     securityLogger.adminAction(req.user.id, 'UPDATE_ANNOUNCEMENT', {

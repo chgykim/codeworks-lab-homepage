@@ -6,7 +6,7 @@ import Loading from '../components/common/Loading';
 import './Announcements.css';
 
 function Announcements() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const [announcements, setAnnouncements] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -14,14 +14,23 @@ function Announcements() {
     const [page, setPage] = useState(1);
     const [hasMore, setHasMore] = useState(true);
 
+    // Get current language code
+    const getCurrentLang = () => {
+        const lang = i18n.language;
+        // Map i18n language codes to API language codes
+        if (lang.startsWith('zh-CN') || lang === 'zh') return 'zh-CN';
+        if (lang.startsWith('zh-TW')) return 'zh-TW';
+        return lang.split('-')[0]; // e.g., 'en-US' -> 'en'
+    };
+
     useEffect(() => {
         fetchAnnouncements();
-    }, [typeFilter]);
+    }, [typeFilter, i18n.language]);
 
     const fetchAnnouncements = async (pageNum = 1, append = false) => {
         try {
             setLoading(true);
-            const response = await announcementsAPI.getAll(pageNum, 10, typeFilter);
+            const response = await announcementsAPI.getAll(pageNum, 10, typeFilter, getCurrentLang());
 
             if (append) {
                 setAnnouncements(prev => [...prev, ...response.data.announcements]);
