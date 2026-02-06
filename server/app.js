@@ -1,6 +1,5 @@
 const express = require('express');
 const cookieParser = require('cookie-parser');
-const path = require('path');
 
 // Load environment variables
 require('dotenv').config();
@@ -38,10 +37,8 @@ const app = express();
 // Trust proxy for rate limiting behind reverse proxy
 app.set('trust proxy', 1);
 
-// Serve static files FIRST (before CORS) in production
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, '../client/dist')));
-}
+// Static files are served from Firebase Hosting (rustic-sage.web.app)
+// Render only serves the API
 
 // Security middleware
 app.use(helmetConfig);
@@ -90,12 +87,7 @@ app.use('/api/contact', contactRoutes);
 app.use('/api/settings', settingsRoutes);
 app.use('/api/announcements', announcementsRoutes);
 
-// Serve index.html for client-side routing in production
-if (process.env.NODE_ENV === 'production') {
-    app.get('*', (req, res) => {
-        res.sendFile(path.join(__dirname, '../client/dist/index.html'));
-    });
-}
+// Client-side routing handled by Firebase Hosting
 
 // Error handling
 app.use(notFoundHandler);
