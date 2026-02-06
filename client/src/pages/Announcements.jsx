@@ -52,11 +52,11 @@ function Announcements() {
     const getTypeLabel = (type) => {
         switch (type) {
             case 'new_app':
-                return t('announcements.types.newApp') || '신규 앱';
+                return t('announcements.types.newApp');
             case 'update':
-                return t('announcements.types.update') || '업데이트';
+                return t('announcements.types.update');
             default:
-                return t('announcements.types.announcement') || '공지';
+                return t('announcements.types.announcement');
         }
     };
 
@@ -86,9 +86,9 @@ function Announcements() {
                 <div className="page-header">
                     <h1>
                         <Megaphone size={32} />
-                        {t('announcements.title') || '공지사항'}
+                        {t('announcements.title')}
                     </h1>
-                    <p>{t('announcements.subtitle') || '최신 소식과 업데이트를 확인하세요'}</p>
+                    <p>{t('announcements.subtitle')}</p>
                 </div>
 
                 <div className="filter-tabs">
@@ -96,28 +96,28 @@ function Announcements() {
                         className={`filter-tab ${typeFilter === '' ? 'active' : ''}`}
                         onClick={() => setTypeFilter('')}
                     >
-                        {t('announcements.all') || '전체'}
+                        {t('announcements.all')}
                     </button>
                     <button
                         className={`filter-tab ${typeFilter === 'new_app' ? 'active' : ''}`}
                         onClick={() => setTypeFilter('new_app')}
                     >
                         <Sparkles size={16} />
-                        {t('announcements.types.newApp') || '신규 앱'}
+                        {t('announcements.types.newApp')}
                     </button>
                     <button
                         className={`filter-tab ${typeFilter === 'update' ? 'active' : ''}`}
                         onClick={() => setTypeFilter('update')}
                     >
                         <RefreshCw size={16} />
-                        {t('announcements.types.update') || '업데이트'}
+                        {t('announcements.types.update')}
                     </button>
                     <button
                         className={`filter-tab ${typeFilter === 'announcement' ? 'active' : ''}`}
                         onClick={() => setTypeFilter('announcement')}
                     >
                         <Megaphone size={16} />
-                        {t('announcements.types.announcement') || '공지'}
+                        {t('announcements.types.announcement')}
                     </button>
                 </div>
 
@@ -133,7 +133,7 @@ function Announcements() {
                 ) : announcements.length === 0 ? (
                     <div className="no-announcements">
                         <Megaphone size={48} />
-                        <p>{t('announcements.empty') || '공지사항이 없습니다'}</p>
+                        <p>{t('announcements.empty')}</p>
                     </div>
                 ) : (
                     <div className="announcements-list">
@@ -162,7 +162,7 @@ function Announcements() {
                             className="btn btn-secondary"
                             onClick={() => fetchAnnouncements(page + 1, true)}
                         >
-                            {t('common.loadMore') || '더 보기'}
+                            {t('common.loadMore')}
                         </button>
                     </div>
                 )}

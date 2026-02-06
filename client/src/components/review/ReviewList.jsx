@@ -1,13 +1,16 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import StarRating from '../common/StarRating';
 import { formatDate } from '../../utils/sanitize';
 import './ReviewList.css';
 
 function ReviewList({ reviews }) {
+    const { t } = useTranslation();
+
     if (!reviews || reviews.length === 0) {
         return (
             <div className="no-reviews-message">
-                <p>등록된 리뷰가 없습니다. 첫 번째 리뷰를 작성해보세요!</p>
+                <p>{t('reviews.noReviews')}</p>
             </div>
         );
     }
