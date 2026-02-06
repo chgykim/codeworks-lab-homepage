@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
+import AnnouncementBanner from './components/common/AnnouncementBanner';
 import { AuthProvider } from './hooks/useAuth';
 
 // Public pages
@@ -39,6 +40,7 @@ function App() {
     return (
         <AuthProvider key={langKey}>
             <Router>
+                <AnnouncementBanner />
                 <Header />
                 <main>
                     <Routes>
