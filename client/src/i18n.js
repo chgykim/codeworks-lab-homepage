@@ -13,9 +13,12 @@ import de from './locales/de/translation.json';
 import ru from './locales/ru/translation.json';
 import ar from './locales/ar/translation.json';
 import hi from './locales/hi/translation.json';
+import th from './locales/th/translation.json';
+import id_ID from './locales/id/translation.json';
+import vi from './locales/vi/translation.json';
 
 // Supported languages
-export const supportedLngs = ['en', 'ko', 'ja', 'zh-CN', 'es', 'pt', 'fr', 'de', 'ru', 'ar', 'hi'];
+export const supportedLngs = ['en', 'ko', 'ja', 'zh-CN', 'es', 'pt', 'fr', 'de', 'ru', 'ar', 'hi', 'th', 'id', 'vi'];
 
 // Get language from URL param first, then localStorage, then default to Korean
 function getLanguage() {
@@ -55,7 +58,10 @@ const resources = {
     de: { translation: de },
     ru: { translation: ru },
     ar: { translation: ar },
-    hi: { translation: hi }
+    hi: { translation: hi },
+    th: { translation: th },
+    id: { translation: id_ID },
+    vi: { translation: vi }
 };
 
 // Initialize i18n
@@ -102,7 +108,10 @@ export const languages = [
     { code: 'de', name: 'German', nativeName: 'Deutsch', flag: '🇩🇪' },
     { code: 'ru', name: 'Russian', nativeName: 'Русский', flag: '🇷🇺' },
     { code: 'ar', name: 'Arabic', nativeName: 'العربية', flag: '🇸🇦', rtl: true },
-    { code: 'hi', name: 'Hindi', nativeName: 'हिन्दी', flag: '🇮🇳' }
+    { code: 'hi', name: 'Hindi', nativeName: 'हिन्दी', flag: '🇮🇳' },
+    { code: 'th', name: 'Thai', nativeName: 'ไทย', flag: '🇹🇭' },
+    { code: 'id', name: 'Indonesian', nativeName: 'Bahasa Indonesia', flag: '🇮🇩' },
+    { code: 'vi', name: 'Vietnamese', nativeName: 'Tiếng Việt', flag: '🇻🇳' }
 ];
 
 // Get language direction

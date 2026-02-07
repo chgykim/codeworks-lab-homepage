@@ -1,0 +1,676 @@
+{
+  "brand": {
+    "name": "CodeWorks Lab",
+    "tagline": "Chúng tôi Ghi nhận, Hiển thị và Hỗ trợ",
+    "description": "Chúng tôi tạo ra các công cụ tiện ích cuộc sống và nhật ký tự quản lý. Chúng tôi không phán xét. Chúng tôi ghi nhận, hiển thị và hỗ trợ.",
+    "safeWay": "Safe Way 10"
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "apps": "Ứng dụng",
+    "manual": "Hướng dẫn",
+    "reviews": "Đánh giá",
+    "announcements": "Tin tức",
+    "blog": "Blog",
+    "admin": "Quản trị",
+    "login": "Đăng nhập",
+    "logout": "Đăng xuất",
+    "mypage": "Trang cá nhân"
+  },
+  "announcements": {
+    "title": "Thông báo",
+    "subtitle": "Xem tin tức và cập nhật mới nhất",
+    "all": "Tất cả",
+    "empty": "Chưa có thông báo nào",
+    "types": {
+      "newApp": "Ứng dụng mới",
+      "update": "Cập nhật",
+      "announcement": "Thông báo"
+    }
+  },
+  "hero": {
+    "title": "Trợ lý",
+    "titleHighlight": "Cuộc sống hàng ngày",
+    "subtitle": "Dòng sản phẩm Safe Way 10 của CodeWorks Lab - các công cụ tiện ích cuộc sống và nhật ký tự quản lý được thiết kế để giúp cuộc sống hàng ngày của bạn dễ dàng hơn.",
+    "appStore": "App Store",
+    "playStore": "Google Play",
+    "downloads": "Lượt tải",
+    "rating": "Đánh giá trung bình",
+    "apps": "Ứng dụng",
+    "coreMessage": "Chúng tôi không phán xét. Chúng tôi ghi nhận, hiển thị và hỗ trợ."
+  },
+  "apps": {
+    "title": "Dòng sản phẩm Safe Way 10",
+    "subtitle": "Tiện ích cuộc sống và nhật ký tự quản lý cho đời sống hàng ngày",
+    "learnMore": "Tìm hiểu thêm",
+    "comingSoon": "Sắp ra mắt",
+    "items": {
+      "wayback": {
+        "name": "WayBack",
+        "tagline": "Trở về an toàn & Du lịch",
+        "description": "Bản đồ ngoại tuyến, điều hướng và hướng dẫn du lịch dựa trên vị trí. Người bạn đồng hành cho những chuyến đi an toàn.",
+        "category": "Điều hướng"
+      },
+      "wayfit": {
+        "name": "WayFit",
+        "tagline": "Nhật ký bữa ăn & Ghi chép calo",
+        "description": "Chụp ảnh thức ăn để ghi lại nhật ký bữa ăn cá nhân và nhận thông tin dinh dưỡng gần đúng.",
+        "category": "Phong cách sống"
+      },
+      "waymuscle": {
+        "name": "WayMuscle",
+        "tagline": "Huấn luyện viên tập tại nhà",
+        "description": "Đối tác tập luyện AI giúp bạn tập thể dục đúng tư thế tại nhà.",
+        "category": "Thể dục"
+      },
+      "waybrain": {
+        "name": "WayBrain",
+        "tagline": "Rèn luyện trí não",
+        "description": "Trò chơi rèn luyện trí não giúp tâm trí bạn luôn hoạt động thông qua câu đố và hội thoại.",
+        "category": "Giải trí"
+      },
+      "wayview": {
+        "name": "WayView",
+        "tagline": "Kính lúp thông minh",
+        "description": "Công cụ hỗ trợ thị giác phóng to chữ nhỏ và đọc to. Kính lúp đọc kỹ thuật số.",
+        "category": "Tiện ích"
+      },
+      "waysound": {
+        "name": "WaySound",
+        "tagline": "Trợ lý phụ đề hội thoại",
+        "description": "Sổ ghi chép chuyển đổi thời gian thực từ giọng nói sang văn bản. Trình tạo phụ đề cho hội thoại.",
+        "category": "Tiện ích"
+      },
+      "waylog": {
+        "name": "WayLog",
+        "tagline": "Nhắc nhở uống thuốc bổ sung",
+        "description": "Đồng hồ báo thức nhắc bạn uống vitamin hoặc thực phẩm bổ sung. Theo dõi lịch sử sử dụng.",
+        "category": "Phong cách sống"
+      },
+      "wayspot": {
+        "name": "WaySpot",
+        "tagline": "Nhật ký quan sát cơ thể",
+        "description": "Album ảnh sắp xếp hình ảnh về những thay đổi trên cơ thể (đốm, vết) theo thứ tự thời gian.",
+        "category": "Phong cách sống"
+      },
+      "wayrest": {
+        "name": "WayRest",
+        "tagline": "Ghi âm giấc ngủ",
+        "description": "Máy ghi âm giấc ngủ ghi lại âm thanh (ngáy, nói mơ) khi bạn ngủ. Kiểm tra âm thanh ban đêm của bạn.",
+        "category": "Phong cách sống"
+      },
+      "waystory": {
+        "name": "WayStory",
+        "tagline": "Trình tạo tự truyện",
+        "description": "Biến câu chuyện cuộc đời bạn thành sách thông qua các cuộc trò chuyện có hướng dẫn. Trợ lý xuất bản và viết lách.",
+        "category": "Sáng tạo"
+      }
+    }
+  },
+  "features": {
+    "title": "Tại sao chọn Safe Way 10?",
+    "subtitle": "Công cụ ghi nhận, hiển thị và hỗ trợ - không phán xét",
+    "items": {
+      "recording": {
+        "title": "Ghi nhận thông minh",
+        "description": "Tự động ghi lại và sắp xếp các hoạt động và dữ liệu hàng ngày của bạn."
+      },
+      "display": {
+        "title": "Hiển thị rõ ràng",
+        "description": "Xem dữ liệu đã ghi của bạn qua biểu đồ và dòng thời gian trực quan."
+      },
+      "assist": {
+        "title": "Hỗ trợ hữu ích",
+        "description": "Nhận nhắc nhở, mẹo và hướng dẫn để hỗ trợ thói quen hàng ngày của bạn."
+      },
+      "privacy": {
+        "title": "Quyền riêng tư trên hết",
+        "description": "Dữ liệu của bạn thuộc về bạn. Lưu trữ mã hóa với toàn quyền kiểm soát quyền riêng tư."
+      },
+      "offline": {
+        "title": "Sẵn sàng ngoại tuyến",
+        "description": "Các tính năng cốt lõi hoạt động không cần internet. Dữ liệu của bạn luôn có thể truy cập."
+      },
+      "sync": {
+        "title": "Lưu trữ cục bộ 100%",
+        "description": "Tất cả dữ liệu chỉ được lưu trữ trên thiết bị của bạn. Không có thông tin cá nhân nào được gửi hoặc lưu trữ bên ngoài."
+      },
+      "simple": {
+        "title": "Đơn giản & Trực quan",
+        "description": "Được thiết kế cho tất cả mọi người. Dễ sử dụng bất kể kinh nghiệm công nghệ."
+      },
+      "support": {
+        "title": "Hỗ trợ tận tâm",
+        "description": "Đội ngũ hỗ trợ khách hàng phản hồi nhanh, sẵn sàng giúp đỡ khi bạn cần."
+      }
+    }
+  },
+  "reviews": {
+    "title": "Đánh giá của người dùng",
+    "subtitle": "{{count}} người dùng đã đánh giá trung bình {{rating}} sao",
+    "writeReview": "Viết đánh giá",
+    "submitReview": "Gửi đánh giá",
+    "name": "Tên",
+    "email": "Email (tùy chọn)",
+    "rating": "Đánh giá",
+    "content": "Đánh giá của bạn",
+    "contentPlaceholder": "Chia sẻ trải nghiệm của bạn với chúng tôi (tối thiểu 10 ký tự)",
+    "submitSuccess": "Đánh giá đã được gửi thành công. Nó sẽ hiển thị sau khi được phê duyệt.",
+    "loadMore": "Xem thêm",
+    "noReviews": "Chưa có đánh giá nào. Hãy là người đầu tiên chia sẻ trải nghiệm của bạn!",
+    "pending": "Đang chờ",
+    "approved": "Đã duyệt",
+    "rejected": "Bị từ chối"
+  },
+  "blog": {
+    "title": "Blog & Tin tức",
+    "subtitle": "Cập nhật tin tức và mẹo mới nhất từ CodeWorks Lab",
+    "all": "Tất cả",
+    "loadMore": "Xem thêm",
+    "noPosts": "Chưa có bài viết nào.",
+    "backToList": "Quay lại Blog",
+    "views": "lượt xem",
+    "categories": {
+      "general": "Chung",
+      "announcement": "Thông báo",
+      "update": "Cập nhật",
+      "tips": "Mẹo hay",
+      "event": "Sự kiện"
+    }
+  },
+  "manual": {
+    "title": "Hướng dẫn sử dụng",
+    "subtitle": "Tìm hiểu cách tận dụng tối đa các ứng dụng của chúng tôi",
+    "sections": {
+      "gettingStarted": {
+        "title": "Bắt đầu",
+        "items": {
+          "download": {
+            "title": "Tải ứng dụng",
+            "text": "Tìm kiếm ứng dụng của chúng tôi trên App Store hoặc Google Play và tải xuống miễn phí."
+          },
+          "signup": {
+            "title": "Tạo tài khoản",
+            "text": "Đăng ký bằng email hoặc tài khoản mạng xã hội (Google, Apple, v.v.) để đăng ký nhanh."
+          },
+          "setup": {
+            "title": "Thiết lập ban đầu",
+            "text": "Nhập thông tin cơ bản của bạn để nhận đề xuất được cá nhân hóa."
+          }
+        }
+      },
+      "profile": {
+        "title": "Cài đặt hồ sơ",
+        "items": {
+          "basic": {
+            "title": "Thông tin cơ bản",
+            "text": "Vào Hồ sơ > Cài đặt để cập nhật tên, tùy chọn và các thông tin khác."
+          },
+          "goals": {
+            "title": "Đặt mục tiêu",
+            "text": "Chọn mục tiêu của bạn và để chúng tôi giúp bạn theo dõi tiến trình."
+          },
+          "sync": {
+            "title": "Cài đặt đồng bộ",
+            "text": "Kết nối với các nền tảng khác để tự động đồng bộ dữ liệu của bạn."
+          }
+        }
+      },
+      "features": {
+        "title": "Tính năng chính",
+        "items": {
+          "tracking": {
+            "title": "Ghi nhận hoạt động",
+            "text": "Nhấn nút + trên màn hình chính để ghi lại hoạt động của bạn."
+          },
+          "auto": {
+            "title": "Ghi nhận tự động",
+            "text": "Kết nối thiết bị đeo để tự động ghi lại hoạt động."
+          },
+          "routines": {
+            "title": "Tạo thói quen",
+            "text": "Lưu các hoạt động thường dùng thành thói quen để truy cập nhanh."
+          }
+        }
+      },
+      "notifications": {
+        "title": "Thông báo",
+        "items": {
+          "newApp": {
+            "title": "Ứng dụng mới",
+            "text": "Hãy là người đầu tiên biết về các ứng dụng mới ra mắt trong dòng sản phẩm Safe Way 10."
+          },
+          "update": {
+            "title": "Tin cập nhật",
+            "text": "Cập nhật về các tính năng và cải tiến mới trong ứng dụng của chúng tôi."
+          },
+          "announcement": {
+            "title": "Thông báo",
+            "text": "Nhận tin tức quan trọng và thông tin sự kiện từ CodeWorks Lab."
+          }
+        }
+      }
+    },
+    "contact": {
+      "title": "Cần trợ giúp?",
+      "subtitle": "Không tìm thấy điều bạn cần? Liên hệ với chúng tôi và chúng tôi sẽ phản hồi sớm.",
+      "name": "Tên",
+      "email": "Email",
+      "subject": "Danh mục",
+      "message": "Tin nhắn",
+      "send": "Gửi tin nhắn",
+      "success": "Tin nhắn đã được gửi thành công. Chúng tôi sẽ phản hồi sớm nhất có thể.",
+      "selectCategory": "Chọn danh mục",
+      "categories": {
+        "appError": "Lỗi ứng dụng",
+        "deviceSupport": "Hỗ trợ thiết bị",
+        "countryLanguage": "Quốc gia/Ngôn ngữ",
+        "improvement": "Cải tiến",
+        "featureRequest": "Yêu cầu tính năng",
+        "appDevelopment": "Phát triển ứng dụng",
+        "other": "Khác"
+      }
+    }
+  },
+  "faq": {
+    "title": "Câu hỏi thường gặp",
+    "subtitle": "Tìm câu trả lời cho các câu hỏi phổ biến",
+    "items": {
+      "free": {
+        "question": "Các ứng dụng có miễn phí không?",
+        "answer": "Không! Dùng thử miễn phí tất cả tính năng trong 2 tuần! Sau đó đăng ký theo tháng hoặc theo năm!"
+      },
+      "devices": {
+        "question": "Hỗ trợ những thiết bị nào?",
+        "answer": "Có sẵn trên iOS 14+ và Android 8.0+. Cũng hỗ trợ tích hợp Apple Watch và Galaxy Watch."
+      },
+      "integration": {
+        "question": "Tôi có thể kết nối với ứng dụng khác không?",
+        "answer": "Có! Ứng dụng của chúng tôi tích hợp với Apple Health, Google Fit và Samsung Health khi có thể."
+      },
+      "privacy": {
+        "question": "Dữ liệu của tôi có an toàn không?",
+        "answer": "Tất cả dữ liệu được mã hóa đầu cuối và chúng tôi tuân thủ GDPR cùng các quy định về quyền riêng tư. Chúng tôi không bao giờ chia sẻ dữ liệu mà không có sự đồng ý."
+      },
+      "cancel": {
+        "question": "Điều gì xảy ra nếu tôi hủy đăng ký?",
+        "answer": "Dữ liệu của bạn được bảo toàn ngay cả sau khi hủy. Tiếp tục bất cứ lúc nào và tiếp tục từ nơi bạn đã dừng lại."
+      }
+    }
+  },
+  "footer": {
+    "description": "Chúng tôi ghi nhận, hiển thị và hỗ trợ. Xây dựng công cụ phong cách sống cho đời sống hàng ngày.",
+    "quickLinks": "Liên kết nhanh",
+    "legal": "Pháp lý",
+    "privacy": "Chính sách bảo mật",
+    "terms": "Điều khoản dịch vụ",
+    "refund": "Chính sách hoàn tiền",
+    "contact": "Liên hệ",
+    "copyright": "Mọi quyền được bảo lưu.",
+    "madeBy": "Được tạo với sự tận tâm bởi"
+  },
+  "privacy": {
+    "title": "Chính sách bảo mật",
+    "effectiveDate": "Ngày có hiệu lực",
+    "intro": "CodeWorks Lab (\"Công ty\") tuân thủ các luật và quy định về quyền riêng tư hiện hành và cam kết bảo vệ thông tin cá nhân của người dùng. Chính sách bảo mật này giải thích cách chúng tôi thu thập, sử dụng và bảo vệ thông tin của bạn.",
+    "section1": {
+      "title": "1. Thông tin chúng tôi thu thập",
+      "desc": "Chúng tôi có thể thu thập các loại thông tin sau:",
+      "item1": "Thông tin nhật ký được tạo tự động trong quá trình sử dụng ứng dụng",
+      "item2": "Thông tin thiết bị để phân tích lỗi (phiên bản hệ điều hành, model thiết bị, v.v.)",
+      "item3": "Thông tin bạn cung cấp trực tiếp (tên, email khi gửi yêu cầu)",
+      "item4": "Biệt danh và email (tùy chọn) khi viết đánh giá",
+      "noSensitive": "Chúng tôi không thu thập thông tin nhạy cảm như dữ liệu sức khỏe, dữ liệu sinh trắc học, dữ liệu vị trí, danh bạ, ảnh hoặc bản ghi âm.",
+      "noPayment": "Chúng tôi không xử lý thanh toán trong ứng dụng trực tiếp. Tất cả thông tin thanh toán được xử lý thông qua Apple App Store hoặc Google Play Store."
+    },
+    "section2": {
+      "title": "2. Mục đích thu thập và sử dụng",
+      "desc": "Thông tin thu thập chỉ được sử dụng cho các mục đích sau:",
+      "item1": "Cung cấp dịch vụ và cải tiến tính năng",
+      "item2": "Phân tích lỗi và nâng cao độ ổn định dịch vụ",
+      "item3": "Phản hồi yêu cầu khách hàng và xử lý khiếu nại",
+      "item4": "Phân tích thống kê sử dụng dịch vụ"
+    },
+    "section3": {
+      "title": "3. Thời gian lưu trữ",
+      "item1": "Thông tin cá nhân sẽ được xóa ngay khi đạt được mục đích thu thập.",
+      "item2": "Tuy nhiên, nếu luật hiện hành yêu cầu lưu trữ, thông tin sẽ được bảo quản an toàn trong thời gian quy định.",
+      "item3": "Hồ sơ liên quan đến hợp đồng hoặc rút tiền: 5 năm",
+      "item4": "Hồ sơ liên quan đến khiếu nại hoặc tranh chấp của người tiêu dùng: 3 năm"
+    },
+    "section4": {
+      "title": "4. Cung cấp cho bên thứ ba",
+      "desc": "Về nguyên tắc, chúng tôi không cung cấp thông tin cá nhân cho bên thứ ba. Ngoại lệ chỉ áp dụng trong các trường hợp sau:",
+      "item1": "Khi người dùng đã đồng ý trước",
+      "item2": "Khi luật pháp yêu cầu hoặc cơ quan điều tra yêu cầu theo thủ tục pháp lý"
+    },
+    "section5": {
+      "title": "5. Dịch vụ bên ngoài",
+      "desc": "Chúng tôi có thể sử dụng các dịch vụ bên ngoài sau để cải thiện dịch vụ:",
+      "item1": "Firebase Analytics (thống kê sử dụng ứng dụng)",
+      "item2": "Firebase Crashlytics (phân tích lỗi)",
+      "item3": "Google Gemini API (tính năng AI)",
+      "note": "Vui lòng tham khảo chính sách bảo mật của từng dịch vụ để biết cách xử lý dữ liệu.",
+      "overseas": "Các dịch vụ bên ngoài (Firebase, Gemini API) có thể sử dụng máy chủ ở nước ngoài, và dữ liệu được xử lý theo chính sách bảo mật của từng dịch vụ."
+    },
+    "section6": {
+      "title": "6. Xóa dữ liệu",
+      "desc": "Chúng tôi xóa thông tin cá nhân ngay khi hết thời hạn lưu trữ hoặc đạt được mục đích xử lý.",
+      "item1": "Tệp điện tử: Xóa an toàn để ngăn phục hồi",
+      "item2": "Tài liệu vật lý: Cắt hủy hoặc thiêu hủy"
+    },
+    "section7": {
+      "title": "7. Quyền của bạn",
+      "desc": "Bạn có thể thực hiện các quyền sau bất cứ lúc nào:",
+      "item1": "Yêu cầu truy cập thông tin cá nhân",
+      "item2": "Yêu cầu sửa thông tin cá nhân",
+      "item3": "Yêu cầu xóa thông tin cá nhân",
+      "item4": "Yêu cầu ngừng xử lý thông tin cá nhân",
+      "note": "Bạn có thể gửi yêu cầu thông qua biểu mẫu liên hệ trên trang Hướng dẫn."
+    },
+    "section8": {
+      "title": "8. Biện pháp bảo mật",
+      "desc": "Chúng tôi thực hiện các biện pháp sau để đảm bảo an toàn cho thông tin cá nhân:",
+      "item1": "Mã hóa thông tin cá nhân",
+      "item2": "Biện pháp kỹ thuật chống tấn công mạng",
+      "item3": "Giảm thiểu và đào tạo nhân sự xử lý thông tin cá nhân"
+    },
+    "section9": {
+      "title": "9. Cán bộ bảo mật",
+      "desc": "Để biết thêm thông tin về xử lý thông tin cá nhân, vui lòng liên hệ qua biểu mẫu trên trang Hướng dẫn.",
+      "officer": "Cán bộ bảo mật",
+      "name": "Tên: Rustic Sage",
+      "position": "Chức vụ: Đại diện",
+      "contact": "Liên hệ: Biểu mẫu liên hệ trang Hướng dẫn"
+    },
+    "section10": {
+      "title": "10. Thay đổi chính sách",
+      "desc": "Chính sách bảo mật này có hiệu lực kể từ ngày nêu trên. Mọi thay đổi sẽ được thông báo trên trang web của chúng tôi ít nhất 7 ngày trước khi có hiệu lực."
+    }
+  },
+  "terms": {
+    "title": "Điều khoản dịch vụ",
+    "effectiveDate": "Ngày có hiệu lực",
+    "intro": "Điều khoản dịch vụ này (\"Điều khoản\") điều chỉnh việc sử dụng tất cả các dịch vụ (\"Dịch vụ\") do CodeWorks Lab (\"Công ty\") cung cấp. Bằng cách sử dụng Dịch vụ, bạn đồng ý với các Điều khoản này.",
+    "section1": {
+      "title": "1. Mục đích",
+      "desc": "Điều khoản này thiết lập các điều kiện và thủ tục sử dụng các ứng dụng dòng Safe Way 10 và các dịch vụ liên quan, cũng như quyền, nghĩa vụ và trách nhiệm của Công ty và người dùng."
+    },
+    "section2": {
+      "title": "2. Định nghĩa",
+      "term1": "\"Dịch vụ\"",
+      "def1": "là tất cả các dịch vụ được cung cấp thông qua ứng dụng và trang web do Công ty vận hành.",
+      "term2": "\"Người dùng\"",
+      "def2": "là bất kỳ ai truy cập và sử dụng Dịch vụ theo các Điều khoản này.",
+      "term3": "\"Nội dung\"",
+      "def3": "là tất cả thông tin được người dùng tạo, đăng hoặc lưu trữ trong Dịch vụ."
+    },
+    "section3": {
+      "title": "3. Hiệu lực và sửa đổi Điều khoản",
+      "item1": "Điều khoản này áp dụng cho tất cả người dùng muốn sử dụng Dịch vụ.",
+      "item2": "Công ty có thể sửa đổi Điều khoản nếu cần thiết, và các thay đổi sẽ được thông báo qua ứng dụng hoặc trang web.",
+      "item3": "Người dùng không đồng ý với Điều khoản sửa đổi có thể ngừng sử dụng và rời khỏi Dịch vụ.",
+      "item4": "Việc tiếp tục sử dụng Dịch vụ sau ngày có hiệu lực của các thay đổi được coi là chấp nhận Điều khoản sửa đổi."
+    },
+    "section4": {
+      "title": "4. Cung cấp dịch vụ",
+      "item1": "Công ty nỗ lực cung cấp dịch vụ ổn định.",
+      "item2": "Loại hình dịch vụ, phương thức sử dụng và thời gian do Công ty quyết định.",
+      "item3": "Công ty có thể sửa đổi hoặc ngừng toàn bộ hoặc một phần Dịch vụ để cải tiến, vì yêu cầu kỹ thuật hoặc lý do vận hành.",
+      "item4": "Dịch vụ có thể tạm ngừng để bảo trì định kỳ hoặc khẩn cấp."
+    },
+    "section5": {
+      "title": "5. Nghĩa vụ của người dùng",
+      "desc": "Người dùng không được thực hiện các hành vi sau:",
+      "item1": "Vi phạm pháp luật hoặc Điều khoản này khi sử dụng Dịch vụ",
+      "item2": "Xâm phạm quyền sở hữu trí tuệ, quyền hình ảnh hoặc các quyền khác của Công ty hoặc bên thứ ba",
+      "item3": "Can thiệp vào hoạt động bình thường của Dịch vụ",
+      "item4": "Thu thập hoặc lạm dụng thông tin cá nhân của người dùng khác",
+      "item5": "Sử dụng Dịch vụ cho mục đích thương mại trái phép",
+      "item6": "Các hoạt động bất hợp pháp hoặc không phù hợp khác"
+    },
+    "section6": {
+      "title": "6. Sở hữu trí tuệ",
+      "item1": "Quyền sở hữu trí tuệ đối với tất cả nội dung trong Dịch vụ (văn bản, hình ảnh, phần mềm, v.v.) thuộc về Công ty.",
+      "item2": "Bản quyền nội dung do người dùng đăng trong Dịch vụ thuộc về người dùng tương ứng.",
+      "item3": "Người dùng không được sao chép, phân phối hoặc sửa đổi nội dung Dịch vụ mà không có sự đồng ý bằng văn bản trước của Công ty."
+    },
+    "section7": {
+      "title": "7. Dịch vụ trả phí và thanh toán",
+      "item1": "Một số dịch vụ có thể được cung cấp có phí. Giá cả và phương thức thanh toán được quy định trong từng dịch vụ.",
+      "item2": "Hoàn tiền cho dịch vụ trả phí tuân theo luật hiện hành và chính sách hoàn tiền của Công ty.",
+      "item3": "Dịch vụ đăng ký có thể tự động gia hạn trừ khi người dùng hủy."
+    },
+    "section8": {
+      "title": "8. Miễn trừ trách nhiệm",
+      "item1": "Công ty không chịu trách nhiệm khi không thể cung cấp Dịch vụ do bất khả kháng như thiên tai, chiến tranh hoặc gián đoạn dịch vụ viễn thông.",
+      "item2": "Công ty không chịu trách nhiệm về gián đoạn dịch vụ do lỗi của người dùng.",
+      "item3": "Công ty không đảm bảo tính chính xác hoặc độ tin cậy của thông tin có được thông qua Dịch vụ.",
+      "item4": "Công ty không có nghĩa vụ can thiệp vào tranh chấp giữa người dùng hoặc giữa người dùng và bên thứ ba, và không chịu trách nhiệm về thiệt hại phát sinh."
+    },
+    "section9": {
+      "title": "9. Trách nhiệm bồi thường thiệt hại",
+      "item1": "Nếu Công ty hoặc người dùng vi phạm Điều khoản và gây thiệt hại cho bên kia, họ có trách nhiệm bồi thường.",
+      "item2": "Tuy nhiên, trách nhiệm có thể được giới hạn trong trường hợp không có cố ý hoặc sơ suất nghiêm trọng."
+    },
+    "section10": {
+      "title": "10. Giải quyết tranh chấp",
+      "item1": "Tranh chấp phát sinh liên quan đến Điều khoản này sẽ được điều chỉnh bởi luật pháp Hàn Quốc.",
+      "item2": "Trong trường hợp tranh chấp giữa Công ty và người dùng, cả hai bên sẽ đàm phán thiện chí để giải quyết hòa giải.",
+      "item3": "Nếu đàm phán thất bại, thẩm quyền sẽ thuộc tòa án theo quy định của Bộ luật Tố tụng Dân sự."
+    },
+    "section11": {
+      "title": "11. Liên hệ",
+      "desc": "Để biết thêm thông tin về việc sử dụng Dịch vụ, vui lòng gửi qua biểu mẫu liên hệ trên trang Hướng dẫn."
+    },
+    "supplementary": {
+      "title": "Điều khoản bổ sung",
+      "desc": "Điều khoản này có hiệu lực kể từ ngày 3 tháng 2 năm 2026."
+    }
+  },
+  "admin": {
+    "login": {
+      "title": "Đăng nhập quản trị",
+      "subtitle": "Đăng nhập để truy cập bảng điều khiển quản trị",
+      "email": "Email",
+      "password": "Mật khẩu",
+      "submit": "Đăng nhập",
+      "error": "Thông tin đăng nhập không hợp lệ",
+      "noPermission": "Yêu cầu quyền quản trị"
+    },
+    "dashboard": {
+      "title": "Bảng điều khiển quản trị",
+      "welcome": "Chào mừng",
+      "totalReviews": "Tổng đánh giá",
+      "pendingReviews": "Đang chờ",
+      "approvedReviews": "Đã duyệt",
+      "blogPosts": "Bài viết blog",
+      "published": "Đã xuất bản",
+      "drafts": "Bản nháp",
+      "uniqueVisitors": "Khách truy cập duy nhất (30 ngày)",
+      "totalVisits": "Tổng lượt truy cập",
+      "avgRating": "Đánh giá trung bình",
+      "blogViews": "Lượt xem blog",
+      "topPages": "Trang phổ biến nhất (30 ngày)",
+      "quickLinks": "Liên kết nhanh",
+      "manageReviews": "Quản lý đánh giá",
+      "manageBlog": "Quản lý blog",
+      "manageApps": "Quản lý ứng dụng",
+      "manageAnnouncements": "Quản lý thông báo"
+    },
+    "reviews": {
+      "title": "Quản lý đánh giá",
+      "all": "Tất cả",
+      "pending": "Đang chờ",
+      "approved": "Đã duyệt",
+      "rejected": "Bị từ chối",
+      "author": "Tác giả",
+      "rating": "Đánh giá",
+      "content": "Nội dung",
+      "status": "Trạng thái",
+      "date": "Ngày",
+      "actions": "Hành động",
+      "approve": "Duyệt",
+      "reject": "Từ chối",
+      "delete": "Xóa",
+      "deleteConfirm": "Bạn có chắc chắn muốn xóa đánh giá này?",
+      "statusUpdated": "Trạng thái đánh giá đã được cập nhật",
+      "deleted": "Đánh giá đã bị xóa"
+    },
+    "announcements": {
+      "title": "Quản lý thông báo",
+      "new": "Thông báo mới",
+      "edit": "Sửa thông báo",
+      "all": "Tất cả",
+      "allStatus": "Tất cả trạng thái",
+      "type": "Loại",
+      "titleLabel": "Tiêu đề",
+      "titlePlaceholder": "Nhập tiêu đề thông báo",
+      "content": "Nội dung",
+      "contentPlaceholder": "Nhập nội dung thông báo",
+      "status": "Trạng thái",
+      "draft": "Bản nháp",
+      "published": "Đã xuất bản",
+      "emailStatus": "Trạng thái email",
+      "date": "Ngày",
+      "actions": "Hành động",
+      "types": {
+        "newApp": "Ứng dụng mới",
+        "update": "Cập nhật",
+        "announcement": "Thông báo"
+      },
+      "sendEmail": "Gửi email",
+      "sendEmailConfirm": "Gửi email đến tất cả người dùng đã đăng ký?",
+      "emailSent": "Đã gửi email đến {{count}} người dùng",
+      "created": "Đã tạo thông báo",
+      "updated": "Đã cập nhật thông báo",
+      "deleted": "Đã xóa thông báo",
+      "deleteConfirm": "Bạn có chắc chắn muốn xóa thông báo này?"
+    },
+    "blog": {
+      "title": "Quản lý blog",
+      "newPost": "Bài viết mới",
+      "editPost": "Sửa bài viết",
+      "all": "Tất cả",
+      "published": "Đã xuất bản",
+      "draft": "Bản nháp",
+      "postTitle": "Tiêu đề",
+      "category": "Danh mục",
+      "status": "Trạng thái",
+      "views": "Lượt xem",
+      "date": "Ngày",
+      "actions": "Hành động",
+      "content": "Nội dung",
+      "excerpt": "Tóm tắt (tùy chọn)",
+      "save": "Lưu",
+      "cancel": "Hủy",
+      "deleteConfirm": "Bạn có chắc chắn muốn xóa bài viết này?",
+      "created": "Đã tạo bài viết",
+      "updated": "Đã cập nhật bài viết",
+      "deleted": "Đã xóa bài viết"
+    }
+  },
+  "common": {
+    "loading": "Đang tải...",
+    "error": "Đã xảy ra lỗi",
+    "retry": "Thử lại",
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "delete": "Xóa",
+    "edit": "Sửa",
+    "create": "Tạo mới",
+    "submit": "Gửi",
+    "search": "Tìm kiếm",
+    "filter": "Lọc",
+    "noData": "Không có dữ liệu",
+    "required": "Bắt buộc",
+    "optional": "Tùy chọn",
+    "prev": "Trước",
+    "next": "Tiếp"
+  },
+  "auth": {
+    "login": "Đăng nhập",
+    "register": "Đăng ký",
+    "logout": "Đăng xuất",
+    "email": "Email",
+    "password": "Mật khẩu",
+    "name": "Tên",
+    "confirmPassword": "Xác nhận mật khẩu",
+    "emailPlaceholder": "Nhập email của bạn",
+    "passwordPlaceholder": "Nhập mật khẩu của bạn",
+    "namePlaceholder": "Nhập tên của bạn",
+    "confirmPasswordPlaceholder": "Xác nhận mật khẩu của bạn",
+    "loginSubtitle": "Đăng nhập vào tài khoản của bạn",
+    "registerSubtitle": "Tạo tài khoản mới",
+    "noAccount": "Chưa có tài khoản?",
+    "hasAccount": "Đã có tài khoản?",
+    "loginFailed": "Đăng nhập thất bại",
+    "registerFailed": "Đăng ký thất bại",
+    "invalidEmail": "Vui lòng nhập email hợp lệ",
+    "emailTaken": "Email này đã được đăng ký",
+    "passwordMinLength": "Mật khẩu phải có ít nhất 8 ký tự",
+    "passwordRequirements": "Mật khẩu phải chứa chữ hoa, chữ thường và số",
+    "passwordMismatch": "Mật khẩu không khớp",
+    "passwordMin8": "8+ ký tự",
+    "passwordLowercase": "Chữ thường",
+    "passwordUppercase": "Chữ hoa",
+    "passwordNumber": "Số"
+  },
+  "mypage": {
+    "title": "Trang cá nhân",
+    "subtitle": "Quản lý tài khoản của bạn",
+    "noName": "Chưa có tên",
+    "joined": "Ngày tham gia: {{date}}",
+    "reviews": "Đánh giá",
+    "inquiries": "Yêu cầu",
+    "changePassword": "Đổi mật khẩu",
+    "myReviews": "Đánh giá của tôi",
+    "myInquiries": "Yêu cầu của tôi",
+    "deleteAccount": "Xóa tài khoản",
+    "deleteAccountTitle": "Xóa tài khoản",
+    "deleteWarning": "Hành động này không thể hoàn tác. Bạn có chắc chắn muốn xóa tài khoản?",
+    "confirmPassword": "Xác nhận mật khẩu",
+    "deleteFailed": "Không thể xóa tài khoản",
+    "currentPassword": "Mật khẩu hiện tại",
+    "newPassword": "Mật khẩu mới",
+    "passwordChanged": "Đổi mật khẩu thành công",
+    "totalReviews": "{{count}} đánh giá",
+    "noReviews": "Chưa có đánh giá nào",
+    "noReviewsDesc": "Viết đánh giá để chia sẻ trải nghiệm của bạn!",
+    "writeReview": "Viết đánh giá",
+    "deleteReviewTitle": "Xóa đánh giá",
+    "deleteReviewConfirm": "Bạn có chắc chắn muốn xóa đánh giá này?",
+    "totalInquiries": "{{count}} yêu cầu",
+    "noInquiries": "Chưa có yêu cầu nào",
+    "noInquiriesDesc": "Có câu hỏi? Liên hệ với chúng tôi!",
+    "goToContact": "Liên hệ",
+    "noSubject": "Không có chủ đề",
+    "status": {
+      "pending": "Đang chờ",
+      "approved": "Đã duyệt",
+      "rejected": "Bị từ chối"
+    },
+    "inquiryStatus": {
+      "unread": "Chưa đọc",
+      "read": "Đã đọc",
+      "replied": "Đã trả lời"
+    }
+  },
+  "language": {
+    "select": "Ngôn ngữ",
+    "en": "English",
+    "ko": "한국어",
+    "ja": "日本語",
+    "zh-CN": "简体中文",
+    "es": "Español",
+    "pt": "Português",
+    "fr": "Français",
+    "de": "Deutsch",
+    "ru": "Русский",
+    "ar": "العربية",
+    "hi": "हिन्दी",
+    "th": "ไทย",
+    "id": "Bahasa Indonesia",
+    "vi": "Tiếng Việt"
+  }
+}

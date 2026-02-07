@@ -1,0 +1,676 @@
+{
+  "brand": {
+    "name": "CodeWorks Lab",
+    "tagline": "Kami Mencatat, Menampilkan, dan Membantu",
+    "description": "Kami membuat alat utilitas gaya hidup dan jurnal manajemen diri. Kami tidak menghakimi. Kami mencatat, menampilkan, dan membantu.",
+    "safeWay": "Safe Way 10"
+  },
+  "nav": {
+    "home": "Beranda",
+    "apps": "Aplikasi",
+    "manual": "Panduan",
+    "reviews": "Ulasan",
+    "announcements": "Berita",
+    "blog": "Blog",
+    "admin": "Admin",
+    "login": "Masuk",
+    "logout": "Keluar",
+    "mypage": "Halaman Saya"
+  },
+  "announcements": {
+    "title": "Pengumuman",
+    "subtitle": "Lihat berita dan pembaruan terbaru",
+    "all": "Semua",
+    "empty": "Belum ada pengumuman",
+    "types": {
+      "newApp": "Aplikasi Baru",
+      "update": "Pembaruan",
+      "announcement": "Pemberitahuan"
+    }
+  },
+  "hero": {
+    "title": "Asisten",
+    "titleHighlight": "Kehidupan Sehari-hari Anda",
+    "subtitle": "Jajaran Safe Way 10 dari CodeWorks Lab - alat utilitas gaya hidup dan jurnal manajemen diri yang dirancang untuk mempermudah kehidupan sehari-hari Anda.",
+    "appStore": "App Store",
+    "playStore": "Google Play",
+    "downloads": "Unduhan",
+    "rating": "Rata-rata Penilaian",
+    "apps": "Aplikasi",
+    "coreMessage": "Kami tidak menghakimi. Kami mencatat, menampilkan, dan membantu."
+  },
+  "apps": {
+    "title": "Jajaran Safe Way 10",
+    "subtitle": "Utilitas gaya hidup dan jurnal manajemen diri untuk kehidupan sehari-hari",
+    "learnMore": "Selengkapnya",
+    "comingSoon": "Segera Hadir",
+    "items": {
+      "wayback": {
+        "name": "WayBack",
+        "tagline": "Pulang Aman & Perjalanan",
+        "description": "Peta offline, navigasi, dan panduan wisata berbasis lokasi. Teman perjalanan aman Anda.",
+        "category": "Navigasi"
+      },
+      "wayfit": {
+        "name": "WayFit",
+        "tagline": "Jurnal Makan & Catatan Kalori",
+        "description": "Foto makanan Anda untuk menyimpan buku harian makan pribadi dan mendapatkan informasi nutrisi perkiraan.",
+        "category": "Gaya Hidup"
+      },
+      "waymuscle": {
+        "name": "WayMuscle",
+        "tagline": "Pelatih Olahraga di Rumah",
+        "description": "Partner olahraga AI yang membantu Anda berolahraga dengan gerakan yang benar di rumah.",
+        "category": "Kebugaran"
+      },
+      "waybrain": {
+        "name": "WayBrain",
+        "tagline": "Kebugaran Otak",
+        "description": "Permainan latihan otak yang menjaga pikiran Anda tetap aktif melalui kuis dan percakapan.",
+        "category": "Hiburan"
+      },
+      "wayview": {
+        "name": "WayView",
+        "tagline": "Kaca Pembesar Pintar",
+        "description": "Alat bantu visual yang memperbesar teks kecil dan membacakannya. Kaca pembesar baca digital.",
+        "category": "Utilitas"
+      },
+      "waysound": {
+        "name": "WaySound",
+        "tagline": "Asisten Subtitle Percakapan",
+        "description": "Notepad transkripsi real-time yang mengubah suara menjadi teks. Generator subtitle untuk percakapan.",
+        "category": "Utilitas"
+      },
+      "waylog": {
+        "name": "WayLog",
+        "tagline": "Pengingat Suplemen",
+        "description": "Jam alarm yang mengingatkan Anda kapan harus minum vitamin atau suplemen. Lacak riwayat konsumsi Anda.",
+        "category": "Gaya Hidup"
+      },
+      "wayspot": {
+        "name": "WaySpot",
+        "tagline": "Buku Harian Pengamatan Tubuh",
+        "description": "Album foto yang mengatur gambar perubahan tubuh (bintik, tanda) secara kronologis.",
+        "category": "Gaya Hidup"
+      },
+      "wayrest": {
+        "name": "WayRest",
+        "tagline": "Perekam Suara Tidur",
+        "description": "Perekam tidur yang menangkap suara (dengkuran, igauan) saat Anda tidur. Periksa suara malam Anda.",
+        "category": "Gaya Hidup"
+      },
+      "waystory": {
+        "name": "WayStory",
+        "tagline": "Pembuat Autobiografi",
+        "description": "Ubah kisah hidup Anda menjadi buku melalui percakapan terpandu. Asisten penerbitan dan penulisan.",
+        "category": "Kreatif"
+      }
+    }
+  },
+  "features": {
+    "title": "Mengapa Memilih Safe Way 10?",
+    "subtitle": "Alat yang mencatat, menampilkan, dan membantu - tanpa menghakimi",
+    "items": {
+      "recording": {
+        "title": "Pencatatan Cerdas",
+        "description": "Catat dan atur aktivitas serta data harian Anda secara otomatis."
+      },
+      "display": {
+        "title": "Tampilan Jelas",
+        "description": "Lihat data yang tercatat dalam grafik dan lini masa yang intuitif."
+      },
+      "assist": {
+        "title": "Bantuan Bermanfaat",
+        "description": "Dapatkan pengingat, tips, dan panduan untuk mendukung rutinitas harian Anda."
+      },
+      "privacy": {
+        "title": "Privasi Diutamakan",
+        "description": "Data Anda tetap milik Anda. Penyimpanan terenkripsi dengan kontrol privasi penuh."
+      },
+      "offline": {
+        "title": "Siap Offline",
+        "description": "Fitur utama berfungsi tanpa internet. Data Anda selalu dapat diakses."
+      },
+      "sync": {
+        "title": "Penyimpanan 100% Lokal",
+        "description": "Semua data hanya disimpan di perangkat Anda. Tidak ada informasi pribadi yang dikirim atau disimpan secara eksternal."
+      },
+      "simple": {
+        "title": "Sederhana & Intuitif",
+        "description": "Dirancang untuk semua orang. Mudah digunakan tanpa memandang pengalaman teknologi."
+      },
+      "support": {
+        "title": "Dukungan Penuh Perhatian",
+        "description": "Layanan pelanggan yang responsif siap membantu saat Anda membutuhkan."
+      }
+    }
+  },
+  "reviews": {
+    "title": "Ulasan Pengguna",
+    "subtitle": "{{count}} pengguna memberi kami rata-rata {{rating}} bintang",
+    "writeReview": "Tulis Ulasan",
+    "submitReview": "Kirim Ulasan",
+    "name": "Nama",
+    "email": "Email (opsional)",
+    "rating": "Penilaian",
+    "content": "Ulasan Anda",
+    "contentPlaceholder": "Bagikan pengalaman Anda dengan kami (minimal 10 karakter)",
+    "submitSuccess": "Ulasan berhasil dikirim. Akan terlihat setelah disetujui.",
+    "loadMore": "Muat Lainnya",
+    "noReviews": "Belum ada ulasan. Jadilah yang pertama membagikan pengalaman Anda!",
+    "pending": "Menunggu",
+    "approved": "Disetujui",
+    "rejected": "Ditolak"
+  },
+  "blog": {
+    "title": "Blog & Berita",
+    "subtitle": "Ikuti berita dan tips terbaru dari CodeWorks Lab",
+    "all": "Semua",
+    "loadMore": "Muat Lainnya",
+    "noPosts": "Belum ada posting.",
+    "backToList": "Kembali ke Blog",
+    "views": "dilihat",
+    "categories": {
+      "general": "Umum",
+      "announcement": "Pengumuman",
+      "update": "Pembaruan",
+      "tips": "Tips",
+      "event": "Acara"
+    }
+  },
+  "manual": {
+    "title": "Panduan Pengguna",
+    "subtitle": "Pelajari cara memaksimalkan penggunaan aplikasi kami",
+    "sections": {
+      "gettingStarted": {
+        "title": "Memulai",
+        "items": {
+          "download": {
+            "title": "Unduh Aplikasi",
+            "text": "Cari aplikasi kami di App Store atau Google Play dan unduh secara gratis."
+          },
+          "signup": {
+            "title": "Buat Akun",
+            "text": "Daftar dengan email atau akun sosial (Google, Apple, dll.) untuk pendaftaran cepat."
+          },
+          "setup": {
+            "title": "Pengaturan Awal",
+            "text": "Masukkan informasi dasar Anda untuk menerima rekomendasi yang dipersonalisasi."
+          }
+        }
+      },
+      "profile": {
+        "title": "Pengaturan Profil",
+        "items": {
+          "basic": {
+            "title": "Informasi Dasar",
+            "text": "Buka Profil > Pengaturan untuk memperbarui nama, preferensi, dan detail lainnya."
+          },
+          "goals": {
+            "title": "Tetapkan Tujuan Anda",
+            "text": "Pilih tujuan Anda dan biarkan kami membantu melacak kemajuan Anda."
+          },
+          "sync": {
+            "title": "Pengaturan Sinkronisasi",
+            "text": "Hubungkan dengan platform lain untuk menyinkronkan data Anda secara otomatis."
+          }
+        }
+      },
+      "features": {
+        "title": "Fitur Utama",
+        "items": {
+          "tracking": {
+            "title": "Pencatatan Aktivitas",
+            "text": "Ketuk tombol + di layar utama untuk mencatat aktivitas Anda."
+          },
+          "auto": {
+            "title": "Pencatatan Otomatis",
+            "text": "Hubungkan perangkat wearable Anda untuk pencatatan aktivitas otomatis."
+          },
+          "routines": {
+            "title": "Buat Rutinitas",
+            "text": "Simpan aktivitas yang sering digunakan sebagai rutinitas untuk akses cepat."
+          }
+        }
+      },
+      "notifications": {
+        "title": "Notifikasi",
+        "items": {
+          "newApp": {
+            "title": "Aplikasi Baru",
+            "text": "Jadilah yang pertama mengetahui rilis aplikasi baru dalam jajaran Safe Way 10."
+          },
+          "update": {
+            "title": "Berita Pembaruan",
+            "text": "Tetap terinformasi tentang fitur dan peningkatan baru dalam aplikasi kami."
+          },
+          "announcement": {
+            "title": "Pengumuman",
+            "text": "Dapatkan berita penting dan informasi acara dari CodeWorks Lab."
+          }
+        }
+      }
+    },
+    "contact": {
+      "title": "Butuh Bantuan?",
+      "subtitle": "Tidak menemukan yang Anda cari? Hubungi kami dan kami akan segera menghubungi Anda.",
+      "name": "Nama",
+      "email": "Email",
+      "subject": "Kategori",
+      "message": "Pesan",
+      "send": "Kirim Pesan",
+      "success": "Pesan berhasil dikirim. Kami akan merespons secepat mungkin.",
+      "selectCategory": "Pilih kategori",
+      "categories": {
+        "appError": "Kesalahan Aplikasi",
+        "deviceSupport": "Dukungan Perangkat",
+        "countryLanguage": "Negara/Bahasa",
+        "improvement": "Perbaikan",
+        "featureRequest": "Permintaan Fitur",
+        "appDevelopment": "Pengembangan Aplikasi",
+        "other": "Lainnya"
+      }
+    }
+  },
+  "faq": {
+    "title": "Pertanyaan yang Sering Diajukan",
+    "subtitle": "Temukan jawaban untuk pertanyaan umum",
+    "items": {
+      "free": {
+        "question": "Apakah aplikasinya gratis?",
+        "answer": "Tidak! Coba semua fitur gratis selama 2 minggu! Lalu berlangganan bulanan atau tahunan!"
+      },
+      "devices": {
+        "question": "Perangkat apa saja yang didukung?",
+        "answer": "Tersedia di iOS 14+ dan Android 8.0+. Juga mendukung integrasi Apple Watch dan Galaxy Watch."
+      },
+      "integration": {
+        "question": "Bisakah saya menghubungkan aplikasi lain?",
+        "answer": "Ya! Aplikasi kami terintegrasi dengan Apple Health, Google Fit, dan Samsung Health jika berlaku."
+      },
+      "privacy": {
+        "question": "Apakah data saya aman?",
+        "answer": "Semua data dienkripsi end-to-end dan kami mematuhi GDPR serta regulasi privasi. Kami tidak pernah membagikan data tanpa persetujuan."
+      },
+      "cancel": {
+        "question": "Apa yang terjadi jika saya membatalkan langganan?",
+        "answer": "Data Anda tetap tersimpan meskipun setelah pembatalan. Lanjutkan kapan saja dan lanjutkan dari tempat Anda berhenti."
+      }
+    }
+  },
+  "footer": {
+    "description": "Kami mencatat, menampilkan, dan membantu. Membangun alat gaya hidup untuk kehidupan sehari-hari.",
+    "quickLinks": "Tautan Cepat",
+    "legal": "Hukum",
+    "privacy": "Kebijakan Privasi",
+    "terms": "Ketentuan Layanan",
+    "refund": "Kebijakan Pengembalian Dana",
+    "contact": "Kontak",
+    "copyright": "Hak cipta dilindungi.",
+    "madeBy": "Dibuat dengan sepenuh hati oleh"
+  },
+  "privacy": {
+    "title": "Kebijakan Privasi",
+    "effectiveDate": "Tanggal Berlaku",
+    "intro": "CodeWorks Lab (\"Perusahaan\") mematuhi undang-undang dan peraturan privasi yang berlaku serta berkomitmen untuk melindungi informasi pribadi pengguna. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi informasi Anda.",
+    "section1": {
+      "title": "1. Informasi yang Kami Kumpulkan",
+      "desc": "Kami dapat mengumpulkan jenis informasi berikut:",
+      "item1": "Informasi log yang dihasilkan secara otomatis selama penggunaan aplikasi",
+      "item2": "Informasi perangkat untuk analisis kesalahan (versi OS, model perangkat, dll.)",
+      "item3": "Informasi yang Anda berikan secara langsung (nama, email untuk pertanyaan)",
+      "item4": "Nama panggilan dan email (opsional) saat menulis ulasan",
+      "noSensitive": "Kami tidak mengumpulkan informasi sensitif seperti data kesehatan, data biometrik, data lokasi, kontak, foto, atau rekaman suara.",
+      "noPayment": "Kami tidak memproses pembayaran dalam aplikasi secara langsung. Semua informasi pembayaran diproses melalui Apple App Store atau Google Play Store."
+    },
+    "section2": {
+      "title": "2. Tujuan Pengumpulan dan Penggunaan",
+      "desc": "Informasi yang dikumpulkan hanya digunakan untuk tujuan berikut:",
+      "item1": "Penyediaan layanan dan peningkatan fitur",
+      "item2": "Analisis kesalahan dan peningkatan stabilitas layanan",
+      "item3": "Tanggapan terhadap pertanyaan pelanggan dan penanganan keluhan",
+      "item4": "Analisis statistik penggunaan layanan"
+    },
+    "section3": {
+      "title": "3. Periode Penyimpanan",
+      "item1": "Informasi pribadi dihapus tanpa penundaan ketika tujuan pengumpulan telah tercapai.",
+      "item2": "Namun, jika penyimpanan diwajibkan oleh undang-undang yang berlaku, informasi akan disimpan dengan aman selama periode yang diperlukan.",
+      "item3": "Catatan terkait kontrak atau penarikan: 5 tahun",
+      "item4": "Catatan terkait keluhan atau sengketa konsumen: 3 tahun"
+    },
+    "section4": {
+      "title": "4. Pengungkapan kepada Pihak Ketiga",
+      "desc": "Pada prinsipnya, kami tidak memberikan informasi pribadi kepada pihak ketiga. Pengecualian hanya dilakukan dalam kasus berikut:",
+      "item1": "Ketika pengguna telah memberikan persetujuan sebelumnya",
+      "item2": "Ketika diwajibkan oleh undang-undang atau diminta oleh otoritas penyelidik sesuai prosedur hukum"
+    },
+    "section5": {
+      "title": "5. Layanan Eksternal",
+      "desc": "Kami dapat menggunakan layanan eksternal berikut untuk peningkatan layanan:",
+      "item1": "Firebase Analytics (statistik penggunaan aplikasi)",
+      "item2": "Firebase Crashlytics (analisis kesalahan)",
+      "item3": "Google Gemini API (fitur AI)",
+      "note": "Silakan merujuk pada kebijakan privasi masing-masing layanan untuk praktik penanganan data mereka.",
+      "overseas": "Layanan eksternal (Firebase, Gemini API) dapat menggunakan server di luar negeri, dan data diproses sesuai dengan kebijakan privasi masing-masing layanan."
+    },
+    "section6": {
+      "title": "6. Penghapusan Data",
+      "desc": "Kami menghapus informasi pribadi tanpa penundaan ketika periode penyimpanan berakhir atau tujuan pemrosesan telah tercapai.",
+      "item1": "File elektronik: Dihapus secara aman untuk mencegah pemulihan",
+      "item2": "Dokumen fisik: Dihancurkan atau dibakar"
+    },
+    "section7": {
+      "title": "7. Hak Anda",
+      "desc": "Anda dapat menggunakan hak-hak berikut kapan saja:",
+      "item1": "Permintaan untuk mengakses informasi pribadi",
+      "item2": "Permintaan untuk memperbaiki informasi pribadi",
+      "item3": "Permintaan untuk menghapus informasi pribadi",
+      "item4": "Permintaan untuk menghentikan pemrosesan informasi pribadi",
+      "note": "Anda dapat mengajukan permintaan melalui formulir kontak di halaman Panduan kami."
+    },
+    "section8": {
+      "title": "8. Langkah Keamanan",
+      "desc": "Kami menerapkan langkah-langkah berikut untuk memastikan keamanan informasi pribadi:",
+      "item1": "Enkripsi informasi pribadi",
+      "item2": "Langkah teknis terhadap peretasan",
+      "item3": "Meminimalkan dan melatih personel yang menangani informasi pribadi"
+    },
+    "section9": {
+      "title": "9. Petugas Privasi",
+      "desc": "Untuk pertanyaan mengenai pemrosesan informasi pribadi, silakan hubungi kami melalui formulir kontak di halaman Panduan kami.",
+      "officer": "Petugas Privasi",
+      "name": "Nama: Rustic Sage",
+      "position": "Jabatan: Perwakilan",
+      "contact": "Kontak: Formulir kontak halaman Panduan"
+    },
+    "section10": {
+      "title": "10. Perubahan Kebijakan",
+      "desc": "Kebijakan Privasi ini berlaku sejak tanggal yang tercantum di atas. Setiap perubahan akan diumumkan melalui situs web kami setidaknya 7 hari sebelum berlaku."
+    }
+  },
+  "terms": {
+    "title": "Ketentuan Layanan",
+    "effectiveDate": "Tanggal Berlaku",
+    "intro": "Ketentuan Layanan (\"Ketentuan\") ini mengatur penggunaan Anda atas semua layanan (\"Layanan\") yang disediakan oleh CodeWorks Lab (\"Perusahaan\"). Dengan menggunakan Layanan kami, Anda menyetujui Ketentuan ini.",
+    "section1": {
+      "title": "1. Tujuan",
+      "desc": "Ketentuan ini menetapkan syarat dan prosedur untuk menggunakan aplikasi jajaran Safe Way 10 dan layanan terkait, serta hak, kewajiban, dan tanggung jawab Perusahaan dan pengguna."
+    },
+    "section2": {
+      "title": "2. Definisi",
+      "term1": "\"Layanan\"",
+      "def1": "mengacu pada semua layanan yang disediakan melalui aplikasi dan situs web yang dioperasikan oleh Perusahaan.",
+      "term2": "\"Pengguna\"",
+      "def2": "mengacu pada siapa saja yang mengakses dan menggunakan Layanan sesuai dengan Ketentuan ini.",
+      "term3": "\"Konten\"",
+      "def3": "mengacu pada semua informasi yang dibuat, diposting, atau disimpan oleh pengguna dalam Layanan."
+    },
+    "section3": {
+      "title": "3. Berlaku dan Perubahan Ketentuan",
+      "item1": "Ketentuan ini berlaku untuk semua pengguna yang ingin menggunakan Layanan.",
+      "item2": "Perusahaan dapat mengubah Ketentuan ini jika diperlukan, dan perubahan akan diumumkan melalui aplikasi atau situs web.",
+      "item3": "Pengguna yang tidak setuju dengan Ketentuan yang diubah dapat menghentikan penggunaan dan menarik diri dari Layanan.",
+      "item4": "Penggunaan Layanan yang berlanjut setelah tanggal efektif perubahan merupakan penerimaan terhadap Ketentuan yang diubah."
+    },
+    "section4": {
+      "title": "4. Penyediaan Layanan",
+      "item1": "Perusahaan berusaha menyediakan layanan yang stabil.",
+      "item2": "Jenis layanan, metode penggunaan, dan jam operasional ditentukan oleh Perusahaan.",
+      "item3": "Perusahaan dapat mengubah atau menghentikan seluruh atau sebagian Layanan untuk peningkatan, kebutuhan teknis, atau alasan operasional.",
+      "item4": "Layanan dapat ditangguhkan sementara untuk pemeliharaan rutin atau darurat."
+    },
+    "section5": {
+      "title": "5. Kewajiban Pengguna",
+      "desc": "Pengguna tidak boleh melakukan hal-hal berikut:",
+      "item1": "Melanggar hukum atau Ketentuan ini melalui penggunaan Layanan",
+      "item2": "Melanggar hak kekayaan intelektual, hak potret, atau hak lainnya milik Perusahaan atau pihak ketiga",
+      "item3": "Mengganggu operasi normal Layanan",
+      "item4": "Mengumpulkan atau menyalahgunakan informasi pribadi pengguna lain",
+      "item5": "Penggunaan komersial Layanan tanpa izin",
+      "item6": "Aktivitas ilegal atau tidak pantas lainnya"
+    },
+    "section6": {
+      "title": "6. Kekayaan Intelektual",
+      "item1": "Hak kekayaan intelektual untuk semua konten yang termasuk dalam Layanan (teks, gambar, perangkat lunak, dll.) adalah milik Perusahaan.",
+      "item2": "Hak cipta untuk konten yang diposting oleh pengguna dalam Layanan adalah milik masing-masing pengguna.",
+      "item3": "Pengguna tidak boleh mereproduksi, mendistribusikan, atau memodifikasi konten Layanan tanpa persetujuan tertulis sebelumnya dari Perusahaan."
+    },
+    "section7": {
+      "title": "7. Layanan Berbayar dan Pembayaran",
+      "item1": "Beberapa layanan mungkin disediakan dengan biaya. Harga dan metode pembayaran ditentukan dalam masing-masing layanan.",
+      "item2": "Pengembalian dana untuk layanan berbayar mengikuti undang-undang yang berlaku dan kebijakan pengembalian dana Perusahaan.",
+      "item3": "Layanan berlangganan dapat diperpanjang secara otomatis kecuali dibatalkan oleh pengguna."
+    },
+    "section8": {
+      "title": "8. Penafian",
+      "item1": "Perusahaan tidak bertanggung jawab atas ketidakmampuan menyediakan Layanan karena keadaan kahar seperti bencana alam, perang, atau gangguan layanan telekomunikasi.",
+      "item2": "Perusahaan tidak bertanggung jawab atas gangguan layanan yang disebabkan oleh kelalaian pengguna.",
+      "item3": "Perusahaan tidak menjamin keakuratan atau keandalan informasi yang diperoleh melalui Layanan.",
+      "item4": "Perusahaan tidak berkewajiban untuk ikut campur dalam sengketa antara pengguna atau antara pengguna dan pihak ketiga, dan tidak bertanggung jawab atas kerugian yang dihasilkan."
+    },
+    "section9": {
+      "title": "9. Tanggung Jawab atas Kerugian",
+      "item1": "Jika Perusahaan atau pengguna melanggar Ketentuan ini dan menyebabkan kerugian kepada pihak lain, mereka bertanggung jawab atas ganti rugi.",
+      "item2": "Namun, tanggung jawab dapat dibatasi dalam kasus tanpa kesengajaan atau kelalaian berat."
+    },
+    "section10": {
+      "title": "10. Penyelesaian Sengketa",
+      "item1": "Sengketa yang timbul sehubungan dengan Ketentuan ini diatur oleh hukum Republik Korea.",
+      "item2": "Dalam hal sengketa antara Perusahaan dan pengguna, kedua belah pihak harus bernegosiasi dengan itikad baik untuk penyelesaian damai.",
+      "item3": "Jika negosiasi gagal, yurisdiksi berada pada pengadilan sebagaimana diatur oleh Undang-Undang Hukum Acara Perdata."
+    },
+    "section11": {
+      "title": "11. Kontak",
+      "desc": "Untuk pertanyaan mengenai penggunaan Layanan, silakan ajukan melalui formulir kontak di halaman Panduan kami."
+    },
+    "supplementary": {
+      "title": "Ketentuan Tambahan",
+      "desc": "Ketentuan ini berlaku mulai tanggal 3 Februari 2026."
+    }
+  },
+  "admin": {
+    "login": {
+      "title": "Masuk Admin",
+      "subtitle": "Masuk untuk mengakses dasbor admin",
+      "email": "Email",
+      "password": "Kata Sandi",
+      "submit": "Masuk",
+      "error": "Kredensial tidak valid",
+      "noPermission": "Diperlukan akses admin"
+    },
+    "dashboard": {
+      "title": "Dasbor Admin",
+      "welcome": "Selamat Datang",
+      "totalReviews": "Total Ulasan",
+      "pendingReviews": "Menunggu",
+      "approvedReviews": "Disetujui",
+      "blogPosts": "Posting Blog",
+      "published": "Diterbitkan",
+      "drafts": "Draf",
+      "uniqueVisitors": "Pengunjung Unik (30h)",
+      "totalVisits": "Total Kunjungan",
+      "avgRating": "Rata-rata Penilaian",
+      "blogViews": "Tampilan Blog",
+      "topPages": "Halaman Teratas (30h)",
+      "quickLinks": "Tautan Cepat",
+      "manageReviews": "Kelola Ulasan",
+      "manageBlog": "Kelola Blog",
+      "manageApps": "Kelola Aplikasi",
+      "manageAnnouncements": "Kelola Pengumuman"
+    },
+    "reviews": {
+      "title": "Manajemen Ulasan",
+      "all": "Semua",
+      "pending": "Menunggu",
+      "approved": "Disetujui",
+      "rejected": "Ditolak",
+      "author": "Penulis",
+      "rating": "Penilaian",
+      "content": "Konten",
+      "status": "Status",
+      "date": "Tanggal",
+      "actions": "Tindakan",
+      "approve": "Setujui",
+      "reject": "Tolak",
+      "delete": "Hapus",
+      "deleteConfirm": "Apakah Anda yakin ingin menghapus ulasan ini?",
+      "statusUpdated": "Status ulasan diperbarui",
+      "deleted": "Ulasan dihapus"
+    },
+    "announcements": {
+      "title": "Manajemen Pengumuman",
+      "new": "Pengumuman Baru",
+      "edit": "Edit Pengumuman",
+      "all": "Semua",
+      "allStatus": "Semua Status",
+      "type": "Tipe",
+      "titleLabel": "Judul",
+      "titlePlaceholder": "Masukkan judul pengumuman",
+      "content": "Konten",
+      "contentPlaceholder": "Masukkan konten pengumuman",
+      "status": "Status",
+      "draft": "Draf",
+      "published": "Diterbitkan",
+      "emailStatus": "Status Email",
+      "date": "Tanggal",
+      "actions": "Tindakan",
+      "types": {
+        "newApp": "Aplikasi Baru",
+        "update": "Pembaruan",
+        "announcement": "Pengumuman"
+      },
+      "sendEmail": "Kirim Email",
+      "sendEmailConfirm": "Kirim email ke semua pengguna terdaftar?",
+      "emailSent": "Email terkirim ke {{count}} pengguna",
+      "created": "Pengumuman dibuat",
+      "updated": "Pengumuman diperbarui",
+      "deleted": "Pengumuman dihapus",
+      "deleteConfirm": "Apakah Anda yakin ingin menghapus pengumuman ini?"
+    },
+    "blog": {
+      "title": "Manajemen Blog",
+      "newPost": "Posting Baru",
+      "editPost": "Edit Posting",
+      "all": "Semua",
+      "published": "Diterbitkan",
+      "draft": "Draf",
+      "postTitle": "Judul",
+      "category": "Kategori",
+      "status": "Status",
+      "views": "Tampilan",
+      "date": "Tanggal",
+      "actions": "Tindakan",
+      "content": "Konten",
+      "excerpt": "Ringkasan (opsional)",
+      "save": "Simpan",
+      "cancel": "Batal",
+      "deleteConfirm": "Apakah Anda yakin ingin menghapus posting ini?",
+      "created": "Posting dibuat",
+      "updated": "Posting diperbarui",
+      "deleted": "Posting dihapus"
+    }
+  },
+  "common": {
+    "loading": "Memuat...",
+    "error": "Terjadi kesalahan",
+    "retry": "Coba Lagi",
+    "save": "Simpan",
+    "cancel": "Batal",
+    "delete": "Hapus",
+    "edit": "Edit",
+    "create": "Buat",
+    "submit": "Kirim",
+    "search": "Cari",
+    "filter": "Filter",
+    "noData": "Tidak ada data tersedia",
+    "required": "Wajib",
+    "optional": "Opsional",
+    "prev": "Sebelumnya",
+    "next": "Berikutnya"
+  },
+  "auth": {
+    "login": "Masuk",
+    "register": "Daftar",
+    "logout": "Keluar",
+    "email": "Email",
+    "password": "Kata Sandi",
+    "name": "Nama",
+    "confirmPassword": "Konfirmasi Kata Sandi",
+    "emailPlaceholder": "Masukkan email Anda",
+    "passwordPlaceholder": "Masukkan kata sandi Anda",
+    "namePlaceholder": "Masukkan nama Anda",
+    "confirmPasswordPlaceholder": "Konfirmasi kata sandi Anda",
+    "loginSubtitle": "Masuk ke akun Anda",
+    "registerSubtitle": "Buat akun baru",
+    "noAccount": "Belum punya akun?",
+    "hasAccount": "Sudah punya akun?",
+    "loginFailed": "Gagal masuk",
+    "registerFailed": "Gagal mendaftar",
+    "invalidEmail": "Silakan masukkan email yang valid",
+    "emailTaken": "Email ini sudah terdaftar",
+    "passwordMinLength": "Kata sandi minimal 8 karakter",
+    "passwordRequirements": "Kata sandi harus mengandung huruf besar, huruf kecil, dan angka",
+    "passwordMismatch": "Kata sandi tidak cocok",
+    "passwordMin8": "8+ karakter",
+    "passwordLowercase": "Huruf kecil",
+    "passwordUppercase": "Huruf besar",
+    "passwordNumber": "Angka"
+  },
+  "mypage": {
+    "title": "Halaman Saya",
+    "subtitle": "Kelola akun Anda",
+    "noName": "Tidak ada nama",
+    "joined": "Bergabung: {{date}}",
+    "reviews": "Ulasan",
+    "inquiries": "Pertanyaan",
+    "changePassword": "Ubah Kata Sandi",
+    "myReviews": "Ulasan Saya",
+    "myInquiries": "Pertanyaan Saya",
+    "deleteAccount": "Hapus Akun",
+    "deleteAccountTitle": "Hapus Akun",
+    "deleteWarning": "Tindakan ini tidak dapat dibatalkan. Apakah Anda yakin ingin menghapus akun Anda?",
+    "confirmPassword": "Konfirmasi Kata Sandi",
+    "deleteFailed": "Gagal menghapus akun",
+    "currentPassword": "Kata Sandi Saat Ini",
+    "newPassword": "Kata Sandi Baru",
+    "passwordChanged": "Kata sandi berhasil diubah",
+    "totalReviews": "{{count}} ulasan",
+    "noReviews": "Belum ada ulasan",
+    "noReviewsDesc": "Tulis ulasan untuk membagikan pengalaman Anda!",
+    "writeReview": "Tulis Ulasan",
+    "deleteReviewTitle": "Hapus Ulasan",
+    "deleteReviewConfirm": "Apakah Anda yakin ingin menghapus ulasan ini?",
+    "totalInquiries": "{{count}} pertanyaan",
+    "noInquiries": "Belum ada pertanyaan",
+    "noInquiriesDesc": "Punya pertanyaan? Hubungi kami!",
+    "goToContact": "Hubungi Kami",
+    "noSubject": "Tidak ada subjek",
+    "status": {
+      "pending": "Menunggu",
+      "approved": "Disetujui",
+      "rejected": "Ditolak"
+    },
+    "inquiryStatus": {
+      "unread": "Belum Dibaca",
+      "read": "Sudah Dibaca",
+      "replied": "Sudah Dibalas"
+    }
+  },
+  "language": {
+    "select": "Bahasa",
+    "en": "English",
+    "ko": "한국어",
+    "ja": "日本語",
+    "zh-CN": "简体中文",
+    "es": "Español",
+    "pt": "Português",
+    "fr": "Français",
+    "de": "Deutsch",
+    "ru": "Русский",
+    "ar": "العربية",
+    "hi": "हिन्दी",
+    "th": "ไทย",
+    "id": "Bahasa Indonesia",
+    "vi": "Tiếng Việt"
+  }
+}
