@@ -2,8 +2,8 @@
   "brand": {
     "name": "CodeWorks Lab",
     "tagline": "Chúng tôi Ghi nhận, Hiển thị và Hỗ trợ",
-    "description": "Chúng tôi tạo ra các công cụ tiện ích cuộc sống và nhật ký tự quản lý. Chúng tôi không phán xét. Chúng tôi ghi nhận, hiển thị và hỗ trợ.",
-    "safeWay": "Safe Way 10"
+    "description": "Chúng tôi tạo ra các công cụ an toàn đồng hành cùng bạn trong những khoảnh khắc nguy hiểm. Chúng tôi không phán xét. Chúng tôi ghi lại, hiển thị và hỗ trợ.",
+    "safeWay": "Safe Way 11"
   },
   "nav": {
     "home": "Trang chủ",
@@ -29,9 +29,9 @@
     }
   },
   "hero": {
-    "title": "Trợ lý",
-    "titleHighlight": "Cuộc sống hàng ngày",
-    "subtitle": "Dòng sản phẩm Safe Way 10 của CodeWorks Lab - các công cụ tiện ích cuộc sống và nhật ký tự quản lý được thiết kế để giúp cuộc sống hàng ngày của bạn dễ dàng hơn.",
+    "title": "Người Bạn Đồng Hành",
+    "titleHighlight": "An Toàn Đáng Tin Cậy",
+    "subtitle": "Bộ sưu tập Safe Way 11 của CodeWorks Lab - 11 công cụ an toàn đồng hành cùng bạn trong những khoảnh khắc nguy hiểm. Chúng tôi chỉ tạo ra ứng dụng không thể thiếu.",
     "appStore": "App Store",
     "playStore": "Google Play",
     "downloads": "Lượt tải",
@@ -40,76 +40,82 @@
     "coreMessage": "Chúng tôi không phán xét. Chúng tôi ghi nhận, hiển thị và hỗ trợ."
   },
   "apps": {
-    "title": "Dòng sản phẩm Safe Way 10",
-    "subtitle": "Tiện ích cuộc sống và nhật ký tự quản lý cho đời sống hàng ngày",
+    "title": "Bộ sưu tập Safe Way 11",
+    "subtitle": "Công cụ an toàn đồng hành cùng bạn trong những khoảnh khắc nguy hiểm",
     "learnMore": "Tìm hiểu thêm",
     "comingSoon": "Sắp ra mắt",
     "items": {
       "wayback": {
         "name": "WayBack",
-        "tagline": "Trở về an toàn & Du lịch",
-        "description": "Bản đồ ngoại tuyến, điều hướng và hướng dẫn du lịch dựa trên vị trí. Người bạn đồng hành cho những chuyến đi an toàn.",
+        "tagline": "Trở Về An Toàn & Du Lịch",
+        "description": "Bản đồ offline và tuyến đường AI tránh nguy hiểm để trở về an toàn. Quay lại điểm xuất phát trong 5 giây.",
         "category": "Điều hướng"
       },
-      "wayfit": {
-        "name": "WayFit",
-        "tagline": "Nhật ký bữa ăn & Ghi chép calo",
-        "description": "Chụp ảnh thức ăn để ghi lại nhật ký bữa ăn cá nhân và nhận thông tin dinh dưỡng gần đúng.",
-        "category": "Phong cách sống"
-      },
-      "waymuscle": {
-        "name": "WayMuscle",
-        "tagline": "Huấn luyện viên tập tại nhà",
-        "description": "Đối tác tập luyện AI giúp bạn tập thể dục đúng tư thế tại nhà.",
-        "category": "Thể dục"
-      },
-      "waybrain": {
-        "name": "WayBrain",
-        "tagline": "Rèn luyện trí não",
-        "description": "Trò chơi rèn luyện trí não giúp tâm trí bạn luôn hoạt động thông qua câu đố và hội thoại.",
-        "category": "Giải trí"
-      },
-      "wayview": {
-        "name": "WayView",
-        "tagline": "Kính lúp thông minh",
-        "description": "Công cụ hỗ trợ thị giác phóng to chữ nhỏ và đọc to. Kính lúp đọc kỹ thuật số.",
-        "category": "Tiện ích"
+      "waypulse": {
+        "name": "WayPulse",
+        "tagline": "Trợ lý Sức khỏe AI",
+        "description": "Tự động gửi SMS khẩn cấp cho gia đình khi phát hiện nhịp tim bất thường. Báo cáo sức khỏe cá nhân hóa bằng AI.",
+        "category": "Sức khỏe"
       },
       "waysound": {
         "name": "WaySound",
-        "tagline": "Trợ lý phụ đề hội thoại",
-        "description": "Sổ ghi chép chuyển đổi thời gian thực từ giọng nói sang văn bản. Trình tạo phụ đề cho hội thoại.",
-        "category": "Tiện ích"
+        "tagline": "Trợ lý Phụ đề Hội thoại",
+        "description": "Chuyển đổi giọng nói thành phụ đề theo thời gian thực. Công cụ giao tiếp thiết yếu cho người khiếm thính và môi trường đa ngôn ngữ.",
+        "category": "Trợ năng"
       },
-      "waylog": {
-        "name": "WayLog",
-        "tagline": "Nhắc nhở uống thuốc bổ sung",
-        "description": "Đồng hồ báo thức nhắc bạn uống vitamin hoặc thực phẩm bổ sung. Theo dõi lịch sử sử dụng.",
-        "category": "Phong cách sống"
+      "wayscan": {
+        "name": "WayScan",
+        "tagline": "Máy quét Dị ứng Thực phẩm",
+        "description": "Quét nhãn thực phẩm bằng camera và AI cảnh báo về chất gây dị ứng bằng 14 ngôn ngữ.",
+        "category": "Sức khỏe"
       },
-      "wayspot": {
-        "name": "WaySpot",
-        "tagline": "Nhật ký quan sát cơ thể",
-        "description": "Album ảnh sắp xếp hình ảnh về những thay đổi trên cơ thể (đốm, vết) theo thứ tự thời gian.",
-        "category": "Phong cách sống"
+      "waypanic": {
+        "name": "WayPanic",
+        "tagline": "Phản ứng Khẩn cấp Tự động",
+        "description": "Quay video, gửi GPS và tin nhắn khẩn cấp chỉ với một chạm. Bảo hiểm cho đi bộ đêm và tình huống khẩn cấp.",
+        "category": "An toàn"
+      },
+      "waybrain": {
+        "name": "WayBrain",
+        "tagline": "Thể dục Não bộ",
+        "description": "Trò chơi luyện não AI dạng hội thoại. Bài tập não hàng ngày giúp duy trì sức khỏe nhận thức cho cha mẹ.",
+        "category": "Sức khỏe"
       },
       "wayrest": {
         "name": "WayRest",
-        "tagline": "Ghi âm giấc ngủ",
-        "description": "Máy ghi âm giấc ngủ ghi lại âm thanh (ngáy, nói mơ) khi bạn ngủ. Kiểm tra âm thanh ban đêm của bạn.",
-        "category": "Phong cách sống"
+        "tagline": "Máy ghi Âm thanh Giấc ngủ",
+        "description": "AI phân loại ngáy, nói mê và nghiến răng khi ngủ. Xem sức khỏe giấc ngủ trực quan.",
+        "category": "Sức khỏe"
+      },
+      "waywild": {
+        "name": "WayWild",
+        "tagline": "Nhận dạng Nguy hiểm Hoang dã",
+        "description": "Chụp ảnh nấm, rắn hoặc cây khi đi leo núi và AI cho biết mức độ nguy hiểm.",
+        "category": "An toàn"
+      },
+      "wayer": {
+        "name": "WayER",
+        "tagline": "Hướng dẫn Y tế Khẩn cấp ở Nước ngoài",
+        "description": "Số khẩn cấp, cụm từ y tế và tìm bệnh viện trên toàn thế giới. Bộ sinh tồn khi ốm ở nước ngoài.",
+        "category": "Du lịch"
       },
       "waystory": {
         "name": "WayStory",
-        "tagline": "Trình tạo tự truyện",
-        "description": "Biến câu chuyện cuộc đời bạn thành sách thông qua các cuộc trò chuyện có hướng dẫn. Trợ lý xuất bản và viết lách.",
-        "category": "Sáng tạo"
+        "tagline": "Tạo Tự truyện",
+        "description": "Biến câu chuyện cuộc đời cha mẹ thành sách qua hội thoại bằng giọng nói. Ghi lại trước khi quá muộn.",
+        "category": "Gia đình"
+      },
+      "waycrash": {
+        "name": "WayCrash",
+        "tagline": "Trợ lý Tai nạn Giao thông",
+        "description": "Hướng dẫn bằng giọng nói trong cơn hoảng loạn sau tai nạn. Chụp ảnh tự động và tạo báo cáo.",
+        "category": "An toàn"
       }
     }
   },
   "features": {
-    "title": "Tại sao chọn Safe Way 10?",
-    "subtitle": "Công cụ ghi nhận, hiển thị và hỗ trợ - không phán xét",
+    "title": "Tại sao chọn Safe Way 11?",
+    "subtitle": "Công cụ ghi lại, hiển thị và hỗ trợ trong những khoảnh khắc nguy hiểm - không phán xét",
     "items": {
       "recording": {
         "title": "Ghi nhận thông minh",
@@ -238,7 +244,7 @@
         "items": {
           "newApp": {
             "title": "Ứng dụng mới",
-            "text": "Hãy là người đầu tiên biết về các ứng dụng mới ra mắt trong dòng sản phẩm Safe Way 10."
+            "text": "Hãy là người đầu tiên biết về các ứng dụng mới ra mắt trong dòng sản phẩm Safe Way 11."
           },
           "update": {
             "title": "Tin cập nhật",
@@ -299,7 +305,7 @@
     }
   },
   "footer": {
-    "description": "Chúng tôi ghi nhận, hiển thị và hỗ trợ. Xây dựng công cụ phong cách sống cho đời sống hàng ngày.",
+    "description": "Chúng tôi tạo ra các công cụ an toàn đồng hành cùng bạn trong những khoảnh khắc nguy hiểm. Ghi lại, hiển thị và hỗ trợ.",
     "quickLinks": "Liên kết nhanh",
     "legal": "Pháp lý",
     "privacy": "Chính sách bảo mật",
@@ -394,7 +400,7 @@
     "intro": "Điều khoản dịch vụ này (\"Điều khoản\") điều chỉnh việc sử dụng tất cả các dịch vụ (\"Dịch vụ\") do CodeWorks Lab (\"Công ty\") cung cấp. Bằng cách sử dụng Dịch vụ, bạn đồng ý với các Điều khoản này.",
     "section1": {
       "title": "1. Mục đích",
-      "desc": "Điều khoản này thiết lập các điều kiện và thủ tục sử dụng các ứng dụng dòng Safe Way 10 và các dịch vụ liên quan, cũng như quyền, nghĩa vụ và trách nhiệm của Công ty và người dùng."
+      "desc": "Điều khoản này thiết lập các điều kiện và thủ tục sử dụng các ứng dụng dòng Safe Way 11 và các dịch vụ liên quan, cũng như quyền, nghĩa vụ và trách nhiệm của Công ty và người dùng."
     },
     "section2": {
       "title": "2. Định nghĩa",

@@ -2,8 +2,8 @@
   "brand": {
     "name": "CodeWorks Lab",
     "tagline": "记录、展示、协助",
-    "description": "我们创造生活便利工具和自我管理日志。我们不做判断。我们记录、展示、协助。",
-    "safeWay": "Safe Way 10"
+    "description": "我们创造在危险时刻陪伴您的安全工具。我们不做判断。我们记录、展示、协助。",
+    "safeWay": "Safe Way 11"
   },
   "nav": {
     "home": "首页",
@@ -29,9 +29,9 @@
     }
   },
   "hero": {
-    "title": "您的日常",
-    "titleHighlight": "生活助手",
-    "subtitle": "CodeWorks Lab的Safe Way 10系列 - 让日常生活更轻松的生活便利工具和自我管理日志。",
+    "title": "危险时刻的",
+    "titleHighlight": "可靠安全工具",
+    "subtitle": "CodeWorks Lab的Safe Way 11系列 - 在危险时刻陪伴您的11个安全工具。我们只做不可或缺的应用。",
     "appStore": "App Store",
     "playStore": "Google Play",
     "downloads": "下载量",
@@ -40,76 +40,82 @@
     "coreMessage": "我们不做判断。我们记录、展示、协助。"
   },
   "apps": {
-    "title": "Safe Way 10 系列",
-    "subtitle": "为日常生活打造的生活便利工具和自我管理日志",
+    "title": "Safe Way 11 系列",
+    "subtitle": "危险时刻，陪伴您的安全工具",
     "learnMore": "了解更多",
     "comingSoon": "即将推出",
     "items": {
       "wayback": {
         "name": "WayBack",
         "tagline": "安全回家与旅行",
-        "description": "离线地图、导航和基于位置的旅行指南。您安全旅程的伴侣。",
+        "description": "离线地图和AI危险回避路线助您安全回家。5秒内返回出发点。",
         "category": "导航"
       },
-      "wayfit": {
-        "name": "WayFit",
-        "tagline": "饮食记录与卡路里计算",
-        "description": "拍摄食物照片，记录个人饮食日记，获取大致营养信息。",
-        "category": "生活方式"
-      },
-      "waymuscle": {
-        "name": "WayMuscle",
-        "tagline": "家庭训练教练",
-        "description": "帮助您在家以正确姿势锻炼的AI运动伙伴。",
-        "category": "健身"
-      },
-      "waybrain": {
-        "name": "WayBrain",
-        "tagline": "脑力健身",
-        "description": "通过问答和对话保持大脑活跃的脑力训练游戏。",
-        "category": "娱乐"
-      },
-      "wayview": {
-        "name": "WayView",
-        "tagline": "智能放大镜",
-        "description": "放大小字并朗读的视觉辅助工具。数字阅读放大镜。",
-        "category": "工具"
+      "waypulse": {
+        "name": "WayPulse",
+        "tagline": "AI健康副驾",
+        "description": "检测到异常心率时自动向家人发送紧急短信。AI定制健康报告和体检记录管理。",
+        "category": "健康"
       },
       "waysound": {
         "name": "WaySound",
         "tagline": "对话字幕助手",
-        "description": "将语音转换为文字的实时转录记事本。对话字幕生成器。",
-        "category": "工具"
+        "description": "将语音实时转换为字幕。为听障人士和多语言环境打造的必备沟通工具。",
+        "category": "无障碍"
       },
-      "waylog": {
-        "name": "WayLog",
-        "tagline": "营养品提醒",
-        "description": "提醒您服用维生素或营养品的闹钟。跟踪您的服用历史。",
-        "category": "生活方式"
+      "wayscan": {
+        "name": "WayScan",
+        "tagline": "食品过敏扫描仪",
+        "description": "用相机扫描食品成分表，AI会以14种语言警告过敏成分。",
+        "category": "健康"
       },
-      "wayspot": {
-        "name": "WaySpot",
-        "tagline": "身体观察日记",
-        "description": "按时间顺序整理身体变化（斑点、痕迹）照片的相册。",
-        "category": "生活方式"
+      "waypanic": {
+        "name": "WayPanic",
+        "tagline": "紧急情况自动响应",
+        "description": "一键同时启动录像、GPS发送、紧急短信。夜间出行和紧急情况的保险。",
+        "category": "安全"
+      },
+      "waybrain": {
+        "name": "WayBrain",
+        "tagline": "脑力健身",
+        "description": "AI对话式脑力训练游戏。帮助父母维持认知功能的每日大脑锻炼。",
+        "category": "健康"
       },
       "wayrest": {
         "name": "WayRest",
         "tagline": "睡眠声音录音机",
-        "description": "记录睡眠期间声音（打鼾、说梦话）的睡眠录音机。查看您的夜间声音。",
-        "category": "生活方式"
+        "description": "AI分类睡眠中的打鼾、梦话、磨牙。直观查看睡眠健康状况。",
+        "category": "健康"
+      },
+      "waywild": {
+        "name": "WayWild",
+        "tagline": "野外危险识别",
+        "description": "登山时发现的蘑菇、蛇、植物，拍照后AI告知危险等级。",
+        "category": "安全"
+      },
+      "wayer": {
+        "name": "WayER",
+        "tagline": "海外医疗紧急指南",
+        "description": "全球紧急电话、医疗会话、医院查找合而为一。在国外生病时的生存工具包。",
+        "category": "旅行"
       },
       "waystory": {
         "name": "WayStory",
         "tagline": "自传制作器",
-        "description": "通过引导对话将您的人生故事整理成书。出版和写作助手。",
-        "category": "创意"
+        "description": "通过语音对话将父母的人生故事整理成书。趁还来得及，记录下来。",
+        "category": "家庭"
+      },
+      "waycrash": {
+        "name": "WayCrash",
+        "tagline": "交通事故应对助手",
+        "description": "事故后恐慌状态下的语音引导。自动拍照、生成事故报告。",
+        "category": "安全"
       }
     }
   },
   "features": {
-    "title": "为什么选择Safe Way 10？",
-    "subtitle": "记录、展示、协助的工具 - 不做任何判断",
+    "title": "为什么选择Safe Way 11？",
+    "subtitle": "危险时刻，不做判断，只记录、展示、协助的工具",
     "items": {
       "recording": {
         "title": "智能记录",
@@ -238,7 +244,7 @@
         "items": {
           "newApp": {
             "title": "新应用",
-            "text": "第一时间获取Safe Way 10系列新应用发布消息。"
+            "text": "第一时间获取Safe Way 11系列新应用发布消息。"
           },
           "update": {
             "title": "更新消息",
@@ -299,7 +305,7 @@
     }
   },
   "footer": {
-    "description": "我们记录、展示、协助。为日常生活构建生活便利工具。",
+    "description": "我们创造在危险时刻陪伴您的安全工具。记录、展示、协助。",
     "quickLinks": "快速链接",
     "legal": "法律信息",
     "privacy": "隐私政策",
@@ -394,7 +400,7 @@
     "intro": "本服务条款（以下简称『条款』）适用于CodeWorks Lab（以下简称『公司』）提供的所有服务（以下简称『服务』）。使用我们的服务即表示您同意本条款。",
     "section1": {
       "title": "第一条（目的）",
-      "desc": "本条款规定Safe Way 10系列应用程序及相关服务的使用条件和程序，以及公司和用户的权利、义务和责任。"
+      "desc": "本条款规定Safe Way 11系列应用程序及相关服务的使用条件和程序，以及公司和用户的权利、义务和责任。"
     },
     "section2": {
       "title": "第二条（定义）",

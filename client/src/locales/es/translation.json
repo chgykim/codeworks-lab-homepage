@@ -2,8 +2,8 @@
   "brand": {
     "name": "CodeWorks Lab",
     "tagline": "Registramos, Mostramos y Asistimos",
-    "description": "Creamos herramientas de utilidad para el estilo de vida y diarios de autogestión. No juzgamos. Registramos, mostramos y asistimos.",
-    "safeWay": "Safe Way 10"
+    "description": "Creamos herramientas de seguridad que te acompañan en momentos peligrosos. No juzgamos. Registramos, mostramos y asistimos.",
+    "safeWay": "Safe Way 11"
   },
   "nav": {
     "home": "Inicio",
@@ -29,9 +29,9 @@
     }
   },
   "hero": {
-    "title": "Tu Asistente",
-    "titleHighlight": "de Vida Diaria",
-    "subtitle": "La línea Safe Way 10 de CodeWorks Lab - herramientas de utilidad para el estilo de vida y diarios de autogestión diseñados para facilitar tu vida diaria.",
+    "title": "Tu Compañero",
+    "titleHighlight": "de Seguridad Confiable",
+    "subtitle": "La línea Safe Way 11 de CodeWorks Lab - 11 herramientas de seguridad que te acompañan en momentos peligrosos. Solo creamos apps indispensables.",
     "appStore": "App Store",
     "playStore": "Google Play",
     "downloads": "Descargas",
@@ -40,76 +40,82 @@
     "coreMessage": "No juzgamos. Registramos, mostramos y asistimos."
   },
   "apps": {
-    "title": "Línea Safe Way 10",
-    "subtitle": "Utilidades de estilo de vida y diarios de autogestión para la vida cotidiana",
+    "title": "Línea Safe Way 11",
+    "subtitle": "Herramientas de seguridad que te acompañan en momentos peligrosos",
     "learnMore": "Más Información",
     "comingSoon": "Próximamente",
     "items": {
       "wayback": {
         "name": "WayBack",
         "tagline": "Regreso Seguro y Viajes",
-        "description": "Mapas offline, navegación y guía de viaje basada en ubicación. Tu compañero para viajes seguros.",
+        "description": "Mapas offline y rutas IA de evasión de peligros para regresos seguros. Vuelve a tu punto de partida en 5 segundos.",
         "category": "Navegación"
       },
-      "wayfit": {
-        "name": "WayFit",
-        "tagline": "Diario de Comidas y Calorías",
-        "description": "Toma fotos de tu comida para mantener un diario personal y obtener información nutricional aproximada.",
-        "category": "Estilo de Vida"
-      },
-      "waymuscle": {
-        "name": "WayMuscle",
-        "tagline": "Entrenador en Casa",
-        "description": "Compañero de ejercicio con IA que te ayuda a entrenar con la forma correcta en casa.",
-        "category": "Fitness"
-      },
-      "waybrain": {
-        "name": "WayBrain",
-        "tagline": "Fitness Mental",
-        "description": "Juego de entrenamiento cerebral que mantiene tu mente activa a través de cuestionarios y conversaciones.",
-        "category": "Entretenimiento"
-      },
-      "wayview": {
-        "name": "WayView",
-        "tagline": "Lupa Inteligente",
-        "description": "Herramienta de asistencia visual que agranda texto pequeño y lo lee en voz alta. Una lupa de lectura digital.",
-        "category": "Utilidad"
+      "waypulse": {
+        "name": "WayPulse",
+        "tagline": "Copiloto de Salud IA",
+        "description": "Envía SMS de emergencia automático a familiares al detectar ritmo cardíaco anormal. Reportes de salud personalizados con IA.",
+        "category": "Salud"
       },
       "waysound": {
         "name": "WaySound",
         "tagline": "Asistente de Subtítulos",
-        "description": "Bloc de notas de transcripción en tiempo real que convierte voz a texto. Un generador de subtítulos para conversaciones.",
-        "category": "Utilidad"
+        "description": "Conversión de voz a subtítulos en tiempo real. Herramienta esencial para personas con problemas auditivos y entornos multilingües.",
+        "category": "Accesibilidad"
       },
-      "waylog": {
-        "name": "WayLog",
-        "tagline": "Recordatorio de Suplementos",
-        "description": "Reloj despertador que te recuerda cuándo tomar vitaminas o suplementos. Registra tu historial de consumo.",
-        "category": "Estilo de Vida"
+      "wayscan": {
+        "name": "WayScan",
+        "tagline": "Escáner de Alergias Alimentarias",
+        "description": "Escanea etiquetas de alimentos con tu cámara y la IA te advierte sobre alérgenos en 14 idiomas.",
+        "category": "Salud"
       },
-      "wayspot": {
-        "name": "WaySpot",
-        "tagline": "Diario de Observación Corporal",
-        "description": "Álbum de fotos que organiza imágenes de cambios corporales (manchas, marcas) en orden cronológico.",
-        "category": "Estilo de Vida"
+      "waypanic": {
+        "name": "WayPanic",
+        "tagline": "Respuesta Automática de Emergencia",
+        "description": "Grabación de video, envío de GPS y mensaje de emergencia con un solo toque. Tu seguro para caminatas nocturnas.",
+        "category": "Seguridad"
+      },
+      "waybrain": {
+        "name": "WayBrain",
+        "tagline": "Fitness Mental",
+        "description": "Juegos de entrenamiento cerebral con IA conversacional. Ejercicio cerebral diario para mantener la salud cognitiva de tus padres.",
+        "category": "Salud"
       },
       "wayrest": {
         "name": "WayRest",
         "tagline": "Grabador de Sonidos del Sueño",
-        "description": "Grabador de sueño que captura sonidos (ronquidos, hablar dormido) mientras descansas. Revisa tus sonidos nocturnos.",
-        "category": "Estilo de Vida"
+        "description": "La IA clasifica ronquidos, hablar dormido y bruxismo mientras duermes. Visualiza tu salud del sueño.",
+        "category": "Salud"
+      },
+      "waywild": {
+        "name": "WayWild",
+        "tagline": "Identificador de Peligros Silvestres",
+        "description": "Fotografía hongos, serpientes o plantas en tu excursión y la IA te dice el nivel de peligro.",
+        "category": "Seguridad"
+      },
+      "wayer": {
+        "name": "WayER",
+        "tagline": "Guía de Emergencia Médica en el Extranjero",
+        "description": "Números de emergencia, frases médicas y buscador de hospitales en todo el mundo. Tu kit de supervivencia al enfermarte en el extranjero.",
+        "category": "Viajes"
       },
       "waystory": {
         "name": "WayStory",
         "tagline": "Creador de Autobiografías",
-        "description": "Convierte tus historias de vida en un libro a través de conversaciones guiadas. Asistente de publicación y escritura.",
-        "category": "Creatividad"
+        "description": "Convierte las historias de vida de tus padres en un libro mediante conversaciones por voz. Regístralas antes de que desaparezcan.",
+        "category": "Familia"
+      },
+      "waycrash": {
+        "name": "WayCrash",
+        "tagline": "Asistente de Accidentes de Tráfico",
+        "description": "Guía por voz en el pánico tras un accidente. Captura automática de fotos y generación de reportes.",
+        "category": "Seguridad"
       }
     }
   },
   "features": {
-    "title": "¿Por qué Elegir Safe Way 10?",
-    "subtitle": "Herramientas que registran, muestran y asisten - sin hacer juicios",
+    "title": "¿Por qué Elegir Safe Way 11?",
+    "subtitle": "Herramientas que registran, muestran y asisten en momentos peligrosos - sin hacer juicios",
     "items": {
       "recording": {
         "title": "Registro Inteligente",
@@ -238,7 +244,7 @@
         "items": {
           "newApp": {
             "title": "Nueva App",
-            "text": "Sé el primero en conocer los nuevos lanzamientos de la línea Safe Way 10."
+            "text": "Sé el primero en conocer los nuevos lanzamientos de la línea Safe Way 11."
           },
           "update": {
             "title": "Noticias de Actualización",
@@ -299,7 +305,7 @@
     }
   },
   "footer": {
-    "description": "Registramos, mostramos y asistimos. Construyendo herramientas de estilo de vida para la vida cotidiana.",
+    "description": "Creamos herramientas de seguridad que te acompañan en momentos peligrosos. Registramos, mostramos y asistimos.",
     "quickLinks": "Enlaces Rápidos",
     "legal": "Legal",
     "privacy": "Política de Privacidad",
@@ -394,7 +400,7 @@
     "intro": "Estos Términos de Servicio (\"Términos\") rigen su uso de todos los servicios (\"Servicio\") proporcionados por CodeWorks Lab (\"Empresa\"). Al usar nuestro Servicio, acepta estos Términos.",
     "section1": {
       "title": "1. Propósito",
-      "desc": "Estos Términos establecen las condiciones y procedimientos para usar las aplicaciones de la línea Safe Way 10 y servicios relacionados, así como los derechos, obligaciones y responsabilidades de la Empresa y los usuarios."
+      "desc": "Estos Términos establecen las condiciones y procedimientos para usar las aplicaciones de la línea Safe Way 11 y servicios relacionados, así como los derechos, obligaciones y responsabilidades de la Empresa y los usuarios."
     },
     "section2": {
       "title": "2. Definiciones",

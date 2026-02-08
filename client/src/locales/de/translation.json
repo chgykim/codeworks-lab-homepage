@@ -2,8 +2,8 @@
   "brand": {
     "name": "CodeWorks Lab",
     "tagline": "Wir Erfassen, Zeigen und Unterstützen",
-    "description": "Wir entwickeln Lifestyle-Utility-Tools und Selbstmanagement-Tagebücher. Wir urteilen nicht. Wir erfassen, zeigen und unterstützen.",
-    "safeWay": "Safe Way 10"
+    "description": "Wir entwickeln Sicherheitstools, die in gefährlichen Momenten an Ihrer Seite stehen. Wir urteilen nicht. Wir erfassen, zeigen und unterstützen.",
+    "safeWay": "Safe Way 11"
   },
   "nav": {
     "home": "Startseite",
@@ -29,9 +29,9 @@
     }
   },
   "hero": {
-    "title": "Ihr Alltags-",
-    "titleHighlight": "Lebensassistent",
-    "subtitle": "Die Safe Way 10 Produktlinie von CodeWorks Lab - Lifestyle-Utility-Tools und Selbstmanagement-Tagebücher für einen einfacheren Alltag.",
+    "title": "Ihr Verlässlicher",
+    "titleHighlight": "Sicherheitsbegleiter",
+    "subtitle": "Die Safe Way 11 Produktlinie von CodeWorks Lab - 11 Sicherheitstools, die in gefährlichen Momenten an Ihrer Seite stehen. Wir entwickeln nur unverzichtbare Apps.",
     "appStore": "App Store",
     "playStore": "Google Play",
     "downloads": "Downloads",
@@ -40,76 +40,82 @@
     "coreMessage": "Wir urteilen nicht. Wir erfassen, zeigen und unterstützen."
   },
   "apps": {
-    "title": "Safe Way 10 Produktlinie",
-    "subtitle": "Lifestyle-Utilities und Selbstmanagement-Tagebücher für den Alltag",
+    "title": "Safe Way 11 Produktlinie",
+    "subtitle": "Sicherheitstools, die in gefährlichen Momenten an Ihrer Seite stehen",
     "learnMore": "Mehr Erfahren",
     "comingSoon": "Demnächst",
     "items": {
       "wayback": {
         "name": "WayBack",
         "tagline": "Sichere Rückkehr & Reisen",
-        "description": "Offline-Karten, Navigation und standortbasierter Reiseführer. Ihr Begleiter für sichere Reisen.",
+        "description": "Offline-Karten und KI-gestützte Gefahrenvermeidungsrouten für sichere Heimkehr. In 5 Sekunden zum Ausgangspunkt zurück.",
         "category": "Navigation"
       },
-      "wayfit": {
-        "name": "WayFit",
-        "tagline": "Mahlzeiten-Tagebuch & Kalorien",
-        "description": "Fotografieren Sie Ihre Mahlzeiten für ein persönliches Ernährungstagebuch und erhalten Sie ungefähre Nährwertinformationen.",
-        "category": "Lifestyle"
-      },
-      "waymuscle": {
-        "name": "WayMuscle",
-        "tagline": "Home-Training-Coach",
-        "description": "KI-Trainingspartner, der Ihnen hilft, zu Hause mit der richtigen Form zu trainieren.",
-        "category": "Fitness"
-      },
-      "waybrain": {
-        "name": "WayBrain",
-        "tagline": "Gehirn-Fitness",
-        "description": "Gehirntraining-Spiel, das Ihren Geist durch Quizze und Gespräche aktiv hält.",
-        "category": "Unterhaltung"
-      },
-      "wayview": {
-        "name": "WayView",
-        "tagline": "Intelligente Lupe",
-        "description": "Visuelles Hilfsmittel, das kleine Texte vergrößert und vorliest. Eine digitale Leselupe.",
-        "category": "Utility"
+      "waypulse": {
+        "name": "WayPulse",
+        "tagline": "KI-Gesundheits-Copilot",
+        "description": "Sendet automatisch Notfall-SMS an Familie bei abnormaler Herzfrequenz. KI-personalisierte Gesundheitsberichte und Untersuchungsaufzeichnungen.",
+        "category": "Gesundheit"
       },
       "waysound": {
         "name": "WaySound",
         "tagline": "Gesprächs-Untertitel-Assistent",
-        "description": "Echtzeit-Transkriptions-Notizblock, der Sprache in Text umwandelt. Ein Untertitel-Generator für Gespräche.",
-        "category": "Utility"
+        "description": "Echtzeit-Sprache-zu-Untertitel-Umwandlung. Essentielles Kommunikationstool für Schwerhörige und mehrsprachige Umgebungen.",
+        "category": "Barrierefreiheit"
       },
-      "waylog": {
-        "name": "WayLog",
-        "tagline": "Nahrungsergänzungs-Erinnerung",
-        "description": "Wecker, der Sie an die Einnahme von Vitaminen oder Nahrungsergänzungsmitteln erinnert. Verfolgen Sie Ihre Einnahmehistorie.",
-        "category": "Lifestyle"
+      "wayscan": {
+        "name": "WayScan",
+        "tagline": "Lebensmittel-Allergie-Scanner",
+        "description": "Scannen Sie Lebensmitteletiketten mit Ihrer Kamera und die KI warnt Sie vor Allergenen in 14 Sprachen.",
+        "category": "Gesundheit"
       },
-      "wayspot": {
-        "name": "WaySpot",
-        "tagline": "Körper-Beobachtungs-Tagebuch",
-        "description": "Fotoalbum, das Bilder von Körperveränderungen (Flecken, Markierungen) chronologisch organisiert.",
-        "category": "Lifestyle"
+      "waypanic": {
+        "name": "WayPanic",
+        "tagline": "Automatische Notfallreaktion",
+        "description": "Videoaufnahme, GPS-Versand und Notfall-SMS mit einem Fingertipp. Ihre Versicherung für nächtliche Heimwege.",
+        "category": "Sicherheit"
+      },
+      "waybrain": {
+        "name": "WayBrain",
+        "tagline": "Gehirn-Fitness",
+        "description": "KI-gestützte dialogbasierte Gehirntraining-Spiele. Tägliches Gehirntraining zur Erhaltung der kognitiven Gesundheit Ihrer Eltern.",
+        "category": "Gesundheit"
       },
       "wayrest": {
         "name": "WayRest",
         "tagline": "Schlafgeräusch-Recorder",
-        "description": "Schlaf-Recorder, der Geräusche (Schnarchen, Schlafgespräche) während des Schlafens aufnimmt. Überprüfen Sie Ihre nächtlichen Geräusche.",
-        "category": "Lifestyle"
+        "description": "KI klassifiziert Schnarchen, Schlafgespräche und Zähneknirschen während Sie schlafen. Sehen Sie Ihre Schlafgesundheit auf einen Blick.",
+        "category": "Gesundheit"
+      },
+      "waywild": {
+        "name": "WayWild",
+        "tagline": "Wildnis-Gefahren-Erkennung",
+        "description": "Fotografieren Sie Pilze, Schlangen oder Pflanzen auf Ihrer Wanderung und die KI zeigt Ihnen die Gefahrenstufe.",
+        "category": "Sicherheit"
+      },
+      "wayer": {
+        "name": "WayER",
+        "tagline": "Medizinischer Notfallguide im Ausland",
+        "description": "Notrufnummern, medizinische Phrasen und Krankenhaussuche weltweit. Ihr Überlebenskit bei Krankheit im Ausland.",
+        "category": "Reisen"
       },
       "waystory": {
         "name": "WayStory",
         "tagline": "Autobiografie-Ersteller",
-        "description": "Verwandeln Sie Ihre Lebensgeschichten durch geführte Gespräche in ein Buch. Ein Veröffentlichungs- und Schreibassistent.",
-        "category": "Kreativ"
+        "description": "Verwandeln Sie die Lebensgeschichten Ihrer Eltern durch Sprachgespräche in ein Buch. Halten Sie sie fest, bevor sie verschwinden.",
+        "category": "Familie"
+      },
+      "waycrash": {
+        "name": "WayCrash",
+        "tagline": "Verkehrsunfall-Assistent",
+        "description": "Sprachgeführte Unterstützung in der Panik nach einem Unfall. Automatische Fotoaufnahme und Berichterstellung.",
+        "category": "Sicherheit"
       }
     }
   },
   "features": {
-    "title": "Warum Safe Way 10 Wählen?",
-    "subtitle": "Tools, die erfassen, zeigen und unterstützen - ohne zu urteilen",
+    "title": "Warum Safe Way 11 Wählen?",
+    "subtitle": "Tools, die in gefährlichen Momenten erfassen, zeigen und unterstützen - ohne zu urteilen",
     "items": {
       "recording": {
         "title": "Intelligente Erfassung",
@@ -238,7 +244,7 @@
         "items": {
           "newApp": {
             "title": "Neue App",
-            "text": "Seien Sie der Erste, der von neuen App-Veröffentlichungen der Safe Way 10 Produktlinie erfährt."
+            "text": "Seien Sie der Erste, der von neuen App-Veröffentlichungen der Safe Way 11 Produktlinie erfährt."
           },
           "update": {
             "title": "Update-Nachrichten",
@@ -299,7 +305,7 @@
     }
   },
   "footer": {
-    "description": "Wir erfassen, zeigen und unterstützen. Lifestyle-Tools für den Alltag entwickeln.",
+    "description": "Wir entwickeln Sicherheitstools, die in gefährlichen Momenten an Ihrer Seite stehen. Wir erfassen, zeigen und unterstützen.",
     "quickLinks": "Schnelllinks",
     "legal": "Rechtliches",
     "privacy": "Datenschutz",
@@ -394,7 +400,7 @@
     "intro": "Diese Nutzungsbedingungen (\"Bedingungen\") regeln Ihre Nutzung aller Dienste (\"Dienst\"), die von CodeWorks Lab (\"Unternehmen\") bereitgestellt werden. Durch die Nutzung unseres Dienstes stimmen Sie diesen Bedingungen zu.",
     "section1": {
       "title": "1. Zweck",
-      "desc": "Diese Bedingungen legen die Bedingungen und Verfahren für die Nutzung der Safe Way 10 Lineup-Apps und verwandter Dienste sowie die Rechte, Pflichten und Verantwortlichkeiten des Unternehmens und der Nutzer fest."
+      "desc": "Diese Bedingungen legen die Bedingungen und Verfahren für die Nutzung der Safe Way 11 Lineup-Apps und verwandter Dienste sowie die Rechte, Pflichten und Verantwortlichkeiten des Unternehmens und der Nutzer fest."
     },
     "section2": {
       "title": "2. Definitionen",

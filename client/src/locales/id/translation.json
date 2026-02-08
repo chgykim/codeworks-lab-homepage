@@ -2,8 +2,8 @@
   "brand": {
     "name": "CodeWorks Lab",
     "tagline": "Kami Mencatat, Menampilkan, dan Membantu",
-    "description": "Kami membuat alat utilitas gaya hidup dan jurnal manajemen diri. Kami tidak menghakimi. Kami mencatat, menampilkan, dan membantu.",
-    "safeWay": "Safe Way 10"
+    "description": "Kami membuat alat keselamatan yang menemani Anda di saat-saat berbahaya. Kami tidak menghakimi. Kami mencatat, menampilkan, dan membantu.",
+    "safeWay": "Safe Way 11"
   },
   "nav": {
     "home": "Beranda",
@@ -29,9 +29,9 @@
     }
   },
   "hero": {
-    "title": "Asisten",
-    "titleHighlight": "Kehidupan Sehari-hari Anda",
-    "subtitle": "Jajaran Safe Way 10 dari CodeWorks Lab - alat utilitas gaya hidup dan jurnal manajemen diri yang dirancang untuk mempermudah kehidupan sehari-hari Anda.",
+    "title": "Pendamping",
+    "titleHighlight": "Keselamatan Andal",
+    "subtitle": "Seri Safe Way 11 dari CodeWorks Lab - 11 alat keselamatan yang menemani Anda di saat-saat berbahaya. Kami hanya membuat aplikasi yang tak tergantikan.",
     "appStore": "App Store",
     "playStore": "Google Play",
     "downloads": "Unduhan",
@@ -40,76 +40,82 @@
     "coreMessage": "Kami tidak menghakimi. Kami mencatat, menampilkan, dan membantu."
   },
   "apps": {
-    "title": "Jajaran Safe Way 10",
-    "subtitle": "Utilitas gaya hidup dan jurnal manajemen diri untuk kehidupan sehari-hari",
+    "title": "Seri Safe Way 11",
+    "subtitle": "Alat keselamatan yang menemani Anda di saat-saat berbahaya",
     "learnMore": "Selengkapnya",
     "comingSoon": "Segera Hadir",
     "items": {
       "wayback": {
         "name": "WayBack",
         "tagline": "Pulang Aman & Perjalanan",
-        "description": "Peta offline, navigasi, dan panduan wisata berbasis lokasi. Teman perjalanan aman Anda.",
+        "description": "Peta offline dan rute AI penghindaran bahaya untuk pulang dengan aman. Kembali ke titik awal dalam 5 detik.",
         "category": "Navigasi"
       },
-      "wayfit": {
-        "name": "WayFit",
-        "tagline": "Jurnal Makan & Catatan Kalori",
-        "description": "Foto makanan Anda untuk menyimpan buku harian makan pribadi dan mendapatkan informasi nutrisi perkiraan.",
-        "category": "Gaya Hidup"
-      },
-      "waymuscle": {
-        "name": "WayMuscle",
-        "tagline": "Pelatih Olahraga di Rumah",
-        "description": "Partner olahraga AI yang membantu Anda berolahraga dengan gerakan yang benar di rumah.",
-        "category": "Kebugaran"
-      },
-      "waybrain": {
-        "name": "WayBrain",
-        "tagline": "Kebugaran Otak",
-        "description": "Permainan latihan otak yang menjaga pikiran Anda tetap aktif melalui kuis dan percakapan.",
-        "category": "Hiburan"
-      },
-      "wayview": {
-        "name": "WayView",
-        "tagline": "Kaca Pembesar Pintar",
-        "description": "Alat bantu visual yang memperbesar teks kecil dan membacakannya. Kaca pembesar baca digital.",
-        "category": "Utilitas"
+      "waypulse": {
+        "name": "WayPulse",
+        "tagline": "Kopilot Kesehatan AI",
+        "description": "Kirim SMS darurat otomatis ke keluarga saat detak jantung tidak normal terdeteksi. Laporan kesehatan personal dari AI.",
+        "category": "Kesehatan"
       },
       "waysound": {
         "name": "WaySound",
         "tagline": "Asisten Subtitle Percakapan",
-        "description": "Notepad transkripsi real-time yang mengubah suara menjadi teks. Generator subtitle untuk percakapan.",
-        "category": "Utilitas"
+        "description": "Konversi ucapan ke subtitle secara real-time. Alat komunikasi penting untuk tunarungu dan lingkungan multibahasa.",
+        "category": "Aksesibilitas"
       },
-      "waylog": {
-        "name": "WayLog",
-        "tagline": "Pengingat Suplemen",
-        "description": "Jam alarm yang mengingatkan Anda kapan harus minum vitamin atau suplemen. Lacak riwayat konsumsi Anda.",
-        "category": "Gaya Hidup"
+      "wayscan": {
+        "name": "WayScan",
+        "tagline": "Pemindai Alergi Makanan",
+        "description": "Pindai label makanan dengan kamera dan AI memperingatkan tentang alergen dalam 14 bahasa.",
+        "category": "Kesehatan"
       },
-      "wayspot": {
-        "name": "WaySpot",
-        "tagline": "Buku Harian Pengamatan Tubuh",
-        "description": "Album foto yang mengatur gambar perubahan tubuh (bintik, tanda) secara kronologis.",
-        "category": "Gaya Hidup"
+      "waypanic": {
+        "name": "WayPanic",
+        "tagline": "Respons Darurat Otomatis",
+        "description": "Rekam video, kirim GPS, dan pesan darurat dengan satu sentuhan. Asuransi untuk perjalanan malam dan keadaan darurat.",
+        "category": "Keselamatan"
+      },
+      "waybrain": {
+        "name": "WayBrain",
+        "tagline": "Kebugaran Otak",
+        "description": "Game latihan otak AI percakapan. Latihan otak harian untuk menjaga kesehatan kognitif orang tua Anda.",
+        "category": "Kesehatan"
       },
       "wayrest": {
         "name": "WayRest",
         "tagline": "Perekam Suara Tidur",
-        "description": "Perekam tidur yang menangkap suara (dengkuran, igauan) saat Anda tidur. Periksa suara malam Anda.",
-        "category": "Gaya Hidup"
+        "description": "AI mengklasifikasikan mendengkur, igauan, dan gerinda gigi saat tidur. Lihat kesehatan tidur Anda secara visual.",
+        "category": "Kesehatan"
+      },
+      "waywild": {
+        "name": "WayWild",
+        "tagline": "Identifikasi Bahaya Alam Liar",
+        "description": "Foto jamur, ular, atau tanaman saat mendaki dan AI memberitahu tingkat bahayanya.",
+        "category": "Keselamatan"
+      },
+      "wayer": {
+        "name": "WayER",
+        "tagline": "Panduan Darurat Medis di Luar Negeri",
+        "description": "Nomor darurat, frasa medis, dan pencari rumah sakit di seluruh dunia. Kit survival saat sakit di luar negeri.",
+        "category": "Perjalanan"
       },
       "waystory": {
         "name": "WayStory",
         "tagline": "Pembuat Autobiografi",
-        "description": "Ubah kisah hidup Anda menjadi buku melalui percakapan terpandu. Asisten penerbitan dan penulisan.",
-        "category": "Kreatif"
+        "description": "Ubah kisah hidup orang tua Anda menjadi buku melalui percakapan suara. Rekam sebelum terlambat.",
+        "category": "Keluarga"
+      },
+      "waycrash": {
+        "name": "WayCrash",
+        "tagline": "Asisten Kecelakaan Lalu Lintas",
+        "description": "Panduan suara dalam kepanikan setelah kecelakaan. Pengambilan foto otomatis dan pembuatan laporan.",
+        "category": "Keselamatan"
       }
     }
   },
   "features": {
-    "title": "Mengapa Memilih Safe Way 10?",
-    "subtitle": "Alat yang mencatat, menampilkan, dan membantu - tanpa menghakimi",
+    "title": "Mengapa Memilih Safe Way 11?",
+    "subtitle": "Alat yang mencatat, menampilkan, dan membantu di saat-saat berbahaya - tanpa menghakimi",
     "items": {
       "recording": {
         "title": "Pencatatan Cerdas",
@@ -238,7 +244,7 @@
         "items": {
           "newApp": {
             "title": "Aplikasi Baru",
-            "text": "Jadilah yang pertama mengetahui rilis aplikasi baru dalam jajaran Safe Way 10."
+            "text": "Jadilah yang pertama mengetahui rilis aplikasi baru dalam jajaran Safe Way 11."
           },
           "update": {
             "title": "Berita Pembaruan",
@@ -299,7 +305,7 @@
     }
   },
   "footer": {
-    "description": "Kami mencatat, menampilkan, dan membantu. Membangun alat gaya hidup untuk kehidupan sehari-hari.",
+    "description": "Kami membuat alat keselamatan yang menemani Anda di saat-saat berbahaya. Mencatat, menampilkan, dan membantu.",
     "quickLinks": "Tautan Cepat",
     "legal": "Hukum",
     "privacy": "Kebijakan Privasi",
@@ -394,7 +400,7 @@
     "intro": "Ketentuan Layanan (\"Ketentuan\") ini mengatur penggunaan Anda atas semua layanan (\"Layanan\") yang disediakan oleh CodeWorks Lab (\"Perusahaan\"). Dengan menggunakan Layanan kami, Anda menyetujui Ketentuan ini.",
     "section1": {
       "title": "1. Tujuan",
-      "desc": "Ketentuan ini menetapkan syarat dan prosedur untuk menggunakan aplikasi jajaran Safe Way 10 dan layanan terkait, serta hak, kewajiban, dan tanggung jawab Perusahaan dan pengguna."
+      "desc": "Ketentuan ini menetapkan syarat dan prosedur untuk menggunakan aplikasi jajaran Safe Way 11 dan layanan terkait, serta hak, kewajiban, dan tanggung jawab Perusahaan dan pengguna."
     },
     "section2": {
       "title": "2. Definisi",

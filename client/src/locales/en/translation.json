@@ -2,8 +2,8 @@
   "brand": {
     "name": "CodeWorks Lab",
     "tagline": "We Record, Display, and Assist",
-    "description": "We create lifestyle utility tools and self-management journals. We do not judge. We record, display, and assist.",
-    "safeWay": "Safe Way 10"
+    "description": "We build safety tools that stand by you in dangerous moments. We do not judge. We record, display, and assist.",
+    "safeWay": "Safe Way 11"
   },
   "nav": {
     "home": "Home",
@@ -29,9 +29,9 @@
     }
   },
   "hero": {
-    "title": "Your Everyday",
-    "titleHighlight": "Life Assistant",
-    "subtitle": "CodeWorks Lab's Safe Way 10 lineup - lifestyle utility tools and self-management journals designed to make your daily life easier.",
+    "title": "Your Reliable",
+    "titleHighlight": "Safety Companion",
+    "subtitle": "CodeWorks Lab's Safe Way 11 lineup - 11 safety tools that stand by you in dangerous moments. We only build apps you can't live without.",
     "appStore": "App Store",
     "playStore": "Google Play",
     "downloads": "Downloads",
@@ -40,76 +40,82 @@
     "coreMessage": "We do not judge. We record, display, and assist."
   },
   "apps": {
-    "title": "Safe Way 10 Lineup",
-    "subtitle": "Lifestyle utilities and self-management journals for everyday life",
+    "title": "Safe Way 11 Lineup",
+    "subtitle": "Safety tools that stand by you in dangerous moments",
     "learnMore": "Learn More",
     "comingSoon": "Coming Soon",
     "items": {
       "wayback": {
         "name": "WayBack",
         "tagline": "Safe Return & Travel",
-        "description": "Offline maps, navigation, and location-based travel guide. Your companion for safe journeys.",
+        "description": "Offline maps and AI-powered hazard-avoidance routing for safe returns. Get back to your starting point in 5 seconds.",
         "category": "Navigation"
       },
-      "wayfit": {
-        "name": "WayFit",
-        "tagline": "Meal Journal & Calorie Log",
-        "description": "Take photos of your food to keep a personal meal diary and get approximate nutritional information.",
-        "category": "Lifestyle"
-      },
-      "waymuscle": {
-        "name": "WayMuscle",
-        "tagline": "Home Training Coach",
-        "description": "AI exercise partner that helps you work out with proper form at home.",
-        "category": "Fitness"
-      },
-      "waybrain": {
-        "name": "WayBrain",
-        "tagline": "Brain Fitness",
-        "description": "Brain training game that keeps your mind active through quizzes and conversations.",
-        "category": "Entertainment"
-      },
-      "wayview": {
-        "name": "WayView",
-        "tagline": "Smart Magnifier",
-        "description": "Visual assistance tool that enlarges small text and reads it aloud. A digital reading magnifier.",
-        "category": "Utility"
+      "waypulse": {
+        "name": "WayPulse",
+        "tagline": "AI Health Copilot",
+        "description": "Auto-sends emergency SMS to family when abnormal heart rate is detected. AI-personalized health reports and checkup records.",
+        "category": "Health"
       },
       "waysound": {
         "name": "WaySound",
         "tagline": "Conversation Subtitle Assistant",
-        "description": "Real-time transcription notepad that converts speech to text. A subtitle generator for conversations.",
-        "category": "Utility"
+        "description": "Real-time speech-to-subtitle conversion. Essential communication tool for the hard of hearing and multilingual environments.",
+        "category": "Accessibility"
       },
-      "waylog": {
-        "name": "WayLog",
-        "tagline": "Supplement Reminder",
-        "description": "Alarm clock that reminds you when to take vitamins or supplements. Keep track of your intake history.",
-        "category": "Lifestyle"
+      "wayscan": {
+        "name": "WayScan",
+        "tagline": "Food Allergy Scanner",
+        "description": "Scan food labels with your camera and AI warns you about allergens in 14 languages.",
+        "category": "Health"
       },
-      "wayspot": {
-        "name": "WaySpot",
-        "tagline": "Body Observation Diary",
-        "description": "Photo album that organizes pictures of body changes (spots, marks) in chronological order.",
-        "category": "Lifestyle"
+      "waypanic": {
+        "name": "WayPanic",
+        "tagline": "Emergency Auto-Response",
+        "description": "One-touch video recording, GPS sharing, and emergency text — all at once. Insurance for late-night walks and emergencies.",
+        "category": "Safety"
+      },
+      "waybrain": {
+        "name": "WayBrain",
+        "tagline": "Brain Fitness",
+        "description": "AI-powered conversational brain training games. Daily brain exercise to help maintain your parents' cognitive health.",
+        "category": "Health"
       },
       "wayrest": {
         "name": "WayRest",
         "tagline": "Sleep Sound Recorder",
-        "description": "Sleep recorder that captures sounds (snoring, sleep talking) while you rest. Check your nighttime sounds.",
-        "category": "Lifestyle"
+        "description": "AI classifies snoring, sleep talking, and teeth grinding while you sleep. See your sleep health at a glance.",
+        "category": "Health"
+      },
+      "waywild": {
+        "name": "WayWild",
+        "tagline": "Wildlife Hazard Identifier",
+        "description": "Snap a photo of mushrooms, snakes, or plants on your hike and AI tells you the danger level.",
+        "category": "Safety"
+      },
+      "wayer": {
+        "name": "WayER",
+        "tagline": "Overseas Medical Emergency Guide",
+        "description": "Emergency numbers, medical phrases, and hospital finder worldwide — all in one. Your survival kit when sick abroad.",
+        "category": "Travel"
       },
       "waystory": {
         "name": "WayStory",
         "tagline": "Autobiography Maker",
-        "description": "Turn your life stories into a book through guided conversations. A publishing and writing assistant.",
-        "category": "Creative"
+        "description": "Turn your parents' life stories into a book through voice conversations. Record them before they're gone.",
+        "category": "Family"
+      },
+      "waycrash": {
+        "name": "WayCrash",
+        "tagline": "Car Accident Response Assistant",
+        "description": "Voice-guided assistance in the panic after a crash. Auto photo capture and accident report generation.",
+        "category": "Safety"
       }
     }
   },
   "features": {
-    "title": "Why Choose Safe Way 10?",
-    "subtitle": "Tools that record, display, and assist - without making judgments",
+    "title": "Why Choose Safe Way 11?",
+    "subtitle": "Tools that record, display, and assist in dangerous moments - without making judgments",
     "items": {
       "recording": {
         "title": "Smart Recording",
@@ -238,7 +244,7 @@
         "items": {
           "newApp": {
             "title": "New App",
-            "text": "Be the first to know about new app releases in the Safe Way 10 lineup."
+            "text": "Be the first to know about new app releases in the Safe Way 11 lineup."
           },
           "update": {
             "title": "Update News",
@@ -299,7 +305,7 @@
     }
   },
   "footer": {
-    "description": "We record, display, and assist. Building lifestyle tools for everyday life.",
+    "description": "We build safety tools that stand by you in dangerous moments. We record, display, and assist.",
     "quickLinks": "Quick Links",
     "legal": "Legal",
     "privacy": "Privacy Policy",
@@ -394,7 +400,7 @@
     "intro": "These Terms of Service (\"Terms\") govern your use of all services (\"Service\") provided by CodeWorks Lab (\"Company\"). By using our Service, you agree to these Terms.",
     "section1": {
       "title": "1. Purpose",
-      "desc": "These Terms establish the conditions and procedures for using the Safe Way 10 lineup apps and related services, as well as the rights, obligations, and responsibilities of the Company and users."
+      "desc": "These Terms establish the conditions and procedures for using the Safe Way 11 lineup apps and related services, as well as the rights, obligations, and responsibilities of the Company and users."
     },
     "section2": {
       "title": "2. Definitions",

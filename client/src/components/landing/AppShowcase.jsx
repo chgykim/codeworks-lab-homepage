@@ -2,48 +2,51 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import {
     MapPin,
-    Utensils,
-    Dumbbell,
-    Brain,
-    Eye,
+    HeartPulse,
     Mic,
-    Pill,
-    Camera,
+    ScanSearch,
+    ShieldAlert,
+    Brain,
     Moon,
+    TreePine,
+    Stethoscope,
     BookOpen,
+    Car,
     Lock
 } from 'lucide-react';
 import './AppShowcase.css';
 
 const appIcons = {
     wayback: MapPin,
-    wayfit: Utensils,
-    waymuscle: Dumbbell,
-    waybrain: Brain,
-    wayview: Eye,
+    waypulse: HeartPulse,
     waysound: Mic,
-    waylog: Pill,
-    wayspot: Camera,
+    wayscan: ScanSearch,
+    waypanic: ShieldAlert,
+    waybrain: Brain,
     wayrest: Moon,
-    waystory: BookOpen
+    waywild: TreePine,
+    wayer: Stethoscope,
+    waystory: BookOpen,
+    waycrash: Car
 };
 
 const appColors = {
     wayback: '#3b82f6',
-    wayfit: '#10b981',
-    waymuscle: '#ef4444',
-    waybrain: '#8b5cf6',
-    wayview: '#f59e0b',
+    waypulse: '#ef4444',
     waysound: '#06b6d4',
-    waylog: '#ec4899',
-    wayspot: '#6366f1',
+    wayscan: '#10b981',
+    waypanic: '#f97316',
+    waybrain: '#8b5cf6',
     wayrest: '#6b7280',
-    waystory: '#84cc16'
+    waywild: '#84cc16',
+    wayer: '#ec4899',
+    waystory: '#f59e0b',
+    waycrash: '#6366f1'
 };
 
 const appKeys = [
-    'wayback', 'wayfit', 'waymuscle', 'waybrain', 'wayview',
-    'waysound', 'waylog', 'wayspot', 'wayrest', 'waystory'
+    'wayback', 'waypulse', 'waysound', 'wayscan', 'waypanic',
+    'waybrain', 'wayrest', 'waywild', 'wayer', 'waystory', 'waycrash'
 ];
 
 function AppShowcase({ releasedApps = [] }) {

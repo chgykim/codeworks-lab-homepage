@@ -2,8 +2,8 @@
   "brand": {
     "name": "CodeWorks Lab",
     "tagline": "記録し、表示し、サポートします",
-    "description": "生活便利ツールと自己管理ジャーナルを作っています。私たちは判断しません。記録し、表示し、サポートします。",
-    "safeWay": "Safe Way 10"
+    "description": "危険な瞬間にそばにいる安全ツールを作っています。私たちは判断しません。記録し、表示し、サポートします。",
+    "safeWay": "Safe Way 11"
   },
   "nav": {
     "home": "ホーム",
@@ -29,9 +29,9 @@
     }
   },
   "hero": {
-    "title": "あなたの毎日の",
-    "titleHighlight": "ライフアシスタント",
-    "subtitle": "CodeWorks LabのSafe Way 10ラインナップ - 毎日の生活をより便利にする生活便利ツールと自己管理ジャーナル。",
+    "title": "危険な瞬間の",
+    "titleHighlight": "頼れる安全ツール",
+    "subtitle": "CodeWorks LabのSafe Way 11ラインナップ - 危険な瞬間にそばにいてくれる11の安全ツール。なくてはならないアプリだけを作ります。",
     "appStore": "App Store",
     "playStore": "Google Play",
     "downloads": "ダウンロード",
@@ -40,76 +40,82 @@
     "coreMessage": "私たちは判断しません。記録し、表示し、サポートします。"
   },
   "apps": {
-    "title": "Safe Way 10 ラインナップ",
-    "subtitle": "毎日の生活のための生活便利ツールと自己管理ジャーナル",
+    "title": "Safe Way 11 ラインナップ",
+    "subtitle": "危険な瞬間、そばにいてくれる安全ツール",
     "learnMore": "詳細を見る",
     "comingSoon": "近日公開",
     "items": {
       "wayback": {
         "name": "WayBack",
         "tagline": "安全な帰宅＆旅行",
-        "description": "オフラインマップ、ナビゲーション、位置情報ベースの旅行ガイド。安全な旅のお供に。",
+        "description": "オフラインマップとAI危険回避ルートで安全な帰宅をサポート。5秒で出発点に戻れます。",
         "category": "ナビゲーション"
       },
-      "wayfit": {
-        "name": "WayFit",
-        "tagline": "食事記録＆カロリー計算",
-        "description": "食事の写真を撮って食事日記をつけ、おおよその栄養情報を取得。",
-        "category": "ライフスタイル"
-      },
-      "waymuscle": {
-        "name": "WayMuscle",
-        "tagline": "ホームトレーニングコーチ",
-        "description": "自宅で正しいフォームで運動できるようサポートするAI運動パートナー。",
-        "category": "フィットネス"
-      },
-      "waybrain": {
-        "name": "WayBrain",
-        "tagline": "脳のフィットネス",
-        "description": "クイズや会話を通じて脳を活性化させる脳トレゲーム。",
-        "category": "エンターテイメント"
-      },
-      "wayview": {
-        "name": "WayView",
-        "tagline": "スマート虫眼鏡",
-        "description": "小さな文字を拡大して読み上げる視覚補助ツール。デジタル読書拡大鏡。",
-        "category": "ユーティリティ"
+      "waypulse": {
+        "name": "WayPulse",
+        "tagline": "AI健康コパイロット",
+        "description": "異常な心拍数を検知すると家族に自動緊急SMS。AIカスタマイズ健康レポートと検診記録管理。",
+        "category": "健康"
       },
       "waysound": {
         "name": "WaySound",
         "tagline": "会話字幕アシスタント",
-        "description": "音声をテキストに変換するリアルタイム書き起こしメモ帳。会話の字幕生成器。",
-        "category": "ユーティリティ"
+        "description": "音声をリアルタイム字幕に変換。難聴者と多言語環境のための必須コミュニケーションツール。",
+        "category": "アクセシビリティ"
       },
-      "waylog": {
-        "name": "WayLog",
-        "tagline": "サプリメントリマインダー",
-        "description": "ビタミンやサプリメントの服用時間を知らせる目覚まし時計。服用履歴を追跡。",
-        "category": "ライフスタイル"
+      "wayscan": {
+        "name": "WayScan",
+        "tagline": "食品アレルギースキャナー",
+        "description": "食品成分表をカメラでスキャンするとAIが14言語でアレルギー成分を警告します。",
+        "category": "健康"
       },
-      "wayspot": {
-        "name": "WaySpot",
-        "tagline": "ボディ観察日記",
-        "description": "体の変化（シミ、傷など）の写真を時系列で整理するフォトアルバム。",
-        "category": "ライフスタイル"
+      "waypanic": {
+        "name": "WayPanic",
+        "tagline": "緊急事態自動対応",
+        "description": "ワンタッチで動画録画、GPS送信、緊急テキストを同時発信。夜間の帰宅と緊急事態の保険。",
+        "category": "安全"
+      },
+      "waybrain": {
+        "name": "WayBrain",
+        "tagline": "脳のフィットネス",
+        "description": "AI対話型脳トレゲーム。ご両親の認知機能維持をサポートする毎日の脳の運動。",
+        "category": "健康"
       },
       "wayrest": {
         "name": "WayRest",
         "tagline": "睡眠音レコーダー",
-        "description": "睡眠中の音（いびき、寝言）を記録する睡眠レコーダー。夜間の音を確認。",
-        "category": "ライフスタイル"
+        "description": "睡眠中のいびき、寝言、歯ぎしりをAIが分類。睡眠の健康を目で確認。",
+        "category": "健康"
+      },
+      "waywild": {
+        "name": "WayWild",
+        "tagline": "野生の危険識別",
+        "description": "登山中に見つけたキノコ、ヘビ、植物をカメラで撮るとAIが危険度をお知らせします。",
+        "category": "安全"
+      },
+      "wayer": {
+        "name": "WayER",
+        "tagline": "海外医療緊急ガイド",
+        "description": "世界中の緊急電話、医療会話、病院検索をひとつに。海外で病気になった時のサバイバルキット。",
+        "category": "旅行"
       },
       "waystory": {
         "name": "WayStory",
         "tagline": "自叙伝メーカー",
-        "description": "ガイド付きの会話を通じて人生のストーリーを本にまとめます。出版・執筆アシスタント。",
-        "category": "クリエイティブ"
+        "description": "音声会話でご両親の人生の物語を本に整理。消える前に記録しましょう。",
+        "category": "家族"
+      },
+      "waycrash": {
+        "name": "WayCrash",
+        "tagline": "交通事故対応アシスタント",
+        "description": "事故直後のパニック状態で音声案内。写真撮影、レポート自動生成。",
+        "category": "安全"
       }
     }
   },
   "features": {
-    "title": "なぜSafe Way 10を選ぶのか？",
-    "subtitle": "判断せずに記録し、表示し、サポートするツール",
+    "title": "なぜSafe Way 11を選ぶのか？",
+    "subtitle": "危険な瞬間、判断せずに記録し、表示し、サポートするツール",
     "items": {
       "recording": {
         "title": "スマート記録",
@@ -238,7 +244,7 @@
         "items": {
           "newApp": {
             "title": "新アプリ",
-            "text": "Safe Way 10ラインナップの新しいアプリリリース情報をいち早くお届けします。"
+            "text": "Safe Way 11ラインナップの新しいアプリリリース情報をいち早くお届けします。"
           },
           "update": {
             "title": "アップデート情報",
@@ -299,7 +305,7 @@
     }
   },
   "footer": {
-    "description": "私たちは記録し、表示し、サポートします。毎日の生活のための生活便利ツールを構築しています。",
+    "description": "危険な瞬間にそばにいる安全ツールを作っています。記録し、表示し、サポートします。",
     "quickLinks": "クイックリンク",
     "legal": "法的情報",
     "privacy": "プライバシーポリシー",
@@ -394,7 +400,7 @@
     "intro": "本利用規約（以下「本規約」）は、CodeWorks Lab（以下「当社」）が提供するすべてのサービス（以下「サービス」）のご利用に適用されます。サービスをご利用になることで、本規約に同意したものとみなされます。",
     "section1": {
       "title": "第1条（目的）",
-      "desc": "本規約は、Safe Way 10ラインナップアプリおよび関連サービスの利用条件と手続き、当社とユーザーの権利、義務、責任を定めます。"
+      "desc": "本規約は、Safe Way 11ラインナップアプリおよび関連サービスの利用条件と手続き、当社とユーザーの権利、義務、責任を定めます。"
     },
     "section2": {
       "title": "第2条（定義）",

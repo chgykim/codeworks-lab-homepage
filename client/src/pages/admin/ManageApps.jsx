@@ -8,15 +8,16 @@ import './Admin.css';
 
 const appNames = {
     wayback: 'WayBack',
-    wayfit: 'WayFit',
-    waymuscle: 'WayMuscle',
-    waybrain: 'WayBrain',
-    wayview: 'WayView',
+    waypulse: 'WayPulse',
     waysound: 'WaySound',
-    waylog: 'WayLog',
-    wayspot: 'WaySpot',
+    wayscan: 'WayScan',
+    waypanic: 'WayPanic',
+    waybrain: 'WayBrain',
     wayrest: 'WayRest',
-    waystory: 'WayStory'
+    waywild: 'WayWild',
+    wayer: 'WayER',
+    waystory: 'WayStory',
+    waycrash: 'WayCrash'
 };
 
 function ManageApps() {
