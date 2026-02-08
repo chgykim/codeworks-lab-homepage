@@ -21,8 +21,8 @@ router.get('/public', asyncHandler(async (req, res) => {
     const releasedApps = releasedAppsStr ? releasedAppsStr.split(',') : [];
 
     res.json({
-        siteName: settings.site_name || 'HealthLife App',
-        siteDescription: settings.site_description || '건강한 라이프스타일을 위한 최고의 앱',
+        siteName: settings.site_name || 'CodeWorks Lab',
+        siteDescription: settings.site_description || 'Safe Way 11 - 위험한 순간에 곁에 있어주는 안전 도구',
         appStoreUrl: settings.app_store_url || '#',
         playStoreUrl: settings.play_store_url || '#',
         releasedApps: releasedApps

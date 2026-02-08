@@ -27,7 +27,7 @@ router.get('/info', asyncHandler(async (req, res) => {
 
     res.json({
         contactEmail: settings.contact_email || 'contact@example.com',
-        siteName: settings.site_name || 'HealthLife App'
+        siteName: settings.site_name || 'CodeWorks Lab'
     });
 }));
 
