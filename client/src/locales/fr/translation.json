@@ -3,7 +3,7 @@
     "name": "CodeWorks Lab",
     "tagline": "Nous Enregistrons, Affichons et Assistons",
     "description": "Nous créons des outils de sécurité qui vous accompagnent dans les moments dangereux. Nous ne jugeons pas. Nous enregistrons, affichons et assistons.",
-    "safeWay": "Safe Way 12"
+    "safeWay": "Way 12"
   },
   "nav": {
     "home": "Accueil",
@@ -31,7 +31,7 @@
   "hero": {
     "title": "Votre Compagnon",
     "titleHighlight": "de Sécurité Fiable",
-    "subtitle": "La gamme Safe Way 12 de CodeWorks Lab - 12 outils de sécurité qui vous accompagnent dans les moments dangereux. Nous ne créons que des apps indispensables.",
+    "subtitle": "La gamme Way 12 de CodeWorks Lab - 12 applications qui enregistrent, affichent et assistent. Nous ne créons que des apps indispensables.",
     "appStore": "App Store",
     "playStore": "Google Play",
     "downloads": "Téléchargements",
@@ -40,8 +40,8 @@
     "coreMessage": "Nous ne jugeons pas. Nous enregistrons, affichons et assistons."
   },
   "apps": {
-    "title": "Gamme Safe Way 12",
-    "subtitle": "Outils de sécurité qui vous accompagnent dans les moments dangereux",
+    "title": "Gamme Way 12",
+    "subtitle": "12 outils qui enregistrent, affichent et assistent",
     "learnMore": "En Savoir Plus",
     "comingSoon": "Bientôt Disponible",
     "items": {
@@ -120,8 +120,8 @@
     }
   },
   "features": {
-    "title": "Pourquoi Choisir Safe Way 12?",
-    "subtitle": "Des outils qui enregistrent, affichent et assistent dans les moments dangereux - sans porter de jugement",
+    "title": "Pourquoi Choisir Way 12?",
+    "subtitle": "Des outils qui enregistrent, affichent et assistent - sans porter de jugement",
     "items": {
       "recording": {
         "title": "Enregistrement Intelligent",
@@ -250,7 +250,7 @@
         "items": {
           "newApp": {
             "title": "Nouvelle App",
-            "text": "Soyez le premier informé des nouveaux lancements de la gamme Safe Way 12."
+            "text": "Soyez le premier informé des nouveaux lancements de la gamme Way 12."
           },
           "update": {
             "title": "Nouvelles Mises à Jour",
@@ -406,7 +406,7 @@
     "intro": "Ces Conditions d'Utilisation (\"Conditions\") régissent votre utilisation de tous les services (\"Service\") fournis par CodeWorks Lab (\"Société\"). En utilisant notre Service, vous acceptez ces Conditions.",
     "section1": {
       "title": "1. Objet",
-      "desc": "Ces Conditions établissent les conditions et procédures d'utilisation des applications de la gamme Safe Way 12 et des services connexes, ainsi que les droits, obligations et responsabilités de la Société et des utilisateurs."
+      "desc": "Ces Conditions établissent les conditions et procédures d'utilisation des applications de la gamme Way 12 et des services connexes, ainsi que les droits, obligations et responsabilités de la Société et des utilisateurs."
     },
     "section2": {
       "title": "2. Définitions",

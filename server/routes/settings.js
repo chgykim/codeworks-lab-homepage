@@ -6,7 +6,7 @@ const { asyncHandler } = require('../middleware/errorHandler');
 const { authenticateToken, requireAdmin } = require('../middleware/auth');
 
 // All app keys
-const APP_KEYS = ['wayback', 'waypulse', 'waysound', 'wayscan', 'waypanic', 'waybrain', 'wayrest', 'waywild', 'wayer', 'waystory', 'waycrash', 'waymoments'];
+const APP_KEYS = ['waymoments', 'wayback', 'waypulse', 'waysound', 'wayscan', 'waypanic', 'waybrain', 'wayrest', 'waywild', 'wayer', 'waystory', 'waycrash'];
 
 // GET /api/settings/public - Get public site settings
 router.get('/public', asyncHandler(async (req, res) => {
@@ -22,7 +22,7 @@ router.get('/public', asyncHandler(async (req, res) => {
 
     res.json({
         siteName: settings.site_name || 'CodeWorks Lab',
-        siteDescription: settings.site_description || 'Safe Way 12 - 위험한 순간에 곁에 있어주는 안전 도구',
+        siteDescription: settings.site_description || 'Way 12 - 기록하고, 보여주고, 돕는 12개의 앱',
         appStoreUrl: settings.app_store_url || '#',
         playStoreUrl: settings.play_store_url || '#',
         releasedApps: releasedApps

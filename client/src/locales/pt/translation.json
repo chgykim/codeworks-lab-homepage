@@ -3,7 +3,7 @@
     "name": "CodeWorks Lab",
     "tagline": "Registramos, Exibimos e Assistimos",
     "description": "Criamos ferramentas de segurança que estão ao seu lado em momentos perigosos. Não julgamos. Registramos, exibimos e assistimos.",
-    "safeWay": "Safe Way 12"
+    "safeWay": "Way 12"
   },
   "nav": {
     "home": "Início",
@@ -31,7 +31,7 @@
   "hero": {
     "title": "Seu Companheiro",
     "titleHighlight": "de Segurança Confiável",
-    "subtitle": "A linha Safe Way 12 da CodeWorks Lab - 12 ferramentas de segurança que estão ao seu lado em momentos perigosos. Só criamos apps indispensáveis.",
+    "subtitle": "A linha Way 12 da CodeWorks Lab - 12 aplicativos que registram, exibem e assistem. Só criamos apps indispensáveis.",
     "appStore": "App Store",
     "playStore": "Google Play",
     "downloads": "Downloads",
@@ -40,8 +40,8 @@
     "coreMessage": "Não julgamos. Registramos, exibimos e assistimos."
   },
   "apps": {
-    "title": "Linha Safe Way 12",
-    "subtitle": "Ferramentas de segurança que estão ao seu lado em momentos perigosos",
+    "title": "Linha Way 12",
+    "subtitle": "12 ferramentas que registram, exibem e assistem",
     "learnMore": "Saiba Mais",
     "comingSoon": "Em Breve",
     "items": {
@@ -120,8 +120,8 @@
     }
   },
   "features": {
-    "title": "Por que Escolher Safe Way 12?",
-    "subtitle": "Ferramentas que registram, exibem e assistem em momentos perigosos - sem fazer julgamentos",
+    "title": "Por que Escolher Way 12?",
+    "subtitle": "Ferramentas que registram, exibem e assistem - sem fazer julgamentos",
     "items": {
       "recording": {
         "title": "Registro Inteligente",
@@ -250,7 +250,7 @@
         "items": {
           "newApp": {
             "title": "Novo App",
-            "text": "Seja o primeiro a saber sobre novos lançamentos da linha Safe Way 12."
+            "text": "Seja o primeiro a saber sobre novos lançamentos da linha Way 12."
           },
           "update": {
             "title": "Notícias de Atualização",
@@ -406,7 +406,7 @@
     "intro": "Estes Termos de Serviço (\"Termos\") regem o uso de todos os serviços (\"Serviço\") fornecidos pela CodeWorks Lab (\"Empresa\"). Ao usar nosso Serviço, você concorda com estes Termos.",
     "section1": {
       "title": "1. Finalidade",
-      "desc": "Estes Termos estabelecem as condições e procedimentos para usar os aplicativos da linha Safe Way 12 e serviços relacionados, bem como os direitos, obrigações e responsabilidades da Empresa e dos usuários."
+      "desc": "Estes Termos estabelecem as condições e procedimentos para usar os aplicativos da linha Way 12 e serviços relacionados, bem como os direitos, obrigações e responsabilidades da Empresa e dos usuários."
     },
     "section2": {
       "title": "2. Definições",

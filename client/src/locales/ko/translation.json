@@ -3,7 +3,7 @@
     "name": "CodeWorks Lab",
     "tagline": "기록하고, 보여주고, 돕습니다",
     "description": "위험한 순간에 곁에 있어주는 안전 도구를 만듭니다. 판단하지 않습니다. 기록하고, 보여주고, 도울 뿐입니다.",
-    "safeWay": "Safe Way 12"
+    "safeWay": "Way 12"
   },
   "nav": {
     "home": "홈",
@@ -31,7 +31,7 @@
   "hero": {
     "title": "위험한 순간의",
     "titleHighlight": "든든한 안전 도구",
-    "subtitle": "CodeWorks Lab의 Safe Way 12 라인업 - 위험한 순간에 곁에 있어주는 12개의 안전 도구. 없으면 안 되는 앱만 만듭니다.",
+    "subtitle": "CodeWorks Lab의 Way 12 라인업 - 기록하고, 보여주고, 돕는 12개의 앱. 없으면 안 되는 앱만 만듭니다.",
     "appStore": "App Store",
     "playStore": "Google Play",
     "downloads": "다운로드",
@@ -40,8 +40,8 @@
     "coreMessage": "판단하지 않습니다. 기록하고, 보여주고, 도울 뿐입니다."
   },
   "apps": {
-    "title": "Safe Way 12 라인업",
-    "subtitle": "위험한 순간, 곁에 있어주는 안전 도구",
+    "title": "Way 12 라인업",
+    "subtitle": "기록하고, 보여주고, 도와주는 12개의 도구",
     "learnMore": "자세히 보기",
     "comingSoon": "출시 예정",
     "items": {
@@ -120,8 +120,8 @@
     }
   },
   "features": {
-    "title": "왜 Safe Way 12인가요?",
-    "subtitle": "위험한 순간, 판단 없이 기록하고, 보여주고, 돕는 도구들",
+    "title": "왜 Way 12인가요?",
+    "subtitle": "판단 없이 기록하고, 보여주고, 돕는 도구들",
     "items": {
       "recording": {
         "title": "스마트 기록",
@@ -250,7 +250,7 @@
         "items": {
           "newApp": {
             "title": "신규 앱",
-            "text": "Safe Way 12 라인업의 새로운 앱 출시 소식을 가장 먼저 만나보세요."
+            "text": "Way 12 라인업의 새로운 앱 출시 소식을 가장 먼저 만나보세요."
           },
           "update": {
             "title": "업데이트 소식",
@@ -406,7 +406,7 @@
     "intro": "본 약관은 CodeWorks Lab(이하 \"회사\")이 제공하는 모든 서비스(이하 \"서비스\")의 이용과 관련하여 회사와 이용자 간의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다.",
     "section1": {
       "title": "제1조 (목적)",
-      "desc": "이 약관은 회사가 제공하는 Safe Way 12 라인업 앱 및 관련 서비스의 이용 조건과 절차, 회사와 이용자의 권리와 의무, 책임사항 등을 규정합니다."
+      "desc": "이 약관은 회사가 제공하는 Way 12 라인업 앱 및 관련 서비스의 이용 조건과 절차, 회사와 이용자의 권리와 의무, 책임사항 등을 규정합니다."
     },
     "section2": {
       "title": "제2조 (정의)",

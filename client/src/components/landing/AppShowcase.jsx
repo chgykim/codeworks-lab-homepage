@@ -48,8 +48,8 @@ const appColors = {
 };
 
 const appKeys = [
-    'wayback', 'waypulse', 'waysound', 'wayscan', 'waypanic',
-    'waybrain', 'wayrest', 'waywild', 'wayer', 'waystory', 'waycrash', 'waymoments'
+    'waymoments', 'wayback', 'waypulse', 'waysound', 'wayscan', 'waypanic',
+    'waybrain', 'wayrest', 'waywild', 'wayer', 'waystory', 'waycrash'
 ];
 
 function AppShowcase({ releasedApps = [] }) {

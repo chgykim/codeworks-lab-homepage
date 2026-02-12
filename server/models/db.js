@@ -202,7 +202,7 @@ async function initializeDatabase() {
         // Insert default site settings
         const defaultSettings = [
             ['site_name', 'CodeWorks Lab'],
-            ['site_description', 'Safe Way 12 - 위험한 순간에 곁에 있어주는 안전 도구'],
+            ['site_description', 'Way 12 - 기록하고, 보여주고, 돕는 12개의 앱'],
             ['contact_email', 'contact@codeworkslab.com'],
             ['app_store_url', 'https://apps.apple.com'],
             ['play_store_url', 'https://play.google.com']

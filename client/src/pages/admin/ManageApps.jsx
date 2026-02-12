@@ -7,6 +7,7 @@ import { adminAPI } from '../../utils/api';
 import './Admin.css';
 
 const appNames = {
+    waymoments: 'WayMoments',
     wayback: 'WayBack',
     waypulse: 'WayPulse',
     waysound: 'WaySound',
@@ -17,8 +18,7 @@ const appNames = {
     waywild: 'WayWild',
     wayer: 'WayER',
     waystory: 'WayStory',
-    waycrash: 'WayCrash',
-    waymoments: 'WayMoments'
+    waycrash: 'WayCrash'
 };
 
 function ManageApps() {
