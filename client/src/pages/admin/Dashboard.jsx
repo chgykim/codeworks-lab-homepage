@@ -125,7 +125,7 @@ function Dashboard() {
                                     <span className="stat-label">{t('admin.dashboard.avgRating')}</span>
                                 </div>
                                 <div className="stat-details">
-                                    <span>Safe Way 11</span>
+                                    <span>Safe Way 12</span>
                                 </div>
                             </div>
                         </div>

@@ -12,6 +12,7 @@ import {
     Stethoscope,
     BookOpen,
     Car,
+    Sparkles,
     Lock
 } from 'lucide-react';
 import './AppShowcase.css';
@@ -27,7 +28,8 @@ const appIcons = {
     waywild: TreePine,
     wayer: Stethoscope,
     waystory: BookOpen,
-    waycrash: Car
+    waycrash: Car,
+    waymoments: Sparkles
 };
 
 const appColors = {
@@ -41,12 +43,13 @@ const appColors = {
     waywild: '#84cc16',
     wayer: '#ec4899',
     waystory: '#f59e0b',
-    waycrash: '#6366f1'
+    waycrash: '#6366f1',
+    waymoments: '#e11d48'
 };
 
 const appKeys = [
     'wayback', 'waypulse', 'waysound', 'wayscan', 'waypanic',
-    'waybrain', 'wayrest', 'waywild', 'wayer', 'waystory', 'waycrash'
+    'waybrain', 'wayrest', 'waywild', 'wayer', 'waystory', 'waycrash', 'waymoments'
 ];
 
 function AppShowcase({ releasedApps = [] }) {

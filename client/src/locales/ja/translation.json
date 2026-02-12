@@ -3,7 +3,7 @@
     "name": "CodeWorks Lab",
     "tagline": "記録し、表示し、サポートします",
     "description": "危険な瞬間にそばにいる安全ツールを作っています。私たちは判断しません。記録し、表示し、サポートします。",
-    "safeWay": "Safe Way 11"
+    "safeWay": "Safe Way 12"
   },
   "nav": {
     "home": "ホーム",
@@ -31,7 +31,7 @@
   "hero": {
     "title": "危険な瞬間の",
     "titleHighlight": "頼れる安全ツール",
-    "subtitle": "CodeWorks LabのSafe Way 11ラインナップ - 危険な瞬間にそばにいてくれる11の安全ツール。なくてはならないアプリだけを作ります。",
+    "subtitle": "CodeWorks LabのSafe Way 12ラインナップ - 危険な瞬間にそばにいてくれる12の安全ツール。なくてはならないアプリだけを作ります。",
     "appStore": "App Store",
     "playStore": "Google Play",
     "downloads": "ダウンロード",
@@ -40,7 +40,7 @@
     "coreMessage": "私たちは判断しません。記録し、表示し、サポートします。"
   },
   "apps": {
-    "title": "Safe Way 11 ラインナップ",
+    "title": "Safe Way 12 ラインナップ",
     "subtitle": "危険な瞬間、そばにいてくれる安全ツール",
     "learnMore": "詳細を見る",
     "comingSoon": "近日公開",
@@ -110,11 +110,17 @@
         "tagline": "交通事故対応アシスタント",
         "description": "事故直後のパニック状態で音声案内。写真撮影、レポート自動生成。",
         "category": "安全"
+      },
+      "waymoments": {
+        "name": "WayMoments",
+        "tagline": "AI感性自動記録",
+        "description": "集まり・会話・写真・感情を自動記録。セッション終了時に感性タイムラインとAIエッセイを生成します。",
+        "category": "ライフスタイル"
       }
     }
   },
   "features": {
-    "title": "なぜSafe Way 11を選ぶのか？",
+    "title": "なぜSafe Way 12を選ぶのか？",
     "subtitle": "危険な瞬間、判断せずに記録し、表示し、サポートするツール",
     "items": {
       "recording": {
@@ -244,7 +250,7 @@
         "items": {
           "newApp": {
             "title": "新アプリ",
-            "text": "Safe Way 11ラインナップの新しいアプリリリース情報をいち早くお届けします。"
+            "text": "Safe Way 12ラインナップの新しいアプリリリース情報をいち早くお届けします。"
           },
           "update": {
             "title": "アップデート情報",
@@ -400,7 +406,7 @@
     "intro": "本利用規約（以下「本規約」）は、CodeWorks Lab（以下「当社」）が提供するすべてのサービス（以下「サービス」）のご利用に適用されます。サービスをご利用になることで、本規約に同意したものとみなされます。",
     "section1": {
       "title": "第1条（目的）",
-      "desc": "本規約は、Safe Way 11ラインナップアプリおよび関連サービスの利用条件と手続き、当社とユーザーの権利、義務、責任を定めます。"
+      "desc": "本規約は、Safe Way 12ラインナップアプリおよび関連サービスの利用条件と手続き、当社とユーザーの権利、義務、責任を定めます。"
     },
     "section2": {
       "title": "第2条（定義）",

@@ -3,7 +3,7 @@
     "name": "CodeWorks Lab",
     "tagline": "Wir Erfassen, Zeigen und Unterstützen",
     "description": "Wir entwickeln Sicherheitstools, die in gefährlichen Momenten an Ihrer Seite stehen. Wir urteilen nicht. Wir erfassen, zeigen und unterstützen.",
-    "safeWay": "Safe Way 11"
+    "safeWay": "Safe Way 12"
   },
   "nav": {
     "home": "Startseite",
@@ -31,7 +31,7 @@
   "hero": {
     "title": "Ihr Verlässlicher",
     "titleHighlight": "Sicherheitsbegleiter",
-    "subtitle": "Die Safe Way 11 Produktlinie von CodeWorks Lab - 11 Sicherheitstools, die in gefährlichen Momenten an Ihrer Seite stehen. Wir entwickeln nur unverzichtbare Apps.",
+    "subtitle": "Die Safe Way 12 Produktlinie von CodeWorks Lab - 12 Sicherheitstools, die in gefährlichen Momenten an Ihrer Seite stehen. Wir entwickeln nur unverzichtbare Apps.",
     "appStore": "App Store",
     "playStore": "Google Play",
     "downloads": "Downloads",
@@ -40,7 +40,7 @@
     "coreMessage": "Wir urteilen nicht. Wir erfassen, zeigen und unterstützen."
   },
   "apps": {
-    "title": "Safe Way 11 Produktlinie",
+    "title": "Safe Way 12 Produktlinie",
     "subtitle": "Sicherheitstools, die in gefährlichen Momenten an Ihrer Seite stehen",
     "learnMore": "Mehr Erfahren",
     "comingSoon": "Demnächst",
@@ -110,11 +110,17 @@
         "tagline": "Verkehrsunfall-Assistent",
         "description": "Sprachgeführte Unterstützung in der Panik nach einem Unfall. Automatische Fotoaufnahme und Berichterstellung.",
         "category": "Sicherheit"
+      },
+      "waymoments": {
+        "name": "WayMoments",
+        "tagline": "KI-Emotionstagebuch",
+        "description": "Zeichnet automatisch Treffen, Gespräche, Fotos und Emotionen auf. Erstellt emotionale Zeitachsen und KI-Essays am Ende der Sitzung.",
+        "category": "Lifestyle"
       }
     }
   },
   "features": {
-    "title": "Warum Safe Way 11 Wählen?",
+    "title": "Warum Safe Way 12 Wählen?",
     "subtitle": "Tools, die in gefährlichen Momenten erfassen, zeigen und unterstützen - ohne zu urteilen",
     "items": {
       "recording": {
@@ -244,7 +250,7 @@
         "items": {
           "newApp": {
             "title": "Neue App",
-            "text": "Seien Sie der Erste, der von neuen App-Veröffentlichungen der Safe Way 11 Produktlinie erfährt."
+            "text": "Seien Sie der Erste, der von neuen App-Veröffentlichungen der Safe Way 12 Produktlinie erfährt."
           },
           "update": {
             "title": "Update-Nachrichten",
@@ -400,7 +406,7 @@
     "intro": "Diese Nutzungsbedingungen (\"Bedingungen\") regeln Ihre Nutzung aller Dienste (\"Dienst\"), die von CodeWorks Lab (\"Unternehmen\") bereitgestellt werden. Durch die Nutzung unseres Dienstes stimmen Sie diesen Bedingungen zu.",
     "section1": {
       "title": "1. Zweck",
-      "desc": "Diese Bedingungen legen die Bedingungen und Verfahren für die Nutzung der Safe Way 11 Lineup-Apps und verwandter Dienste sowie die Rechte, Pflichten und Verantwortlichkeiten des Unternehmens und der Nutzer fest."
+      "desc": "Diese Bedingungen legen die Bedingungen und Verfahren für die Nutzung der Safe Way 12 Lineup-Apps und verwandter Dienste sowie die Rechte, Pflichten und Verantwortlichkeiten des Unternehmens und der Nutzer fest."
     },
     "section2": {
       "title": "2. Definitionen",

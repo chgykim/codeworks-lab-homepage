@@ -3,7 +3,7 @@
     "name": "CodeWorks Lab",
     "tagline": "Kami Mencatat, Menampilkan, dan Membantu",
     "description": "Kami membuat alat keselamatan yang menemani Anda di saat-saat berbahaya. Kami tidak menghakimi. Kami mencatat, menampilkan, dan membantu.",
-    "safeWay": "Safe Way 11"
+    "safeWay": "Safe Way 12"
   },
   "nav": {
     "home": "Beranda",
@@ -31,7 +31,7 @@
   "hero": {
     "title": "Pendamping",
     "titleHighlight": "Keselamatan Andal",
-    "subtitle": "Seri Safe Way 11 dari CodeWorks Lab - 11 alat keselamatan yang menemani Anda di saat-saat berbahaya. Kami hanya membuat aplikasi yang tak tergantikan.",
+    "subtitle": "Seri Safe Way 12 dari CodeWorks Lab - 12 alat keselamatan yang menemani Anda di saat-saat berbahaya. Kami hanya membuat aplikasi yang tak tergantikan.",
     "appStore": "App Store",
     "playStore": "Google Play",
     "downloads": "Unduhan",
@@ -40,7 +40,7 @@
     "coreMessage": "Kami tidak menghakimi. Kami mencatat, menampilkan, dan membantu."
   },
   "apps": {
-    "title": "Seri Safe Way 11",
+    "title": "Seri Safe Way 12",
     "subtitle": "Alat keselamatan yang menemani Anda di saat-saat berbahaya",
     "learnMore": "Selengkapnya",
     "comingSoon": "Segera Hadir",
@@ -110,11 +110,17 @@
         "tagline": "Asisten Kecelakaan Lalu Lintas",
         "description": "Panduan suara dalam kepanikan setelah kecelakaan. Pengambilan foto otomatis dan pembuatan laporan.",
         "category": "Keselamatan"
+      },
+      "waymoments": {
+        "name": "WayMoments",
+        "tagline": "Jurnal Emosi Otomatis AI",
+        "description": "Mencatat pertemuan, percakapan, foto, dan emosi secara otomatis. Menghasilkan timeline emosional dan esai AI saat sesi berakhir.",
+        "category": "Gaya Hidup"
       }
     }
   },
   "features": {
-    "title": "Mengapa Memilih Safe Way 11?",
+    "title": "Mengapa Memilih Safe Way 12?",
     "subtitle": "Alat yang mencatat, menampilkan, dan membantu di saat-saat berbahaya - tanpa menghakimi",
     "items": {
       "recording": {
@@ -244,7 +250,7 @@
         "items": {
           "newApp": {
             "title": "Aplikasi Baru",
-            "text": "Jadilah yang pertama mengetahui rilis aplikasi baru dalam jajaran Safe Way 11."
+            "text": "Jadilah yang pertama mengetahui rilis aplikasi baru dalam jajaran Safe Way 12."
           },
           "update": {
             "title": "Berita Pembaruan",
@@ -400,7 +406,7 @@
     "intro": "Ketentuan Layanan (\"Ketentuan\") ini mengatur penggunaan Anda atas semua layanan (\"Layanan\") yang disediakan oleh CodeWorks Lab (\"Perusahaan\"). Dengan menggunakan Layanan kami, Anda menyetujui Ketentuan ini.",
     "section1": {
       "title": "1. Tujuan",
-      "desc": "Ketentuan ini menetapkan syarat dan prosedur untuk menggunakan aplikasi jajaran Safe Way 11 dan layanan terkait, serta hak, kewajiban, dan tanggung jawab Perusahaan dan pengguna."
+      "desc": "Ketentuan ini menetapkan syarat dan prosedur untuk menggunakan aplikasi jajaran Safe Way 12 dan layanan terkait, serta hak, kewajiban, dan tanggung jawab Perusahaan dan pengguna."
     },
     "section2": {
       "title": "2. Definisi",

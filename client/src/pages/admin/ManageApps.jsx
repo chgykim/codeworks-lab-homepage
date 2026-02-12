@@ -17,7 +17,8 @@ const appNames = {
     waywild: 'WayWild',
     wayer: 'WayER',
     waystory: 'WayStory',
-    waycrash: 'WayCrash'
+    waycrash: 'WayCrash',
+    waymoments: 'WayMoments'
 };
 
 function ManageApps() {

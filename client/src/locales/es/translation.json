@@ -3,7 +3,7 @@
     "name": "CodeWorks Lab",
     "tagline": "Registramos, Mostramos y Asistimos",
     "description": "Creamos herramientas de seguridad que te acompañan en momentos peligrosos. No juzgamos. Registramos, mostramos y asistimos.",
-    "safeWay": "Safe Way 11"
+    "safeWay": "Safe Way 12"
   },
   "nav": {
     "home": "Inicio",
@@ -31,7 +31,7 @@
   "hero": {
     "title": "Tu Compañero",
     "titleHighlight": "de Seguridad Confiable",
-    "subtitle": "La línea Safe Way 11 de CodeWorks Lab - 11 herramientas de seguridad que te acompañan en momentos peligrosos. Solo creamos apps indispensables.",
+    "subtitle": "La línea Safe Way 12 de CodeWorks Lab - 12 herramientas de seguridad que te acompañan en momentos peligrosos. Solo creamos apps indispensables.",
     "appStore": "App Store",
     "playStore": "Google Play",
     "downloads": "Descargas",
@@ -40,7 +40,7 @@
     "coreMessage": "No juzgamos. Registramos, mostramos y asistimos."
   },
   "apps": {
-    "title": "Línea Safe Way 11",
+    "title": "Línea Safe Way 12",
     "subtitle": "Herramientas de seguridad que te acompañan en momentos peligrosos",
     "learnMore": "Más Información",
     "comingSoon": "Próximamente",
@@ -110,11 +110,17 @@
         "tagline": "Asistente de Accidentes de Tráfico",
         "description": "Guía por voz en el pánico tras un accidente. Captura automática de fotos y generación de reportes.",
         "category": "Seguridad"
+      },
+      "waymoments": {
+        "name": "WayMoments",
+        "tagline": "Diario Emocional Automático con IA",
+        "description": "Registra automáticamente reuniones, conversaciones, fotos y emociones. Genera líneas de tiempo emocionales y ensayos de IA al finalizar la sesión.",
+        "category": "Estilo de Vida"
       }
     }
   },
   "features": {
-    "title": "¿Por qué Elegir Safe Way 11?",
+    "title": "¿Por qué Elegir Safe Way 12?",
     "subtitle": "Herramientas que registran, muestran y asisten en momentos peligrosos - sin hacer juicios",
     "items": {
       "recording": {
@@ -244,7 +250,7 @@
         "items": {
           "newApp": {
             "title": "Nueva App",
-            "text": "Sé el primero en conocer los nuevos lanzamientos de la línea Safe Way 11."
+            "text": "Sé el primero en conocer los nuevos lanzamientos de la línea Safe Way 12."
           },
           "update": {
             "title": "Noticias de Actualización",
@@ -400,7 +406,7 @@
     "intro": "Estos Términos de Servicio (\"Términos\") rigen su uso de todos los servicios (\"Servicio\") proporcionados por CodeWorks Lab (\"Empresa\"). Al usar nuestro Servicio, acepta estos Términos.",
     "section1": {
       "title": "1. Propósito",
-      "desc": "Estos Términos establecen las condiciones y procedimientos para usar las aplicaciones de la línea Safe Way 11 y servicios relacionados, así como los derechos, obligaciones y responsabilidades de la Empresa y los usuarios."
+      "desc": "Estos Términos establecen las condiciones y procedimientos para usar las aplicaciones de la línea Safe Way 12 y servicios relacionados, así como los derechos, obligaciones y responsabilidades de la Empresa y los usuarios."
     },
     "section2": {
       "title": "2. Definiciones",

@@ -3,7 +3,7 @@
     "name": "CodeWorks Lab",
     "tagline": "记录、展示、协助",
     "description": "我们创造在危险时刻陪伴您的安全工具。我们不做判断。我们记录、展示、协助。",
-    "safeWay": "Safe Way 11"
+    "safeWay": "Safe Way 12"
   },
   "nav": {
     "home": "首页",
@@ -31,7 +31,7 @@
   "hero": {
     "title": "危险时刻的",
     "titleHighlight": "可靠安全工具",
-    "subtitle": "CodeWorks Lab的Safe Way 11系列 - 在危险时刻陪伴您的11个安全工具。我们只做不可或缺的应用。",
+    "subtitle": "CodeWorks Lab的Safe Way 12系列 - 在危险时刻陪伴您的12个安全工具。我们只做不可或缺的应用。",
     "appStore": "App Store",
     "playStore": "Google Play",
     "downloads": "下载量",
@@ -40,7 +40,7 @@
     "coreMessage": "我们不做判断。我们记录、展示、协助。"
   },
   "apps": {
-    "title": "Safe Way 11 系列",
+    "title": "Safe Way 12 系列",
     "subtitle": "危险时刻，陪伴您的安全工具",
     "learnMore": "了解更多",
     "comingSoon": "即将推出",
@@ -110,11 +110,17 @@
         "tagline": "交通事故应对助手",
         "description": "事故后恐慌状态下的语音引导。自动拍照、生成事故报告。",
         "category": "安全"
+      },
+      "waymoments": {
+        "name": "WayMoments",
+        "tagline": "AI情感自动记录",
+        "description": "自动记录聚会、对话、照片和情感。会话结束时生成情感时间线和AI随笔。",
+        "category": "生活"
       }
     }
   },
   "features": {
-    "title": "为什么选择Safe Way 11？",
+    "title": "为什么选择Safe Way 12？",
     "subtitle": "危险时刻，不做判断，只记录、展示、协助的工具",
     "items": {
       "recording": {
@@ -244,7 +250,7 @@
         "items": {
           "newApp": {
             "title": "新应用",
-            "text": "第一时间获取Safe Way 11系列新应用发布消息。"
+            "text": "第一时间获取Safe Way 12系列新应用发布消息。"
           },
           "update": {
             "title": "更新消息",
@@ -400,7 +406,7 @@
     "intro": "本服务条款（以下简称『条款』）适用于CodeWorks Lab（以下简称『公司』）提供的所有服务（以下简称『服务』）。使用我们的服务即表示您同意本条款。",
     "section1": {
       "title": "第一条（目的）",
-      "desc": "本条款规定Safe Way 11系列应用程序及相关服务的使用条件和程序，以及公司和用户的权利、义务和责任。"
+      "desc": "本条款规定Safe Way 12系列应用程序及相关服务的使用条件和程序，以及公司和用户的权利、义务和责任。"
     },
     "section2": {
       "title": "第二条（定义）",

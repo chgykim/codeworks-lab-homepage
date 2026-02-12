@@ -3,7 +3,7 @@
     "name": "CodeWorks Lab",
     "tagline": "Chúng tôi Ghi nhận, Hiển thị và Hỗ trợ",
     "description": "Chúng tôi tạo ra các công cụ an toàn đồng hành cùng bạn trong những khoảnh khắc nguy hiểm. Chúng tôi không phán xét. Chúng tôi ghi lại, hiển thị và hỗ trợ.",
-    "safeWay": "Safe Way 11"
+    "safeWay": "Safe Way 12"
   },
   "nav": {
     "home": "Trang chủ",
@@ -31,7 +31,7 @@
   "hero": {
     "title": "Người Bạn Đồng Hành",
     "titleHighlight": "An Toàn Đáng Tin Cậy",
-    "subtitle": "Bộ sưu tập Safe Way 11 của CodeWorks Lab - 11 công cụ an toàn đồng hành cùng bạn trong những khoảnh khắc nguy hiểm. Chúng tôi chỉ tạo ra ứng dụng không thể thiếu.",
+    "subtitle": "Bộ sưu tập Safe Way 12 của CodeWorks Lab - 12 công cụ an toàn đồng hành cùng bạn trong những khoảnh khắc nguy hiểm. Chúng tôi chỉ tạo ra ứng dụng không thể thiếu.",
     "appStore": "App Store",
     "playStore": "Google Play",
     "downloads": "Lượt tải",
@@ -40,7 +40,7 @@
     "coreMessage": "Chúng tôi không phán xét. Chúng tôi ghi nhận, hiển thị và hỗ trợ."
   },
   "apps": {
-    "title": "Bộ sưu tập Safe Way 11",
+    "title": "Bộ sưu tập Safe Way 12",
     "subtitle": "Công cụ an toàn đồng hành cùng bạn trong những khoảnh khắc nguy hiểm",
     "learnMore": "Tìm hiểu thêm",
     "comingSoon": "Sắp ra mắt",
@@ -110,11 +110,17 @@
         "tagline": "Trợ lý Tai nạn Giao thông",
         "description": "Hướng dẫn bằng giọng nói trong cơn hoảng loạn sau tai nạn. Chụp ảnh tự động và tạo báo cáo.",
         "category": "An toàn"
+      },
+      "waymoments": {
+        "name": "WayMoments",
+        "tagline": "Nhật ký Cảm xúc Tự động AI",
+        "description": "Tự động ghi lại cuộc gặp, hội thoại, ảnh và cảm xúc. Tạo dòng thời gian cảm xúc và bài luận AI khi kết thúc phiên.",
+        "category": "Phong cách sống"
       }
     }
   },
   "features": {
-    "title": "Tại sao chọn Safe Way 11?",
+    "title": "Tại sao chọn Safe Way 12?",
     "subtitle": "Công cụ ghi lại, hiển thị và hỗ trợ trong những khoảnh khắc nguy hiểm - không phán xét",
     "items": {
       "recording": {
@@ -244,7 +250,7 @@
         "items": {
           "newApp": {
             "title": "Ứng dụng mới",
-            "text": "Hãy là người đầu tiên biết về các ứng dụng mới ra mắt trong dòng sản phẩm Safe Way 11."
+            "text": "Hãy là người đầu tiên biết về các ứng dụng mới ra mắt trong dòng sản phẩm Safe Way 12."
           },
           "update": {
             "title": "Tin cập nhật",
@@ -400,7 +406,7 @@
     "intro": "Điều khoản dịch vụ này (\"Điều khoản\") điều chỉnh việc sử dụng tất cả các dịch vụ (\"Dịch vụ\") do CodeWorks Lab (\"Công ty\") cung cấp. Bằng cách sử dụng Dịch vụ, bạn đồng ý với các Điều khoản này.",
     "section1": {
       "title": "1. Mục đích",
-      "desc": "Điều khoản này thiết lập các điều kiện và thủ tục sử dụng các ứng dụng dòng Safe Way 11 và các dịch vụ liên quan, cũng như quyền, nghĩa vụ và trách nhiệm của Công ty và người dùng."
+      "desc": "Điều khoản này thiết lập các điều kiện và thủ tục sử dụng các ứng dụng dòng Safe Way 12 và các dịch vụ liên quan, cũng như quyền, nghĩa vụ và trách nhiệm của Công ty và người dùng."
     },
     "section2": {
       "title": "2. Định nghĩa",
