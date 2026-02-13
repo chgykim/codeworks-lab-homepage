@@ -53,8 +53,8 @@
       },
       "wayenvelope": {
         "name": "WayEnvelope",
-        "tagline": "Event Envelope Scanner",
-        "description": "Scan envelope names with AI OCR, input amounts, and auto-tally. Export to Excel/CSV. Essential for weddings, funerals, and celebrations.",
+        "tagline": "Gift Money Manager",
+        "description": "Scan gift envelopes with AI OCR, track names and amounts, auto-tally and export to Excel/CSV. For weddings, funerals, and celebrations worldwide.",
         "category": "Lifestyle"
       },
       "wayback": {

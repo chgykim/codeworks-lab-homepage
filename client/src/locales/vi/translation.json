@@ -53,8 +53,8 @@
       },
       "wayenvelope": {
         "name": "WayEnvelope",
-        "tagline": "Máy quét Phong bì Sự kiện",
-        "description": "Quét tên trên phong bì bằng AI OCR, nhập số tiền và tự động tổng hợp. Xuất Excel/CSV. Thiết yếu cho đám cưới, đám tang và lễ kỷ niệm.",
+        "tagline": "Quản lý phong bì",
+        "description": "Quét phong bì quà tặng bằng AI OCR, theo dõi tên và số tiền, tổng hợp tự động và xuất ra Excel/CSV. Dành cho đám cưới, đám tang và lễ kỷ niệm.",
         "category": "Phong cách sống"
       },
       "wayback": {

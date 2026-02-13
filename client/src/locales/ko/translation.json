@@ -53,8 +53,8 @@
       },
       "wayenvelope": {
         "name": "WayEnvelope",
-        "tagline": "행사 봉투 스캐너",
-        "description": "AI OCR로 봉투 이름 스캔, 금액 입력, 자동 정산. 엑셀/CSV 내보내기. 결혼식·장례식·돌잔치 필수 앱.",
+        "tagline": "글로벌 축의금 매니저",
+        "description": "AI OCR로 봉투 이름 자동 인식, 금액 입력, 자동 정산. 엑셀/CSV 내보내기. 전 세계 축의금 문화 지원.",
         "category": "라이프"
       },
       "wayback": {

@@ -53,8 +53,8 @@
       },
       "wayenvelope": {
         "name": "WayEnvelope",
-        "tagline": "Pemindai Amplop Acara",
-        "description": "Pindai nama di amplop dengan AI OCR, masukkan jumlah, dan hitung otomatis. Ekspor ke Excel/CSV. Penting untuk pernikahan, pemakaman, dan perayaan.",
+        "tagline": "Manajer Amplop",
+        "description": "Pindai amplop hadiah dengan AI OCR, lacak nama dan jumlah, hitung otomatis dan ekspor ke Excel/CSV. Untuk pernikahan, pemakaman, dan perayaan.",
         "category": "Gaya Hidup"
       },
       "wayback": {

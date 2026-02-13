@@ -53,8 +53,8 @@
       },
       "wayenvelope": {
         "name": "WayEnvelope",
-        "tagline": "Escáner de Sobres de Eventos",
-        "description": "Escanea nombres en sobres con OCR IA, ingresa montos y totaliza automáticamente. Exporta a Excel/CSV. Esencial para bodas, funerales y celebraciones.",
+        "tagline": "Gestor de Regalos",
+        "description": "Escanea sobres de regalo con IA OCR, registra nombres y montos, totaliza y exporta a Excel/CSV. Para bodas, funerales y celebraciones.",
         "category": "Estilo de Vida"
       },
       "wayback": {

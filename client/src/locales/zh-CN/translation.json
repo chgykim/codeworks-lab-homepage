@@ -53,8 +53,8 @@
       },
       "wayenvelope": {
         "name": "WayEnvelope",
-        "tagline": "活动红包扫描仪",
-        "description": "AI OCR扫描红包姓名，输入金额，自动结算。导出Excel/CSV。婚礼·葬礼·庆典必备。",
+        "tagline": "礼金管家",
+        "description": "AI OCR自动识别红包姓名，输入金额自动汇总。支持导出Excel/CSV。适用于婚礼、葬礼及各类庆典。",
         "category": "生活"
       },
       "wayback": {

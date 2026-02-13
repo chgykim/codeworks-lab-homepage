@@ -53,8 +53,8 @@
       },
       "wayenvelope": {
         "name": "WayEnvelope",
-        "tagline": "Scanner de Envelopes de Eventos",
-        "description": "Escaneie nomes em envelopes com OCR IA, insira valores e totalize automaticamente. Exporte para Excel/CSV. Essencial para casamentos, funerais e celebrações.",
+        "tagline": "Gestor de Presentes",
+        "description": "Digitalize envelopes de presente com IA OCR, registre nomes e valores, totalize e exporte para Excel/CSV. Para casamentos, funerais e celebrações.",
         "category": "Estilo de Vida"
       },
       "wayback": {

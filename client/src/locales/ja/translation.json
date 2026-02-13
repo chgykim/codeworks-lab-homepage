@@ -53,8 +53,8 @@
       },
       "wayenvelope": {
         "name": "WayEnvelope",
-        "tagline": "イベント封筒スキャナー",
-        "description": "AI OCRで封筒の名前をスキャン、金額入力、自動精算。Excel/CSVエクスポート。結婚式・葬儀・お祝いの必需品。",
+        "tagline": "ご祝儀マネージャー",
+        "description": "AI OCRで封筒の名前を自動認識、金額入力で自動集計。Excel/CSV出力対応。結婚式・葬儀・お祝いに。",
         "category": "ライフスタイル"
       },
       "wayback": {

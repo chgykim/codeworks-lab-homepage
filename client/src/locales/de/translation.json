@@ -53,8 +53,8 @@
       },
       "wayenvelope": {
         "name": "WayEnvelope",
-        "tagline": "Event-Umschlag-Scanner",
-        "description": "Scannen Sie Namen auf Umschlägen mit KI-OCR, geben Sie Beträge ein und summieren Sie automatisch. Export nach Excel/CSV. Unverzichtbar für Hochzeiten, Beerdigungen und Feiern.",
+        "tagline": "Geldgeschenk-Manager",
+        "description": "Scannen Sie Geschenkumschläge mit KI-OCR, erfassen Sie Namen und Beträge, summieren und exportieren Sie als Excel/CSV. Für Hochzeiten, Beerdigungen und Feiern.",
         "category": "Lifestyle"
       },
       "wayback": {
