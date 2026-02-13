@@ -54,8 +54,8 @@ const appColors = {
 };
 
 const appKeys = [
-    'wayvision', 'waypulse', 'wayback', 'wayscan', 'waysound', 'waypanic',
-    'wayenvelope', 'waybrain', 'wayrest', 'waymoments', 'wayer', 'waywild',
+    'wayback', 'waymoments', 'wayvision', 'waypulse', 'wayscan', 'wayenvelope',
+    'waypanic', 'waysound', 'waybrain', 'wayrest', 'wayer', 'waywild',
     'waystory', 'waycrash'
 ];
 
