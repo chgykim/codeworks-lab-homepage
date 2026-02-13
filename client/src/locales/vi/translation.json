@@ -3,7 +3,7 @@
     "name": "CodeWorks Lab",
     "tagline": "Chúng tôi Ghi nhận, Hiển thị và Hỗ trợ",
     "description": "Chúng tôi tạo ra các công cụ an toàn đồng hành cùng bạn trong những khoảnh khắc nguy hiểm. Chúng tôi không phán xét. Chúng tôi ghi lại, hiển thị và hỗ trợ.",
-    "safeWay": "Way 12"
+    "safeWay": "Way 14"
   },
   "nav": {
     "home": "Trang chủ",
@@ -31,7 +31,7 @@
   "hero": {
     "title": "Người Bạn Đồng Hành",
     "titleHighlight": "An Toàn Đáng Tin Cậy",
-    "subtitle": "Bộ sưu tập Way 12 của CodeWorks Lab - 12 ứng dụng ghi nhận, hiển thị và hỗ trợ. Chúng tôi chỉ tạo ra ứng dụng không thể thiếu.",
+    "subtitle": "Bộ sưu tập Way 14 của CodeWorks Lab - 14 ứng dụng ghi nhận, hiển thị và hỗ trợ. Chúng tôi chỉ tạo ra ứng dụng không thể thiếu.",
     "appStore": "App Store",
     "playStore": "Google Play",
     "downloads": "Lượt tải",
@@ -40,11 +40,23 @@
     "coreMessage": "Chúng tôi không phán xét. Chúng tôi ghi nhận, hiển thị và hỗ trợ."
   },
   "apps": {
-    "title": "Bộ sưu tập Way 12",
-    "subtitle": "12 công cụ ghi nhận, hiển thị và hỗ trợ",
+    "title": "Bộ sưu tập Way 14",
+    "subtitle": "14 công cụ ghi nhận, hiển thị và hỗ trợ",
     "learnMore": "Tìm hiểu thêm",
     "comingSoon": "Sắp ra mắt",
     "items": {
+      "wayvision": {
+        "name": "WayVision",
+        "tagline": "Trợ lý Thị giác & Sức khỏe AI",
+        "description": "Phóng to camera, AI OCR, phân tích thành phần, cảnh báo tương tác thuốc và đọc bằng giọng nói. Trợ lý thị giác và sức khỏe AI cho người 40-80 tuổi.",
+        "category": "Sức khỏe"
+      },
+      "wayenvelope": {
+        "name": "WayEnvelope",
+        "tagline": "Máy quét Phong bì Sự kiện",
+        "description": "Quét tên trên phong bì bằng AI OCR, nhập số tiền và tự động tổng hợp. Xuất Excel/CSV. Thiết yếu cho đám cưới, đám tang và lễ kỷ niệm.",
+        "category": "Phong cách sống"
+      },
       "wayback": {
         "name": "WayBack",
         "tagline": "Trở Về An Toàn & Du Lịch",
@@ -120,7 +132,7 @@
     }
   },
   "features": {
-    "title": "Tại sao chọn Way 12?",
+    "title": "Tại sao chọn Way 14?",
     "subtitle": "Công cụ ghi lại, hiển thị và hỗ trợ - không phán xét",
     "items": {
       "recording": {
@@ -250,7 +262,7 @@
         "items": {
           "newApp": {
             "title": "Ứng dụng mới",
-            "text": "Hãy là người đầu tiên biết về các ứng dụng mới ra mắt trong dòng sản phẩm Way 12."
+            "text": "Hãy là người đầu tiên biết về các ứng dụng mới ra mắt trong dòng sản phẩm Way 14."
           },
           "update": {
             "title": "Tin cập nhật",
@@ -406,7 +418,7 @@
     "intro": "Điều khoản dịch vụ này (\"Điều khoản\") điều chỉnh việc sử dụng tất cả các dịch vụ (\"Dịch vụ\") do CodeWorks Lab (\"Công ty\") cung cấp. Bằng cách sử dụng Dịch vụ, bạn đồng ý với các Điều khoản này.",
     "section1": {
       "title": "1. Mục đích",
-      "desc": "Điều khoản này thiết lập các điều kiện và thủ tục sử dụng các ứng dụng dòng Way 12 và các dịch vụ liên quan, cũng như quyền, nghĩa vụ và trách nhiệm của Công ty và người dùng."
+      "desc": "Điều khoản này thiết lập các điều kiện và thủ tục sử dụng các ứng dụng dòng Way 14 và các dịch vụ liên quan, cũng như quyền, nghĩa vụ và trách nhiệm của Công ty và người dùng."
     },
     "section2": {
       "title": "2. Định nghĩa",

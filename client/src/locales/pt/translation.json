@@ -3,7 +3,7 @@
     "name": "CodeWorks Lab",
     "tagline": "Registramos, Exibimos e Assistimos",
     "description": "Criamos ferramentas de segurança que estão ao seu lado em momentos perigosos. Não julgamos. Registramos, exibimos e assistimos.",
-    "safeWay": "Way 12"
+    "safeWay": "Way 14"
   },
   "nav": {
     "home": "Início",
@@ -31,7 +31,7 @@
   "hero": {
     "title": "Seu Companheiro",
     "titleHighlight": "de Segurança Confiável",
-    "subtitle": "A linha Way 12 da CodeWorks Lab - 12 aplicativos que registram, exibem e assistem. Só criamos apps indispensáveis.",
+    "subtitle": "A linha Way 14 da CodeWorks Lab - 14 aplicativos que registram, exibem e assistem. Só criamos apps indispensáveis.",
     "appStore": "App Store",
     "playStore": "Google Play",
     "downloads": "Downloads",
@@ -40,11 +40,23 @@
     "coreMessage": "Não julgamos. Registramos, exibimos e assistimos."
   },
   "apps": {
-    "title": "Linha Way 12",
-    "subtitle": "12 ferramentas que registram, exibem e assistem",
+    "title": "Linha Way 14",
+    "subtitle": "14 ferramentas que registram, exibem e assistem",
     "learnMore": "Saiba Mais",
     "comingSoon": "Em Breve",
     "items": {
+      "wayvision": {
+        "name": "WayVision",
+        "tagline": "Assistente Visual e de Saúde IA",
+        "description": "Ampliação por câmera, OCR IA, análise de ingredientes, alertas de interação medicamentosa e leitura por voz. O assistente visual e de saúde definitivo para 40-80 anos.",
+        "category": "Saúde"
+      },
+      "wayenvelope": {
+        "name": "WayEnvelope",
+        "tagline": "Scanner de Envelopes de Eventos",
+        "description": "Escaneie nomes em envelopes com OCR IA, insira valores e totalize automaticamente. Exporte para Excel/CSV. Essencial para casamentos, funerais e celebrações.",
+        "category": "Estilo de Vida"
+      },
       "wayback": {
         "name": "WayBack",
         "tagline": "Retorno Seguro e Viagens",
@@ -120,7 +132,7 @@
     }
   },
   "features": {
-    "title": "Por que Escolher Way 12?",
+    "title": "Por que Escolher Way 14?",
     "subtitle": "Ferramentas que registram, exibem e assistem - sem fazer julgamentos",
     "items": {
       "recording": {
@@ -250,7 +262,7 @@
         "items": {
           "newApp": {
             "title": "Novo App",
-            "text": "Seja o primeiro a saber sobre novos lançamentos da linha Way 12."
+            "text": "Seja o primeiro a saber sobre novos lançamentos da linha Way 14."
           },
           "update": {
             "title": "Notícias de Atualização",
@@ -406,7 +418,7 @@
     "intro": "Estes Termos de Serviço (\"Termos\") regem o uso de todos os serviços (\"Serviço\") fornecidos pela CodeWorks Lab (\"Empresa\"). Ao usar nosso Serviço, você concorda com estes Termos.",
     "section1": {
       "title": "1. Finalidade",
-      "desc": "Estes Termos estabelecem as condições e procedimentos para usar os aplicativos da linha Way 12 e serviços relacionados, bem como os direitos, obrigações e responsabilidades da Empresa e dos usuários."
+      "desc": "Estes Termos estabelecem as condições e procedimentos para usar os aplicativos da linha Way 14 e serviços relacionados, bem como os direitos, obrigações e responsabilidades da Empresa e dos usuários."
     },
     "section2": {
       "title": "2. Definições",

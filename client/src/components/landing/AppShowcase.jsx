@@ -13,13 +13,18 @@ import {
     BookOpen,
     Car,
     Sparkles,
+    Eye,
+    Mail,
     Lock
 } from 'lucide-react';
 import './AppShowcase.css';
 
 const appIcons = {
+    wayvision: Eye,
+    waymoments: Sparkles,
     wayback: MapPin,
     waypulse: HeartPulse,
+    wayenvelope: Mail,
     waysound: Mic,
     wayscan: ScanSearch,
     waypanic: ShieldAlert,
@@ -28,13 +33,15 @@ const appIcons = {
     waywild: TreePine,
     wayer: Stethoscope,
     waystory: BookOpen,
-    waycrash: Car,
-    waymoments: Sparkles
+    waycrash: Car
 };
 
 const appColors = {
+    wayvision: '#14b8a6',
+    waymoments: '#e11d48',
     wayback: '#3b82f6',
     waypulse: '#ef4444',
+    wayenvelope: '#d946ef',
     waysound: '#06b6d4',
     wayscan: '#10b981',
     waypanic: '#f97316',
@@ -43,13 +50,13 @@ const appColors = {
     waywild: '#84cc16',
     wayer: '#ec4899',
     waystory: '#f59e0b',
-    waycrash: '#6366f1',
-    waymoments: '#e11d48'
+    waycrash: '#6366f1'
 };
 
 const appKeys = [
-    'waymoments', 'wayback', 'waypulse', 'waysound', 'wayscan', 'waypanic',
-    'waybrain', 'wayrest', 'waywild', 'wayer', 'waystory', 'waycrash'
+    'wayvision', 'waymoments', 'wayback', 'waypulse', 'wayenvelope', 'waysound',
+    'wayscan', 'waypanic', 'waybrain', 'wayrest', 'waywild', 'wayer',
+    'waystory', 'waycrash'
 ];
 
 function AppShowcase({ releasedApps = [] }) {

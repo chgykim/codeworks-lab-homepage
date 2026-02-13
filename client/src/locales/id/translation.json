@@ -3,7 +3,7 @@
     "name": "CodeWorks Lab",
     "tagline": "Kami Mencatat, Menampilkan, dan Membantu",
     "description": "Kami membuat alat keselamatan yang menemani Anda di saat-saat berbahaya. Kami tidak menghakimi. Kami mencatat, menampilkan, dan membantu.",
-    "safeWay": "Way 12"
+    "safeWay": "Way 14"
   },
   "nav": {
     "home": "Beranda",
@@ -31,7 +31,7 @@
   "hero": {
     "title": "Pendamping",
     "titleHighlight": "Keselamatan Andal",
-    "subtitle": "Seri Way 12 dari CodeWorks Lab - 12 aplikasi yang mencatat, menampilkan, dan membantu. Kami hanya membuat aplikasi yang tak tergantikan.",
+    "subtitle": "Seri Way 14 dari CodeWorks Lab - 14 aplikasi yang mencatat, menampilkan, dan membantu. Kami hanya membuat aplikasi yang tak tergantikan.",
     "appStore": "App Store",
     "playStore": "Google Play",
     "downloads": "Unduhan",
@@ -40,11 +40,23 @@
     "coreMessage": "Kami tidak menghakimi. Kami mencatat, menampilkan, dan membantu."
   },
   "apps": {
-    "title": "Seri Way 12",
-    "subtitle": "12 alat yang mencatat, menampilkan, dan membantu",
+    "title": "Seri Way 14",
+    "subtitle": "14 alat yang mencatat, menampilkan, dan membantu",
     "learnMore": "Selengkapnya",
     "comingSoon": "Segera Hadir",
     "items": {
+      "wayvision": {
+        "name": "WayVision",
+        "tagline": "Asisten Visual & Kesehatan AI",
+        "description": "Pembesaran kamera, AI OCR, analisis bahan, peringatan interaksi obat, dan pembacaan suara. Asisten visual dan kesehatan AI terbaik untuk usia 40-80 tahun.",
+        "category": "Kesehatan"
+      },
+      "wayenvelope": {
+        "name": "WayEnvelope",
+        "tagline": "Pemindai Amplop Acara",
+        "description": "Pindai nama di amplop dengan AI OCR, masukkan jumlah, dan hitung otomatis. Ekspor ke Excel/CSV. Penting untuk pernikahan, pemakaman, dan perayaan.",
+        "category": "Gaya Hidup"
+      },
       "wayback": {
         "name": "WayBack",
         "tagline": "Pulang Aman & Perjalanan",
@@ -120,7 +132,7 @@
     }
   },
   "features": {
-    "title": "Mengapa Memilih Way 12?",
+    "title": "Mengapa Memilih Way 14?",
     "subtitle": "Alat yang mencatat, menampilkan, dan membantu - tanpa menghakimi",
     "items": {
       "recording": {
@@ -250,7 +262,7 @@
         "items": {
           "newApp": {
             "title": "Aplikasi Baru",
-            "text": "Jadilah yang pertama mengetahui rilis aplikasi baru dalam jajaran Way 12."
+            "text": "Jadilah yang pertama mengetahui rilis aplikasi baru dalam jajaran Way 14."
           },
           "update": {
             "title": "Berita Pembaruan",
@@ -406,7 +418,7 @@
     "intro": "Ketentuan Layanan (\"Ketentuan\") ini mengatur penggunaan Anda atas semua layanan (\"Layanan\") yang disediakan oleh CodeWorks Lab (\"Perusahaan\"). Dengan menggunakan Layanan kami, Anda menyetujui Ketentuan ini.",
     "section1": {
       "title": "1. Tujuan",
-      "desc": "Ketentuan ini menetapkan syarat dan prosedur untuk menggunakan aplikasi jajaran Way 12 dan layanan terkait, serta hak, kewajiban, dan tanggung jawab Perusahaan dan pengguna."
+      "desc": "Ketentuan ini menetapkan syarat dan prosedur untuk menggunakan aplikasi jajaran Way 14 dan layanan terkait, serta hak, kewajiban, dan tanggung jawab Perusahaan dan pengguna."
     },
     "section2": {
       "title": "2. Definisi",

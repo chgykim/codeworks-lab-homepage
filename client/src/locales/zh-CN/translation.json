@@ -3,7 +3,7 @@
     "name": "CodeWorks Lab",
     "tagline": "记录、展示、协助",
     "description": "我们创造在危险时刻陪伴您的安全工具。我们不做判断。我们记录、展示、协助。",
-    "safeWay": "Way 12"
+    "safeWay": "Way 14"
   },
   "nav": {
     "home": "首页",
@@ -31,7 +31,7 @@
   "hero": {
     "title": "危险时刻的",
     "titleHighlight": "可靠安全工具",
-    "subtitle": "CodeWorks Lab的Way 12系列 - 记录、展示、协助的12个应用。我们只做不可或缺的应用。",
+    "subtitle": "CodeWorks Lab的Way 14系列 - 记录、展示、协助的14个应用。我们只做不可或缺的应用。",
     "appStore": "App Store",
     "playStore": "Google Play",
     "downloads": "下载量",
@@ -40,11 +40,23 @@
     "coreMessage": "我们不做判断。我们记录、展示、协助。"
   },
   "apps": {
-    "title": "Way 12 系列",
-    "subtitle": "记录、展示、协助的12个工具",
+    "title": "Way 14 系列",
+    "subtitle": "记录、展示、协助的14个工具",
     "learnMore": "了解更多",
     "comingSoon": "即将推出",
     "items": {
+      "wayvision": {
+        "name": "WayVision",
+        "tagline": "AI视觉·健康助手",
+        "description": "相机放大、AI OCR、成分分析、药物相互作用警告、语音朗读。40~80岁人群的AI视觉·健康辅助应用。",
+        "category": "健康"
+      },
+      "wayenvelope": {
+        "name": "WayEnvelope",
+        "tagline": "活动红包扫描仪",
+        "description": "AI OCR扫描红包姓名，输入金额，自动结算。导出Excel/CSV。婚礼·葬礼·庆典必备。",
+        "category": "生活"
+      },
       "wayback": {
         "name": "WayBack",
         "tagline": "安全回家与旅行",
@@ -120,7 +132,7 @@
     }
   },
   "features": {
-    "title": "为什么选择Way 12？",
+    "title": "为什么选择Way 14？",
     "subtitle": "不做判断，只记录、展示、协助的工具",
     "items": {
       "recording": {
@@ -250,7 +262,7 @@
         "items": {
           "newApp": {
             "title": "新应用",
-            "text": "第一时间获取Way 12系列新应用发布消息。"
+            "text": "第一时间获取Way 14系列新应用发布消息。"
           },
           "update": {
             "title": "更新消息",
@@ -406,7 +418,7 @@
     "intro": "本服务条款（以下简称『条款』）适用于CodeWorks Lab（以下简称『公司』）提供的所有服务（以下简称『服务』）。使用我们的服务即表示您同意本条款。",
     "section1": {
       "title": "第一条（目的）",
-      "desc": "本条款规定Way 12系列应用程序及相关服务的使用条件和程序，以及公司和用户的权利、义务和责任。"
+      "desc": "本条款规定Way 14系列应用程序及相关服务的使用条件和程序，以及公司和用户的权利、义务和责任。"
     },
     "section2": {
       "title": "第二条（定义）",

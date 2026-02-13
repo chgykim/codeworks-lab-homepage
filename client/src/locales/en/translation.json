@@ -3,7 +3,7 @@
     "name": "CodeWorks Lab",
     "tagline": "We Record, Display, and Assist",
     "description": "We build safety tools that stand by you in dangerous moments. We do not judge. We record, display, and assist.",
-    "safeWay": "Way 12"
+    "safeWay": "Way 14"
   },
   "nav": {
     "home": "Home",
@@ -31,7 +31,7 @@
   "hero": {
     "title": "Your Reliable",
     "titleHighlight": "Safety Companion",
-    "subtitle": "CodeWorks Lab's Way 12 lineup - 12 apps that record, display, and assist. We only build apps you can't live without.",
+    "subtitle": "CodeWorks Lab's Way 14 lineup - 14 apps that record, display, and assist. We only build apps you can't live without.",
     "appStore": "App Store",
     "playStore": "Google Play",
     "downloads": "Downloads",
@@ -40,11 +40,23 @@
     "coreMessage": "We do not judge. We record, display, and assist."
   },
   "apps": {
-    "title": "Way 12 Lineup",
-    "subtitle": "12 tools that record, display, and assist",
+    "title": "Way 14 Lineup",
+    "subtitle": "14 tools that record, display, and assist",
     "learnMore": "Learn More",
     "comingSoon": "Coming Soon",
     "items": {
+      "wayvision": {
+        "name": "WayVision",
+        "tagline": "AI Visual & Health Assistant",
+        "description": "Camera magnification, AI OCR, ingredient analysis, drug interaction warnings, and voice readout. The ultimate AI visual and health assistant for ages 40-80.",
+        "category": "Health"
+      },
+      "wayenvelope": {
+        "name": "WayEnvelope",
+        "tagline": "Event Envelope Scanner",
+        "description": "Scan envelope names with AI OCR, input amounts, and auto-tally. Export to Excel/CSV. Essential for weddings, funerals, and celebrations.",
+        "category": "Lifestyle"
+      },
       "wayback": {
         "name": "WayBack",
         "tagline": "Safe Return & Travel",
@@ -120,7 +132,7 @@
     }
   },
   "features": {
-    "title": "Why Choose Way 12?",
+    "title": "Why Choose Way 14?",
     "subtitle": "Tools that record, display, and assist - without making judgments",
     "items": {
       "recording": {
@@ -250,7 +262,7 @@
         "items": {
           "newApp": {
             "title": "New App",
-            "text": "Be the first to know about new app releases in the Way 12 lineup."
+            "text": "Be the first to know about new app releases in the Way 14 lineup."
           },
           "update": {
             "title": "Update News",
@@ -406,7 +418,7 @@
     "intro": "These Terms of Service (\"Terms\") govern your use of all services (\"Service\") provided by CodeWorks Lab (\"Company\"). By using our Service, you agree to these Terms.",
     "section1": {
       "title": "1. Purpose",
-      "desc": "These Terms establish the conditions and procedures for using the Way 12 lineup apps and related services, as well as the rights, obligations, and responsibilities of the Company and users."
+      "desc": "These Terms establish the conditions and procedures for using the Way 14 lineup apps and related services, as well as the rights, obligations, and responsibilities of the Company and users."
     },
     "section2": {
       "title": "2. Definitions",

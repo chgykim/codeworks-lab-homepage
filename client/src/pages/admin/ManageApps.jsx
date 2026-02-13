@@ -7,9 +7,11 @@ import { adminAPI } from '../../utils/api';
 import './Admin.css';
 
 const appNames = {
+    wayvision: 'WayVision',
     waymoments: 'WayMoments',
     wayback: 'WayBack',
     waypulse: 'WayPulse',
+    wayenvelope: 'WayEnvelope',
     waysound: 'WaySound',
     wayscan: 'WayScan',
     waypanic: 'WayPanic',

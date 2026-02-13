@@ -6,7 +6,7 @@ const { asyncHandler } = require('../middleware/errorHandler');
 const { authenticateToken, requireAdmin } = require('../middleware/auth');
 
 // All app keys
-const APP_KEYS = ['waymoments', 'wayback', 'waypulse', 'waysound', 'wayscan', 'waypanic', 'waybrain', 'wayrest', 'waywild', 'wayer', 'waystory', 'waycrash'];
+const APP_KEYS = ['wayvision', 'waymoments', 'wayback', 'waypulse', 'wayenvelope', 'waysound', 'wayscan', 'waypanic', 'waybrain', 'wayrest', 'waywild', 'wayer', 'waystory', 'waycrash'];
 
 // GET /api/settings/public - Get public site settings
 router.get('/public', asyncHandler(async (req, res) => {

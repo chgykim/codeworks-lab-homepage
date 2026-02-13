@@ -3,7 +3,7 @@
     "name": "CodeWorks Lab",
     "tagline": "Wir Erfassen, Zeigen und Unterstützen",
     "description": "Wir entwickeln Sicherheitstools, die in gefährlichen Momenten an Ihrer Seite stehen. Wir urteilen nicht. Wir erfassen, zeigen und unterstützen.",
-    "safeWay": "Way 12"
+    "safeWay": "Way 14"
   },
   "nav": {
     "home": "Startseite",
@@ -31,7 +31,7 @@
   "hero": {
     "title": "Ihr Verlässlicher",
     "titleHighlight": "Sicherheitsbegleiter",
-    "subtitle": "Die Way 12 Produktlinie von CodeWorks Lab - 12 Apps, die erfassen, zeigen und unterstützen. Wir entwickeln nur unverzichtbare Apps.",
+    "subtitle": "Die Way 14 Produktlinie von CodeWorks Lab - 14 Apps, die erfassen, zeigen und unterstützen. Wir entwickeln nur unverzichtbare Apps.",
     "appStore": "App Store",
     "playStore": "Google Play",
     "downloads": "Downloads",
@@ -40,11 +40,23 @@
     "coreMessage": "Wir urteilen nicht. Wir erfassen, zeigen und unterstützen."
   },
   "apps": {
-    "title": "Way 12 Produktlinie",
-    "subtitle": "12 Tools, die erfassen, zeigen und unterstützen",
+    "title": "Way 14 Produktlinie",
+    "subtitle": "14 Tools, die erfassen, zeigen und unterstützen",
     "learnMore": "Mehr Erfahren",
     "comingSoon": "Demnächst",
     "items": {
+      "wayvision": {
+        "name": "WayVision",
+        "tagline": "KI-Seh- und Gesundheitsassistent",
+        "description": "Kameravergrößerung, KI-OCR, Zutatenanalyse, Arzneimittelwechselwirkungen und Sprachausgabe. Der ultimative KI-Seh- und Gesundheitsassistent für 40-80-Jährige.",
+        "category": "Gesundheit"
+      },
+      "wayenvelope": {
+        "name": "WayEnvelope",
+        "tagline": "Event-Umschlag-Scanner",
+        "description": "Scannen Sie Namen auf Umschlägen mit KI-OCR, geben Sie Beträge ein und summieren Sie automatisch. Export nach Excel/CSV. Unverzichtbar für Hochzeiten, Beerdigungen und Feiern.",
+        "category": "Lifestyle"
+      },
       "wayback": {
         "name": "WayBack",
         "tagline": "Sichere Rückkehr & Reisen",
@@ -120,7 +132,7 @@
     }
   },
   "features": {
-    "title": "Warum Way 12 Wählen?",
+    "title": "Warum Way 14 Wählen?",
     "subtitle": "Tools, die erfassen, zeigen und unterstützen - ohne zu urteilen",
     "items": {
       "recording": {
@@ -250,7 +262,7 @@
         "items": {
           "newApp": {
             "title": "Neue App",
-            "text": "Seien Sie der Erste, der von neuen App-Veröffentlichungen der Way 12 Produktlinie erfährt."
+            "text": "Seien Sie der Erste, der von neuen App-Veröffentlichungen der Way 14 Produktlinie erfährt."
           },
           "update": {
             "title": "Update-Nachrichten",
@@ -406,7 +418,7 @@
     "intro": "Diese Nutzungsbedingungen (\"Bedingungen\") regeln Ihre Nutzung aller Dienste (\"Dienst\"), die von CodeWorks Lab (\"Unternehmen\") bereitgestellt werden. Durch die Nutzung unseres Dienstes stimmen Sie diesen Bedingungen zu.",
     "section1": {
       "title": "1. Zweck",
-      "desc": "Diese Bedingungen legen die Bedingungen und Verfahren für die Nutzung der Way 12 Lineup-Apps und verwandter Dienste sowie die Rechte, Pflichten und Verantwortlichkeiten des Unternehmens und der Nutzer fest."
+      "desc": "Diese Bedingungen legen die Bedingungen und Verfahren für die Nutzung der Way 14 Lineup-Apps und verwandter Dienste sowie die Rechte, Pflichten und Verantwortlichkeiten des Unternehmens und der Nutzer fest."
     },
     "section2": {
       "title": "2. Definitionen",
