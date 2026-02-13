@@ -42,7 +42,7 @@ function Hero({ settings }) {
 
                         <div className="hero-stats">
                             <div className="stat">
-                                <span className="stat-value">12</span>
+                                <span className="stat-value">14</span>
                                 <span className="stat-label">{t('hero.apps')}</span>
                             </div>
                             <div className="stat">
